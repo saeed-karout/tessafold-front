@@ -1,0 +1,323 @@
+.ksa-main{
+    display: flex;
+    padding: 80px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ksa-left{
+    width: 540.938px;
+    height: 456px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ksa-left .bg-ksa{
+    width: 368px;
+    height: 456px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(/images/ksa/bg.jpg) lightgray 50% / cover no-repeat;
+    box-shadow: 4px 8px 20px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    animation: floatImage 6s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+
+.ksa-left .text-ksa{
+    display: flex;
+    width: 408px;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background: var(--OilMain-oilmain-8, #094146);
+    box-shadow: 4px 8px 20px 0 rgba(0, 0, 0, 0.15);
+    position: absolute;
+    right: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slideInRight 1s ease-out;
+    z-index: 2;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+.ksa-left .text-ksa span{
+    flex: 1 0 0;
+    color: var(--Black-black-1, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.ksa-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    flex: 1;
+    max-width: 900px;
+}
+
+.ksa-right .top-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.top-right .icon-ksa{
+    width: 131.507px;
+    height: 88px;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.subtitle-ksa{
+    color: var(--OilMain-oilmain-2, #C5D8DA);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtitle-ksa span{
+    color: var(--Black-black-1, #FFF);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.subtitle-ksa p{
+    display: inline;
+    color: var(--Yellow, #FFB130);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.bottom-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 100%;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.bottom-right .item-ksa{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    animation: slideInItem 0.8s ease-out both;
+}
+
+.bottom-right .item-ksa:hover {
+    background: rgba(13, 92, 99, 0.1);
+    transform: translateX(10px);
+}
+
+@keyframes slideInItem {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* تأخيرات متدرجة للعناصر */
+.bottom-right .item-ksa:nth-child(1) { animation-delay: 0.7s; }
+.bottom-right .item-ksa:nth-child(2) { animation-delay: 0.8s; }
+.bottom-right .item-ksa:nth-child(3) { animation-delay: 0.9s; }
+.bottom-right .item-ksa:nth-child(4) { animation-delay: 1.0s; }
+.bottom-right .item-ksa:nth-child(5) { animation-delay: 1.1s; }
+.bottom-right .item-ksa:nth-child(6) { animation-delay: 1.2s; }
+.bottom-right .item-ksa:nth-child(7) { animation-delay: 1.3s; }
+
+.bottom-right .item-ksa .number{
+    color: var(--OilMain-oilmain-2, #C5D8DA);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    min-width: 50px;
+    transition: all 0.3s ease;
+}
+
+.bottom-right .item-ksa:hover .number {
+    color: var(--Yellow, #FFB130);
+    transform: scale(1.1);
+}
+
+.bottom-right .item-ksa .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.bottom-right .item-ksa .text span{
+    color: var(--OilMain-oilmain-2, #C5D8DA);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    transition: all 0.3s ease;
+}
+
+.bottom-right .item-ksa:hover .text span {
+    color: var(--Black-black-1, #FFF);
+}
+
+/* تأثيرات إضافية */
+.ksa-main::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(13, 92, 99, 0.1) 0%, transparent 70%);
+    z-index: -1;
+    animation: techGlow 8s ease-in-out infinite;
+}
+
+@keyframes techGlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+/* تحسينات للاستجابة */
+@media (max-width: 1200px) {
+    .ksa-main {
+        flex-direction: column;
+        gap: 64px;
+        padding: 60px 40px;
+    }
+    
+    .ksa-left {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .ksa-left .text-ksa {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .ksa-right {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .subtitle-ksa {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .ksa-main {
+        padding: 40px 20px;
+        gap: 48px;
+    }
+    
+    .bottom-right {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .ksa-left .bg-ksa {
+        width: 300px;
+        height: 400px;
+    }
+    
+    .subtitle-ksa {
+        font-size: 24px;
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .subtitle-ksa span,
+    .subtitle-ksa p {
+        font-size: 24px;
+    }
+}

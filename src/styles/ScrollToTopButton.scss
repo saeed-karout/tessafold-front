@@ -1,0 +1,41 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: inline-flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: rgba(151, 185, 188, 0.5);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top[dir="rtl"] {
+  right: auto;
+  left: 40px;
+}
+
+.scroll-icon {
+  width: 24px;
+  height: 24px;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}

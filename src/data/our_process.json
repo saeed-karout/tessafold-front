@@ -1,0 +1,85 @@
+{
+  "steps": [
+    {
+      "id": 1,
+      "name": {
+        "ar": "اتفاق",
+        "en": "Agreement",
+        "de": "handeln"
+      },
+      "icon": "/icons/ourProcess/search.svg"
+    },
+    {
+      "id": 2,
+      "name": {
+        "ar": "تصميم ",
+        "en": "Design",
+        "de": "Design"
+      },
+     "icon": "/icons/ourProcess/Design.svg"
+    },
+    {
+      "id": 3,
+      "name": {
+        "ar": "الجدول الزمني",
+        "en": "Timeline",
+        "de": "Zeitleiste"
+      },
+     "icon": "/icons/ourProcess/timer.svg"
+    },
+    {
+      "id": 4,
+      "name": {
+        "ar": "بناء",
+        "en": "Build",
+        "de": "Bauen"
+      },
+     "icon": "/icons/ourProcess/code.svg"
+    },
+    {
+      "id": 5,
+      "name": {
+        "ar": "الاختبار",
+        "en": "Test",
+        "de": "Prüfen"
+      },
+     "icon": "/icons/ourProcess/task-square.svg"
+    },
+    {
+      "id": 6,
+      "name": {
+        "ar": "النشر",
+        "en": "Deploy",
+        "de": "Einsetzen"
+      },
+     "icon": "/icons/ourProcess/recovery-convert.svg"
+    },
+    {
+      "id": 7,
+      "name": {
+        "ar": "الصيانة",
+        "en": "Maintenance",
+        "de": "Wartung"
+      },
+      "icon": "/icons/ourProcess/search.svg"
+    },
+    {
+      "id": 8,
+      "name": {
+        "ar": "يقيس",
+        "en": "Measure",
+        "de": "Messen"
+      },
+     "icon": "/icons/ourProcess/ruler&pen.svg"
+    },
+    {
+      "id": 9,
+      "name": {
+        "ar": "يحافظ على",
+        "en": "Maintain",
+        "de": "Pflegen"
+      },
+     "icon": "/icons/ourProcess/grid-edit.svg"
+    }
+  ]
+}

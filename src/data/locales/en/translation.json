@@ -1,0 +1,118 @@
+{
+  "header": {
+    "logoAlt": "Company Logo",
+    "home": "Home",
+    "services": "Services",
+    "career": "Career",
+    "ourProcess": "Our Process",
+    "partnerWithUs": "Partner With Us"
+  },
+  "contact": {
+    "title": "Let’s Get to Know",
+    "titleHighlight": "You!",
+    "subtitle": "Please share with us details about your software project and your contact information!",
+    "description": "We're here to assist you! We'd love to learn more about you.",
+    "emailLabel": "Your email?",
+    "emailPlaceholder": "example@email.com",
+    "companyLabel": "Company name or website",
+    "companyPlaceholder": "Links or Company Name",
+    "messageLabel": "Please share with us some details of the project",
+    "messagePlaceholder": "Provide us with some info about your product",
+    "servicesLabel": "Great! Please select all services you are interested in hiring us for",
+    "submit": "Submit",
+    "submitting": "Submitting",
+    "iconAlt": "Contact form icon",
+    "success": "Form submitted successfully!",
+    "error": "An error occurred while submitting the form. Please try again.",
+    "section2": {
+      "title": "Curious to Discover",
+      "span": "Tessafold",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur. Nec sit morbi pretium dignissim eget",
+      "btn": "Go To Homepage"
+    }
+  },
+  "footer": {
+    "logoAlt": "Tessafold Logo",
+    "imprint": "Imprint And Data Protection Declaration",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "whatsapp": "WhatsApp"
+    },
+    "locations": {
+      "berlin": {
+        "title": "Berlin | Germany",
+        "subtitle": "Lützowufer 25, 10787 Berlin, USt-ID: DE354426362"
+      },
+      "jeddah": {
+        "title": "Jeddah | KSA",
+        "subtitle": "2777 Abd Al Qadous Al Ansari, Al Sulaymaniyah, Jeddah 22253, Saudi Arabia, P.O: 6635-23415, CR number: 4030592418"
+      },
+      "california": {
+        "title": "California | USA",
+        "subtitle": "3101 Park Blvd, Palo Alto, CA 94306, CR Number: 23021837"
+      },
+      "dubai": {
+        "title": "Dubai | UAE",
+        "subtitle": "Dubai Investments Park 1, Bayan Business Center, CR Number: 1350473"
+      }
+    },
+    "contacts": {
+      "title": "Contacts",
+      "email": "info@tessafold.com",
+      "emailIcon": "Email icon",
+      "phone1": "+966 58 167 0316",
+      "phone2": "+49 172 677 5186",
+      "phone3": "+971 544707457",
+      "phone4": "+1 949 864 6033",
+      "phoneIcon": "Phone icon"
+    },
+    "copyright": "© {year} Tessafold e.K. Agency for App and Software Development in Berlin and Coburg"
+  },
+  "scrollToTop": {
+    "title": "Scroll to Top",
+    "ariaLabel": "Scroll to top of page button",
+    "alt": "Scroll to top icon"
+  },
+  "hero": {
+    "subtitle": "EMPOWERING BUSINESSES WITH CUSTOMIZABLE SOFTWARE PLATFORMS",
+    "title": "Web and Mobile App Development Powered By",
+    "animatedText": {
+      "ai": "Artificial Intelligence",
+      "ml": "Machine Learning",
+      "software": "Software Solutions"
+    },
+    "description": "Tessafold is a strategic partner for forward-thinking companies that want to build cutting edge and long-lasting software solutions.",
+    "buttonText": "Book Your Free Consultation",
+    "buttonAriaLabel": "Navigate to contact page button",
+    "partnerAlt": "Logo of {name}"
+  },
+  "home": "Home",
+  "projects": "Our Projects",
+  "partners": "Partners",
+  "about_us": "What Our Client Say ",
+  "about_span": " About Us",
+  "our_process": {
+    "title": "Website and App",
+    "title_span": "Execution",
+    "subtitle": "Process is everything. It’s our IP, our bread and butter!",
+    "view_full_process": "View Our Full Process",
+    "arrow_alt": "Arrow icon",
+    "step_icon_alt": "Icon for {name}"
+  },
+  "our_services": "Our Services",
+  "we_serve": "Industries ",
+  "we_serve_span":"We Serve",
+  "we_serve_subtitle":"We offer web and mobile development, data science, and AI services. ",
+  "faq": "FAQ",
+  "select_language": "Select Language",
+  "visit_website": "Visit Website",
+  "download_app": "Download Mobile App",
+  "about": {
+    "arrowAlt": "Arrow icon",
+    "videoTitle": "Video of {name}",
+    "technologies": "Technologies"
+  }
+}

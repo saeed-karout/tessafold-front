@@ -1,0 +1,460 @@
+.main-project {
+  display: flex;
+  padding: 64px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.main-project[dir="rtl"] {
+  direction: rtl;
+}
+
+.topic {
+  color: var(--Black-black-1, #FFF);
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.list-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  position: relative;
+}
+
+/* حاوية الشريط العلوي مع أزرار التنقل */
+.top-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+}
+
+/* أزرار التنقل */
+/* .navigation-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+} */
+
+/* .nav-button {
+  background: rgba(43, 49, 50, 0.9);
+  border: 2px solid var(--OilMain-oilmain-3, #97B9BC);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  pointer-events: all;
+  color: var(--OilMain-oilmain-3, #97B9BC);
+  font-size: 18px;
+  font-weight: bold;
+} */
+
+/* .nav-button:hover {
+  background: var(--OilMain-oilmain-6, #0D5C63);
+  border-color: var(--OilMain-oilmain-1, #E7EFEF);
+  color: var(--Black-black-1, #FFF);
+  transform: scale(1.1);
+}
+
+.prev-button {
+  margin-right: auto;
+}
+
+.next-button {
+  margin-left: auto;
+} */
+
+.list-projects .top-bar {
+  display: flex;
+  padding: 16px 80px; /* زيادة الpadding لإفساح مجال للأزرار */
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Black-black-12, #2B3132);
+  box-shadow: inset -300px 0 60px -100px rgba(43, 49, 50, 0.8), 
+              inset 300px 0 60px -100px rgba(43, 49, 50, 0.8);
+  overflow-x: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  position: relative;
+  flex: 1;
+}
+
+.list-projects .top-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.top-bar .name-project {
+  display: flex;
+  width: 136px;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 200px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  animation: slideInHorizontal 0.5s ease-out;
+}
+
+@keyframes slideInHorizontal {
+  from { 
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* أنيميشن للعناصر الجديدة */
+.top-bar .name-project.new-item {
+  animation: slideInFromEdge 0.6s ease-out;
+}
+
+@keyframes slideInFromEdge {
+  from { 
+    opacity: 0;
+    transform: translateX(50px) scale(0.8);
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.top-bar .name-project.removing {
+  animation: slideOutToEdge 0.6s ease-in forwards;
+}
+
+@keyframes slideOutToEdge {
+  from { 
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  to { 
+    opacity: 0;
+    transform: translateX(-50px) scale(0.8);
+  }
+}
+
+.top-bar .name-project:hover {
+  transform: scale(1.05);
+  background: rgba(13, 92, 99, 0.1);
+}
+
+.top-bar .name-project span {
+  color: var(--Black-black-6, #C6C7C7);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.project-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--OilMain-oilmain-3, #97B9BC);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.top-bar .name-project:hover .project-indicator {
+  width: 60%;
+}
+
+/* under-line */
+.top-bar .name-project.active .project-indicator {
+  width: 80%;
+  background: var(--OilMain-oilmain-1, #E7EFEF);
+}
+
+.top-bar .name-project.active {
+  border-radius: 200px;
+  background: var(--OilMain-oilmain-6, #0D5C63);
+  transform: scale(1.1);
+  animation: pulseGlow 2s infinite;
+}
+
+.top-bar .name-project.active span {
+  color: var(--Black-black-1, #FFF);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.top-bar .name-project.changing {
+  animation: bounce 0.6s ease;
+}
+
+.top-bar .name-project.active.changing {
+  animation: activeChange 0.8s ease;
+}
+
+/* الأنماط للعناصر الطرفية */
+.top-bar .name-project.edge span {
+  color: var(--Black-black-7, #989A9B);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.top-bar .name-project.edge:not(.active) span {
+  color: var(--Black-black-7, #989A9B) !important;
+  font-weight: 300 !important;
+}
+
+/* تأثير التعتيم التدريجي للعناصر الطرفية */
+.top-bar .name-project.edge:not(.active) {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+.top-bar .name-project.edge:first-child,
+.top-bar .name-project.edge:last-child {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+/* باقي الأنيميشنات والأنماط تبقى كما هي */
+.project-details {
+  display: flex;
+  align-items: center;
+  gap: 104px;
+  animation: slideInUp 0.7s ease-out;
+  position: relative;
+}
+
+.project-details.changing {
+  animation: slideOutDown 0.5s ease-in forwards;
+}
+
+.project-details:not(.changing) {
+  animation: slideInUp 0.7s ease-out;
+}
+
+.project-details .left {
+  display: flex;
+  width: 509px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  animation: fadeInLeft 0.8s ease-out 0.2s both;
+}
+
+.project-details.changing .left {
+  animation: fadeOutLeft 0.5s ease-in forwards;
+}
+
+.project-details .left .h3 {
+  color: var(--OilMain-oilmain-1, #E7EFEF);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+.project-details .left .p {
+  color: var(--Black-black-1, #FFF);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  align-self: stretch;
+  animation: fadeIn 0.8s ease-out 0.4s both;
+}
+
+.project-details .right {
+  display: flex;
+  width: 540px;
+  height: 428px;
+  padding: 10px 11.118px 9.778px 10.5px;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInRight 0.8s ease-out 0.3s both;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); */
+  transition: transform 0.4s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease;
+  animation: zoomIn 1s ease-out;
+}
+
+.image-container img.changing {
+  animation: zoomOut 0.5s ease-in forwards;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(135deg, rgba(13, 92, 99, 0.1) 0%, rgba(13, 92, 99, 0.3) 100%); */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.project-details .left .web-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.project-details .left  a {
+  color: var(--OilMain-oilmain-3, #97B9BC);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px 0px 8px 0;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+
+  
+}
+
+/* .project-details .left .web-link a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--Yellow-yellow-500, #FFB130);
+  transition: left 0.3s ease;
+  z-index: -1;
+} */
+
+/* .project-details .left .web-link a:hover {
+  color: var(--Black-black-1, #FFF);
+  transform: translateY(-2px);
+} */
+
+.project-details .left .web-link a:hover::before {
+  left: 0;
+}
+
+/* تعريف الأنيميشنات (تبقى كما هي) */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInLeft { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes fadeInRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes fadeOutLeft { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(-50px); } }
+@keyframes fadeOutRight { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(50px); } }
+@keyframes slideInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideOutDown { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(50px); } }
+@keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 10px rgba(13, 92, 99, 0.5); } 50% { box-shadow: 0 0 20px rgba(13, 92, 99, 0.8); } }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: scale(1.1); } 40% { transform: scale(1.15); } 60% { transform: scale(1.12); } }
+@keyframes activeChange { 0% { transform: scale(1.1); } 50% { transform: scale(1.2); } 100% { transform: scale(1.1); } }
+@keyframes textGlow { 0%, 100% { text-shadow: 0 0 10px rgba(231, 239, 239, 0.3); } 50% { text-shadow: 0 0 20px rgba(231, 239, 239, 0.6); } }
+@keyframes zoomIn { from { opacity: 0; transform: scale(1.1); } to { opacity: 1; transform: scale(1); } }
+@keyframes zoomOut { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(0.9); } }
+
+/* Responsive design */
+@media (max-width: 1440px) {
+  .top-bar .name-project {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-project {
+    padding: 32px 16px;
+  }
+
+  .list-projects .top-bar {
+    padding: 16px 40px;
+  }
+
+  .top-bar .name-project {
+    width: 100px;
+  }
+
+  .navigation-buttons {
+    display: none; /* إخفاء الأزرار في الجوال */
+  }
+
+  .project-details {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .list-projects .left {
+    width: 100%;
+  }
+
+  .project-details .right {
+    width: 100%;
+    height: auto;
+  }
+}

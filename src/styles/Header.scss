@@ -1,0 +1,575 @@
+// المتغيرات
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1224px;
+$primary-bg: #2B3132;
+$primary-color: #FFF;
+$secondary-color: #92B6B9;
+$button-bg: #FFF;
+$button-color: #39797F;
+$yellow-color: #FFB130; // افتراضي للون الأصفر
+
+// الميكسينات
+@mixin mobile {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin transition($property: all, $duration: 0.3s) {
+  transition: $property $duration ease;
+}
+
+.navbar {
+  display: flex;
+  align-self: stretch;
+  padding: 24px 32px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  background: var(--Black-black-12, #2B3132);
+  box-shadow: 4px 8px 20px 0 rgba(0, 0, 0, 0.15);
+  margin: 16px 64px 0 64px;
+  
+  &.rtl {
+    direction: rtl;
+  }
+  
+  &.ltr {
+    direction: ltr;
+  }
+
+  @include tablet {
+    margin: 16px 40px 0 40px;
+    padding: 20px 24px;
+  }
+
+  @include mobile {
+    margin: 12px 20px 0 20px;
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+}
+
+.logo {
+  display: flex;
+  height: 32px;
+  padding: 0 75.9px 0 0.1px;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  img {
+    height: 32px;
+    width: auto;
+    @include transition(transform);
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  @include mobile {
+    padding: 0;
+    
+    img {
+      height: 28px;
+    }
+  }
+}
+
+// قائمة التنقل للشاشات الكبيرة
+.pages-rout {
+  display: flex;
+  padding: 8px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include tablet {
+    gap: 16px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.pages-rout .nav-item {
+  display: flex;
+  min-width: 104px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  @include transition;
+
+  &:hover {
+    // background: rgba(255, 255, 255, 0.1);
+    
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.nav-item span {
+  color: $secondary-color;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  @include transition;
+}
+
+.nav-item.active span {
+  color: $primary-color;
+}
+
+.nav-item.active {
+  // background: rgba(255, 255, 255, 0.1);
+}
+
+// الجزء الأيمن للشاشات الكبيرة
+.frame-contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    gap: 12px;
+  }
+}
+
+.button-contact {
+  display: flex;
+  padding: 9.5px 32px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 12px;
+  background: $button-bg;
+  cursor: pointer;
+  @include transition;
+  border: none;
+
+  &:hover {
+    background: var(--tessafold, $yellow-color);
+    transform: translateY(-2px);
+    
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &.active {
+    background: var(--tessafold, $yellow-color);
+    
+    span {
+      color: $primary-color;
+    }
+  }
+
+  @include tablet {
+    padding: 8px 24px;
+  }
+}
+
+.button-contact span {
+  color: $button-color;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  @include transition;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  align-self: stretch;
+}
+
+.language .lang-btn {
+  display: flex;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #F0F5F6;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  @include transition;
+
+  &:hover {
+    color: gray;
+    // background: rgba(255, 255, 255, 0.1);
+  }
+  
+  &.active {
+    color: var(--yellow, $yellow-color);
+    font-weight: 500;
+  }
+}
+
+// زر القائمة للشاشات الصغيرة
+.mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 8px;
+  
+  @include mobile {
+    display: block;
+  }
+}
+
+.hamburger {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  @include transition;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: $secondary-color;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    @include transition;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 8px;
+    }
+
+    &:nth-child(3) {
+      top: 16px;
+    }
+  }
+
+  &.open {
+    span {
+      &:nth-child(1) {
+        top: 8px;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 8px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+// القائمة الجانبية للشاشات الصغيرة
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mobile-menu-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  background: $primary-bg;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  @include transition(transform);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+
+  .mobile-menu-overlay.open & {
+    transform: translateX(0);
+  }
+
+  .navbar.rtl & {
+    right: auto;
+    left: 0;
+    transform: translateX(-100%);
+
+    .mobile-menu-overlay.open & {
+      transform: translateX(0);
+    }
+  }
+
+  @include mobile {
+    width: 280px;
+    padding: 20px;
+  }
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  color: $secondary-color;
+  @include transition;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $primary-color;
+    transform: scale(1.1);
+  }
+}
+
+.mobile-nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 0;
+  flex: 1;
+}
+
+.mobile-nav-item {
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 12px;
+  @include transition;
+
+  span {
+    color: $secondary-color;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    @include transition;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &.active {
+    background: rgba(255, 255, 255, 0.1);
+    
+    span {
+      color: $primary-color;
+      font-weight: 600;
+    }
+  }
+}
+
+.mobile-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-contact-btn {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: $button-bg;
+  cursor: pointer;
+  @include transition;
+  border: none;
+
+  &:hover {
+    background: var(--tessafold, $yellow-color);
+    
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &.active {
+    background: var(--tessafold, $yellow-color);
+    
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.mobile-contact-btn span {
+  color: $button-color;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  @include transition;
+}
+
+.mobile-language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mobile-lang-btn {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #F0F5F6;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  @include transition;
+
+  &:hover {
+    color: gray;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  &.active {
+    color: var(--yellow, $yellow-color);
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+// تحسينات إضافية للشاشات الصغيرة جداً
+@media (max-width: 480px) {
+  .navbar {
+    margin: 8px 12px 0 12px;
+    padding: 12px 16px;
+  }
+
+  .mobile-menu-content {
+    width: 260px;
+    padding: 16px;
+  }
+
+  .mobile-nav-item {
+    padding: 14px 16px;
+    
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .mobile-contact-btn {
+    padding: 10px 20px;
+    
+    span {
+      font-size: 15px;
+    }
+  }
+}
+
+// تحسينات للشاشات المتوسطة
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    margin: 16px 32px 0 32px;
+    padding: 20px 24px;
+  }
+
+  .pages-rout {
+    gap: 12px;
+  }
+
+  .pages-rout .nav-item {
+    min-width: 90px;
+    padding: 6px 10px;
+    
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .button-contact {
+    padding: 8px 20px;
+    
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+// منع التمرير عند فتح القائمة الجانبية
+body.mobile-menu-open {
+  overflow: hidden;
+}
+

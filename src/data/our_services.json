@@ -1,0 +1,77 @@
+{
+  "section": {
+    "className": "main-our-services",
+    "background": {
+      "className": "bg-image",
+      "image": "/bg/bg-our-services.png",
+      "alt": {
+        "ar": "خلفية خدماتنا",
+        "en": "Our Services Background",
+        "de": "Hintergrund unserer Dienstleistungen"
+      }
+    },
+    "topic": {
+      "title": {
+        "ar": "خدماتنا",
+        "en": "Our Services",
+        "de": "Unsere Dienstleistungen"
+      },
+      "description": {
+        "ar": "نقدم خدمات تطوير الويب والموبايل، علوم البيانات، والذكاء الاصطناعي. فريقنا من المحترفين يقدم حلولًا مبتكرة باستخدام أحدث التقنيات.",
+        "en": "We offer web and mobile development, data science, and AI services. Our team of professionals delivers innovative solutions using the latest technologies.",
+        "de": "Wir bieten Web- und Mobile-Entwicklung, Datenwissenschaft und KI-Dienste an. Unser Team von Fachleuten liefert innovative Lösungen mit den neuesten Technologien."
+      }
+    },
+    "services": [
+      {
+        "title": {
+          "ar": "الذكاء الاصطناعي وعلوم البيانات",
+          "en": "Artificial Intelligence And Data Science",
+          "de": "Künstliche Intelligenz und Datenwissenschaft"
+        },
+        "isLink": false
+      },
+      {
+        "title": {
+          "ar": "ويب3 والبلوكتشين",
+          "en": "Web3 And Blockchain",
+          "de": "Web3 und Blockchain"
+        },
+        "isLink": false
+      },
+      {
+        "title": {
+          "ar": "تطوير تطبيقات الويب والموبايل",
+          "en": "Web And Mobile App Development",
+          "de": "Web- und Mobile-App-Entwicklung"
+        },
+        "isLink": false
+      },
+      {
+        "title": {
+          "ar": "تعزيز الطاقم",
+          "en": "Staff Augmentation",
+          "de": "Personalausbau"
+        },
+        "isLink": false
+      },
+      {
+        "title": {
+          "ar": "تصميم واجهة المستخدم/تجربة المستخدم",
+          "en": "UIUX Design",
+          "de": "UI/UX-Design"
+        },
+        "isLink": false
+      },
+      {
+        "title": {
+          "ar": "ابدأ مشروعك معنا!",
+          "en": "Start Your Project With Us!",
+          "de": "Starten Sie Ihr Projekt mit uns!"
+        },
+        "isLink": true,
+        "to": "/contact"
+      }
+    ]
+  }
+}

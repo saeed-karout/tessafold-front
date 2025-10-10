@@ -1,0 +1,82 @@
+{
+  "ksa_section": {
+    "left_text": {
+      "en": "Tessafold supports Mada, MyFatura, Tabby, and Tamara integrations, aligning with Saudi’s fintech advancements under SAMA’s Fintech Strategy. The company builds secure and scalable payment platforms, fostering financial inclusion and cashless transactions.",
+      "ar": "تيسافولد تدعم تكاملات مدى، فاتورتي، تبي، وتمارا، متوافقة مع تطورات المملكة في التقنية المالية تحت استراتيجية ساما للتقنية المالية. الشركة تبني منصات دفع آمنة وقابلة للتطوير، وتعزيز الشمول المالي والمعاملات غير النقدية.",
+      "de": "Tessafold unterstützt Mada, MyFatura, Tabby und Tamara Integrationen und richtet sich damit an die Fortschritte Saudi-Arabiens im Fintech-Bereich unter der Fintech-Strategie von SAMA. Das Unternehmen baut sichere und skalierbare Zahlungsplattformen, die finanzielle Inklusion und bargeldlose Transaktionen fördern."
+    },
+    "title": {
+      "en": "Tessafold",
+      "ar": "تيسافولد",
+      "de": "Tessafold"
+    },
+    "aligns_with": {
+      "en": "Aligns With",
+      "ar": "تتوافق مع",
+      "de": "Stimmt überein mit"
+    },
+    "vision_2030": {
+      "en": "2030 Vision",
+      "ar": "رؤية 2030",
+      "de": "Vision 2030"
+    },
+    "items": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Supporting Smart Cities & AI Adoption",
+          "ar": "دعم المدن الذكية واعتماد الذكاء الاصطناعي",
+          "de": "Unterstützung von Smart Cities & KI-Adaption"
+        }
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "Enabling a Thriving Private Sector",
+          "ar": "تمكين القطاع الخاص المزدهر",
+          "de": "Ermöglichung eines florierenden Privatsektors"
+        }
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Promoting a Competitive Business Environment",
+          "ar": "تعزيز بيئة الأعمال التنافسية",
+          "de": "Förderung eines wettbewerbsfähigen Geschäftsumfelds"
+        }
+      },
+      {
+        "id": 4,
+        "text": {
+          "en": "Driving Digital Transformation",
+          "ar": "دفع التحول الرقمي",
+          "de": "Vorantreibung der digitalen Transformation"
+        }
+      },
+      {
+        "id": 5,
+        "text": {
+          "en": "Boosting Local Talent & Innovation",
+          "ar": "تعزيز المواهب المحلية والابتكار",
+          "de": "Förderung lokaler Talente & Innovation"
+        }
+      },
+      {
+        "id": 6,
+        "text": {
+          "en": "Strengthening E-Commerce & Digital Economy",
+          "ar": "تعزيز التجارة الإلكترونية والاقتصاد الرقمي",
+          "de": "Stärkung von E-Commerce & digitaler Wirtschaft"
+        }
+      },
+      {
+        "id": 7,
+        "text": {
+          "en": "Advancing Financial Technology (Fintech)",
+          "ar": "تطوير التكنولوجيا المالية (فينتيك)",
+          "de": "Fortschritt der Finanztechnologie (Fintech)"
+        }
+      }
+    ]
+  }
+}

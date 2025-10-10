@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "groupName": {
+      "ar": "التخطيط",
+      "en": "Planning",
+      "de": "Planung"
+    },
+    "steps": [
+      {
+        "id": 1,
+        "icon": "FaBrain",
+        "title": {
+          "ar": "الفكرة",
+          "en": "Ideation",
+          "de": "Ideenfindung"
+        },
+        "subtitle": {
+          "ar": "العصف الذهني للأفكار",
+          "en": "Brainstorming ideas",
+          "de": "Ideen sammeln"
+        },
+        "topic": {
+          "ar": "توليد الأفكار",
+          "en": "Idea Generation",
+          "de": "Ideengenerierung"
+        },
+        "description": {
+          "ar": "نجمع الأفكار ونخطط للمشروع.",
+          "en": "We gather ideas and plan the project.",
+          "de": "Wir sammeln Ideen und planen das Projekt."
+        }
+      },
+      {
+        "id": 2,
+        "icon": "FaCogs",
+        "title": {
+          "ar": "التطوير",
+          "en": "Development",
+          "de": "Entwicklung"
+        },
+        "subtitle": {
+          "ar": "بناء الحلول",
+          "en": "Building solutions",
+          "de": "Lösungen entwickeln"
+        },
+        "topic": {
+          "ar": "إنشاء المنتج",
+          "en": "Product Creation",
+          "de": "Produkterstellung"
+        },
+        "description": {
+          "ar": "نقوم بتطوير المنتج باستخدام أحدث التقنيات.",
+          "en": "We develop the product using the latest technologies.",
+          "de": "Wir entwickeln das Produkt mit den neuesten Technologien."
+        }
+      }
+    ]
+  }
+]

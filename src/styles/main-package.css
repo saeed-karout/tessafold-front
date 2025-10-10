@@ -1,0 +1,370 @@
+/* أنيميشنات جديدة بأسماء فريدة */
+@keyframes techFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+}
+
+@keyframes techPulse {
+    0%, 100% {
+        box-shadow: 
+            5.5px 5.5px 18.333px 0 rgba(0, 0, 0, 0.25),
+            0 0 0 0 rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        box-shadow: 
+            5.5px 5.5px 18.333px 0 rgba(0, 0, 0, 0.25),
+            0 0 20px 5px rgba(255, 255, 255, 0.05);
+    }
+}
+
+@keyframes techRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes techGlow {
+    0%, 100% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+/* الأنماط الرئيسية */
+.tech-package-main{
+    display: flex;
+    padding: 64px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+   
+}
+
+.tech-package-content{
+    display: flex;
+    height: 503px;
+    padding: 24px 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    gap: 48px;
+     position: relative;
+    overflow: hidden;
+}
+
+.tech-package-content .tech-content-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.tech-top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.tech-main-title{
+    color: var(--Black-black-1, #FFF);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: center;
+}
+
+.tech-highlight{
+    color: var(--yellow);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.tech-subtitle{
+    color: var(--Black-black-1, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.tech-contact-btn{
+    display: flex;
+    padding: 9.5px 32px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--OilN-oil-1, #FFF);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--tessafold);
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.tech-contact-btn:hover{
+    background: var(--tessafold);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tech-contact-btn:hover::before {
+    left: 0;
+}
+
+.tech-btn-text{
+    color: var(--OilMain-oilmain-6, #0D5C63);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.tech-contact-btn:hover .tech-btn-text{
+    color: #FFF;
+}
+
+/* أنماط الأيقونات */
+.tech-icon-frame{
+    display: flex;
+    width: 88px;
+    height: 86px;
+    padding: 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5px;
+    border-radius: 100px;
+    background: var(--Black-black-13, #191F20);
+    box-shadow: 5.5px 5.5px 18.333px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    position: absolute;
+    z-index: 1;
+    /* الأنيميشن الدائم المضافة */
+    animation: techFloat 3s ease-in-out infinite, techPulse 4s ease-in-out infinite;
+}
+
+.tech-icon-frame:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.1),
+        5.5px 5.5px 25px 0 rgba(0, 0, 0, 0.3);
+    background: var(--Black-black-12, #2B3132);
+    /* إيقاف الأنيميشن الدائم عند Hover */
+    animation: none;
+}
+
+.tech-icon-frame img{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tech-icon-frame:hover img {
+    transform: scale(1.1);
+}
+
+/* تأخيرات الأنيميشن للعناصر المختلفة */
+.tech-pos-1 { 
+    animation-delay: 0s, 0s; 
+}
+
+.tech-pos-2 { 
+    animation-delay: 0.3s, 0.3s; 
+}
+
+.tech-pos-3 { 
+    animation-delay: 0.6s, 0.6s; 
+}
+
+.tech-pos-4 { 
+    animation-delay: 0.9s, 0.9s; 
+}
+
+.tech-pos-5 { 
+    animation-delay: 1.2s, 1.2s; 
+}
+
+.tech-pos-6 { 
+    animation-delay: 1.5s, 1.5s; 
+}
+
+.tech-pos-7 { 
+    animation-delay: 1.8s, 1.8s; 
+}
+
+.tech-pos-8 { 
+    animation-delay: 2.1s, 2.1s; 
+}
+
+.tech-pos-9 { 
+    animation-delay: 2.4s, 2.4s; 
+}
+
+.tech-pos-10 { 
+    animation-delay: 2.7s, 2.7s; 
+}
+
+.tech-icon-frame::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 102px;
+    background: linear-gradient(45deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.1), 
+        transparent);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tech-icon-frame:hover::before {
+    opacity: 1;
+    animation: techRotate 2s linear infinite;
+}
+
+/* المواقع */
+.tech-pos-1{
+    left: 414px;
+    top: 48px;
+}
+
+.tech-pos-2{
+    left: 122px;
+    top: 74px;
+}
+
+.tech-pos-3{
+    left: 232px;
+    bottom: 190px;
+}
+
+.tech-pos-4{
+    left: 80px;
+    bottom: 54px;
+}
+
+.tech-pos-5{
+    left: 380px;
+    bottom: 54px;
+}
+
+.tech-pos-6{
+    right: 414px;
+    top: 47px;
+}
+
+.tech-pos-7{
+    right: 122px;
+    top: 74px;
+}
+
+.tech-pos-8{
+    right: 232px;
+    bottom: 190px;
+}
+
+.tech-pos-9{
+    right: 380px;
+    bottom: 54px;
+}
+
+.tech-pos-10{
+    right: 80px;
+    bottom: 54px;
+}
+
+/* تأثيرات إضافية للخلفية */
+.tech-package-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(13, 92, 99, 0.1) 0%, transparent 70%);
+    z-index: 0;
+    animation: techGlow 6s ease-in-out infinite;
+}
+
+/* تحسينات للاستجابة */
+@media (max-width: 768px) {
+    .tech-package-content {
+        padding: 24px 20px;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .tech-main-title {
+        font-size: 24px;
+    }
+
+    .tech-subtitle {
+        font-size: 16px;
+    }
+
+    /* تعديل مواقع العناصر للشاشات الصغيرة */
+    .tech-icon-frame {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tech-icon-frame img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-pos-1 { left: 20px; top: 20px; }
+    .tech-pos-2 { left: 10px; top: 100px; }
+    .tech-pos-3 { left: 80px; bottom: 100px; }
+    .tech-pos-4 { left: 10px; bottom: 30px; }
+    .tech-pos-5 { left: 100px; bottom: 30px; }
+    .tech-pos-6 { right: 20px; top: 20px; }
+    .tech-pos-7 { right: 10px; top: 100px; }
+    .tech-pos-8 { right: 80px; bottom: 100px; }
+    .tech-pos-9 { right: 100px; bottom: 30px; }
+    .tech-pos-10 { right: 10px; bottom: 30px; }
+}

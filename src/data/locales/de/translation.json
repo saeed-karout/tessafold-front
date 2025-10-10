@@ -1,0 +1,118 @@
+{
+  "header": {
+    "logoAlt": "Firmenlogo",
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "career": "Karriere",
+    "ourProcess": "Unser Prozess",
+    "partnerWithUs": "Mit uns zusammenarbeiten"
+  },
+  "contact": {
+    "title": "Lassen Sie uns",
+    "titleHighlight": "Sie kennenlernen!",
+    "subtitle": "Bitte teilen Sie uns Details zu Ihrem Softwareprojekt und Ihre Kontaktdaten mit!",
+    "description": "Wir sind hier, um Ihnen zu helfen! Wir möchten mehr über Sie erfahren.",
+    "emailLabel": "Ihre E-Mail?",
+    "emailPlaceholder": "example@email.com",
+    "companyLabel": "Firmenname oder Website",
+    "companyPlaceholder": "Links oder Firmenname",
+    "messageLabel": "Bitte teilen Sie uns einige Details zum Projekt mit",
+    "messagePlaceholder": "Geben Sie uns einige Informationen zu Ihrem Produkt",
+    "servicesLabel": "Toll! Bitte wählen Sie alle Dienstleistungen aus, für die Sie uns engagieren möchten",
+    "submit": "Absenden",
+    "submitting": "Wird gesendet",
+    "iconAlt": "Kontaktformular-Symbol",
+    "success": "Formular erfolgreich gesendet!",
+    "error": "Beim Senden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "section2": {
+      "title": "Neugierig zu entdecken",
+      "span": "Tissafold",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur. Nec sit morbi pretium dignissim eget",
+      "btn": "Zur Startseite"
+    }
+  },
+  "footer": {
+    "logoAlt": "Tessafold Logo",
+    "imprint": "Impressum und Datenschutzerklärung",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "whatsapp": "WhatsApp"
+    },
+    "locations": {
+      "berlin": {
+        "title": "Berlin | Deutschland",
+        "subtitle": "Lützowufer 25, 10787 Berlin, USt-ID: DE354426362"
+      },
+      "jeddah": {
+        "title": "Jeddah | Saudi-Arabien",
+        "subtitle": "2777 Abd Al Qadous Al Ansari, Al Sulaymaniyah, Jeddah 22253, Saudi-Arabien, P.O: 6635-23415, Handelsregisternummer: 4030592418"
+      },
+      "california": {
+        "title": "Kalifornien | USA",
+        "subtitle": "3101 Park Blvd, Palo Alto, CA 94306, Handelsregisternummer: 23021837"
+      },
+      "dubai": {
+        "title": "Dubai | VAE",
+        "subtitle": "Dubai Investments Park 1, Bayan Business Center, Handelsregisternummer: 1350473"
+      }
+    },
+    "contacts": {
+      "title": "Kontakte",
+      "email": "info@tessafold.com",
+      "emailIcon": "E-Mail-Symbol",
+      "phone1": "+966 58 167 0316",
+      "phone2": "+49 172 677 5186",
+      "phone3": "+971 544707457",
+      "phone4": "+1 949 864 6033",
+      "phoneIcon": "Telefon-Symbol"
+    },
+    "copyright": "© {year} Tessafold e.K. Agentur für App- und Softwareentwicklung in Berlin und Coburg"
+  },
+  "scrollToTop": {
+    "title": "Zum Seitenanfang",
+    "ariaLabel": "Schaltfläche zum Seitenanfang",
+    "alt": "Symbol zum Seitenanfang"
+  },
+  "hero": {
+    "subtitle": "UNTERNEHMEN MIT ANPASSBAREN SOFTWAREPLATTFORMEN STÄRKEN",
+    "title": "Web- und Mobile-App-Entwicklung angetrieben von",
+    "animatedText": {
+      "ai": "Künstlicher Intelligenz",
+      "ml": "Maschinellem Lernen",
+      "software": "Softwarelösungen"
+    },
+    "description": "Tessafold ist ein strategischer Partner für zukunftsorientierte Unternehmen, die innovative und langlebige Softwarelösungen entwickeln möchten.",
+    "buttonText": "Buchen Sie Ihre kostenlose Beratung",
+    "buttonAriaLabel": "Schaltfläche zur Kontaktseite",
+    "partnerAlt": "Logo von {name}"
+  },
+  "home": "Startseite",
+  "projects": "Unsere Projekte",
+  "partners": "Partner",
+  "about_us": "Was unsere Kunden über",
+  "about_span": "uns sagen",
+  "our_process": {
+    "title": "Website- und App-",
+    "title_span": "Entwicklung",
+    "subtitle": "Prozess ist alles. Es ist unser geistiges Eigentum, unser tägliches Brot!",
+    "view_full_process": "Unseren vollständigen Prozess anzeigen",
+    "arrow_alt": "Pfeilsymbol",
+    "step_icon_alt": "Symbol für {name}"
+  },
+  "our_services": "Unsere Dienstleistungen",
+  "we_serve": "Branchen",
+  "we_serve_span":"Wir bedienen",
+  "we_serve_subtitle":"Wir bieten Web- und Mobilentwicklung, Datenwissenschaft und KI-Dienste.",
+  "faq": "Häufig gestellte Fragen",
+  "select_language": "Sprache auswählen",
+  "visit_website": "Website besuchen",
+  "download_app": "App herunterladen",
+  "about": {
+    "arrowAlt": "Pfeilsymbol",
+    "videoTitle": "Video von {name}",
+    "technologies": "Technologien"
+  }
+}

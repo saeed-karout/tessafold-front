@@ -1,0 +1,29 @@
+{
+  "last_section": {
+    "topic_part1": {
+      "en": "Discuss",
+      "ar": "ناقش",
+      "de": "Diskutieren"
+    },
+    "topic_part2": {
+      "en": "Develop",
+      "ar": "طور",
+      "de": "Entwickeln"
+    },
+    "topic_part3": {
+      "en": "Deliver",
+      "ar": "أنجز",
+      "de": "Liefern"
+    },
+    "subtopic": {
+      "en": "Ready to kickstart your next project? Let's connect and bring your ideas to life! Reach out to us today to discuss how we can collaborate on innovative solutions tailored to your needs.",
+      "ar": "مستعد لبدء مشروعك القادم؟ دعنا نتصل ونحول أفكارك إلى واقع! تواصل معنا اليوم لمناقشة كيفية التعاون في حلول مبتكرة مخصصة لاحتياجاتك.",
+      "de": "Bereit, Ihr nächstes Projekt zu starten? Lassen Sie uns in Verbindung treten und Ihre Ideen zum Leben erwecken! Nehmen Sie noch heute Kontakt mit uns auf, um zu besprechen, wie wir an innovativen Lösungen zusammenarbeiten können, die auf Ihre Bedürfnisse zugeschnitten sind."
+    },
+    "button": {
+      "en": "Let's Talk!",
+      "ar": "لنتحدث!",
+      "de": "Lass uns reden!"
+    }
+  }
+}
