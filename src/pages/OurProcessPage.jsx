@@ -5,7 +5,7 @@ import LastSection from '../components/LastSection';
 
 function OurProcessPage() {
   return (
-    <div className='main-process'>
+    <div className='main-process-page'>
       <div className="frame1-process">
         <div className="top-process">
           <div className="topic-process">

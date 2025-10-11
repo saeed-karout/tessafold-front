@@ -26,7 +26,7 @@ function OurProcess() {
   }, []);
 
   return (
-    <section className="main-process" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+    <section className="main-process-component" >
       <div className="section-top">
         <div className="frame">
           <div className="left">

@@ -1,4 +1,4 @@
-.main-process {
+.main-process-component {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,7 +150,7 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .main-process {
+  .main-process-component {
     padding: 4rem 1rem 5rem 1rem;
     gap: 3rem;
     height: 90vh;
@@ -181,7 +181,7 @@
 }
 
 @media (max-width: 768px) {
-  .main-process {
+  .main-process-component {
     padding: 2.5rem 0.75rem 3rem 0.75rem;
     gap: 2rem;
   }
@@ -246,7 +246,7 @@
 }
 
 @media (max-width: 480px) {
-  .main-process {
+  .main-process-component {
     padding: 1.5rem 0.5rem 2rem 0.5rem;
     gap: 1.5rem;
     height: 90vh;
