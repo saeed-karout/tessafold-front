@@ -5,7 +5,7 @@
   align-items: center;
   gap: 3rem; /* 48px */
   padding: 4rem 1rem; /* Reduced from 64px 0 */
-
+  overflow: hidden;
 }
 
 .title-about {

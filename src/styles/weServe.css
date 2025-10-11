@@ -1,4 +1,4 @@
-.we-serve-main{
+.we-serve-main {
     display: flex;
     padding: 64px 80px;
     flex-direction: column;
@@ -7,7 +7,7 @@
     gap: 48px;
 }
 
-.top-serve{
+.top-serve {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@
     gap: 16px;
 }
 
-.top-serve .title-serve{
+.top-serve .title-serve {
     color: var(--Yellow-yellow-500, #FFB130);
     font-family: Poppins;
     font-size: 32px;
@@ -25,7 +25,7 @@
     text-align: center;
 }
 
-.top-serve .title-serve span{
+.top-serve .title-serve span {
     color: var(--Black-black-1, #FFF);
     font-family: Poppins;
     font-size: 32px;
@@ -34,7 +34,7 @@
     line-height: 160%;
 }
 
-.top-serve .subtitle-serve{
+.top-serve .subtitle-serve {
     color: var(--Black-black-4, #F1F2F2);
     text-align: center;
     font-family: Poppins;
@@ -45,19 +45,18 @@
     max-width: 600px;
 }
 
-.frame-serve{
-    display: flex;
+.frame-serve {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
     justify-content: center;
     align-items: center;
-    align-content: center;
     gap: 32px;
     align-self: stretch;
-    flex-wrap: wrap;
 }
 
-.card-serve{
+.card-serve {
     display: flex;
-    width: 405px;
+    /* width: 100%; */
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
@@ -74,13 +73,13 @@
     width: 100%;
 }
 
-/* الكارد بخلفية */
-.card-serve.with-bg{
+/* Card with background */
+.card-serve.with-bg {
     background: var(--Black-black-13, #191F20);
 }
 
-/* الكارد بدون خلفية */
-.card-serve.without-bg{
+/* Card without background */
+.card-serve.without-bg {
     background: transparent;
 }
 
@@ -98,7 +97,7 @@
     background: rgba(255, 177, 48, 0.05);
 }
 
-.card-serve img{
+.card-serve img {
     width: 35.8px;
     height: 36.7px;
     flex-shrink: 0;
@@ -109,7 +108,7 @@
     transform: scale(1.1);
 }
 
-.card-serve .topic-serve{
+.card-serve .topic-serve {
     color: var(--Black-black-1, #FFF);
     font-family: Poppins;
     font-size: 20px;
@@ -123,7 +122,7 @@
     color: var(--Yellow-yellow-500, #FFB130);
 }
 
-.card-serve .description-serve{
+.card-serve .description-serve {
     color: var(--Black-black-1, #FFF);
     font-family: Poppins;
     font-size: 16px;
@@ -135,7 +134,7 @@
 
 /* ========== MEDIA QUERIES ========== */
 
-/* للتابلت */
+/* For tablets */
 @media (max-width: 1024px) {
     .we-serve-main {
         padding: 48px 40px;
@@ -146,12 +145,12 @@
     }
     
     .card-serve {
-        width: calc(50% - 12px);
+        /* width: 100%; */
         min-width: 300px;
     }
 }
 
-/* للموبايل */
+/* For mobile */
 @media (max-width: 768px) {
     .we-serve-main {
         padding: 40px 20px;
@@ -180,25 +179,20 @@
     }
     
     .frame-serve {
-        display: flex;
-        flex-wrap: wrap;
-      
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
         width: 100%;
     }
     
     .card-serve.mobile {
-        display: flex;
         padding: 24px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 8px;
-        flex: 1 0 0;
-        align-self: stretch;
         min-width: 140px;
         height: auto;
         min-height: 120px;
-
     }
     
     .card-content {
@@ -206,7 +200,7 @@
         justify-content: center;
     }
     
-    /* إخفاء الوصف في الموبايل */
+    /* Hide description on mobile */
     .card-serve.mobile .description-serve {
         display: none;
     }
@@ -223,14 +217,14 @@
         text-align: left;
     }
     
-    /* تأثيرات hover للموبايل */
+    /* Hover effects for mobile */
     .card-serve.mobile:hover {
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 }
 
-/* للشاشات الصغيرة جداً */
+/* For very small screens */
 @media (max-width: 480px) {
     .we-serve-main {
         padding: 32px 16px;
@@ -251,7 +245,7 @@
     }
     
     .frame-serve {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
     
@@ -273,7 +267,7 @@
     }
 }
 
-/* للشاشات الأصغر من 360px */
+/* For screens smaller than 360px */
 @media (max-width: 360px) {
     .frame-serve {
         grid-template-columns: 1fr;
@@ -290,7 +284,7 @@
     }
 }
 
-/* تحسينات للغة العربية */
+/* Arabic language improvements */
 [dir="rtl"] .card-content {
     align-items: flex-end;
 }
@@ -299,7 +293,7 @@
     text-align: right;
 }
 
-/* أنيميشن لدخول الكروت */
+/* Animation for card entrance */
 @keyframes cardSlideIn {
     from {
         opacity: 0;

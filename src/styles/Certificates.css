@@ -42,6 +42,7 @@
     max-width: 87.5rem; /* 1400px */
     margin: 0 auto;
     
+    
 }
 
 .main-cert[dir="rtl"] {
@@ -119,7 +120,7 @@
     gap: 0.5rem; /* 8px */
     padding: 0.75rem 1.25rem; /* 12px 20px */
     border-radius: 0.5rem; /* 8px */
-    background: rgba(255, 255, 255, 0.1);
+  
     cursor: pointer;
     transition: all 0.3s ease;
     border: 1px solid transparent;
@@ -194,7 +195,7 @@
 
     .left-cert {
         max-width: 100%;
-        align-items: center;
+        
         text-align: center;
     }
 

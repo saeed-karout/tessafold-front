@@ -1,4 +1,3 @@
-// المتغيرات
 $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1224px;
 $primary-bg: #2B3132;
@@ -6,9 +5,8 @@ $primary-color: #FFF;
 $secondary-color: #92B6B9;
 $button-bg: #FFF;
 $button-color: #39797F;
-$yellow-color: #FFB130; // افتراضي للون الأصفر
+$yellow-color: #FFB130;
 
-// الميكسينات
 @mixin mobile {
   @media (max-width: #{$breakpoint-tablet}) {
     @content;
@@ -35,13 +33,23 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   background: var(--Black-black-12, #2B3132);
   box-shadow: 4px 8px 20px 0 rgba(0, 0, 0, 0.15);
   margin: 16px 64px 0 64px;
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  @include transition(transform);
+
   &.rtl {
     direction: rtl;
   }
   
   &.ltr {
     direction: ltr;
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
   }
 
   @include tablet {
@@ -83,7 +91,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   }
 }
 
-// قائمة التنقل للشاشات الكبيرة
 .pages-rout {
   display: flex;
   padding: 8px 0;
@@ -112,8 +119,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   @include transition;
 
   &:hover {
-    // background: rgba(255, 255, 255, 0.1);
-    
     span {
       color: $primary-color;
     }
@@ -135,11 +140,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   color: $primary-color;
 }
 
-.nav-item.active {
-  // background: rgba(255, 255, 255, 0.1);
-}
-
-// الجزء الأيمن للشاشات الكبيرة
 .frame-contact {
   display: flex;
   align-items: center;
@@ -233,7 +233,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
 
   &:hover {
     color: gray;
-    // background: rgba(255, 255, 255, 0.1);
   }
   
   &.active {
@@ -242,7 +241,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   }
 }
 
-// زر القائمة للشاشات الصغيرة
 .mobile-menu-toggle {
   display: none;
   cursor: pointer;
@@ -302,7 +300,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   }
 }
 
-// القائمة الجانبية للشاشات الصغيرة
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
@@ -511,7 +508,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   }
 }
 
-// تحسينات إضافية للشاشات الصغيرة جداً
 @media (max-width: 480px) {
   .navbar {
     margin: 8px 12px 0 12px;
@@ -540,7 +536,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   }
 }
 
-// تحسينات للشاشات المتوسطة
 @media (min-width: 769px) and (max-width: 1024px) {
   .navbar {
     margin: 16px 32px 0 32px;
@@ -569,8 +564,6 @@ $yellow-color: #FFB130; // افتراضي للون الأصفر
   }
 }
 
-// منع التمرير عند فتح القائمة الجانبية
 body.mobile-menu-open {
   overflow: hidden;
 }
-

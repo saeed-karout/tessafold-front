@@ -436,6 +436,12 @@
     }
 }
 
+
+@media (max-width: 1100px) {
+.lastSection-main{
+    display: none;
+}
+}
 /* تحسينات إضافية للشاشات الصغيرة جداً */
 @media (max-width: 480px) {
   .lastSection-content {

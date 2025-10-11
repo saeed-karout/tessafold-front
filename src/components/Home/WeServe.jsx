@@ -8,7 +8,7 @@ function WeServe() {
   const currentLang = i18n.language?.split('-')[0] || 'en';
   const [isMobile, setIsMobile] = useState(false);
 
-  // كشف حجم الشاشة
+  // Detect screen size
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -50,24 +50,42 @@ function WeServe() {
         </div>
       </div>
       <div className="frame-serve">
-        {(weServeData.we_serve?.cards || []).map((card, index) => (
-          <div
-            key={card.id || index}
-            className={`card-serve ${index % 2 === 0 ? 'with-bg' : 'without-bg'} ${isMobile ? 'mobile' : ''}`}
-          >
-            <div className="card-content">
-              <img src={card.icon || '/placeholder.png'} alt={card.topic?.[currentLang] || 'Service'} />
-              <div className="topic-serve">
-                {card.topic?.[currentLang] || 'Untitled Service'}
-              </div>
-              {!isMobile && (
-                <div className="description-serve">
-                  {card.description?.[currentLang] || 'No description available'}
+        {(weServeData.we_serve?.cards || []).map((card, index) => {
+          // Determine background class based on index and screen size
+          const rowIndex = Math.floor(index / 2); // Which row the card is in
+          const isEvenRow = rowIndex % 2 === 0;
+          const isFirstInRow = index % 2 === 0;
+          const bgClass = isMobile
+            ? isEvenRow
+              ? isFirstInRow
+                ? 'with-bg'
+                : 'without-bg'
+              : isFirstInRow
+                ? 'without-bg'
+                : 'with-bg'
+            : index % 2 === 0
+              ? 'with-bg'
+              : 'without-bg';
+
+          return (
+            <div
+              key={card.id || index}
+              className={`card-serve ${bgClass} ${isMobile ? 'mobile' : ''}`}
+            >
+              <div className="card-content">
+                <img src={card.icon || '/placeholder.png'} alt={card.topic?.[currentLang] || 'Service'} />
+                <div className="topic-serve">
+                  {card.topic?.[currentLang] || 'Untitled Service'}
                 </div>
-              )}
+                {!isMobile && (
+                  <div className="description-serve">
+                    {card.description?.[currentLang] || 'No description available'}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

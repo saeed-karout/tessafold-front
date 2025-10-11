@@ -10,6 +10,8 @@ function Header() {
   const [currentHash, setCurrentHash] = useState('');
   const [lang, setLang] = useState(i18n.language || 'en');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     setLang(i18n.language || 'en');
@@ -25,6 +27,25 @@ function Header() {
     };
   }, [i18n.language, location]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsHeaderVisible(false);
+      } else if (currentScrollY < lastScrollY || currentScrollY <= 100) {
+        setIsHeaderVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   const changeLanguage = (newLang) => {
     i18n.changeLanguage(newLang);
     setLang(newLang);
@@ -33,25 +54,19 @@ function Header() {
   const handleNavigation = (target) => {
     if (target === '/contact') {
       navigate('/contact');
-      setIsMobileMenuOpen(false);
     } else if (target === '/our-process') {
       navigate('/our-process');
-      setIsMobileMenuOpen(false);
     } else if (target === '/') {
       navigate('/');
-      setIsMobileMenuOpen(false);
     } else {
-      // Smooth scroll for sections like home, services, career
       const element = document.getElementById(target);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
-        setIsMobileMenuOpen(false);
       } else if (location.pathname !== '/') {
-        // If not on home page, navigate to home and scroll to section
         navigate(`/#${target}`);
-        setIsMobileMenuOpen(false);
       }
     }
+    setIsMobileMenuOpen(false); // Close menu after navigation
   };
 
   const isActive = (target) => {
@@ -68,10 +83,11 @@ function Header() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    document.body.classList.toggle('mobile-menu-open', !isMobileMenuOpen);
   };
 
   return (
-    <div className={`navbar`}>
+    <div className={`navbar ${isHeaderVisible ? '' : 'hidden'} ${lang === 'ar' ? 'rtl' : 'ltr'}`}>
       {/* الشعار */}
       <div className="logo" onClick={() => handleNavigation('/')}>
         <img 
@@ -140,25 +156,37 @@ function Header() {
           <div className="mobile-nav-items">
             <div
               className={`mobile-nav-item ${isActive('/') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/')}
+              onClick={() => {
+                handleNavigation('/');
+                toggleMobileMenu();
+              }}
             >
               <span>{t('header.home', { defaultValue: 'Home' })}</span>
             </div>
             <div
               className={`mobile-nav-item ${isActive('services') ? 'active' : ''}`}
-              onClick={() => handleNavigation('services')}
+              onClick={() => {
+                handleNavigation('services');
+                toggleMobileMenu();
+              }}
             >
               <span>{t('header.services', { defaultValue: 'Services' })}</span>
             </div>
             <div
               className={`mobile-nav-item ${isActive('career') ? 'active' : ''}`}
-              onClick={() => handleNavigation('career')}
+              onClick={() => {
+                handleNavigation('career');
+                toggleMobileMenu();
+              }}
             >
               <span>{t('header.career', { defaultValue: 'Career' })}</span>
             </div>
             <div
               className={`mobile-nav-item ${isActive('/our-process') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/our-process')}
+              onClick={() => {
+                handleNavigation('/our-process');
+                toggleMobileMenu();
+              }}
             >
               <span>{t('header.ourProcess', { defaultValue: 'Our Process' })}</span>
             </div>
@@ -167,7 +195,10 @@ function Header() {
           <div className="mobile-menu-footer">
             <div
               className={`mobile-contact-btn ${isActive('/contact') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/contact')}
+              onClick={() => {
+                handleNavigation('/contact');
+                toggleMobileMenu();
+              }}
             >
               <span>{t('header.partnerWithUs', { defaultValue: 'Partner With Us' })}</span>
             </div>
@@ -175,19 +206,28 @@ function Header() {
             <div className="mobile-language">
               <button
                 className={`mobile-lang-btn ${lang === 'en' ? 'active' : ''}`}
-                onClick={() => changeLanguage('en')}
+                onClick={() => {
+                  changeLanguage('en');
+                  toggleMobileMenu();
+                }}
               >
                 EN
               </button>
               <button
                 className={`mobile-lang-btn ${lang === 'de' ? 'active' : ''}`}
-                onClick={() => changeLanguage('de')}
+                onClick={() => {
+                  changeLanguage('de');
+                  toggleMobileMenu();
+                }}
               >
                 DE
               </button>
               <button
                 className={`mobile-lang-btn ${lang === 'ar' ? 'active' : ''}`}
-                onClick={() => changeLanguage('ar')}
+                onClick={() => {
+                  changeLanguage('ar');
+                  toggleMobileMenu();
+                }}
               >
                 AR
               </button>

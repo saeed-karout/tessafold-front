@@ -18,10 +18,12 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  
 
    --sb-track-color: #39797f;
   --sb-thumb-color: #ffb130;
   --sb-size: 4px;
+  
   
 }
 

@@ -5,7 +5,7 @@ import ServicesData from '../../data/our_services.json';
 import { useTranslation } from 'react-i18next';
 
 function OurServices() {
-  const {  i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const currentLang = i18n.language?.split('-')[0] || 'en';
   const servicesSection = ServicesData?.section ?? { topic: { title: { [currentLang]: '' }, description: { [currentLang]: '' } }, services: [] };
   const servicesList = Array.isArray(servicesSection.services) ? servicesSection.services : [];
@@ -19,7 +19,7 @@ function OurServices() {
   }, []);
 
   return (
-    <div className="main-our-services" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+    <div className="main-our-services">
       <div className="bg-image">
         <div className="topic-service">
           <div className="title">{servicesSection.topic.title?.[currentLang] || 'Our Services'}</div>

@@ -17,7 +17,7 @@ function Home() {
       <section id="projects"><Projects /></section>
       <section id="about"><About /></section>
       <section id="our_process"><OurProcess /></section>
-      <section id="our_services"><OurServices /></section>
+      <OurServices />
       <section><ComponentPackage /></section>
       <section id="we_serve"><WeServe /></section>
       <section id="ksa"><KSA /></section>
