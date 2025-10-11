@@ -112,7 +112,7 @@ function ContactPage() {
         email: formData.email,
         companyName: formData.companyName,
         message: formData.message,
-        services: serviceTitles.join(', '), // Safe join after filtering
+        services: serviceTitles.join(', '), 
       });
 
       if (response.status === 200) {
