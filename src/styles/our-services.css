@@ -10,7 +10,7 @@
 }
 
 .bg-image {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1440px;
   height: 605px;
   border-radius: 16px;
@@ -22,7 +22,7 @@
 
 .frame-services {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   padding: 40px 64px;
   align-items: center;
   align-content: center;
@@ -75,7 +75,7 @@
 
 .topic-service {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1280px;
   padding: 0 64px;
   flex-direction: column;

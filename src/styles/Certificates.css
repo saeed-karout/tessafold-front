@@ -41,7 +41,7 @@
     gap: 4rem; /* 64px */
     max-width: 87.5rem; /* 1400px */
     margin: 0 auto;
-    width: 100%;
+    
 }
 
 .main-cert[dir="rtl"] {
@@ -147,8 +147,8 @@
 
 .card-cert {
     display: flex;
-    width: 6.4375rem; /* 103px */
-    height: 8rem; /* 128px */
+    max-width: 200px; /* 103px */
+    max-height: 200px; /* 128px */
     padding: 0.631563rem; /* 10.105px */
     justify-content: center;
     align-items: center;
@@ -167,8 +167,8 @@
 }
 
 .card-cert img {
-    width: 4.381563rem; /* 70.105px */
-    height: 4.736813rem; /* 75.789px */
+    width: 90%; /* 70.105px */
+
     flex-shrink: 0;
     transition: transform 0.3s ease;
 }
@@ -245,7 +245,7 @@
     }
 
     .card-cert {
-        width: 100%;
+        /* width: 100%; */
         max-width: 6.4375rem; /* 103px */
     }
 }
@@ -290,7 +290,7 @@
     }
 
     .card-cert {
-        width: 100%;
+     
         max-width: 5.5rem; /* 88px */
         height: 6.875rem; /* 109.6px */
         padding: 0.538125rem; /* 8.61px */

@@ -5,7 +5,7 @@
   align-items: center;
   gap: 3rem; /* 48px */
   padding: 4rem 1rem; /* Reduced from 64px 0 */
-  width: 100%;
+
 }
 
 .main-project[dir="rtl"] {
@@ -359,7 +359,7 @@
   }
 
   .project-details .right {
-    width: 100%;
+    width: 95%;
     max-width: 28rem;
     height: auto;
     aspect-ratio: 4 / 3; /* Maintain image proportion */
@@ -456,7 +456,7 @@
   }
 
   .project-details .right {
-    max-width: 100%;
+    max-width: 95%;
     padding: 0.5rem;
   }
 
