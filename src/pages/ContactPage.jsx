@@ -4,17 +4,28 @@ import axios from 'axios';
 import servicesData from '../data/services-contact.json';
 import '../styles/Contact.scss';
 import { useNavigate } from 'react-router-dom';
+
 function ContactPage() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || 'en';
   const navigate = useNavigate();
+
   // Initialize formData with services from localStorage if available
-  const [formData, setFormData] = useState({
-    email: '',
-    companyName: '',
-    message: '',
-    services: JSON.parse(localStorage.getItem('selectedServices') || '[]')
-  });
+const [formData, setFormData] = useState({
+  email: '',
+  companyName: '',
+  message: '',
+  services: (() => {
+    try {
+      const stored = localStorage.getItem('selectedServices');
+      return stored ? JSON.parse(stored) : [];
+    } catch (e) {
+      console.warn('Invalid localStorage data, resetting services:', e);
+      localStorage.removeItem('selectedServices');
+      return [];
+    }
+  })() // IIFE للتهيئة الفورية
+});
   const [formStatus, setFormStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -22,6 +33,14 @@ function ContactPage() {
   useEffect(() => {
     localStorage.setItem('selectedServices', JSON.stringify(formData.services));
   }, [formData.services]);
+
+  // Preload images to avoid flickering
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/images/contact/icon-form.svg';
+    const vector = new Image();
+    vector.src = '/images/contact/Vector.svg';
+  }, []);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -46,41 +65,48 @@ function ContactPage() {
     );
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!isFormValid()) return;
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!isFormValid()) return;
 
-    setIsSubmitting(true);
-    try {
-      const response = await axios.post(
-        'https://formspree.io/f/meorowdq', 
-        {
-          email: formData.email,
-          companyName: formData.companyName,
-          message: formData.message,
-          services: formData.services
-            .map((id) => servicesData.find((s) => s.id.toString() === id)?.title[currentLang])
-            .join(', ')
-        }
-      );
-      if (response.status === 200) {
-        setFormStatus('success');
-        setFormData({ email: '', companyName: '', message: '', services: [] });
-        localStorage.removeItem('selectedServices'); // Clear localStorage on success
-      }
-    } catch (error) {
+  setIsSubmitting(true);
+  try {
+    // فحص إضافي للأمان
+    if (!servicesData || !Array.isArray(formData.services)) {
+      console.error('Invalid services data:', { servicesData, formDataServices: formData.services });
       setFormStatus('error');
-      console.error('Form submission error:', error);
-    } finally {
       setIsSubmitting(false);
+      return;
     }
-  };
 
+    const response = await axios.post('https://formspree.io/f/meorowdq', {
+      email: formData.email,
+      companyName: formData.companyName,
+      message: formData.message,
+      services: formData.services
+        .map((id) => servicesData.find((s) => s.id.toString() === id)?.title?.[currentLang] ?? 'Unknown Service') // استخدم optional chaining
+        .filter(Boolean) // إزالة القيم الفارغة
+        .join(', ') // الآن آمن لأنها مصفوفة صالحة
+    });
+    if (response.status === 200) {
+      setFormStatus('success');
+      setFormData({ email: '', companyName: '', message: '', services: [] });
+      localStorage.removeItem('selectedServices');
+    }
+  } catch (error) {
+    setFormStatus('error');
+    console.error('Form submission error:', error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
   return (
-    <div className="content" >
+    <>
+    
+    <div className="content">
       <div className="frame1">
-        <div className="top">
-          <div className="titles"style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+        <div className="top" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+          <div className="titles">
             {t('contact.title')} <span>{t('contact.titleHighlight')}</span>
           </div>
           <div className="subtitles">{t('contact.subtitle')}</div>
@@ -148,7 +174,7 @@ function ContactPage() {
                       className={`check-item ${formData.services.includes(service.id.toString()) ? 'active' : ''}`}
                       onClick={() => {
                         const input = document.getElementById(`service-${service.id}`);
-                        if (input) input.click(); // Trigger checkbox click
+                        if (input) input.click();
                       }}
                     >
                       <input
@@ -187,27 +213,21 @@ function ContactPage() {
           />
         </div>
       </div>
-      <div className="frame2">
-        
-            <img src="/images/contact/Vector.svg"  className="vector" alt="" />
-            <div className="text">
-                <div className="topic">
-                     {t('contact.section2.title')} <span>{t('contact.section2.span')}</span>
-                </div>
-
-                <p>{t('contact.section2.subtitle')}</p>
-            </div>
-
-            <div className="btn-home"
-                onClick={() => navigate('/')}
-            >
-                <span>{t('contact.section2.btn')}</span>
-            </div>
-            <img src="/images/contact/Vector.svg"  className="vector2" alt="" />
-
-      
-      </div>
     </div>
+      <div className="frame2">
+        <img src="/images/contact/Vector.svg" className="vector" alt="" />
+        <div className="text">
+          <div className="topic">
+            {t('contact.section2.title')} <span>{t('contact.section2.span')}</span>
+          </div>
+          <p>{t('contact.section2.subtitle')}</p>
+        </div>
+        <div className="btn-home" onClick={() => navigate('/')}>
+          <span>{t('contact.section2.btn')}</span>
+        </div>
+        <img src="/images/contact/Vector.svg" className="vector2" alt="" />
+      </div>
+    </>
   );
 }
 
