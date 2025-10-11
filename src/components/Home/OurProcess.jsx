@@ -5,6 +5,7 @@ import '../../styles/process.css';
 function OurProcess() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || 'en';
+  const steps = Array.isArray(processData?.steps) ? processData.steps : [];
 
   return (
     <section className="main-process" >
@@ -28,7 +29,7 @@ function OurProcess() {
         <div className="group">
           <div className="line"></div>
           <div className="parent">
-            {processData.steps.map((step) => (
+            {steps.map((step) => (
               <div key={step.id} className="frame-data">
                 <div className="icon">
                   <img

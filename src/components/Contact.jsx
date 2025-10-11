@@ -29,15 +29,18 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Ensure services is an array before joining
+    const servicesValue = Array.isArray(formData.services) ? formData.services.join(', ') : String(formData.services ?? '');
+
     emailjs
       .send(
         'YOUR_SERVICE_ID', // Replace with your EmailJS Service ID
         'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
-        { ...formData, services: formData.services.join(', ') },
+        { ...formData, services: servicesValue },
         'YOUR_PUBLIC_KEY' // Replace with your EmailJS Public Key
       )
       .then(() => alert(t('message_sent')))
-      .catch((error) => alert(t('message_error') + error.text));
+      .catch((error) => alert(t('message_error') + (error?.text ?? String(error))));
   };
 
   return (

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import projectsData from "../../data/projects.json";
 import "../../styles/Projects.css";
@@ -6,8 +6,10 @@ import "../../styles/Projects.css";
 function Projects() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
+  // projectsData is a static import; memoize once
+  const safeProjects = useMemo(() => (Array.isArray(projectsData) ? projectsData : []), []);
   const [activeProjectId, setActiveProjectId] = useState(
-    projectsData[0]?.id || 1
+    safeProjects[0]?.id || 1
   );
   const [isChanging, setIsChanging] = useState(false);
   const [visibleProjects, setVisibleProjects] = useState([]);
@@ -19,9 +21,9 @@ function Projects() {
 
   // إنشاء المصفوفة المرئية بناءً على الفهرس النشط
   useEffect(() => {
-    if (projectsData.length === 0) return;
+    if (safeProjects.length === 0) return;
 
-    const activeIndex = projectsData.findIndex((p) => p.id === activeProjectId);
+    const activeIndex = safeProjects.findIndex((p) => p.id === activeProjectId);
     if (activeIndex === -1) return;
 
     // حساب نقطة البداية لجعل المشروع النشط في المركز (المركز هو الفهرس 5 في 11 عنصر)
@@ -29,9 +31,9 @@ function Projects() {
 
     // ضمان أن الفهرس ضمن الحدود (تأثير دائري)
     if (newStartIndex < 0) {
-      newStartIndex = projectsData.length + newStartIndex;
-    } else if (newStartIndex >= projectsData.length) {
-      newStartIndex = newStartIndex % projectsData.length;
+      newStartIndex = safeProjects.length + newStartIndex;
+    } else if (newStartIndex >= safeProjects.length) {
+      newStartIndex = newStartIndex % safeProjects.length;
     }
 
     setStartIndex(newStartIndex);
@@ -39,12 +41,12 @@ function Projects() {
     // إنشاء المصفوفة المرئية
     const newVisibleProjects = [];
     for (let i = 0; i < VISIBLE_COUNT; i++) {
-      const circularIndex = (newStartIndex + i) % projectsData.length;
-      newVisibleProjects.push(projectsData[circularIndex]);
+      const circularIndex = (newStartIndex + i) % safeProjects.length;
+      newVisibleProjects.push(safeProjects[circularIndex]);
     }
 
     setVisibleProjects(newVisibleProjects);
-  }, [activeProjectId, projectsData]);
+  }, [activeProjectId, safeProjects]);
 
   // تحديد إذا كان المشروع من العناصر الطرفية (أول أو آخر عنصرين)
   const isEdgeProject = (index) => {

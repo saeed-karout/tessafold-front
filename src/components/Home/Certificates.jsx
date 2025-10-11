@@ -6,27 +6,36 @@ import "../../styles/Certificates.css"
 function Certificates() {
   const { i18n } = useTranslation()
   const currentLang = i18n.language || 'en'
+  const certs = certificatesData?.certificates ?? {
+    title_part1: { en: '', ar: '' },
+    germany: { en: '', ar: '' },
+    and: { en: '', ar: '' },
+    california: { en: '', ar: '' },
+    description: { en: '', ar: '' },
+    subtitle: { en: '', ar: '' },
+    button: { en: '', ar: '' },
+  };
 
   return (
     <div className='main-cert' style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
       <div className="left-cert">
          <div className="top-cert">
-            {certificatesData.certificates.title_part1[currentLang]} 
-            <span> {certificatesData.certificates.germany[currentLang]}</span> 
-            {certificatesData.certificates.and[currentLang]} 
-            <span> {certificatesData.certificates.california[currentLang]}</span>
+            {certs.title_part1[currentLang]} 
+            <span> {certs.germany[currentLang]}</span> 
+            {certs.and[currentLang]} 
+            <span> {certs.california[currentLang]}</span>
           </div>
           
           <div className="description-cert">
-            {certificatesData.certificates.description[currentLang]}
+            {certs.description[currentLang]}
           </div>
           
           <div className="subtitle-cert">
-            {certificatesData.certificates.subtitle[currentLang]}
+            {certs.subtitle[currentLang]}
           </div>
 
           <div className="btn-profile">
-            <div className="view">{certificatesData.certificates.button[currentLang]}</div>
+            <div className="view">{certs.button[currentLang]}</div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
               <path d="M9.71295 18.5L14.6523 13.5606C15.2357 12.9773 15.2357 12.0227 14.6523 11.4394L9.71295 6.5" stroke="#FFC159" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

@@ -9,8 +9,14 @@ function About() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState('');
 
-  const team = aboutData.team;
-  const currentMember = team[currentIndex];
+  const team = Array.isArray(aboutData.team) ? aboutData.team : [];
+  const currentMember = team[currentIndex] || {
+    id: 'unknown',
+    video: '',
+    name: { en: t('unknown'), ar: t('unknown') },
+    careerLevel: { en: t('n_a'), ar: t('n_a') },
+    technology: { en: [], ar: [] },
+  };
 
   const handleNext = () => {
     setAnimationClass('animate-out');
@@ -77,7 +83,7 @@ function About() {
               {currentMember.careerLevel[currentLang]}
             </div>
             <div className="technology">
-              {t('about.technologies')} | {currentMember.technology[currentLang].join(', ')}
+              {t('about.technologies')} | {Array.isArray(currentMember.technology?.[currentLang]) ? currentMember.technology[currentLang].join(', ') : String(currentMember.technology?.[currentLang] ?? '')}
             </div>
           </div>
         </div>

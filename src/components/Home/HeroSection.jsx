@@ -12,6 +12,8 @@ function HeroSection() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const currentLang = i18n.language || 'en';
+  // Defensive: ensure partnersData is an array before mapping
+  const partners = Array.isArray(partnersData) ? partnersData : [];
 
   // Initialize Typed.js for yellow-hero animation
   useEffect(() => {
@@ -69,7 +71,7 @@ function HeroSection() {
           loop={true}
           className="partners-swiper"
         >
-          {partnersData.map((partner) => (
+          {partners.map((partner) => (
             <SwiperSlide key={partner.id}>
               <div className="partner-slide">
                 <img

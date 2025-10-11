@@ -7,6 +7,7 @@ import "../../styles/main-package.css";
 function PackageComponent() {
   const {  i18n } = useTranslation();
   const currentLang = i18n.language || 'en';
+  const pkg = packageTranslations?.package ?? { title_part1: { en: '' }, title_part2: { en: '' }, subtitle: { en: '' }, button: { en: '' } };
 
   return (
     <div className='tech-package-main' style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
@@ -14,21 +15,21 @@ function PackageComponent() {
           <div className="tech-content-center">
             <div className="tech-top-section">
               <div className="tech-main-title">
-                {packageTranslations.package.title_part1[currentLang]} 
+                {pkg.title_part1[currentLang]} 
                 <span className="tech-highlight">
-                  {" "}{packageTranslations.package.title_part2[currentLang]}
+                  {" "}{pkg.title_part2[currentLang]}
                 </span>
               </div>
 
               <div className="tech-subtitle">
-                {packageTranslations.package.subtitle[currentLang]}
+                {pkg.subtitle[currentLang]}
               </div>
             </div>
 
             <Link to={'/contact'}>
               <div className="tech-contact-btn">
                 <span className="tech-btn-text">
-                  {packageTranslations.package.button[currentLang]}
+                  {pkg.button[currentLang]}
                 </span>
               </div>
             </Link>

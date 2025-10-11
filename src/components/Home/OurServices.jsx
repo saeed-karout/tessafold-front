@@ -8,16 +8,18 @@ import { useTranslation } from 'react-i18next';
 function OurServices() {
    const {  i18n } = useTranslation();
     const currentLang = i18n.language || 'en';
+    const servicesSection = ServicesData?.section ?? { topic: { title: { en: '' }, description: { en: '' } }, services: [] };
+    const servicesList = Array.isArray(servicesSection.services) ? servicesSection.services : [];
 
   return (
     <div className="main-our-services"  >
       <div className="bg-image">
         <div className="topic-service" dir={currentLang === 'ar' ? 'rtl' : 'ltr'}>
-          <div className="title">{ServicesData.section.topic.title[currentLang]}</div>
-          <div className="description">{ServicesData.section.topic.description[currentLang]}</div>
+          <div className="title">{servicesSection.topic.title[currentLang]}</div>
+          <div className="description">{servicesSection.topic.description[currentLang]}</div>
         </div>
         <div className="frame-services">
-          {ServicesData.section.services.map((service, index) => (
+          {servicesList.map((service, index) => (
             <div key={index} className={`card-service ${service.isLink ? 'card-service-link' : ''}`} dir={currentLang === 'ar' ? 'rtl' : 'ltr'}>
               {service.isLink ? (
                 <Link to={service.to}>

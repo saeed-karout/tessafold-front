@@ -108,11 +108,13 @@ function ContactPage() {
         services: serviceTitles,
       });
 
+      const servicesString = Array.isArray(serviceTitles) ? serviceTitles.join(', ') : String(serviceTitles ?? '');
+
       const response = await axios.post('https://formspree.io/f/meorowdq', {
         email: formData.email,
         companyName: formData.companyName,
         message: formData.message,
-        services: serviceTitles.join(', '), 
+        services: servicesString,
       });
 
       if (response.status === 200) {
