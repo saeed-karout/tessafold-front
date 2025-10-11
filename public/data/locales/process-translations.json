@@ -1,0 +1,136 @@
+{
+  "process": {
+    "phases": {
+      "phase1": {
+        "title": {
+          "en": "Phase I - Research and Design",
+          "ar": "المرحلة الأولى - البحث والتصميم",
+          "de": "Phase I - Forschung und Design"
+        },
+        "steps": [
+          {
+            "id": 1,
+            "title": {
+              "en": "Specification & Planning",
+              "ar": "المواصفات والتخطيط",
+              "de": "Spezifikation & Planung"
+            },
+            "description": {
+              "en": "Through several guided discovery sessions, we build out a specifications document that clearly outlines our project goal.\n\nWhat are we building, for what users, and with what features?\nWhat languages, frameworks & services should we use to optimize cost vs functionality?\n\nOur team of professionals help guide this process through:\nFeature Suggestions (for example, did you think of building an admin panel to track usership & analytics).\n80/20 principles where its possible to build a similar feature but for much cheaper.\n\nHere is a sample of a Specifications Sheet.",
+              "ar": "من خلال عدة جلسات اكتشاف موجهة، نقوم ببناء وثيقة مواصفات تحدد بوضوح هدف مشروعنا.\n\nماذا نبني، ولمن من المستخدمين، وبأي ميزات؟\nما هي اللغات والأطر والخدمات التي يجب أن نستخدمها لتحسين التكلفة مقابل الوظيفة؟\n\nفريقنا من المحترفين يساعد في توجيه هذه العملية من خلال:\nاقتراحات الميزات (على سبيل المثال، هل فكرت في بناء لوحة تحكم لتتبع المستخدمين والتحليلات).\nمبادئ 80/20 حيث يمكن بناء ميزة مماثلة ولكن بتكلفة أقل بكثير.\n\nهنا نموذج من ورقة المواصفات.",
+              "de": "Durch mehrere geführte Entdeckungssitzungen erstellen wir ein Spezifikationsdokument, das unser Projektziel klar umreißt.\n\nWas bauen wir, für welche Benutzer und mit welchen Funktionen?\nWelche Sprachen, Frameworks & Services sollten wir verwenden, um Kosten vs. Funktionalität zu optimieren?\n\nUnser Team von Fachleuten hilft bei der Steuerung dieses Prozesses durch:\nFunktionsvorschläge (zum Beispiel, haben Sie daran gedacht, ein Admin-Panel zur Verfolgung von Nutzern & Analysen zu erstellen).\n80/20-Prinzipien, bei denen es möglich ist, eine ähnliche Funktion zu einem viel günstigeren Preis zu erstellen.\n\nHier ist ein Beispiel eines Spezifikationsblattes."
+            },
+            "icon": "/icons/ourProcess/search.svg"
+          },
+          {
+            "id": 2,
+            "title": {
+              "en": "Design, Wireframe & Prototype",
+              "ar": "التصميم، الإطار الشبكي والنموذج الأولي",
+              "de": "Design, Wireframe & Prototyp"
+            },
+            "description": {
+              "en": "We create detailed designs and interactive prototypes to visualize your project before development begins.",
+              "ar": "نقوم بإنشاء تصاميم مفصلة ونماذج أولية تفاعلية لتصور مشروعك قبل بدء التطوير.",
+              "de": "Wir erstellen detaillierte Designs und interaktive Prototypen, um Ihr Projekt vor Entwicklungsbeginn zu visualisieren."
+            },
+            "icon": "/icons/ourProcess/Design.svg"
+          },
+          {
+            "id": 3,
+            "title": {
+              "en": "Estimates & Timeline",
+              "ar": "التقديرات والجدول الزمني",
+              "de": "Schätzungen & Zeitplan"
+            },
+            "description": {
+              "en": "We provide accurate time and cost estimates with a clear project timeline for successful delivery.",
+              "ar": "نقدم تقديرات دقيقة للوقت والتكلفة مع جدول زمني واضح للمشروع للتسليم الناجح.",
+              "de": "Wir liefern genaue Zeit- und Kostenschätzungen mit einem klaren Projektzeitplan für eine erfolgreiche Lieferung."
+            },
+            "icon": "/icons/ourProcess/timer.svg"
+          }
+        ]
+      },
+      "phase2": {
+        "title": {
+          "en": "Phase II - Development",
+          "ar": "المرحلة الثانية - التطوير",
+          "de": "Phase II - Entwicklung"
+        },
+        "steps": [
+          {
+            "id": 4,
+            "title": {
+              "en": "Build",
+              "ar": "البناء",
+              "de": "Aufbau"
+            },
+            "description": {
+              "en": "Our development team brings your project to life using the latest technologies and best practices.",
+              "ar": "فريق التطوير لدينا يحول مشروعك إلى واقع باستخدام أحدث التقنيات وأفضل الممارسات.",
+              "de": "Unser Entwicklungsteam bringt Ihr Projekt mit den neuesten Technologien und Best Practices zum Leben."
+            },
+            "icon": "/icons/ourProcess/code.svg"
+          },
+          {
+            "id": 5,
+            "title": {
+              "en": "Test",
+              "ar": "الاختبار",
+              "de": "Testen"
+            },
+            "description": {
+              "en": "Comprehensive testing ensures your application works flawlessly across all devices and platforms.",
+              "ar": "الاختبار الشامل يضمن أن تطبيقك يعمل بسلاسة على جميع الأجهزة والمنصات.",
+              "de": "Umfassendes Testen stellt sicher, dass Ihre Anwendung auf allen Geräten und Plattformen einwandfrei funktioniert."
+            },
+            "icon": "/icons/ourProcess/task-square.svg"
+          },
+          {
+            "id": 6,
+            "title": {
+              "en": "Deploy",
+              "ar": "النشر",
+              "de": "Bereitstellung"
+            },
+            "description": {
+              "en": "We deploy your application to production servers with zero downtime and optimal performance.",
+              "ar": "نقوم بنشر تطبيقك على خوادم الإنتاج بدون أي توقف وبأداء مثالي.",
+              "de": "Wir stellen Ihre Anwendung auf Produktionsservern ohne Ausfallzeiten und mit optimaler Leistung bereit."
+            },
+            "icon": "/icons/ourProcess/recovery-convert.svg"
+          },
+          {
+            "id": 7,
+            "title": {
+              "en": "Measure",
+              "ar": "القياس",
+              "de": "Messen"
+            },
+            "description": {
+              "en": "We monitor performance and gather analytics to measure success and identify areas for improvement.",
+              "ar": "نراقب الأداء ونجمع التحليلات لقياس النجاح وتحديد مجالات التحسين.",
+              "de": "Wir überwachen die Leistung und sammeln Analysen, um den Erfolg zu messen und Verbesserungsbereiche zu identifizieren."
+            },
+            "icon": "/icons/ourProcess/ruler&pen.svg"
+          },
+          {
+            "id": 8,
+            "title": {
+              "en": "Maintain",
+              "ar": "الصيانة",
+              "de": "Wartung"
+            },
+            "description": {
+              "en": "Ongoing maintenance and support to keep your application secure, updated, and performing at its best.",
+              "ar": "الصيانة والدعم المستمرين للحفاظ على تطبيقك آمنًا ومحدثًا ويعمل بأفضل أداء.",
+              "de": "Laufende Wartung und Unterstützung, um Ihre Anwendung sicher, aktuell und leistungsstark zu halten."
+            },
+            "icon": "/icons/ourProcess/grid-edit.svg"
+          }
+        ]
+      }
+    }
+  }
+}

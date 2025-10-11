@@ -1,0 +1,423 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "ar": "المشروع الأول",
+      "en": "Project One",
+      "de": "Projekt Eins"
+    },
+    "title": {
+      "ar": "تطبيق ويب مذهل",
+      "en": "Amazing Web App",
+      "de": "Erstaunliche Webanwendung"
+    },
+    "description": {
+      "ar": "تطبيق ويب تم بناؤه باستخدام تقنيات حديثة لتقديم تجربة مستخدم سلسة.",
+      "en": "A web app built with modern technologies for a seamless user experience.",
+      "de": "Eine Webanwendung mit modernen Technologien für ein nahtloses Benutzererlebnis."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project1",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project1"
+  },
+  {
+    "id": 2,
+    "name": {
+      "ar": "المشروع الثاني",
+      "en": "Project Two",
+      "de": "Projekt Zwei"
+    },
+    "title": {
+      "ar": "تطبيق موبايل ذكي",
+      "en": "Smart Mobile App",
+      "de": "Intelligente Mobile-App"
+    },
+    "description": {
+      "ar": "تطبيق موبايل يستفيد من الذكاء الاصطناعي لتحسين الأداء.",
+      "en": "A mobile app leveraging AI to enhance performance.",
+      "de": "Eine mobile App, die KI nutzt, um die Leistung zu verbessern."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project2",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project2"
+  },
+  {
+    "id": 3,
+    "name": {
+      "ar": "المشروع الثالث",
+      "en": "Project Three",
+      "de": "Projekt Drei"
+    },
+    "title": {
+      "ar": "منصة سحابية متكاملة",
+      "en": "Integrated Cloud Platform",
+      "de": "Integrierte Cloud-Plattform"
+    },
+    "description": {
+      "ar": "منصة سحابية توفر حلولاً شاملة للشركات.",
+      "en": "A cloud platform providing comprehensive business solutions.",
+      "de": "Eine Cloud-Plattform, die umfassende Geschäftslösungen bietet."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project3",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project3"
+  },
+  {
+    "id": 4,
+    "name": {
+      "ar": "المشروع الرابع",
+      "en": "Project Four",
+      "de": "Projekt Vier"
+    },
+    "title": {
+      "ar": "نظام إدارة ذكي",
+      "en": "Smart Management System",
+      "de": "Intelligentes Managementsystem"
+    },
+    "description": {
+      "ar": "نظام إدارة يساعد الشركات على تحسين العمليات الداخلية.",
+      "en": "A management system to streamline business operations.",
+      "de": "Ein Managementsystem zur Optimierung von Geschäftsprozessen."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project4",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project4"
+  },
+  {
+    "id": 5,
+    "name": {
+      "ar": "المشروع الخامس",
+      "en": "Project Five",
+      "de": "Projekt Fünf"
+    },
+    "title": {
+      "ar": "تطبيق تعليمي تفاعلي",
+      "en": "Interactive Learning App",
+      "de": "Interaktive Lern-App"
+    },
+    "description": {
+      "ar": "تطبيق تعليمي يقدم محتوى تفاعلي للطلاب.",
+      "en": "An educational app offering interactive content for students.",
+      "de": "Eine Lern-App mit interaktivem Inhalt für Schüler."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project5",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project5"
+  },
+  {
+    "id": 6,
+    "name": {
+      "ar": "المشروع السادس",
+      "en": "Project Six",
+      "de": "Projekt Sechs"
+    },
+    "title": {
+      "ar": "منصة تجارة إلكترونية",
+      "en": "E-Commerce Platform",
+      "de": "E-Commerce-Plattform"
+    },
+    "description": {
+      "ar": "منصة للتجارة الإلكترونية تدعم الشركات الصغيرة.",
+      "en": "An e-commerce platform supporting small businesses.",
+      "de": "Eine E-Commerce-Plattform zur Unterstützung kleiner Unternehmen."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project6",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project6"
+  },
+  {
+    "id": 7,
+    "name": {
+      "ar": "المشروع السابع",
+      "en": "Project Seven",
+      "de": "Projekt Sieben"
+    },
+    "title": {
+      "ar": "تطبيق صحي مبتكر",
+      "en": "Innovative Health App",
+      "de": "Innovative Gesundheits-App"
+    },
+    "description": {
+      "ar": "تطبيق يساعد المستخدمين على تتبع صحتهم بسهولة.",
+      "en": "An app helping users track their health effortlessly.",
+      "de": "Eine App, die Benutzern hilft, ihre Gesundheit mühelos zu verfolgen."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project7",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project7"
+  },
+  {
+    "id": 8,
+    "name": {
+      "ar": "المشروع الثامن",
+      "en": "Project Eight",
+      "de": "Projekt Acht"
+    },
+    "title": {
+      "ar": "نظام أمني ذكي",
+      "en": "Smart Security System",
+      "de": "Intelligentes Sicherheitssystem"
+    },
+    "description": {
+      "ar": "نظام أمني يعتمد على الذكاء الاصطناعي لحماية البيانات.",
+      "en": "A security system powered by AI to protect data.",
+      "de": "Ein Sicherheitssystem mit KI zum Schutz von Daten."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project8",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project8"
+  },
+  {
+    "id": 9,
+    "name": {
+      "ar": "المشروع التاسع",
+      "en": "Project Nine",
+      "de": "Projekt Neun"
+    },
+    "title": {
+      "ar": "تطبيق توصيل ذكي",
+      "en": "Smart Delivery App",
+      "de": "Intelligente Liefer-App"
+    },
+    "description": {
+      "ar": "تطبيق توصيل يحسن تجربة العملاء بتقنيات متقدمة.",
+      "en": "A delivery app enhancing customer experience with advanced tech.",
+      "de": "Eine Liefer-App, die das Kundenerlebnis mit fortschrittlicher Technologie verbessert."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project9",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project9"
+  },
+  {
+    "id": 10,
+    "name": {
+      "ar": "المشروع العاشر",
+      "en": "Project Ten",
+      "de": "Projekt Zehn"
+    },
+    "title": {
+      "ar": "منصة تحليلات بيانات",
+      "en": "Data Analytics Platform",
+      "de": "Datenanalyse-Plattform"
+    },
+    "description": {
+      "ar": "منصة تقدم تحليلات بيانات متقدمة للشركات.",
+      "en": "A platform offering advanced data analytics for businesses.",
+      "de": "Eine Plattform, die fortschrittliche Datenanalysen für Unternehmen bietet."
+    },
+    "image": "/images/projects/1.png.jpg",
+    "webLink": "https://example.com/project10",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project10"
+  }, {
+    "id": 1,
+    "name": {
+      "ar": "المشروع الأول",
+      "en": "Project One",
+      "de": "Projekt Eins"
+    },
+    "title": {
+      "ar": "تطبيق ويب مذهل",
+      "en": "Amazing Web App",
+      "de": "Erstaunliche Webanwendung"
+    },
+    "description": {
+      "ar": "تطبيق ويب تم بناؤه باستخدام تقنيات حديثة لتقديم تجربة مستخدم سلسة.",
+      "en": "A web app built with modern technologies for a seamless user experience.",
+      "de": "Eine Webanwendung mit modernen Technologien für ein nahtloses Benutzererlebnis."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project1",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project1"
+  },
+  {
+    "id": 2,
+    "name": {
+      "ar": "المشروع الثاني",
+      "en": "Project Two",
+      "de": "Projekt Zwei"
+    },
+    "title": {
+      "ar": "تطبيق موبايل ذكي",
+      "en": "Smart Mobile App",
+      "de": "Intelligente Mobile-App"
+    },
+    "description": {
+      "ar": "تطبيق موبايل يستفيد من الذكاء الاصطناعي لتحسين الأداء.",
+      "en": "A mobile app leveraging AI to enhance performance.",
+      "de": "Eine mobile App, die KI nutzt, um die Leistung zu verbessern."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project2",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project2"
+  },
+  {
+    "id": 3,
+    "name": {
+      "ar": "المشروع الثالث",
+      "en": "Project Three",
+      "de": "Projekt Drei"
+    },
+    "title": {
+      "ar": "منصة سحابية متكاملة",
+      "en": "Integrated Cloud Platform",
+      "de": "Integrierte Cloud-Plattform"
+    },
+    "description": {
+      "ar": "منصة سحابية توفر حلولاً شاملة للشركات.",
+      "en": "A cloud platform providing comprehensive business solutions.",
+      "de": "Eine Cloud-Plattform, die umfassende Geschäftslösungen bietet."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project3",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project3"
+  },
+  {
+    "id": 4,
+    "name": {
+      "ar": "المشروع الرابع",
+      "en": "Project Four",
+      "de": "Projekt Vier"
+    },
+    "title": {
+      "ar": "نظام إدارة ذكي",
+      "en": "Smart Management System",
+      "de": "Intelligentes Managementsystem"
+    },
+    "description": {
+      "ar": "نظام إدارة يساعد الشركات على تحسين العمليات الداخلية.",
+      "en": "A management system to streamline business operations.",
+      "de": "Ein Managementsystem zur Optimierung von Geschäftsprozessen."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project4",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project4"
+  },
+  {
+    "id": 5,
+    "name": {
+      "ar": "المشروع الخامس",
+      "en": "Project Five",
+      "de": "Projekt Fünf"
+    },
+    "title": {
+      "ar": "تطبيق تعليمي تفاعلي",
+      "en": "Interactive Learning App",
+      "de": "Interaktive Lern-App"
+    },
+    "description": {
+      "ar": "تطبيق تعليمي يقدم محتوى تفاعلي للطلاب.",
+      "en": "An educational app offering interactive content for students.",
+      "de": "Eine Lern-App mit interaktivem Inhalt für Schüler."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project5",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project5"
+  },
+  {
+    "id": 6,
+    "name": {
+      "ar": "المشروع السادس",
+      "en": "Project Six",
+      "de": "Projekt Sechs"
+    },
+    "title": {
+      "ar": "منصة تجارة إلكترونية",
+      "en": "E-Commerce Platform",
+      "de": "E-Commerce-Plattform"
+    },
+    "description": {
+      "ar": "منصة للتجارة الإلكترونية تدعم الشركات الصغيرة.",
+      "en": "An e-commerce platform supporting small businesses.",
+      "de": "Eine E-Commerce-Plattform zur Unterstützung kleiner Unternehmen."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project6",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project6"
+  },
+  {
+    "id": 7,
+    "name": {
+      "ar": "المشروع السابع",
+      "en": "Project Seven",
+      "de": "Projekt Sieben"
+    },
+    "title": {
+      "ar": "تطبيق صحي مبتكر",
+      "en": "Innovative Health App",
+      "de": "Innovative Gesundheits-App"
+    },
+    "description": {
+      "ar": "تطبيق يساعد المستخدمين على تتبع صحتهم بسهولة.",
+      "en": "An app helping users track their health effortlessly.",
+      "de": "Eine App, die Benutzern hilft, ihre Gesundheit mühelos zu verfolgen."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project7",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project7"
+  },
+  {
+    "id": 8,
+    "name": {
+      "ar": "المشروع الثامن",
+      "en": "Project Eight",
+      "de": "Projekt Acht"
+    },
+    "title": {
+      "ar": "نظام أمني ذكي",
+      "en": "Smart Security System",
+      "de": "Intelligentes Sicherheitssystem"
+    },
+    "description": {
+      "ar": "نظام أمني يعتمد على الذكاء الاصطناعي لحماية البيانات.",
+      "en": "A security system powered by AI to protect data.",
+      "de": "Ein Sicherheitssystem mit KI zum Schutz von Daten."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project8",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project8"
+  },
+  {
+    "id": 9,
+    "name": {
+      "ar": "المشروع التاسع",
+      "en": "Project Nine",
+      "de": "Projekt Neun"
+    },
+    "title": {
+      "ar": "تطبيق توصيل ذكي",
+      "en": "Smart Delivery App",
+      "de": "Intelligente Liefer-App"
+    },
+    "description": {
+      "ar": "تطبيق توصيل يحسن تجربة العملاء بتقنيات متقدمة.",
+      "en": "A delivery app enhancing customer experience with advanced tech.",
+      "de": "Eine Liefer-App, die das Kundenerlebnis mit fortschrittlicher Technologie verbessert."
+    },
+    "image": "/images/projects/1.png",
+    "webLink": "https://example.com/project9",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project9"
+  },
+  {
+    "id": 10,
+    "name": {
+      "ar": "المشروع العاشر",
+      "en": "Project Ten",
+      "de": "Projekt Zehn"
+    },
+    "title": {
+      "ar": "منصة تحليلات بيانات",
+      "en": "Data Analytics Platform",
+      "de": "Datenanalyse-Plattform"
+    },
+    "description": {
+      "ar": "منصة تقدم تحليلات بيانات متقدمة للشركات.",
+      "en": "A platform offering advanced data analytics for businesses.",
+      "de": "Eine Plattform, die fortschrittliche Datenanalysen für Unternehmen bietet."
+    },
+    "image": "/images/projects/1.png.jpg",
+    "webLink": "https://example.com/project10",
+    "appDownloadLink": "https://play.google.com/store/apps/details?id=project10"
+  }
+ 
+  
+]

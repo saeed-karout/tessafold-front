@@ -1,39 +1,51 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import weServeData from '../../data/we-serve.json';
-import "../../styles/weServe.css"
+import "../../styles/weServe.css";
 
 function WeServe() {
-  const { i18n } = useTranslation();
-  const currentLang = i18n.language || 'en';
-  const weServe = weServeData?.we_serve ?? { title_part1: { en: '' }, title_part2: { en: '' }, subtitle: { en: '' }, cards: [] };
-  const cards = Array.isArray(weServe.cards) ? weServe.cards : [];
+  const {  i18n } = useTranslation();
+  const currentLang = i18n.language?.split('-')[0] || 'en';
+
+  // Log weServeData for debugging
+  useEffect(() => {
+    console.log('weServeData:', weServeData);
+    if (!weServeData?.we_serve) {
+      console.error('Invalid weServeData:', weServeData);
+    }
+  }, []);
+
+  // Preload images
+  useEffect(() => {
+    (weServeData.we_serve?.cards || []).forEach((card) => {
+      const img = new Image();
+      img.src = card.icon;
+    });
+  }, []);
 
   return (
     <section className='we-serve-main' style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
-
       <div className="top-serve">
         <div className="title-serve">
-          {weServe.title_part1[currentLang]}
-          <span> {weServe.title_part2[currentLang]}</span>
+          {weServeData.we_serve?.title_part1?.[currentLang] || 'We Serve'}
+          <span> {weServeData.we_serve?.title_part2?.[currentLang] || 'Industries'}</span>
         </div>
-
         <div className="subtitle-serve">
-          {weServe.subtitle[currentLang]}
+          {weServeData.we_serve?.subtitle?.[currentLang] || 'Our expertise spans multiple sectors.'}
         </div>
       </div>
-
       <div className="frame-serve">
-  {cards.map((card, index) => (
-          <div 
-            key={card.id}
+        {(weServeData.we_serve?.cards || []).map((card, index) => (
+          <div
+            key={card.id || index}
             className={`card-serve ${index % 2 === 0 ? 'with-bg' : 'without-bg'}`}
           >
-            <img src={card.icon} alt={card.topic[currentLang]} />
+            <img src={card.icon || '/placeholder.png'} alt={card.topic?.[currentLang] || 'Service'} />
             <div className="topic-serve">
-              {card.topic[currentLang]}
+              {card.topic?.[currentLang] || 'Untitled Service'}
             </div>
             <div className="description-serve">
-              {card.description[currentLang]}
+              {card.description?.[currentLang] || 'No description available'}
             </div>
           </div>
         ))}

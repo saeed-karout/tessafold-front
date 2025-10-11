@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "ar": "ما هي عمليتكم؟",
+      "en": "What is your process?",
+      "de": "Was ist Ihr Prozess?"
+    },
+    "answer": {
+      "ar": "نتبع عملية منظمة تشمل التخطيط والتطوير والاختبار. نبدأ بفهم احتياجاتك، ثم ننتقل إلى التصميم، والتطوير، والاختبار الشامل، وأخيرًا النشر والدعم.",
+      "en": "We follow a structured process including planning, development, and testing. We start by understanding your needs, then move to design, development, comprehensive testing, and finally deployment and support.",
+      "de": "Wir folgen einem strukturierten Prozess, der Planung, Entwicklung und Tests umfasst. Wir beginnen mit dem Verständnis Ihrer Bedürfnisse, gehen dann zu Design, Entwicklung, umfassenden Tests und schließlich Bereitstellung und Support über."
+    }
+  },
+  {
+    "id": 2,
+    "question": {
+      "ar": "كم من الوقت يستغرق تطوير مشروع؟",
+      "en": "How long does it take to develop a project?",
+      "de": "Wie lange dauert es, ein Projekt zu entwickeln?"
+    },
+    "answer": {
+      "ar": "يعتمد ذلك على تعقيد المشروع، ولكننا نقدم تقديرات واضحة. المشاريع الصغيرة تستغرق من 2-4 أسابيع، والمتوسطة من 4-12 أسبوعًا، والكبيرة من 3-6 أشهر.",
+      "en": "It depends on the project complexity, but we provide clear estimates. Small projects take 2-4 weeks, medium projects 4-12 weeks, and large projects 3-6 months.",
+      "de": "Es hängt von der Komplexität des Projekts ab, aber wir liefern klare Schätzungen. Kleine Projekte dauern 2-4 Wochen, mittlere Projekte 4-12 Wochen und große Projekte 3-6 Monate."
+    }
+  },
+  {
+    "id": 3,
+    "question": {
+      "ar": "هل تقدمون خدمات الصيانة والدعم؟",
+      "en": "Do you offer maintenance and support services?",
+      "de": "Bieten Sie Wartungs- und Support-Dienstleistungen an?"
+    },
+    "answer": {
+      "ar": "نعم، نقدم خطط صيانة شاملة تشمل التحديثات الأمنية، إصلاح الأخطاء، التحسينات، والدعم الفني المستمر لضمان استمرارية عمل تطبيقك بشكل مثالي.",
+      "en": "Yes, we offer comprehensive maintenance plans including security updates, bug fixes, enhancements, and ongoing technical support to ensure your application continues to perform optimally.",
+      "de": "Ja, wir bieten umfassende Wartungspläne an, einschließlich Sicherheitsupdates, Fehlerbehebungen, Verbesserungen und laufendem technischem Support, um sicherzustellen, dass Ihre Anwendung weiterhin optimal funktioniert."
+    }
+  },
+  {
+    "id": 4,
+    "question": {
+      "ar": "ما هي التقنيات التي تستخدمونها؟",
+      "en": "What technologies do you use?",
+      "de": "Welche Technologien verwenden Sie?"
+    },
+    "answer": {
+      "ar": "نستخدم أحدث التقنيات مثل React، Node.js، Python، Flutter، AWS، وغيرها. نختار التقنية المناسبة بناءً على متطلبات مشروعك لضمان أفضل النتائج.",
+      "en": "We use the latest technologies including React, Node.js, Python, Flutter, AWS, and more. We select the appropriate technology based on your project requirements to ensure the best results.",
+      "de": "Wir verwenden die neuesten Technologien wie React, Node.js, Python, Flutter, AWS und mehr. Wir wählen die geeignete Technologie basierend auf Ihren Projektanforderungen, um die besten Ergebnisse zu gewährleisten."
+    }
+  },
+  {
+    "id": 5,
+    "question": {
+      "ar": "هل يمكنني رؤية أمثلة على مشاريعكم السابقة؟",
+      "en": "Can I see examples of your previous projects?",
+      "de": "Kann ich Beispiele Ihrer bisherigen Projekte sehen?"
+    },
+    "answer": {
+      "ar": "بالتأكيد! يمكنك الاطلاع على معرض أعمالنا الذي يحتوي على مشاريع متنوعة في مختلف القطاعات. كما يمكننا ترتيب جلسة لعرض تفصيلي لمشاريع مشابهة لاحتياجاتك.",
+      "en": "Absolutely! You can browse our portfolio containing diverse projects across various sectors. We can also arrange a session for a detailed presentation of projects similar to your needs.",
+      "de": "Absolut! Sie können unser Portfolio durchsuchen, das verschiedene Projekte aus verschiedenen Branchen enthält. Wir können auch eine Sitzung für eine detaillierte Präsentation von Projekten arrangieren, die Ihren Anforderungen ähneln."
+    }
+  },
+  {
+    "id": 6,
+    "question": {
+      "ar": "كيف تتعاملون مع أمان التطبيقات؟",
+      "en": "How do you handle application security?",
+      "de": "Wie handhaben Sie die Anwendungssicherheit?"
+    },
+    "answer": {
+      "ar": "الأمان أولوية لدينا. نطبق أفضل ممارسات الأمان مثل تشفير البيانات، المصادقة المتعددة العوامل، اختبار الاختراق، ومراجعات الأمن الدورية لضمان حماية بياناتك وتطبيقك.",
+      "en": "Security is our priority. We implement best security practices including data encryption, multi-factor authentication, penetration testing, and regular security audits to ensure your data and application are protected.",
+      "de": "Sicherheit hat bei uns Priorität. Wir implementieren beste Sicherheitspraktiken einschließlich Datenverschlüsselung, Multi-Faktor-Authentifizierung, Penetrationstests und regelmäßigen Sicherheitsaudits, um Ihre Daten und Anwendung zu schützen."
+    }
+  },
+  {
+    "id": 7,
+    "question": {
+      "ar": "ما هي تكلفة تطوير التطبيق؟",
+      "en": "What is the cost of app development?",
+      "de": "Was kostet die App-Entwicklung?"
+    },
+    "answer": {
+      "ar": "تختلف التكلفة حسب حجم المشروع وتعقيده. نقدم عروض أسعار شفافة بعد تحليل متطلباتك. نعمل مع ميزانيات مختلفة ونضمن تقديم أفضل قيمة مقابل استثمارك.",
+      "en": "Cost varies based on project size and complexity. We provide transparent quotes after analyzing your requirements. We work with different budgets and ensure you get the best value for your investment.",
+      "de": "Die Kosten variieren je nach Projektgröße und Komplexität. Wir bieten nach Analyse Ihrer Anforderungen transparente Angebote. Wir arbeiten mit verschiedenen Budgets und stellen sicher, dass Sie den besten Wert für Ihre Investition erhalten."
+    }
+  },
+  {
+    "id": 8,
+    "question": {
+      "ar": "هل تقدمون خدمات التصميم أيضًا؟",
+      "en": "Do you also offer design services?",
+      "de": "Bieten Sie auch Design-Dienstleistungen an?"
+    },
+    "answer": {
+      "ar": "نعم، لدينا فريق تصميم متخصص يقدم خدمات تصميم واجهات المستخدم وتجربة المستخدم لضمان أن تطبيقك ليس فقط وظيفيًا ولكن أيضًا جذاب وسهل الاستخدام.",
+      "en": "Yes, we have a dedicated design team that offers UI/UX design services to ensure your application is not only functional but also attractive and user-friendly.",
+      "de": "Ja, wir haben ein spezielles Designteam, das UI/UX-Design-Dienstleistungen anbietet, um sicherzustellen, dass Ihre Anwendung nicht nur funktional, sondern auch attraktiv und benutzerfreundlich ist."
+    }
+  }
+]

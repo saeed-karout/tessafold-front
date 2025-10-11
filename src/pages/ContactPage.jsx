@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import servicesData from '../data/services-contact.json';
+import servicesData from '../data/services-contact.json'; 
 import '../styles/Contact.scss';
 import { useNavigate } from 'react-router-dom';
 
 function ContactPage() {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || 'en';
+  const currentLang = i18n.language?.split('-')[0] || 'en'; // Normalize language code
   const navigate = useNavigate();
 
   // Initialize formData with safe parsing of localStorage
@@ -28,29 +28,29 @@ function ContactPage() {
   const [formStatus, setFormStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Log servicesData to verify it loads correctly
+  // Log servicesData and currentLang to debug
   useEffect(() => {
     console.log('servicesData:', servicesData);
+    console.log('currentLang:', currentLang);
     if (!servicesData || !Array.isArray(servicesData)) {
       console.error('servicesData is not an array or undefined:', servicesData);
+    } else {
+      // Log services missing titles for currentLang
+      servicesData.forEach((service, index) => {
+        if (!service?.title?.[currentLang]) {
+          console.warn(`Service at index ${index} (id: ${service?.id}) missing title for language: ${currentLang}`);
+        }
+      });
     }
-  }, []);
-
-  // Update localStorage when services change
-  useEffect(() => {
-    try {
-      localStorage.setItem('selectedServices', JSON.stringify(formData.services));
-    } catch (e) {
-      console.warn('Failed to save selectedServices to localStorage:', e);
-    }
-  }, [formData.services]);
+  }, [currentLang]);
 
   // Preload images to avoid flickering
   useEffect(() => {
-    const img = new Image();
-    img.src = '/images/contact/icon-form.svg';
-    const vector = new Image();
-    vector.src = '/images/contact/Vector.svg';
+    const images = ['/images/contact/icon-form.svg', '/images/contact/Vector.svg'];
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
   }, []);
 
   const handleChange = (e) => {
@@ -86,7 +86,6 @@ function ContactPage() {
 
     setIsSubmitting(true);
     try {
-      // Defensive check for servicesData and formData.services
       if (!Array.isArray(servicesData)) {
         throw new Error('servicesData is not an array');
       }
@@ -97,7 +96,7 @@ function ContactPage() {
       const serviceTitles = formData.services
         .map((id) => {
           const service = servicesData.find((s) => s.id.toString() === id);
-          return service?.title?.[currentLang] ?? 'Unknown Service';
+          return service?.title?.[currentLang] ?? t('contact.unknownService', { id }) ?? 'Unknown Service';
         })
         .filter(Boolean);
 
@@ -131,78 +130,76 @@ function ContactPage() {
   };
 
   return (
-
     <>
-    <div className="content">
-      <div className="frame1">
-        <div className="top" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
-          <div className="titles">
-            {t('contact.title')} <span>{t('contact.titleHighlight')}</span>
+      <div className="content">
+        <div className="frame1">
+          <div className="top" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+            <div className="titles">
+              {t('contact.title') || 'Get in Touch'} <span>{t('contact.titleHighlight') || 'Now'}</span>
+            </div>
+            <div className="subtitles">{t('contact.subtitle') || 'Let’s Collaborate'}</div>
+            <p>{t('contact.description') || 'Reach out to discuss your project.'}</p>
           </div>
-          <div className="subtitles">{t('contact.subtitle')}</div>
-          <p>{t('contact.description')}</p>
-        </div>
-        <div className="frame-form">
-          <div className="form">
-            <form onSubmit={handleSubmit}>
-              <div className="item">
-                <div className="title">
-                  {t('contact.emailLabel')} <span>*</span>
+          <div className="frame-form">
+            <div className="form">
+              <form onSubmit={handleSubmit}>
+                <div className="item">
+                  <div className="title">
+                    {t('contact.emailLabel') || 'Email'} <span>*</span>
+                  </div>
+                  <div className="input-field">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder={t('contact.emailPlaceholder') || 'Enter your email'}
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
                 </div>
-                <div className="input-field">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder={t('contact.emailPlaceholder')}
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
 
-              <div className="item">
-                <div className="title">
-                  {t('contact.companyLabel')} <span>*</span>
+                <div className="item">
+                  <div className="title">
+                    {t('contact.companyLabel') || 'Company Name'} <span>*</span>
+                  </div>
+                  <div className="input-field">
+                    <input
+                      type="text"
+                      name="companyName"
+                      placeholder={t('contact.companyPlaceholder') || 'Enter your company name'}
+                      value={formData.companyName}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
                 </div>
-                <div className="input-field">
-                  <input
-                    type="text"
-                    name="companyName"
-                    placeholder={t('contact.companyPlaceholder')}
-                    value={formData.companyName}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
 
-              <div className="item">
-                <div className="title">
-                  {t('contact.messageLabel')} <span>*</span>
+                <div className="item">
+                  <div className="title">
+                    {t('contact.messageLabel') || 'Message'} <span>*</span>
+                  </div>
+                  <div className="input-field">
+                    <textarea
+                      name="message"
+                      rows={5}
+                      placeholder={t('contact.messagePlaceholder') || 'Your message'}
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
                 </div>
-                <div className="input-field">
-                  <textarea
-                    name="message"
-                    rows={5}
-                    placeholder={t('contact.messagePlaceholder')}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
 
-              <div className="item">
-                <div className="title">
-                  {t('contact.servicesLabel')} <span>*</span>
-                </div>
-                <div className="list">
-                  {Array.isArray(servicesData) &&
-                    servicesData.map((service) => (
+                <div className="item">
+                  <div className="title">
+                    {t('contact.servicesLabel') || 'Services'} <span>*</span>
+                  </div>
+                  <div className="list">
+                    {(Array.isArray(servicesData) ? servicesData : []).map((service) => (
                       <div
-                        key={service.id}
-                        className={`check-item ${formData.services.includes(service.id.toString()) ? 'active' : ''}`}
+                        key={service.id || Math.random()}
+                        className={`check-item ${formData.services.includes(service.id?.toString()) ? 'active' : ''}`}
                         onClick={() => {
                           const input = document.getElementById(`service-${service.id}`);
                           if (input) input.click();
@@ -213,48 +210,48 @@ function ContactPage() {
                           id={`service-${service.id}`}
                           name="services"
                           value={service.id}
-                          checked={formData.services.includes(service.id.toString())}
+                          checked={formData.services.includes(service.id?.toString())}
                           onChange={handleChange}
                           style={{ display: 'none' }}
                         />
-                        <span>{service.title?.[currentLang] ?? 'Unknown Service'}</span>
+                        <span>{service.title?.[currentLang] ?? t('contact.unknownService', { id: service.id }) ?? 'Unknown Service'}</span>
                       </div>
                     ))}
+                  </div>
                 </div>
-              </div>
 
-              <div className={`submit ${isFormValid() ? 'active' : ''}`}>
-                <button type="submit" disabled={!isFormValid() || isSubmitting}>
-                  <span>{isSubmitting ? t('contact.submitting') : t('contact.submit')}</span>
-                </button>
-              </div>
+                <div className={`submit ${isFormValid() ? 'active' : ''}`}>
+                  <button type="submit" disabled={!isFormValid() || isSubmitting}>
+                    <span>{isSubmitting ? t('contact.submitting') || 'Submitting...' : t('contact.submit') || 'Submit'}</span>
+                  </button>
+                </div>
 
-              {formStatus === 'success' && (
-                <p className="success-message">{t('contact.success')}</p>
-              )}
-              {formStatus === 'error' && (
-                <p className="error-message">{t('contact.error')}</p>
-              )}
-            </form>
+                {formStatus === 'success' && (
+                  <p className="success-message">{t('contact.success') || 'Form submitted successfully!'}</p>
+                )}
+                {formStatus === 'error' && (
+                  <p className="error-message">{t('contact.error') || 'Error submitting form.'}</p>
+                )}
+              </form>
+            </div>
+            <img
+              src="/images/contact/icon-form.svg"
+              className="bg-icon"
+              alt={t('contact.iconAlt') || 'Form Icon'}
+            />
           </div>
-          <img
-            src="/images/contact/icon-form.svg"
-            className="bg-icon"
-            alt={t('contact.iconAlt')}
-          />
         </div>
       </div>
-    </div>
       <div className="frame2">
         <img src="/images/contact/Vector.svg" className="vector" alt="" />
         <div className="text">
           <div className="topic">
-            {t('contact.section2.title')} <span>{t('contact.section2.span')}</span>
+            {t('contact.section2.title') || 'Ready to Start'} <span>{t('contact.section2.span') || 'Now'}</span>
           </div>
-          <p>{t('contact.section2.subtitle')}</p>
+          <p>{t('contact.section2.subtitle') || 'Let’s build something great together.'}</p>
         </div>
         <div className="btn-home" onClick={() => navigate('/')}>
-          <span>{t('contact.section2.btn')}</span>
+          <span>{t('contact.section2.btn') || 'Back to Home'}</span>
         </div>
         <img src="/images/contact/Vector.svg" className="vector2" alt="" />
       </div>

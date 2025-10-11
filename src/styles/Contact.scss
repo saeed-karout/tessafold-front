@@ -370,6 +370,8 @@ textarea {
   background: var(--Black-black-13, #191F20);
   position: relative;
   overflow: hidden;
+  height: 410px;
+  justify-content: center;
 
   @media (max-width: var(--breakpoint-tablet)) {
     padding: 40px 12px;

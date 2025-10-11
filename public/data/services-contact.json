@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "ar": "نموذج غير وظيفي",
+      "en": "Non-Functional Prototype",
+      "de": "Nicht-funktionales Prototy"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "ar": "تطبيق آيفون",
+      "en": "iPhone App",
+      "de": "iPhone-App"
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "ar": "تطبيق آيباد",
+      "en": "iPad App",
+      "de": "iPad-App"
+    }
+  },
+  {
+    "id": 4,
+    "title": {
+      "ar": "تطبيق أندرويد",
+      "en": "Android App",
+      "de": "Android-App"
+    }
+  },
+  {
+    "id": 5,
+    "title": {
+      "ar": "تطبيق ويب",
+      "en": "Website App",
+      "de": "Web-App"
+    }
+  },
+  {
+    "id": 6,
+    "title": {
+      "ar": "تصميم واجهة وتجربة المستخدم",
+      "en": "UI/UX Design",
+      "de": "UI/UX-Design"
+    }
+  },
+  {
+    "id": 7,
+    "title": {
+      "ar": "موقع ووردبريس",
+      "en": "WordPress Website",
+      "de": "WordPress-Website"
+    }
+  },
+  {
+    "id": 8,
+    "title": {
+      "ar": "صفحة هبوط",
+      "en": "Landing Page Website",
+      "de": "Landingpage-Website"
+    }
+  },
+  {
+    "id": 9,
+    "title": {
+      "ar": "تطبيق سطح المكتب",
+      "en": "Desktop App",
+      "de": "Desktop-App"
+    }
+  },
+  {
+    "id": 10,
+    "title": {
+      "ar": "تطبيق الذكاء الاصطناعي",
+      "en": "AI App",
+      "de": "KI-App"
+    }
+  },
+  {
+    "id": 11,
+    "title": {
+      "ar": "أخرى",
+      "en": "Other",
+      "de": "Andere"
+    }
+  }
+]

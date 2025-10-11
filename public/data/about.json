@@ -1,0 +1,42 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": {
+        "ar": "جون دو",
+        "en": "John Doe",
+        "de": "John Doe"
+      },
+      "careerLevel": {
+        "ar": "مطور أول",
+        "en": "Senior Developer",
+        "de": "Senior Entwickler"
+      },
+      "technology": {
+        "ar": ["React.js", "Node.js", "TypeScript"],
+        "en": ["React.js", "Node.js", "TypeScript"],
+        "de": ["React.js", "Node.js", "TypeScript"]
+      },
+      "video": "https://www.youtube.com/embed/X6GnlcQZ1Cc"
+    },
+    {
+      "id": 2,
+      "name": {
+        "ar": "جين سميث",
+        "en": "Jane Smith",
+        "de": "Jane Smith"
+      },
+      "careerLevel": {
+        "ar": "مدير مشروع",
+        "en": "Project Manager",
+        "de": "Projektmanager"
+      },
+      "technology": {
+        "ar": ["إدارة المشاريع", "Agile", "Scrum"],
+        "en": ["Project Management", "Agile", "Scrum"],
+        "de": ["Projektmanagement", "Agile", "Scrum"]
+      },
+      "video": "https://www.youtube.com/embed/sample-id-2"
+    }
+  ]
+}

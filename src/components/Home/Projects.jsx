@@ -1,157 +1,131 @@
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import projectsData from "../../data/projects.json";
 import "../../styles/Projects.css";
 
 function Projects() {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
-  // projectsData is a static import; memoize once
-  const safeProjects = useMemo(() => (Array.isArray(projectsData) ? projectsData : []), []);
-  const [activeProjectId, setActiveProjectId] = useState(
-    safeProjects[0]?.id || 1
-  );
+  const currentLang = i18n.language?.split('-')[0] || "en";
+  const [activeProjectId, setActiveProjectId] = useState(projectsData[0]?.id || 1);
   const [isChanging, setIsChanging] = useState(false);
   const [visibleProjects, setVisibleProjects] = useState([]);
   const [, setStartIndex] = useState(0);
   const topBarRef = useRef(null);
 
-  // عدد المشاريع المرئية
-  const VISIBLE_COUNT = 11;
-
-  // إنشاء المصفوفة المرئية بناءً على الفهرس النشط
+  // Log projectsData for debugging
   useEffect(() => {
-    if (safeProjects.length === 0) return;
+    console.log('projectsData:', projectsData);
+    if (!projectsData || !Array.isArray(projectsData)) {
+      console.error('Invalid projectsData:', projectsData);
+    }
+  }, []);
 
-    const activeIndex = safeProjects.findIndex((p) => p.id === activeProjectId);
+  // Preload images
+  useEffect(() => {
+    (projectsData || []).forEach((project) => {
+      const img = new Image();
+      img.src = project.image;
+    });
+    const arrowImg = new Image();
+    arrowImg.src = '/arrow-left.svg';
+  }, []);
+
+  // Set visible projects
+  useEffect(() => {
+    if (!projectsData || projectsData.length === 0) {
+      setVisibleProjects([]);
+      return;
+    }
+
+    const activeIndex = projectsData.findIndex((p) => p.id === activeProjectId);
     if (activeIndex === -1) return;
 
-    // حساب نقطة البداية لجعل المشروع النشط في المركز (المركز هو الفهرس 5 في 11 عنصر)
+    const VISIBLE_COUNT = 11;
     let newStartIndex = activeIndex - Math.floor(VISIBLE_COUNT / 2);
 
-    // ضمان أن الفهرس ضمن الحدود (تأثير دائري)
     if (newStartIndex < 0) {
-      newStartIndex = safeProjects.length + newStartIndex;
-    } else if (newStartIndex >= safeProjects.length) {
-      newStartIndex = newStartIndex % safeProjects.length;
+      newStartIndex = projectsData.length + newStartIndex;
+    } else if (newStartIndex >= projectsData.length) {
+      newStartIndex = newStartIndex % projectsData.length;
     }
 
     setStartIndex(newStartIndex);
 
-    // إنشاء المصفوفة المرئية
     const newVisibleProjects = [];
     for (let i = 0; i < VISIBLE_COUNT; i++) {
-      const circularIndex = (newStartIndex + i) % safeProjects.length;
-      newVisibleProjects.push(safeProjects[circularIndex]);
+      const circularIndex = (newStartIndex + i) % projectsData.length;
+      newVisibleProjects.push(projectsData[circularIndex]);
     }
 
     setVisibleProjects(newVisibleProjects);
-  }, [activeProjectId, safeProjects]);
+  }, [activeProjectId, projectsData]);
 
-  // تحديد إذا كان المشروع من العناصر الطرفية (أول أو آخر عنصرين)
   const isEdgeProject = (index) => {
-    return index < 2 || index > VISIBLE_COUNT - 3;
+    return index < 2 || index > 8;
   };
 
-  // دالة للانتقال إلى المشروع التالي
   const goToNextProject = () => {
     if (isChanging) return;
-
-    const currentIndex = projectsData.findIndex(
-      (p) => p.id === activeProjectId
-    );
+    const currentIndex = projectsData.findIndex((p) => p.id === activeProjectId);
     const nextIndex = (currentIndex + 1) % projectsData.length;
-    handleProjectChange(projectsData[nextIndex].id);
+    handleProjectChange(projectsData[nextIndex]?.id || 1);
   };
 
-  // دالة للانتقال إلى المشروع السابق
   const goToPrevProject = () => {
     if (isChanging) return;
-
-    const currentIndex = projectsData.findIndex(
-      (p) => p.id === activeProjectId
-    );
-    const prevIndex =
-      (currentIndex - 1 + projectsData.length) % projectsData.length;
-    handleProjectChange(projectsData[prevIndex].id);
+    const currentIndex = projectsData.findIndex((p) => p.id === activeProjectId);
+    const prevIndex = (currentIndex - 1 + projectsData.length) % projectsData.length;
+    handleProjectChange(projectsData[prevIndex]?.id || 1);
   };
 
-  // دالة لتغيير المشروع مع أنيميشن
   const handleProjectChange = (projectId) => {
     if (projectId === activeProjectId || isChanging) return;
-
     setIsChanging(true);
-
-    // أنيميشن تغيير المحتوى
     setTimeout(() => {
       setActiveProjectId(projectId);
-
-      // إعادة تعيين حالة التغيير بعد انتهاء الأنيميشن
       setTimeout(() => {
         setIsChanging(false);
       }, 500);
     }, 300);
   };
 
-  // تمرير تلقائي عند تغيير المشروع النشط
   useEffect(() => {
     if (!isChanging && topBarRef.current) {
       const topBar = topBarRef.current;
-      const activeElement = topBar.querySelector(
-        `.name-project[data-id="${activeProjectId}"]`
-      );
-
+      const activeElement = topBar.querySelector(`.name-project[data-id="${activeProjectId}"]`);
       if (activeElement) {
         const projectWidth = activeElement.offsetWidth;
         const topBarWidth = topBar.offsetWidth;
         const activePosition = activeElement.offsetLeft;
         const centerPosition = topBarWidth / 2 - projectWidth / 2;
         const scrollPosition = activePosition - centerPosition;
-
-        topBar.scrollTo({
-          left: scrollPosition,
-          behavior: "smooth",
-        });
+        topBar.scrollTo({ left: scrollPosition, behavior: "smooth" });
       }
     }
   }, [activeProjectId, isChanging, visibleProjects]);
 
-  const activeProject = projectsData.find(
-    (project) => project.id === activeProjectId
-  );
-
-  // إضافة أزرار التنقل
-  const NavigationButtons = () => (
-    <div className="navigation-buttons">
-      <button className="nav-button prev-button" onClick={goToPrevProject}>
-        {/* <span>{currentLang === 'ar' ? '→' : '←'}</span> */}
-      </button>
-      <button className="nav-button next-button" onClick={goToNextProject}>
-        {/* <span>{currentLang === 'ar' ? '←' : '→'}</span> */}
-      </button>
-    </div>
-  );
+  const activeProject = projectsData.find((project) => project.id === activeProjectId) || {};
 
   return (
-    <section className="main-project">
-      <div className="topic">{t("projects")}</div>
+    <section className="main-project" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+      <div className="topic">{t("projects") || 'Our Projects'}</div>
       <div className="list-projects">
         <div className="top-bar-container">
-          <NavigationButtons />
-          <div className="top-bar" ref={topBarRef} >
+          <div className="navigation-buttons">
+            <button className="nav-button prev-button" onClick={goToPrevProject} aria-label={t('projects.prev') || 'Previous Project'}></button>
+            <button className="nav-button next-button" onClick={goToNextProject} aria-label={t('projects.next') || 'Next Project'}></button>
+          </div>
+          <div className="top-bar" ref={topBarRef}>
             {visibleProjects.map((project, index) => (
               <div
-                key={`${project.id}-${index}`}
-                className={`name-project ${
-                  project.id === activeProjectId ? "active" : ""
-                } ${isEdgeProject(index) ? "edge" : ""} ${
-                  isChanging && project.id === activeProjectId ? "changing" : ""
+                key={`${project?.id || index}-${index}`}
+                className={`name-project ${project?.id === activeProjectId ? "active" : ""} ${isEdgeProject(index) ? "edge" : ""} ${
+                  isChanging && project?.id === activeProjectId ? "changing" : ""
                 }`}
-                data-id={project.id}
-                onClick={() => handleProjectChange(project.id)}
-
+                data-id={project?.id || index}
+                onClick={() => handleProjectChange(project?.id || 1)}
               >
-                <span>{project.name[currentLang]}</span>
+                <span>{project?.name?.[currentLang] || 'Untitled Project'}</span>
                 <div className="project-indicator"></div>
               </div>
             ))}
@@ -159,49 +133,28 @@ function Projects() {
         </div>
 
         {activeProject && (
-          <div
-            className={`project-details ${isChanging ? "changing" : ""}`}
-            key={activeProjectId}
-            style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}
-          >
+          <div className={`project-details ${isChanging ? "changing" : ""}`} key={activeProjectId}>
             <div className="left">
-              <div className="h3">{activeProject.title[currentLang]}</div>
-              <div className="p">{activeProject.description[currentLang]}</div>
-              <a
-                href={activeProject.webLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <div className="h3">{activeProject.title?.[currentLang] || 'Untitled'}</div>
+              <div className="p">{activeProject.description?.[currentLang] || 'No description available'}</div>
+              <a href={activeProject.webLink || '#'} target="_blank" rel="noopener noreferrer">
                 <div className="web-link">
-                  {t("visit_website")}
-                  <img
-                    src="/arrow-left.svg"
-                    style={{ width: "24px" }}
-                    alt="icon arrow"
-                  />
+                  {t("visit_website") || 'Visit Website'}
+                  <img src="/arrow-left.svg" style={{ width: "24px" }} alt="Arrow icon" />
                 </div>
               </a>
-
-              <a
-                href={activeProject.appDownloadLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={activeProject.appDownloadLink || '#'} target="_blank" rel="noopener noreferrer">
                 <div className="web-link">
-                  {t("download_app")}
-                  <img
-                    src="/arrow-left.svg"
-                    style={{ width: "24px" }}
-                    alt="icon arrow"
-                  />
+                  {t("download_app") || 'Download App'}
+                  <img src="/arrow-left.svg" style={{ width: "24px" }} alt="Arrow icon" />
                 </div>
               </a>
             </div>
             <div className="right">
               <div className="image-container">
                 <img
-                  src={activeProject.image}
-                  alt={activeProject.name[currentLang]}
+                  src={activeProject.image || '/placeholder.png'}
+                  alt={activeProject.name?.[currentLang] || 'Project Image'}
                   loading="lazy"
                   className={isChanging ? "changing" : ""}
                 />

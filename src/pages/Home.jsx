@@ -5,7 +5,6 @@ import OurProcess from '../components/Home/OurProcess';
 import OurServices from '../components/Home/OurServices';
 import WeServe from '../components/Home/WeServe';
 import FAQ from '../components/FAQ';
-// import Contact from '../components/Contact';
 import ComponentPackage from '../components/Home/packageComponent';
 import HeroSection from '../components/Home/HeroSection';
 import Certificates from '../components/Home/Certificates';
@@ -25,7 +24,6 @@ function Home() {
       <section><Certificates /></section>
       <section id="faq"><FAQ /></section>
       <section><LastSection /></section>
-      {/* <section id="contact"><Contact /></section> */}
     </main>
   );
 }

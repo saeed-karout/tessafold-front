@@ -1,37 +1,50 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ksaData from '../data/ksa.json';
-import "../styles/ksa.css"
+import "../styles/ksa.css";
 
-function Partners() {
-  const { i18n } = useTranslation();
-  const currentLang = i18n.language || 'en';
+function KSA() {
+  const {  i18n } = useTranslation();
+  const currentLang = i18n.language?.split('-')[0] || 'en';
+
+  // Log ksaData for debugging
+  useEffect(() => {
+    console.log('ksaData:', ksaData);
+    if (!ksaData?.ksa_section) {
+      console.error('Invalid ksaData:', ksaData);
+    }
+  }, []);
+
+  // Preload images
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/images/ksa/ksa.webp';
+  }, []);
 
   return (
     <section className='ksa-main' style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
       <div className="ksa-left">
-        <div className="bg-ksa" >
+        <div className="bg-ksa">
           <div className="text-ksa">
-            <span>{ksaData.ksa_section.left_text[currentLang]}</span>
+            <span>{ksaData.ksa_section?.left_text?.[currentLang] || 'Our Vision'}</span>
           </div>
         </div>
       </div>
-
       <div className="ksa-right">
         <div className="top-right">
           <img src="/images/ksa/ksa.webp" className='icon-ksa' alt="Saudi Vision 2030" />
           <div className="subtitle-ksa">
-            {ksaData.ksa_section.title[currentLang]}  
-            <span>{ksaData.ksa_section.aligns_with[currentLang]}</span>
-            <p>{ksaData.ksa_section.vision_2030[currentLang]}</p>
+            {ksaData.ksa_section?.title?.[currentLang] || 'Vision Alignment'}
+            <span>{ksaData.ksa_section?.aligns_with?.[currentLang] || 'Aligned with'}</span>
+            <p>{ksaData.ksa_section?.vision_2030?.[currentLang] || 'Saudi Vision 2030'}</p>
           </div>
         </div>
-
         <div className="bottom-right">
-          {ksaData.ksa_section.items.map((item, index) => (
-            <div key={item.id} className="item-ksa">
+          {(ksaData.ksa_section?.items || []).map((item, index) => (
+            <div key={item.id || index} className="item-ksa">
               <div className="number">{index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`}</div>
               <div className="text">
-                <span>{item.text[currentLang]}</span>
+                <span>{item.text?.[currentLang] || 'Item'}</span>
               </div>
             </div>
           ))}
@@ -41,4 +54,4 @@ function Partners() {
   );
 }
 
-export default Partners;
+export default KSA;

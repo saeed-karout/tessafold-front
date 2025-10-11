@@ -1,0 +1,24 @@
+{
+  "package": {
+    "title_part1": {
+      "en": "We’ve Got You a",
+      "ar": "لدينا لك",
+      "de": "Wir haben für Sie ein"
+    },
+    "title_part2": {
+      "en": "Full Package",
+      "ar": "باقة متكاملة",
+      "de": "Vollständiges Paket"
+    },
+    "subtitle": {
+      "en": "Some of the technologies we work with.",
+      "ar": "بعض التقنيات التي نعمل بها.",
+      "de": "Einige der Technologien, mit denen wir arbeiten."
+    },
+    "button": {
+      "en": "Connect With Us Today!",
+      "ar": "تواصل معنا اليوم!",
+      "de": "Kontaktieren Sie uns noch heute!"
+    }
+  }
+}
