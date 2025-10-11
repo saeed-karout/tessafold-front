@@ -60,11 +60,8 @@ function About() {
         <img
           src="/arrow-left.svg"
           className="arrow-left"
-          width={40}
-          height={40}
           alt={t('about.arrowAlt') || 'Previous Member'}
           onClick={handlePrev}
-          style={{ cursor: 'pointer' }}
         />
         <div
           className={`content-about ${animationClass}`}
@@ -75,9 +72,7 @@ function About() {
           <iframe
             key={currentMember.id || currentIndex}
             src={currentMember.video || ''}
-            width="926"
-            height="404"
-            style={{ borderRadius: '8px', border: 'none' }}
+            className="team-video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title={t('about.videoTitle', { name: currentMember.name?.[currentLang] || 'Team Member' })}
@@ -95,11 +90,8 @@ function About() {
         <img
           src="/arrow-left.svg"
           className="arrow-right"
-          width={40}
-          height={40}
           alt={t('about.arrowAlt') || 'Next Member'}
           onClick={handleNext}
-          style={{ cursor: 'pointer' }}
         />
       </div>
     </section>

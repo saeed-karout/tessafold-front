@@ -9,8 +9,16 @@ function Projects() {
   const [activeProjectId, setActiveProjectId] = useState(projectsData[0]?.id || 1);
   const [isChanging, setIsChanging] = useState(false);
   const [visibleProjects, setVisibleProjects] = useState([]);
-  const [, setStartIndex] = useState(0);
+  const [startIndex, setStartIndex] = useState(0);
   const topBarRef = useRef(null);
+
+  // Determine VISIBLE_COUNT based on screen width
+  const getVisibleCount = () => {
+    if (window.innerWidth <= 480) return 3; // Mobile (small)
+    if (window.innerWidth <= 768) return 5; // Mobile (medium) / Tablet
+    if (window.innerWidth <= 1024) return 7; // Tablet / Small desktop
+    return 11; // Desktop
+  };
 
   // Log projectsData for debugging
   useEffect(() => {
@@ -40,7 +48,7 @@ function Projects() {
     const activeIndex = projectsData.findIndex((p) => p.id === activeProjectId);
     if (activeIndex === -1) return;
 
-    const VISIBLE_COUNT = 11;
+    const VISIBLE_COUNT = getVisibleCount();
     let newStartIndex = activeIndex - Math.floor(VISIBLE_COUNT / 2);
 
     if (newStartIndex < 0) {
@@ -60,8 +68,38 @@ function Projects() {
     setVisibleProjects(newVisibleProjects);
   }, [activeProjectId, projectsData]);
 
+  // Update visible projects on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleProjects((prev) => {
+        const VISIBLE_COUNT = getVisibleCount();
+        const activeIndex = projectsData.findIndex((p) => p.id === activeProjectId);
+        if (activeIndex === -1) return prev;
+
+        let newStartIndex = activeIndex - Math.floor(VISIBLE_COUNT / 2);
+        if (newStartIndex < 0) {
+          newStartIndex = projectsData.length + newStartIndex;
+        } else if (newStartIndex >= projectsData.length) {
+          newStartIndex = newStartIndex % projectsData.length;
+        }
+
+        const newVisibleProjects = [];
+        for (let i = 0; i < VISIBLE_COUNT; i++) {
+          const circularIndex = (newStartIndex + i) % projectsData.length;
+          newVisibleProjects.push(projectsData[circularIndex]);
+        }
+
+        return newVisibleProjects;
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [activeProjectId, projectsData]);
+
   const isEdgeProject = (index) => {
-    return index < 2 || index > 8;
+    const VISIBLE_COUNT = getVisibleCount();
+    return index < 1 || index >= VISIBLE_COUNT - 1;
   };
 
   const goToNextProject = () => {
@@ -140,13 +178,13 @@ function Projects() {
               <a href={activeProject.webLink || '#'} target="_blank" rel="noopener noreferrer">
                 <div className="web-link">
                   {t("visit_website") || 'Visit Website'}
-                  <img src="/arrow-left.svg" style={{ width: "24px" }} alt="Arrow icon" />
+                  <img src="/arrow-left.svg" alt="Arrow icon" />
                 </div>
               </a>
               <a href={activeProject.appDownloadLink || '#'} target="_blank" rel="noopener noreferrer">
                 <div className="web-link">
                   {t("download_app") || 'Download App'}
-                  <img src="/arrow-left.svg" style={{ width: "24px" }} alt="Arrow icon" />
+                  <img src="/arrow-left.svg" alt="Arrow icon" />
                 </div>
               </a>
             </div>

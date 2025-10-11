@@ -348,23 +348,24 @@
 
     /* تعديل مواقع العناصر للشاشات الصغيرة */
     .tech-icon-frame {
-        width: 60px;
-        height: 60px;
-    }
-
-    .tech-icon-frame img {
         width: 50px;
         height: 50px;
     }
 
-    .tech-pos-1 { left: 20px; top: 20px; }
-    .tech-pos-2 { left: 10px; top: 100px; }
-    .tech-pos-3 { left: 80px; bottom: 100px; }
-    .tech-pos-4 { left: 10px; bottom: 30px; }
-    .tech-pos-5 { left: 100px; bottom: 30px; }
-    .tech-pos-6 { right: 20px; top: 20px; }
-    .tech-pos-7 { right: 10px; top: 100px; }
-    .tech-pos-8 { right: 80px; bottom: 100px; }
-    .tech-pos-9 { right: 100px; bottom: 30px; }
-    .tech-pos-10 { right: 10px; bottom: 30px; }
+    .tech-icon-frame img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-pos-1 { left: 30px; top: 35px; }
+    .tech-pos-2 { left: 121px; top: 80px; }
+    .tech-pos-3 { right: 0px; top: 8px; }
+    .tech-pos-4 { left: 80px; bottom: 13px; }
+    .tech-pos-5 { left: 310px; top: 65px; } 
+    .tech-pos-6 { left: 15px; top: 250px; }
+    .tech-pos-7 { right: 7px; top: 22px; }
+    .tech-pos-8 { right: 194px; bottom: 40px; }
+    .tech-pos-9 { right: 80px; bottom: 10px; }
+    .tech-pos-10 { right: 10px; bottom: 120px; }
 }
+

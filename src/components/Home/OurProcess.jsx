@@ -38,7 +38,7 @@ function OurProcess() {
           </div>
           <div className="right">
             <span>{t('our_process.view_full_process') || 'View Full Process'}</span>
-            <img src="/arrow-left.svg" width={24} alt={t('our_process.arrow_alt') || 'Arrow'} />
+            <img src="/arrow-left.svg" className="arrow-icon" alt={t('our_process.arrow_alt') || 'Arrow'} />
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ function OurProcess() {
         <div className="group">
           <div className="line"></div>
           <div className="parent">
-            {(processData.steps || []).map((step) => (
+            {(processData.steps || []).map((step, index) => (
               <div key={step.id || Math.random()} className="frame-data">
                 <div className="icon">
                   <img
@@ -56,7 +56,7 @@ function OurProcess() {
                     alt={t('our_process.step_icon_alt', { name: step.name?.[currentLang] || 'Step' })}
                   />
                 </div>
-                <div className="name">{step.name?.[currentLang] || 'Untitled Step'}</div>
+                <div className="name">{`${index + 1}. ${step.name?.[currentLang] || 'Untitled Step'}`}</div>
               </div>
             ))}
           </div>

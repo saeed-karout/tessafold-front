@@ -1,11 +1,26 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import weServeData from '../../data/we-serve.json';
 import "../../styles/weServe.css";
 
 function WeServe() {
-  const {  i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const currentLang = i18n.language?.split('-')[0] || 'en';
+  const [isMobile, setIsMobile] = useState(false);
+
+  // كشف حجم الشاشة
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
 
   // Log weServeData for debugging
   useEffect(() => {
@@ -38,14 +53,18 @@ function WeServe() {
         {(weServeData.we_serve?.cards || []).map((card, index) => (
           <div
             key={card.id || index}
-            className={`card-serve ${index % 2 === 0 ? 'with-bg' : 'without-bg'}`}
+            className={`card-serve ${index % 2 === 0 ? 'with-bg' : 'without-bg'} ${isMobile ? 'mobile' : ''}`}
           >
-            <img src={card.icon || '/placeholder.png'} alt={card.topic?.[currentLang] || 'Service'} />
-            <div className="topic-serve">
-              {card.topic?.[currentLang] || 'Untitled Service'}
-            </div>
-            <div className="description-serve">
-              {card.description?.[currentLang] || 'No description available'}
+            <div className="card-content">
+              <img src={card.icon || '/placeholder.png'} alt={card.topic?.[currentLang] || 'Service'} />
+              <div className="topic-serve">
+                {card.topic?.[currentLang] || 'Untitled Service'}
+              </div>
+              {!isMobile && (
+                <div className="description-serve">
+                  {card.description?.[currentLang] || 'No description available'}
+                </div>
+              )}
             </div>
           </div>
         ))}

@@ -5,13 +5,13 @@ import Typed from 'typed.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import partnersData from '../../data/partners.json';
+import partnersData from '../../data/partners.json'; // Updated import path
 import '../../styles/Hero.css';
 
 function HeroSection() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const currentLang = i18n.language?.split('-')[0] || 'en'; // Normalize language code
+  const currentLang = i18n.language?.split('-')[0] || 'en';
 
   // Preload partner images
   useEffect(() => {
@@ -25,9 +25,9 @@ function HeroSection() {
   useEffect(() => {
     const options = {
       strings: [
-        t('hero.animatedText.ai') || 'AI Development', // Fallback
-        t('hero.animatedText.ml') || 'Machine Learning', // Fallback
-        t('hero.animatedText.software') || 'Software Development', // Fallback
+        t('hero.animatedText.ai') || 'AI Development',
+        t('hero.animatedText.ml') || 'Machine Learning',
+        t('hero.animatedText.software') || 'Software Development',
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -76,6 +76,24 @@ function HeroSection() {
           }}
           loop={true}
           className="partners-swiper"
+          breakpoints={{
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+            1024: {
+              slidesPerView: 7,
+              spaceBetween: 104,
+            },
+          }}
         >
           {(partnersData || []).map((partner) => (
             <SwiperSlide key={partner.id || Math.random()}>

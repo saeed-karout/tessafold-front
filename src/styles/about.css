@@ -1,11 +1,11 @@
 .main-about {
   display: flex;
-  padding: 64px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
-  align-self: stretch;
+  gap: 3rem; /* 48px */
+  padding: 4rem 1rem; /* Reduced from 64px 0 */
+  width: 100%;
 }
 
 .title-about {
@@ -13,61 +13,65 @@
   align-items: flex-start;
   color: var(--Black-black-1, #FFF);
   font-family: Poppins, sans-serif;
-  font-size: 32px;
-  font-style: normal;
+  font-size: 2rem; /* 32px */
   font-weight: 600;
-  line-height: 160%; /* 51.2px */
+  line-height: 1.6; /* 160% */
 }
 
 .title-about span {
   color: var(--Yellow-yellow-500, #FFB130);
   font-family: Poppins, sans-serif;
-  font-size: 32px;
-  font-style: normal;
+  font-size: 2rem; /* 32px */
   font-weight: 600;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .frame-about {
   display: flex;
-  padding: 0 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 96px;
-  align-self: stretch;
+  gap: 6rem; /* 96px */
+  width: 100%;
   position: relative;
+  padding: 0 5rem; /* Reduced from 0 80px */
 }
 
 .frame-about .content-about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem; /* 24px */
+  width: 100%;
 }
 
 .arrow-left {
   position: absolute;
-  left: 169px;
-  top: 184px;
-  rotate: 180deg;
+  left: 10.5625rem; /* 169px */
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
   cursor: pointer;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
 }
 
 .arrow-right {
   position: absolute;
-  right: 169px;
-  top: 184px;
+  right: 10.5625rem; /* 169px */
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
 }
 
-iframe {
+.team-video {
   display: flex;
-  width: 926px;
-  height: 404px;
-  align-items: center;
-  gap: 8px;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 57.875rem; /* 926px */
+  height: auto;
+  aspect-ratio: 16 / 7; /* Maintain proportion (926/404 ≈ 2.29) */
+  border-radius: 0.5rem; /* 8px */
   border: none;
 }
 
@@ -76,35 +80,32 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
+  gap: 0.5rem; /* 8px */
+  width: 100%;
 }
 
 .name {
   color: var(--Black-black-6, #C6C7C7);
   font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1rem; /* 16px */
   font-weight: 300;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .name span {
   color: var(--Black-black-2, #FDFDFD);
   font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1rem; /* 16px */
   font-weight: 600;
-  line-height: 160%; /* 25.6px */
+  line-height: 1.6;
 }
 
 .technology {
   color: var(--Black-black-6, #C6C7C7);
   font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1rem; /* 16px */
   font-weight: 400;
-  line-height: 160%; /* 25.6px */
+  line-height: 1.6;
 }
 
 /* Animation styles */
@@ -116,6 +117,7 @@ iframe {
   animation: slideIn 0.2s ease-in-out forwards;
 }
 
+/* Use a directional slide variable --slide-x (set to -0.9375rem for left, 0.9375rem for right) */
 @keyframes slideOut {
   from {
     opacity: 1;
@@ -123,7 +125,7 @@ iframe {
   }
   to {
     opacity: 0;
-    transform: translateX(calc(var(--slide-direction) == 'left' ? -15px : 15px));
+    transform: translateX(var(--slide-x, 0.9375rem)); /* 15px; set --slide-x: -0.9375rem for left */
     visibility: hidden;
   }
 }
@@ -131,7 +133,7 @@ iframe {
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(calc(var(--slide-direction) == 'left' ? -15px : 15px));
+    transform: translateX(var(--slide-x, 0.9375rem)); /* 15px; set --slide-x: -0.9375rem for left */
     visibility: hidden;
   }
   to {
@@ -141,4 +143,107 @@ iframe {
   }
 }
 
-/* RTL adjustments */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-about {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .frame-about {
+    padding: 0 3rem;
+    gap: 4rem;
+  }
+
+  .arrow-left {
+    left: 2rem;
+  }
+
+  .arrow-right {
+    right: 2rem;
+  }
+
+  .team-video {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-about {
+    padding: 2rem 0.75rem;
+    gap: 1.5rem;
+  }
+
+  .title-about, .title-about span {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .frame-about {
+    padding: 0 1.5rem;
+    gap: 3rem;
+  }
+
+  .arrow-left {
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .arrow-right {
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .team-video {
+    max-width: 100%;
+  }
+
+  .name, .name span, .technology {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-about {
+    padding: 1.5rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .title-about, .title-about span {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .frame-about {
+    padding: 0 0.75rem;
+    gap: 2rem;
+  }
+
+  .arrow-left {
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .arrow-right {
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .name, .name span, .technology {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  @keyframes slideOut {
+    to {
+      transform: translateX(var(--slide-x, 0.625rem)); /* 10px; set --slide-x to -0.625rem for left */
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(var(--slide-x, 0.625rem)); /* 10px; set --slide-x to -0.625rem for left */
+    }
+  }
+}

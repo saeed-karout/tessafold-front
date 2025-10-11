@@ -55,6 +55,7 @@
     transform: translateY(-50%);
     animation: slideInRight 1s ease-out;
     z-index: 2;
+    transition: all 0.3s ease;
 }
 
 @keyframes slideInRight {
@@ -170,10 +171,19 @@
     border-radius: 8px;
     transition: all 0.3s ease;
     animation: slideInItem 0.8s ease-out both;
+    cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .bottom-right .item-ksa:hover {
     background: rgba(13, 92, 99, 0.1);
+    transform: translateX(10px);
+    border-color: var(--OilMain-oilmain-4, #7FA6A9);
+}
+
+.bottom-right .item-ksa.active {
+    background: rgba(255, 177, 48, 0.1);
+    border-color: var(--Yellow, #FFB130);
     transform: translateX(10px);
 }
 
@@ -208,7 +218,8 @@
     transition: all 0.3s ease;
 }
 
-.bottom-right .item-ksa:hover .number {
+.bottom-right .item-ksa:hover .number,
+.bottom-right .item-ksa.active .number {
     color: var(--Yellow, #FFB130);
     transform: scale(1.1);
 }
@@ -231,7 +242,8 @@
     transition: all 0.3s ease;
 }
 
-.bottom-right .item-ksa:hover .text span {
+.bottom-right .item-ksa:hover .text span,
+.bottom-right .item-ksa.active .text span {
     color: var(--Black-black-1, #FFF);
 }
 
@@ -259,7 +271,8 @@
     }
 }
 
-/* تحسينات للاستجابة */
+/* ========== MEDIA QUERIES ========== */
+
 @media (max-width: 1200px) {
     .ksa-main {
         flex-direction: column;
@@ -310,6 +323,17 @@
         height: 400px;
     }
     
+    .ksa-left .text-ksa {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .ksa-left .text-ksa span {
+        font-size: 14px;
+        line-height: 150%;
+    }
+    
     .subtitle-ksa {
         font-size: 24px;
         flex-direction: column;
@@ -319,5 +343,68 @@
     .subtitle-ksa span,
     .subtitle-ksa p {
         font-size: 24px;
+    }
+    
+    .item-ksa {
+        padding: 14px 12px;
+    }
+    
+    .item-ksa .number {
+        font-size: 20px;
+        min-width: 40px;
+    }
+    
+    .item-ksa .text span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ksa-main {
+        padding: 32px 16px;
+        gap: 32px;
+    }
+    
+    .ksa-left .bg-ksa {
+        width: 280px;
+        height: 350px;
+    }
+    
+    .ksa-left .text-ksa {
+        padding: 16px;
+    }
+    
+    .ksa-left .text-ksa span {
+        font-size: 13px;
+    }
+    
+    .subtitle-ksa {
+        font-size: 20px;
+    }
+    
+    .subtitle-ksa span,
+    .subtitle-ksa p {
+        font-size: 20px;
+    }
+    
+    .top-right .icon-ksa {
+        width: 100px;
+        height: 70px;
+    }
+    
+    .bottom-right {
+        gap: 16px;
+    }
+    
+    .item-ksa {
+        padding: 12px 10px;
+    }
+    
+    .item-ksa .number {
+        font-size: 18px;
+    }
+    
+    .item-ksa .text span {
+        font-size: 13px;
     }
 }
