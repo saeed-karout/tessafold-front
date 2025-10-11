@@ -10,28 +10,39 @@ function ContactPage() {
   const currentLang = i18n.language || 'en';
   const navigate = useNavigate();
 
-  // Initialize formData with services from localStorage if available
-const [formData, setFormData] = useState({
-  email: '',
-  companyName: '',
-  message: '',
-  services: (() => {
-    try {
-      const stored = localStorage.getItem('selectedServices');
-      return stored ? JSON.parse(stored) : [];
-    } catch (e) {
-      console.warn('Invalid localStorage data, resetting services:', e);
-      localStorage.removeItem('selectedServices');
-      return [];
-    }
-  })() // IIFE للتهيئة الفورية
-});
+  // Initialize formData with safe parsing of localStorage
+  const [formData, setFormData] = useState({
+    email: '',
+    companyName: '',
+    message: '',
+    services: (() => {
+      try {
+        const stored = localStorage.getItem('selectedServices');
+        return stored && JSON.parse(stored) ? JSON.parse(stored) : [];
+      } catch (e) {
+        console.warn('Failed to parse selectedServices from localStorage:', e);
+        return [];
+      }
+    })(),
+  });
   const [formStatus, setFormStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Load services from localStorage on mount and update on services change
+  // Log servicesData to verify it loads correctly
   useEffect(() => {
-    localStorage.setItem('selectedServices', JSON.stringify(formData.services));
+    console.log('servicesData:', servicesData);
+    if (!servicesData || !Array.isArray(servicesData)) {
+      console.error('servicesData is not an array or undefined:', servicesData);
+    }
+  }, []);
+
+  // Update localStorage when services change
+  useEffect(() => {
+    try {
+      localStorage.setItem('selectedServices', JSON.stringify(formData.services));
+    } catch (e) {
+      console.warn('Failed to save selectedServices to localStorage:', e);
+    }
   }, [formData.services]);
 
   // Preload images to avoid flickering
@@ -61,48 +72,65 @@ const [formData, setFormData] = useState({
       formData.email.trim() &&
       formData.companyName.trim() &&
       formData.message.trim() &&
+      Array.isArray(formData.services) &&
       formData.services.length > 0
     );
   };
 
- const handleSubmit = async (e) => {
-  e.preventDefault();
-  if (!isFormValid()) return;
-
-  setIsSubmitting(true);
-  try {
-    // فحص إضافي للأمان
-    if (!servicesData || !Array.isArray(formData.services)) {
-      console.error('Invalid services data:', { servicesData, formDataServices: formData.services });
-      setFormStatus('error');
-      setIsSubmitting(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!isFormValid()) {
+      console.warn('Form is invalid:', formData);
       return;
     }
 
-    const response = await axios.post('https://formspree.io/f/meorowdq', {
-      email: formData.email,
-      companyName: formData.companyName,
-      message: formData.message,
-      services: formData.services
-        .map((id) => servicesData.find((s) => s.id.toString() === id)?.title?.[currentLang] ?? 'Unknown Service') // استخدم optional chaining
-        .filter(Boolean) // إزالة القيم الفارغة
-        .join(', ') // الآن آمن لأنها مصفوفة صالحة
-    });
-    if (response.status === 200) {
-      setFormStatus('success');
-      setFormData({ email: '', companyName: '', message: '', services: [] });
-      localStorage.removeItem('selectedServices');
+    setIsSubmitting(true);
+    try {
+      // Defensive check for servicesData and formData.services
+      if (!Array.isArray(servicesData)) {
+        throw new Error('servicesData is not an array');
+      }
+      if (!Array.isArray(formData.services)) {
+        throw new Error('formData.services is not an array');
+      }
+
+      const serviceTitles = formData.services
+        .map((id) => {
+          const service = servicesData.find((s) => s.id.toString() === id);
+          return service?.title?.[currentLang] ?? 'Unknown Service';
+        })
+        .filter(Boolean);
+
+      console.log('Submitting form with data:', {
+        email: formData.email,
+        companyName: formData.companyName,
+        message: formData.message,
+        services: serviceTitles,
+      });
+
+      const response = await axios.post('https://formspree.io/f/meorowdq', {
+        email: formData.email,
+        companyName: formData.companyName,
+        message: formData.message,
+        services: serviceTitles.join(', '), // Safe join after filtering
+      });
+
+      if (response.status === 200) {
+        setFormStatus('success');
+        setFormData({ email: '', companyName: '', message: '', services: [] });
+        localStorage.removeItem('selectedServices');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setFormStatus('error');
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    setFormStatus('error');
-    console.error('Form submission error:', error);
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+  };
+
   return (
+
     <>
-    
     <div className="content">
       <div className="frame1">
         <div className="top" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
@@ -168,27 +196,28 @@ const [formData, setFormData] = useState({
                   {t('contact.servicesLabel')} <span>*</span>
                 </div>
                 <div className="list">
-                  {servicesData.map((service) => (
-                    <div
-                      key={service.id}
-                      className={`check-item ${formData.services.includes(service.id.toString()) ? 'active' : ''}`}
-                      onClick={() => {
-                        const input = document.getElementById(`service-${service.id}`);
-                        if (input) input.click();
-                      }}
-                    >
-                      <input
-                        type="checkbox"
-                        id={`service-${service.id}`}
-                        name="services"
-                        value={service.id}
-                        checked={formData.services.includes(service.id.toString())}
-                        onChange={handleChange}
-                        style={{ display: 'none' }}
-                      />
-                      <span>{service.title[currentLang]}</span>
-                    </div>
-                  ))}
+                  {Array.isArray(servicesData) &&
+                    servicesData.map((service) => (
+                      <div
+                        key={service.id}
+                        className={`check-item ${formData.services.includes(service.id.toString()) ? 'active' : ''}`}
+                        onClick={() => {
+                          const input = document.getElementById(`service-${service.id}`);
+                          if (input) input.click();
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          id={`service-${service.id}`}
+                          name="services"
+                          value={service.id}
+                          checked={formData.services.includes(service.id.toString())}
+                          onChange={handleChange}
+                          style={{ display: 'none' }}
+                        />
+                        <span>{service.title?.[currentLang] ?? 'Unknown Service'}</span>
+                      </div>
+                    ))}
                 </div>
               </div>
 
