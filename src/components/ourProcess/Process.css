@@ -390,7 +390,7 @@
 }
 
 .page-process-faq-item.active .page-process-faq-icon {
-    background: var(--secondary);
+    background: var(--primary);
     transform: scale(1.05);
 }
 
@@ -447,8 +447,8 @@
 }
 
 .page-process-faq-item.active .page-process-faq-arrow {
-    background: var(--Yellow, #FFB130);
-    transform: rotate(180deg);
+    /* background: var(--Yellow, #FFB130); */
+    transform: rotate(90deg);
 }
 
 .page-process-arrow-icon {

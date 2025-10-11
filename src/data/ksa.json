@@ -32,7 +32,8 @@
           "en": "We develop AI-powered solutions for smart city infrastructure, including IoT integration, data analytics, and automated systems that enhance urban living and resource management.",
           "ar": "نطور حلولاً مدعومة بالذكاء الاصطناعي للبنية التحتية للمدن الذكية، بما في ذلك تكامل إنترنت الأشياء، وتحليل البيانات، والأنظمة الآلية التي تعزز العيش الحضري وإدارة الموارد.",
           "de": "Wir entwickeln KI-gestützte Lösungen für Smart-City-Infrastrukturen, einschließlich IoT-Integration, Datenanalyse und automatisierte Systeme, die das städtische Leben und Ressourcenmanagement verbessern."
-        }
+        },
+        "image": "/images/ksa/smart-cities.webp"
       },
       {
         "id": 2,
@@ -45,7 +46,8 @@
           "en": "Our digital transformation services empower private businesses with cutting-edge technology solutions, boosting productivity and competitiveness in the global market.",
           "ar": "تمكن خدمات التحول الرقمي الخاصة بنا الشركات الخاصة بحلول تكنولوجية متطورة، مما يعزز الإنتاجية والقدرة التنافسية في السوق العالمية.",
           "de": "Unsere Digitalisierungsservices befähigen Privatunternehmen mit modernsten Technologielösungen, steigern die Produktivität und Wettbewerbsfähigkeit auf dem globalen Markt."
-        }
+        },
+        "image": "/images/ksa/private-sector.webp"
       },
       {
         "id": 3,
@@ -58,7 +60,8 @@
           "en": "We create innovative business platforms that foster competition, innovation, and growth, aligning with Saudi Arabia's vision for a dynamic economic landscape.",
           "ar": "ننشئ منصات أعمال مبتكرة تعزز المنافسة والابتكار والنمو، متوافقة مع رؤية المملكة العربية السعودية لمشهد اقتصادي ديناميكي.",
           "de": "Wir schaffen innovative Geschäftsplattformen, die Wettbewerb, Innovation und Wachstum fördern und sich an die Vision Saudi-Arabiens für eine dynamische Wirtschaftslandschaft anpassen."
-        }
+        },
+        "image": "/images/ksa/business-environment.webp"
       },
       {
         "id": 4,
@@ -71,7 +74,8 @@
           "en": "Our comprehensive digital solutions help organizations transition to modern, efficient operations through cloud computing, automation, and digital workflow optimization.",
           "ar": "تساعد حلولنا الرقمية الشاملة المنظمات في الانتقال إلى عمليات حديثة وفعالة من خلال الحوسبة السحابية والأتمتة وتحسين سير العمل الرقمي.",
           "de": "Unsere umfassenden digitalen Lösungen helfen Organisationen bei der Umstellung auf moderne, effiziente Betriebe durch Cloud Computing, Automatisierung und digitale Workflow-Optimierung."
-        }
+        },
+        "image": "/images/ksa/digital-transformation.webp"
       },
       {
         "id": 5,
@@ -84,7 +88,8 @@
           "en": "We invest in local talent development through training programs and innovation hubs, creating opportunities for Saudi professionals in the technology sector.",
           "ar": "نستثمر في تطوير المواهب المحلية من خلال برامج التدريب ومراكز الابتكار، مما يخلق فرصًا للمحترفين السعوديين في قطاع التكنولوجيا.",
           "de": "Wir investieren in die Entwicklung lokaler Talente durch Schulungsprogramme und Innovationszentren und schaffen Möglichkeiten für saudi-arabische Fachkräfte im Technologiesektor."
-        }
+        },
+        "image": "/images/ksa/talent-innovation.webp"
       },
       {
         "id": 6,
@@ -97,7 +102,8 @@
           "en": "We build robust e-commerce platforms and digital payment systems that drive the growth of online businesses and contribute to Saudi Arabia's digital economy.",
           "ar": "نبني منصات تجارة إلكترونية قوية وأنظمة دفع رقمية تدفع نمو الأعمال عبر الإنترنت وتساهم في الاقتصاد الرقمي للمملكة العربية السعودية.",
           "de": "Wir bauen robuste E-Commerce-Plattformen und digitale Zahlungssysteme, die das Wachstum von Online-Unternehmen vorantreiben und zur digitalen Wirtschaft Saudi-Arabiens beitragen."
-        }
+        },
+        "image": "/images/ksa/ecommerce.webp"
       },
       {
         "id": 7,
@@ -110,7 +116,8 @@
           "en": "Our fintech solutions include secure payment gateways, digital banking integrations, and financial management tools that comply with SAMA regulations.",
           "ar": "تشمل حلولنا في التكنولوجيا المالية بوابات الدفع الآمنة، وتكاملات البنوك الرقمية، وأدوات إدارة المالية التي تتوافق مع لوائح ساما.",
           "de": "Unsere Fintech-Lösungen umfassen sichere Zahlungsgateways, digitale Bankintegrationen und Finanzmanagement-Tools, die den SAMA-Vorschriften entsprechen."
-        }
+        },
+        "image": "/images/ksa/fintech.webp"
       }
     ]
   }
