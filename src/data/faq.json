@@ -2,105 +2,105 @@
   {
     "id": 1,
     "question": {
-      "ar": "ما هي عمليتكم؟",
-      "en": "What is your process?",
-      "de": "Was ist Ihr Prozess?"
+      "ar": "ما هي الخدمات التي تقدمها تيسافولد؟",
+      "en": "What services does Tessafold offer?",
+      "de": "Welche Dienstleistungen bietet Tessafold an?"
     },
     "answer": {
-      "ar": "نتبع عملية منظمة تشمل التخطيط والتطوير والاختبار. نبدأ بفهم احتياجاتك، ثم ننتقل إلى التصميم، والتطوير، والاختبار الشامل، وأخيرًا النشر والدعم.",
-      "en": "We follow a structured process including planning, development, and testing. We start by understanding your needs, then move to design, development, comprehensive testing, and finally deployment and support.",
-      "de": "Wir folgen einem strukturierten Prozess, der Planung, Entwicklung und Tests umfasst. Wir beginnen mit dem Verständnis Ihrer Bedürfnisse, gehen dann zu Design, Entwicklung, umfassenden Tests und schließlich Bereitstellung und Support über."
+      "ar": "تقدم تيسافولد حلولاً رقمية متكاملة تشمل تطوير تطبيقات الويب والجوال، وتصميم واجهات وتجارب المستخدم، وبناء البنية السحابية باستخدام AWS وAzure، وحلول الذكاء الاصطناعي والبيانات، وإدارة دورة حياة المشروع من الاستراتيجية إلى ما بعد الإطلاق.",
+      "en": "Tessafold provides end-to-end digital solutions, including mobile and web app development, UX/UI design, cloud architecture (AWS & Azure), AI and data-driven solutions, and full project lifecycle management — from strategy to post-launch support.",
+      "de": "Tessafold bietet umfassende digitale Lösungen an, darunter Mobile- und Web-App-Entwicklung, UX/UI-Design, Cloud-Architektur (AWS & Azure), KI- und datengesteuerte Lösungen sowie vollständiges Projektmanagement – von der Strategie bis zur Unterstützung nach dem Launch."
     }
   },
   {
     "id": 2,
     "question": {
-      "ar": "كم من الوقت يستغرق تطوير مشروع؟",
-      "en": "How long does it take to develop a project?",
-      "de": "Wie lange dauert es, ein Projekt zu entwickeln?"
+      "ar": "ما هي القطاعات التي تتخصص فيها تيسافولد؟",
+      "en": "What industries does Tessafold specialize in?",
+      "de": "In welchen Branchen ist Tessafold spezialisiert?"
     },
     "answer": {
-      "ar": "يعتمد ذلك على تعقيد المشروع، ولكننا نقدم تقديرات واضحة. المشاريع الصغيرة تستغرق من 2-4 أسابيع، والمتوسطة من 4-12 أسبوعًا، والكبيرة من 3-6 أشهر.",
-      "en": "It depends on the project complexity, but we provide clear estimates. Small projects take 2-4 weeks, medium projects 4-12 weeks, and large projects 3-6 months.",
-      "de": "Es hängt von der Komplexität des Projekts ab, aber wir liefern klare Schätzungen. Kleine Projekte dauern 2-4 Wochen, mittlere Projekte 4-12 Wochen und große Projekte 3-6 Monate."
+      "ar": "نخدم عملاء من قطاعات متنوعة مثل التقنية المالية، والتجارة الإلكترونية، والرعاية الصحية، والذكاء الاصطناعي، والأتمتة المؤسسية. خبرتنا متعددة القطاعات تمكننا من تصميم منتجات رقمية قابلة للتوسع وآمنة وعالية الأداء تلبي أهداف عملائنا.",
+      "en": "We serve clients across diverse sectors such as fintech, e-commerce, healthtech, AI, and enterprise automation. Our cross-industry experience allows us to design scalable, secure, and high-performance digital products tailored to business goals.",
+      "de": "Wir betreuen Kunden aus verschiedenen Branchen wie Fintech, E-Commerce, Healthtech, KI und Unternehmensautomatisierung. Unsere branchenübergreifende Erfahrung ermöglicht es uns, skalierbare, sichere und leistungsstarke digitale Produkte zu entwickeln, die auf Ihre Geschäftsziele zugeschnitten sind."
     }
   },
   {
     "id": 3,
     "question": {
-      "ar": "هل تقدمون خدمات الصيانة والدعم؟",
-      "en": "Do you offer maintenance and support services?",
-      "de": "Bieten Sie Wartungs- und Support-Dienstleistungen an?"
+      "ar": "أين تقع مكاتب تيسافولد؟",
+      "en": "Where is Tessafold located?",
+      "de": "Wo befindet sich Tessafold?"
     },
     "answer": {
-      "ar": "نعم، نقدم خطط صيانة شاملة تشمل التحديثات الأمنية، إصلاح الأخطاء، التحسينات، والدعم الفني المستمر لضمان استمرارية عمل تطبيقك بشكل مثالي.",
-      "en": "Yes, we offer comprehensive maintenance plans including security updates, bug fixes, enhancements, and ongoing technical support to ensure your application continues to perform optimally.",
-      "de": "Ja, wir bieten umfassende Wartungspläne an, einschließlich Sicherheitsupdates, Fehlerbehebungen, Verbesserungen und laufendem technischem Support, um sicherzustellen, dass Ihre Anwendung weiterhin optimal funktioniert."
+      "ar": "تعمل تيسافولد على مستوى عالمي وبشكل هجين أونلاين عن بعد ومن خلال مكاتبها في جدة ودبي وبوسطن وبرلين، مما يمكننا من الجمع بين الدقة الأوروبية وفهم السوق المحلي والإبداع العالمي.",
+      "en": "Tessafold operates globally with offices in Jeddah, Boston, Berlin, Dubai, and Jeddah, enabling us to combine European precision with Middle Eastern market understanding and U.S.-level innovation.",
+      "de": "Tessafold ist weltweit tätig und verfügt über Büros in Boston, San Francisco, Dubai und Dschidda. Dadurch können wir europäische Präzision mit einem tiefen Verständnis des Nahost-Marktes und US-amerikanischer Innovationskraft verbinden."
     }
   },
   {
     "id": 4,
     "question": {
-      "ar": "ما هي التقنيات التي تستخدمونها؟",
-      "en": "What technologies do you use?",
-      "de": "Welche Technologien verwenden Sie?"
+      "ar": "كيف تضمن تيسافولد الجودة والموثوقية في المشاريع؟",
+      "en": "How does Tessafold ensure quality and reliability in its projects?",
+      "de": "Wie stellt Tessafold Qualität und Zuverlässigkeit in Projekten sicher?"
     },
     "answer": {
-      "ar": "نستخدم أحدث التقنيات مثل React، Node.js، Python، Flutter، AWS، وغيرها. نختار التقنية المناسبة بناءً على متطلبات مشروعك لضمان أفضل النتائج.",
-      "en": "We use the latest technologies including React, Node.js, Python, Flutter, AWS, and more. We select the appropriate technology based on your project requirements to ensure the best results.",
-      "de": "Wir verwenden die neuesten Technologien wie React, Node.js, Python, Flutter, AWS und mehr. Wir wählen die geeignete Technologie basierend auf Ihren Projektanforderungen, um die besten Ergebnisse zu gewährleisten."
+      "ar": "نتبع ممارسات تطوير مرنة (Agile) مع اختبارات مستمرة ومراحل متعددة لضمان الجودة. يشرف على كل مشروع مديرو مشاريع ومهندسون معتمدون لضمان التسليم في الوقت المحدد وبأفضل أداء وأمان.",
+      "en": "We follow agile development practices, continuous testing, and multi-stage quality assurance. Every project is overseen by certified project managers and technical leads to guarantee on-time, secure, and performance-optimized delivery.",
+      "de": "Wir arbeiten nach agilen Entwicklungspraktiken mit kontinuierlichen Tests und mehrstufiger Qualitätssicherung. Jedes Projekt wird von zertifizierten Projektmanagern und technischen Leitern überwacht, um eine termingerechte, sichere und leistungsoptimierte Lieferung zu gewährleisten."
     }
   },
   {
     "id": 5,
     "question": {
-      "ar": "هل يمكنني رؤية أمثلة على مشاريعكم السابقة؟",
-      "en": "Can I see examples of your previous projects?",
-      "de": "Kann ich Beispiele Ihrer bisherigen Projekte sehen?"
+      "ar": "ما هي عملية التطوير في تيسافولد؟",
+      "en": "What is Tessafold’s development process?",
+      "de": "Wie sieht der Entwicklungsprozess bei Tessafold aus?"
     },
     "answer": {
-      "ar": "بالتأكيد! يمكنك الاطلاع على معرض أعمالنا الذي يحتوي على مشاريع متنوعة في مختلف القطاعات. كما يمكننا ترتيب جلسة لعرض تفصيلي لمشاريع مشابهة لاحتياجاتك.",
-      "en": "Absolutely! You can browse our portfolio containing diverse projects across various sectors. We can also arrange a session for a detailed presentation of projects similar to your needs.",
-      "de": "Absolut! Sie können unser Portfolio durchsuchen, das verschiedene Projekte aus verschiedenen Branchen enthält. Wir können auch eine Sitzung für eine detaillierte Präsentation von Projekten arrangieren, die Ihren Anforderungen ähneln."
+      "ar": "تعتمد عمليتنا على الوضوح والتعاون والمرونة. نبدأ بمرحلة استكشاف لفهم رؤيتك واحتياجاتك، ثم ننتقل إلى التصميم والنماذج الأولية. يتم التطوير عبر مراحل مرنة مع مراجعات منتظمة لضمان الشفافية وسهولة التعديل. بعد الإطلاق، نواصل التحسين والدعم والتطوير المستمر.",
+      "en": "Our process is structured around clarity, collaboration, and agility. We begin with a deep discovery phase to understand your vision and requirements, followed by design and prototyping. Development runs in agile sprints with regular progress reviews, ensuring transparency and adaptability. After launch, we continue with optimization, scaling, and long-term support.",
+      "de": "Unser Prozess basiert auf Klarheit, Zusammenarbeit und Agilität. Wir beginnen mit einer Entdeckungsphase, um Ihre Vision und Anforderungen zu verstehen, gefolgt von Design und Prototyping. Die Entwicklung erfolgt in agilen Sprints mit regelmäßigen Fortschrittsüberprüfungen, um Transparenz und Anpassungsfähigkeit zu gewährleisten. Nach dem Launch unterstützen wir Sie weiterhin bei Optimierung, Skalierung und langfristiger Wartung."
     }
   },
   {
     "id": 6,
     "question": {
-      "ar": "كيف تتعاملون مع أمان التطبيقات؟",
-      "en": "How do you handle application security?",
-      "de": "Wie handhaben Sie die Anwendungssicherheit?"
+      "ar": "هل تساعد تيسافولد الشركات الناشئة في بناء المنتجات الأولية (MVP)؟",
+      "en": "Can Tessafold help startups build their MVPs?",
+      "de": "Kann Tessafold Start-ups beim Aufbau ihres MVP unterstützen?"
     },
     "answer": {
-      "ar": "الأمان أولوية لدينا. نطبق أفضل ممارسات الأمان مثل تشفير البيانات، المصادقة المتعددة العوامل، اختبار الاختراق، ومراجعات الأمن الدورية لضمان حماية بياناتك وتطبيقك.",
-      "en": "Security is our priority. We implement best security practices including data encryption, multi-factor authentication, penetration testing, and regular security audits to ensure your data and application are protected.",
-      "de": "Sicherheit hat bei uns Priorität. Wir implementieren beste Sicherheitspraktiken einschließlich Datenverschlüsselung, Multi-Faktor-Authentifizierung, Penetrationstests und regelmäßigen Sicherheitsaudits, um Ihre Daten und Anwendung zu schützen."
+      "ar": "نعم، تقدم تيسافولد برنامج تطوير سريع للمنتج الأولي (MVP) يتم فيه تسليم منتج وظيفي قابل للعرض على المستثمرين خلال 100 يوم فقط، متكامل من حيث التصميم، الاستراتيجية، والتطوير الأساسي.",
+      "en": "Yes. Our Fast-Track MVP Program delivers a fully functional, investor-ready minimum viable product within 100 days, complete with strategy, UI/UX, and core development — helping startups test and scale quickly.",
+      "de": "Ja. Unser Fast-Track-MVP-Programm liefert innerhalb von 100 Tagen ein voll funktionsfähiges, investorenbereites Produkt, einschließlich Strategie, UI/UX und Kernentwicklung – damit Start-ups schnell testen und skalieren können."
     }
   },
   {
     "id": 7,
     "question": {
-      "ar": "ما هي تكلفة تطوير التطبيق؟",
-      "en": "What is the cost of app development?",
-      "de": "Was kostet die App-Entwicklung?"
+      "ar": "هل تقدم تيسافولد خدمات الدعم والصيانة طويلة الأمد؟",
+      "en": "Does Tessafold offer long-term support and maintenance?",
+      "de": "Bietet Tessafold langfristigen Support und Wartung an?"
     },
     "answer": {
-      "ar": "تختلف التكلفة حسب حجم المشروع وتعقيده. نقدم عروض أسعار شفافة بعد تحليل متطلباتك. نعمل مع ميزانيات مختلفة ونضمن تقديم أفضل قيمة مقابل استثمارك.",
-      "en": "Cost varies based on project size and complexity. We provide transparent quotes after analyzing your requirements. We work with different budgets and ensure you get the best value for your investment.",
-      "de": "Die Kosten variieren je nach Projektgröße und Komplexität. Wir bieten nach Analyse Ihrer Anforderungen transparente Angebote. Wir arbeiten mit verschiedenen Budgets und stellen sicher, dass Sie den besten Wert für Ihre Investition erhalten."
+      "ar": "بالتأكيد، نقدم خدمات دعم وصيانة مستمرة بعد الإطلاق تشمل المراقبة، والتحسينات، وتحديثات الأمان، لضمان أن يظل منتجك محدثًا وآمنًا ومتوافقًا مع تطور عملك.",
+      "en": "Absolutely. Beyond launch, we provide continuous support, monitoring, and enhancement services to ensure your product stays secure, updated, and aligned with business growth and market evolution.",
+      "de": "Selbstverständlich. Nach dem Launch bieten wir kontinuierlichen Support, Überwachung und Optimierungsdienste an, um sicherzustellen, dass Ihr Produkt sicher, aktuell und mit dem Wachstum Ihres Unternehmens im Einklang bleibt."
     }
   },
   {
     "id": 8,
     "question": {
-      "ar": "هل تقدمون خدمات التصميم أيضًا؟",
-      "en": "Do you also offer design services?",
-      "de": "Bieten Sie auch Design-Dienstleistungen an?"
+      "ar": "كيف يمكنني بدء العمل مع تيسافولد؟",
+      "en": "How can I start working with Tessafold?",
+      "de": "Wie kann ich mit Tessafold zusammenarbeiten?"
     },
     "answer": {
-      "ar": "نعم، لدينا فريق تصميم متخصص يقدم خدمات تصميم واجهات المستخدم وتجربة المستخدم لضمان أن تطبيقك ليس فقط وظيفيًا ولكن أيضًا جذاب وسهل الاستخدام.",
-      "en": "Yes, we have a dedicated design team that offers UI/UX design services to ensure your application is not only functional but also attractive and user-friendly.",
-      "de": "Ja, wir haben ein spezielles Designteam, das UI/UX-Design-Dienstleistungen anbietet, um sicherzustellen, dass Ihre Anwendung nicht nur funktional, sondern auch attraktiv und benutzerfreundlich ist."
+      "ar": "يمكنك التواصل معنا عبر نموذج الاتصال أو البريد الإلكتروني. نبدأ عادةً بجلسة استشارية مجانية لفهم أهدافك، يليها عرض يحتوي على المدة، والنطاق، والتكلفة المقترحة بناءً على احتياجات مشروعك.",
+      "en": "You can reach out via our contact form or email. We typically begin with a free consultation to understand your goals, followed by a proposal outlining timelines, scope, and pricing tailored to your project.",
+      "de": "Sie können uns über das Kontaktformular oder per E-Mail erreichen. In der Regel beginnen wir mit einer kostenlosen Beratung, um Ihre Ziele zu verstehen, gefolgt von einem Vorschlag mit Zeitrahmen, Umfang und Preisgestaltung, die auf Ihr Projekt zugeschnitten sind."
     }
   }
 ]
