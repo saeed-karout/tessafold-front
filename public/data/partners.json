@@ -6,8 +6,8 @@
   },
   {
     "id": 2,
-    "name": "Partner 2",
-    "image": "/partners/partner2.png"
+    "name": "Edfapay",
+    "image": "/partners/Edfpapay.svg"
   },
   {
     "id": 3,
@@ -72,12 +72,12 @@
   },
   {
     "id": 15,
-    "name": "Partner 3",
-    "image": "/partners/partner7.png"
+    "name": "Nimbus",
+    "image": "/partners/Nimbus.png"
   },
   {
     "id": 16,
-    "name": "Partner 4",
-    "image": "/partners/partner8.png"
+    "name": "Indivi",
+    "image": "/partners/Indivi.png"
   }
 ]
