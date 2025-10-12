@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Partner 1",
-    "image": "/partners/partner1.png"
+    "name": "Jadarah",
+    "image": "/partners/Jadarah.png"
   },
   {
     "id": 2,
@@ -11,64 +11,64 @@
   },
   {
     "id": 3,
-    "name": "Partner 3",
-    "image": "/partners/partner3.png"
+    "name": "ESTSS",
+    "image": "/partners/ESTSS.png"
   },
   {
     "id": 4,
-    "name": "Partner 4",
-    "image": "/partners/partner4.png"
+    "name": "elunic",
+    "image": "/partners/elunic.png"
   },
    {
     "id": 5,
-    "name": "Partner 5",
-    "image": "/partners/partne5.png"
+    "name": "Beachy",
+    "image": "/partners/Beachy.png"
   },
   {
     "id": 6,
-    "name": "Partner 2",
-    "image": "/partners/partner6.png"
+    "name": "Rehearsals AI",
+    "image": "/partners/Rehearsals.png"
   },
   {
     "id": 7,
-    "name": "Partner 3",
-    "image": "/partners/partner7.png"
+    "name": "GameSafe.AI",
+    "image": "/partners/GameSafe.png"
   },
   {
     "id": 8,
-    "name": "Partner 4",
-    "image": "/partners/partner8.png"
+    "name": "MI",
+    "image": "/partners/MI.svg"
   }
 ,
     {
     "id": 9,
-    "name": "Partner 1",
-    "image": "/partners/partner1.png"
+    "name": "Nouri.AI",
+    "image": "/partners/Nouri.png"
   },
   {
     "id": 10,
-    "name": "Partner 2",
-    "image": "/partners/partner2.png"
+    "name": "InAkademie",
+    "image": "/partners/inAkademie 1.png"
   },
   {
     "id": 11,
-    "name": "Partner 3",
-    "image": "/partners/partner3.png"
+    "name": "FH",
+    "image": "/partners/FH.png"
   },
   {
     "id": 12,
-    "name": "Partner 4",
-    "image": "/partners/partner4.png"
+    "name": "Cruz",
+    "image": "/partners/Cruz.png"
   },
    {
     "id": 13,
-    "name": "Partner 5",
-    "image": "/partners/partne5.png"
+    "name": "Futuracontour",
+    "image": "/partners/Futuracontour.png"
   },
   {
     "id": 14,
-    "name": "Partner 2",
-    "image": "/partners/partner6.png"
+    "name": "HG",
+    "image": "/partners/HG.png"
   },
   {
     "id": 15,
