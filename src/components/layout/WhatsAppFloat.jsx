@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import '../../styles/whatsappFloat.css';
+import '../../styles/WhatsAppFloat.css';
 import whatsappData from '../../data/whatsapp.json';
 
 function WhatsAppFloat() {
