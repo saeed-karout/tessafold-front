@@ -2,82 +2,82 @@
   {
     "id": 1,
     "name": "Jadarah",
-    "image": "/partners/Jadarah.png"
+    "image": "/images/partners/Jadarah.png"
   },
   {
     "id": 2,
     "name": "Edfapay",
-    "image": "/partners/Edfpapay.svg"
+    "image": "/images/partners/Edfpapay.svg"
   },
   {
     "id": 3,
     "name": "ESTSS",
-    "image": "/partners/ESTSS.png"
+    "image": "/images/partners/ESTSS.png"
   },
   {
     "id": 4,
     "name": "elunic",
-    "image": "/partners/elunic.png"
+    "image": "/images/partners/elunic.png"
   },
    {
     "id": 5,
     "name": "Beachy",
-    "image": "/partners/Beachy.png"
+    "image": "/images/partners/Beachy.png"
   },
   {
     "id": 6,
     "name": "Rehearsals AI",
-    "image": "/partners/Rehearsals.png"
+    "image": "/images/partners/Rehearsals.png"
   },
   {
     "id": 7,
     "name": "GameSafe.AI",
-    "image": "/partners/GameSafe.png"
+    "image": "/images/partners/GameSafe.png"
   },
   {
     "id": 8,
     "name": "MI",
-    "image": "/partners/MI.svg"
+    "image": "/images/partners/MI.svg"
   }
 ,
     {
     "id": 9,
     "name": "Nouri.AI",
-    "image": "/partners/Nouri.png"
+    "image": "/images/partners/Nouri.png"
   },
   {
     "id": 10,
     "name": "InAkademie",
-    "image": "/partners/inAkademie 1.png"
+    "image": "/images/partners/inAkademie 1.png"
   },
   {
     "id": 11,
     "name": "FH",
-    "image": "/partners/FH.png"
+    "image": "/images/partners/FH.png"
   },
   {
     "id": 12,
     "name": "Cruz",
-    "image": "/partners/Cruz.png"
+    "image": "/images/partners/Cruz.png"
   },
    {
     "id": 13,
     "name": "Futuracontour",
-    "image": "/partners/Futuracontour.png"
+    "image": "/images/partners/Futuracontour.png"
   },
   {
     "id": 14,
     "name": "HG",
-    "image": "/partners/HG.png"
+    "image": "/images/partners/HG.png"
   },
   {
     "id": 15,
     "name": "Nimbus",
-    "image": "/partners/Nimbus.png"
+    "image": "/images/partners/Nimbus.png"
   },
   {
     "id": 16,
     "name": "Indivi",
-    "image": "/partners/Indivi.png"
+    "image": "/images/partners/Indivi.png"
   }
 ]
