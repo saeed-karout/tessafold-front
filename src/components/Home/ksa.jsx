@@ -86,7 +86,7 @@ function KSA() {
   return (
     <section
       className='ksa-main'
-      style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}
+      
       onTouchStart={isMobile ? handleTouchStart : undefined}
       onTouchMove={isMobile ? handleTouchMove : undefined}
       onTouchEnd={isMobile ? handleTouchEnd : undefined}
@@ -137,7 +137,7 @@ function KSA() {
               </div>
             </div>
           </div>
-          <div className="ksa-right">
+          <div className="ksa-right" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
             <div className="top-right">
               <img src="/images/ksa/ksa.webp" className="icon-ksa" alt="Saudi Vision 2030" />
               <div className="subtitle-ksa">
@@ -153,7 +153,7 @@ function KSA() {
                   className={`item-ksa ${selectedItem?.id === item.id ? 'active' : ''}`}
                   onClick={() => handleItemClick(item)}
                 >
-                  <div className="number">{index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`}</div>
+                  <div className="number">{index + 1 < 10 ? `${index + 1}.` : `${index + 1}.`}</div>
                   <div className="text">
                     <span>{item.text?.[currentLang] || 'Item'}</span>
                   </div>

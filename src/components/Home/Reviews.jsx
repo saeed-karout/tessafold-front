@@ -1,32 +1,86 @@
-import React, { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import reviewsData from '../../data/reviews.json'; 
 import '../../styles/Reviews.css';
 
 function Reviews() {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || 'en';
+  const currentLang = i18n.language?.split('-')[0] || 'en';
   const widgetRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [useFallback, setUseFallback] = useState(false);
 
   useEffect(() => {
-    // تحميل سكريبت Clutch widget
-    const script = document.createElement('script');
-    script.src = 'https://widget.clutch.co/static/js/widget.js';
-    script.async = true;
-    script.onload = () => {
-      // إعادة تهيئة الـ widget بعد تحميل السكريبت
-      if (window.Clutch && window.Clutch.Widget) {
-        window.Clutch.Widget.load(widgetRef.current);
-      }
-    };
-    document.head.appendChild(script);
+    let retries = 3;
+    const loadWidget = async () => {
+      try {
+        const script = document.createElement('script');
+        script.src = 'https://widget.clutch.co/static/js/widget.js';
+        script.async = true;
+        script.onload = () => {
+          try {
+            if (window.Clutch && window.Clutch.Widget) {
+              window.Clutch.Widget.load(widgetRef.current);
+              setIsLoading(false);
+              console.log('Clutch widget loaded successfully');
+            } else {
+              throw new Error('Clutch Widget API not available');
+            }
+          } catch (err) {
+            console.error('Widget initialization error:', err);
+            if (retries > 0) {
+              retries--;
+              console.log(`Retrying widget load... (${retries} attempts left)`);
+              setTimeout(loadWidget, 2000);
+            } else {
+              setError('Failed to initialize Clutch widget');
+              setUseFallback(true);
+              setIsLoading(false);
+            }
+          }
+        };
+        script.onerror = () => {
+          console.error('Clutch widget script failed to load');
+          if (retries > 0) {
+            retries--;
+            console.log(`Retrying widget load... (${retries} attempts left)`);
+            setTimeout(loadWidget, 2000);
+          } else {
+            setError('Failed to load Clutch widget script');
+            setUseFallback(true);
+            setIsLoading(false);
+          }
+        };
+        document.head.appendChild(script);
 
-    return () => {
-      // تنظيف السكريبت عند إلغاء التثبيت
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
+        return () => {
+          if (document.head.contains(script)) {
+            document.head.removeChild(script);
+          }
+        };
+      } catch (err) {
+        console.error('Unexpected error loading widget:', err);
+        setError('Unexpected error loading reviews');
+        setUseFallback(true);
+        setIsLoading(false);
       }
     };
+
+    loadWidget();
   }, []);
+
+  // Preload fallback review avatars
+  useEffect(() => {
+    if (useFallback && reviewsData) {
+      reviewsData.forEach((review) => {
+        if (review.reviewer?.avatar) {
+          const img = new Image();
+          img.src = review.reviewer.avatar;
+        }
+      });
+    }
+  }, [useFallback]);
 
   return (
     <section className="reviews-section" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
@@ -41,88 +95,78 @@ function Reviews() {
         </div>
 
         <div className="reviews-content">
-          {/* Clutch Widget */}
-          <div 
-            ref={widgetRef}
-            className="clutch-widget"
-            data-url="https://widget.clutch.co"
-            data-widget-type="4"
-            data-height="auto"
-            data-nofollow="false"
-            data-expandifr="true"
-            data-scale="100"
-            data-reviews="328859,328044,327582,269904,267544"
-            data-clutchcompany-id="1782053"
-          ></div>
-
-          {/* تقييمات إضافية مخصصة */}
-          <div className="custom-reviews">
-            <div className="review-card">
-              <div className="review-header">
-                <div className="reviewer-info">
-                  <div className="reviewer-avatar">
-                    <img src="/users.png" alt="Client" />
+          {isLoading ? (
+            <p className="loading">
+              {t('reviews.loading', { defaultValue: 'Loading reviews...' })}
+            </p>
+          ) : error && useFallback ? (
+            reviewsData && reviewsData.length > 0 ? (
+              <div className="clutch-widget">
+                {reviewsData.map((review) => (
+                  <div key={review.id} className="review-card">
+                    <div className="review-header">
+                      <div className="reviewer-info">
+                        <div className="reviewer-avatar">
+                          <img
+                            src={review.reviewer?.avatar || '/placeholder.png'}
+                            alt={t('reviews.reviewer_alt', {
+                              name: review.reviewer?.name?.[currentLang] || 'Reviewer',
+                              defaultValue: 'Reviewer avatar',
+                            })}
+                          />
+                        </div>
+                        <div className="reviewer-details">
+                          <h4>{review.reviewer?.name?.[currentLang] || 'Anonymous'}</h4>
+                          <p>{review.reviewer?.role?.[currentLang] || 'Client'}</p>
+                        </div>
+                      </div>
+                      <div className="review-rating">
+                        <div className="stars">
+                          {'★'.repeat(review.rating || 0)}
+                          {'☆'.repeat(5 - (review.rating || 0))}
+                        </div>
+                        <div className="rating-text">{review.date || 'N/A'}</div>
+                      </div>
+                    </div>
+                    <p className="review-content">{review.content?.[currentLang] || 'No review content'}</p>
                   </div>
-                  <div className="reviewer-details">
-                    <h4 className="reviewer-name">
-                      {t('reviews.client1.name', { defaultValue: 'Sarah Johnson' })}
-                    </h4>
-                    <p className="reviewer-company">
-                      {t('reviews.client1.company', { defaultValue: 'Tech Solutions Inc.' })}
-                    </p>
-                  </div>
-                </div>
-                <div className="review-rating">
-                  <span className="stars">★★★★★</span>
-                  <span className="rating-text">5.0</span>
-                </div>
+                ))}
               </div>
-              <p className="review-content">
-                {t('reviews.client1.content', { 
-                  defaultValue: 'Tessafold delivered an exceptional e-commerce platform that exceeded our expectations. Their attention to detail and technical expertise is remarkable.' 
-                })}
+            ) : (
+              <p className="error">
+                {t('reviews.error', { defaultValue: 'Failed to load reviews. Please try again later.' })}
               </p>
-            </div>
-
-            <div className="review-card">
-              <div className="review-header">
-                <div className="reviewer-info">
-                  <div className="reviewer-avatar">
-                    <img src="/users.png" alt="Client" />
-                  </div>
-                  <div className="reviewer-details">
-                    <h4 className="reviewer-name">
-                      {t('reviews.client2.name', { defaultValue: 'Michael Chen' })}
-                    </h4>
-                    <p className="reviewer-company">
-                      {t('reviews.client2.company', { defaultValue: 'Global Finance Ltd.' })}
-                    </p>
-                  </div>
-                </div>
-                <div className="review-rating">
-                  <span className="stars">★★★★★</span>
-                  <span className="rating-text">5.0</span>
-                </div>
-              </div>
-              <p className="review-content">
-                {t('reviews.client2.content', { 
-                  defaultValue: 'The mobile app developed by Tessafold has significantly improved our customer engagement. Their team was professional and delivered on time.' 
-                })}
-              </p>
-            </div>
-          </div>
+            )
+          ) : error ? (
+            <p className="error">
+              {t('reviews.error', { defaultValue: 'Failed to load reviews. Please try again later.' })}
+            </p>
+          ) : (
+            <div
+              ref={widgetRef}
+              className="clutch-widget"
+              data-url="https://widget.clutch.co"
+              data-widget-type="4"
+              data-nofollow="true"
+              data-expandifr="true"
+              data-scale="100"
+              data-primary-color="#FFB130"
+              data-secondary-color="#39797f"
+              data-reviews="2231946,2228229,2228148,2215763,2214541,2214305,2211821,2210293,2208659,2207514,2204852,2204421"
+              data-clutchcompany-id="1782053"
+            ></div>
+          )}
         </div>
 
         <div className="reviews-cta">
           <p className="cta-text">
             {t('reviews.cta', { defaultValue: 'Join our satisfied clients and start your project today' })}
           </p>
-            <a href="https://clutch.co/profile/tessafold#review-328859" target='_blank'>
-          <button className="reviews-button">
-
-            {t('reviews.button', { defaultValue: 'View All Reviews' })}
-          </button>
-            </a>
+          <a href="https://clutch.co/profile/tessafold#reviews" target="_blank" rel="noopener noreferrer">
+            <button className="reviews-button">
+              {t('reviews.button', { defaultValue: 'View All Reviews' })}
+            </button>
+          </a>
         </div>
       </div>
     </section>

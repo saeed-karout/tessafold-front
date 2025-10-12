@@ -2,12 +2,12 @@ import { useTranslation } from 'react-i18next';
 import '../../styles/Footer.scss';
 
 function Footer() {
-  const { t } = useTranslation();
-
+  const { t ,i18n} = useTranslation();
+  const currentLang = i18n.language?.split('-')[0] || 'en';
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="footer-main">
+    <div className="footer-main" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
       <div className="footer-frame-content">
         <div className="footer-left">
           <div className="footer-logo">

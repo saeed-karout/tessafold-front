@@ -19,7 +19,7 @@ function OurServices() {
   }, []);
 
   return (
-    <div className="main-our-services">
+    <div className="main-our-services" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
       <div className="bg-image">
         <div className="topic-service">
           <div className="title">{servicesSection.topic.title?.[currentLang] || 'Our Services'}</div>

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "reviewer": {
+      "name": { "en": "Ahmed Ali", "ar": "أحمد علي" },
+      "role": { "en": "Founder, XYZ Corp", "ar": "مؤسس، شركة إكس واي زي" },
+      "avatar": "/images/reviews/ahmed-ali.png"
+    },
+    "rating": 5,
+    "content": { "en": "Exceptional service and delivery.", "ar": "خدمة وتسليم استثنائيان." },
+    "date": "2025-03-01"
+  },
+  {
+    "id": 2,
+    "reviewer": {
+      "name": { "en": "Sara Mohammed", "ar": "سارة محمد" },
+      "role": { "en": "CEO, ABC Ltd", "ar": "المدير التنفيذي، شركة أ ب ج" },
+      "avatar": "/images/reviews/sara-mohammed.png"
+    },
+    "rating": 4,
+    "content": { "en": "Great team, delivered on time.", "ar": "فريق رائع، تم التسليم في الوقت المحدد." },
+    "date": "2025-02-15"
+  }
+]

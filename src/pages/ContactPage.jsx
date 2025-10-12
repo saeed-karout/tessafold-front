@@ -141,7 +141,7 @@ function ContactPage() {
             <p>{t('contact.description') || 'Reach out to discuss your project.'}</p>
           </div>
           <div className="frame-form">
-            <div className="form">
+            <div className="form" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
               <form onSubmit={handleSubmit}>
                 <div className="item">
                   <div className="title">
@@ -248,7 +248,7 @@ function ContactPage() {
           <div className="topic">
             {t('contact.section2.title') || 'Ready to Start'} <span>{t('contact.section2.span') || 'Now'}</span>
           </div>
-          <p>{t('contact.section2.subtitle') || 'Let’s build something great together.'}</p>
+          {/* <p>{t('contact.section2.subtitle') || 'Let’s build something great together.'}</p> */}
         </div>
         <div className="btn-home" onClick={() => navigate('/')}>
           <span>{t('contact.section2.btn') || 'Back to Home'}</span>
