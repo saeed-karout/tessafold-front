@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import partnersData from '../../data/partners.json'; // Updated import path
+import partnersData from '../../data/partners.json'; 
 import '../../styles/Hero.css';
 
 function HeroSection() {

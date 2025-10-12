@@ -8,11 +8,13 @@
   overflow: hidden;
 }
 
+
+
 .title-about {
   display: flex;
   align-items: flex-start;
   color: var(--Black-black-1, #FFF);
-  font-family: Poppins, sans-serif;
+  
   font-size: 2rem; /* 32px */
   font-weight: 600;
   line-height: 1.6; /* 160% */
@@ -20,7 +22,7 @@
 
 .title-about span {
   color: var(--Yellow-yellow-500, #FFB130);
-  font-family: Poppins, sans-serif;
+  
   font-size: 2rem; /* 32px */
   font-weight: 600;
   line-height: 1.6;
@@ -87,7 +89,7 @@
 
 .name {
   color: var(--Black-black-6, #C6C7C7);
-  font-family: Poppins, sans-serif;
+  
   font-size: 1rem; /* 16px */
   font-weight: 300;
   line-height: 1.6;
@@ -95,7 +97,7 @@
 
 .name span {
   color: var(--Black-black-2, #FDFDFD);
-  font-family: Poppins, sans-serif;
+  
   font-size: 1rem; /* 16px */
   font-weight: 600;
   line-height: 1.6;
@@ -103,7 +105,7 @@
 
 .technology {
   color: var(--Black-black-6, #C6C7C7);
-  font-family: Poppins, sans-serif;
+  
   font-size: 1rem; /* 16px */
   font-weight: 400;
   line-height: 1.6;

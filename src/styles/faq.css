@@ -12,7 +12,7 @@
 
 .title-faq{
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
+    
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -98,7 +98,7 @@
 
 .question-text span{
     color: var(--OilMain-oilmain-1, #E7EFEF);
-    font-family: Poppins;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -140,7 +140,7 @@
 
 .answer-content p{
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    font-family: Poppins;
+    
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

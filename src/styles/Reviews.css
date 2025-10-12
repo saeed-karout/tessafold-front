@@ -1,6 +1,6 @@
 .reviews-section {
   padding: 80px 0;
-  background: var(--Black-black-12, #2B3132);
+  background: var(--primary, #2B3132);
   position: relative;
   overflow: hidden;
 }
@@ -17,8 +17,7 @@
 }
 
 .reviews-title {
-  color: var(--Yellow-yellow-500, #FFB130);
-  font-family: 'Poppins', sans-serif;
+  color: var(--yellow, #FFB130);
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
@@ -26,9 +25,10 @@
   animation: fadeInUp 0.6s ease-out;
 }
 
+
+
 .reviews-subtitle {
-  color: var(--Black-black-6, #C6C7C7);
-  font-family: 'Poppins', sans-serif;
+  color: var(--secondary, #92B6B9);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
@@ -36,6 +36,10 @@
   margin: 0 auto;
   animation: fadeInUp 0.6s ease-out 0.2s both;
 }
+
+
+
+
 
 .reviews-content {
   display: flex;
@@ -67,17 +71,17 @@
 }
 
 .review-card {
-  background: var(--Black-black-13, #191F20);
+  background: var(--primary, #2B3132);
   border-radius: 16px;
   padding: 24px;
-  border: 1px solid var(--Black-black-10, #3A4142);
+  border: 1px solid var(--tessafold, #39797F);
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .review-card:hover {
   transform: scale(1.02);
-  border-color: var(--Yellow-yellow-500, #FFB130);
+  border-color: var(--yellow, #FFB130);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -98,7 +102,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--Black-black-10, #3A4142);
+  background: var(--tessafold, #39797F);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,20 +116,25 @@
 }
 
 .reviewer-details h4 {
-  color: var(--Black-black-1, #FFF);
-  font-family: 'Poppins', sans-serif;
+  color: var(--background, #ffffff);
   font-size: 16px;
   font-weight: 600;
   margin: 0 0 4px 0;
 }
 
+
+
+
+
 .reviewer-details p {
-  color: var(--Black-black-6, #C6C7C7);
-  font-family: 'Poppins', sans-serif;
+  color: var(--secondary, #92B6B9);
   font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
+
+
+
 
 .review-rating {
   display: flex;
@@ -135,57 +144,58 @@
 }
 
 .stars {
-  color: var(--Yellow-yellow-500, #FFB130);
+  color: var(--yellow, #FFB130);
   font-size: 16px;
 }
 
 .rating-text {
-  color: var(--Black-black-6, #C6C7C7);
-  font-family: 'Poppins', sans-serif;
+  color: var(--secondary, #92B6B9);
   font-size: 14px;
   font-weight: 500;
 }
 
 .review-content {
-  color: var(--Black-black-4, #F1F2F2);
-  font-family: 'Poppins', sans-serif;
+  color: var(--background, #ffffff);
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
   margin: 0;
 }
 
+
+
 .loading, .error {
-  color: var(--Black-black-6, #C6C7C7);
-  font-family: 'Poppins', sans-serif;
+  color: var(--secondary, #92B6B9);
   font-size: 16px;
   text-align: center;
   padding: 40px;
   animation: fadeInUp 0.6s ease-out 0.4s both;
 }
 
+
+
 .reviews-cta {
   text-align: center;
   padding-top: 40px;
-  border-top: 1px solid var(--Black-black-10, #3A4142);
+  border-top: 1px solid var(--tessafold, #39797F);
   animation: fadeInUp 0.6s ease-out 0.6s both;
 }
 
 .cta-text {
-  color: var(--Black-black-6, #C6C7C7);
-  font-family: 'Poppins', sans-serif;
+  color: var(--secondary, #92B6B9);
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 24px;
 }
 
+
+
 .reviews-button {
-  background: var(--Yellow-yellow-500, #FFB130);
-  color: var(--Black-black-12, #2B3132);
+  background: var(--yellow, #FFB130);
+  color: var(--primary, #2B3132);
   border: none;
   border-radius: 12px;
   padding: 14px 32px;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -193,6 +203,8 @@
   position: relative;
   overflow: hidden;
 }
+
+
 
 .reviews-button::before {
   content: '';
@@ -206,7 +218,7 @@
 }
 
 .reviews-button:hover {
-  background: var(--Yellow-yellow-400, #FFC159);
+  background: var(--hover-btn, #0D5C63);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 177, 48, 0.3);
 }
@@ -367,6 +379,17 @@
   from {
     opacity: 0;
     transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
   to {
     opacity: 1;

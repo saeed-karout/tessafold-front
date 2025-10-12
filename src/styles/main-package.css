@@ -82,7 +82,7 @@
 
 .tech-main-title{
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
+    
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -92,7 +92,7 @@
 
 .tech-highlight{
     color: var(--yellow);
-    font-family: Poppins;
+    
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -102,7 +102,7 @@
 .tech-subtitle{
     color: var(--Black-black-1, #FFF);
     text-align: center;
-    font-family: Poppins;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -147,7 +147,7 @@
 .tech-btn-text{
     color: var(--OilMain-oilmain-6, #0D5C63);
     text-align: center;
-    font-family: Poppins;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 600;

@@ -72,7 +72,7 @@
 .ksa-left .text-ksa span {
     flex: 1 0 0;
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
+    
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -113,7 +113,7 @@
 
 .subtitle-ksa {
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    font-family: Poppins;
+    
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -138,7 +138,7 @@
 
 .subtitle-ksa span {
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
+    
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -148,7 +148,7 @@
 .subtitle-ksa p {
     display: inline;
     color: var(--Yellow, #FFB130);
-    font-family: Poppins;
+    
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -209,7 +209,7 @@
 
 .bottom-right .item-ksa .number {
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    font-family: Poppins;
+    
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -234,7 +234,7 @@
 
 .bottom-right .item-ksa .text span {
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    font-family: Poppins;
+    
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -314,7 +314,7 @@
     align-items: center;
     gap: 8px;
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
+    
     font-size: 18px;
     font-weight: 600;
     line-height: 160%;
@@ -329,7 +329,7 @@
 
 .ksa-mobile .selected-item-description {
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    font-family: Poppins;
+    
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;

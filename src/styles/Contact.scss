@@ -60,7 +60,7 @@
 
 .top .titles {
   color: var(--OilMain-oilmain-6, #0D5C63);
-  font-family: Poppins, sans-serif;
+  
   font-size: 36px;
   font-weight: 600;
   line-height: 160%;
@@ -80,7 +80,7 @@
 
 .top .subtitles {
   color: #fff;
-  font-family: Poppins, sans-serif;
+  
   font-size: 18px;
   font-weight: 600;
   line-height: 160%;
@@ -92,11 +92,12 @@
 
 .top p {
   color: var(--Black-black-9, #575B5C);
-  font-family: Poppins, sans-serif;
+  
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
   width: 100%;
+  text-align: start;
 
   @media (max-width: var(--breakpoint-mobile)) {
     font-size: 14px;
@@ -172,7 +173,7 @@ form {
 input::placeholder,
 textarea::placeholder {
   color: var(--Oil-Main-oil-main-3, #97B9BC);
-  font-family: Poppins, sans-serif;
+  
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -217,7 +218,7 @@ textarea {
 
 .item .title {
   color: var(--OilMain-oilmain-6, #0D5C63);
-  font-family: Poppins, sans-serif;
+  
   font-size: 18px;
   font-weight: 600;
   line-height: 160%;
@@ -271,7 +272,7 @@ textarea {
 
 .list .check-item span {
   color: var(--OilMain-oilmain-7, #0B4E54);
-  font-family: Poppins, sans-serif;
+  
   font-size: 14px;
   font-weight: 500;
   line-height: 160%;
@@ -327,7 +328,7 @@ textarea {
 
 .submit span {
   color: var(--secondary, #FFF);
-  font-family: Poppins, sans-serif;
+  
   font-size: 20px;
   font-weight: 500;
   line-height: 160%;
@@ -340,7 +341,7 @@ textarea {
 .success-message {
   color: green;
   margin-top: 12px;
-  font-family: Poppins, sans-serif;
+  
   font-size: 16px;
 
   @media (max-width: var(--breakpoint-mobile)) {
@@ -351,7 +352,7 @@ textarea {
 .error-message {
   color: red;
   margin-top: 12px;
-  font-family: Poppins, sans-serif;
+  
   font-size: 16px;
 
   @media (max-width: var(--breakpoint-mobile)) {
@@ -426,7 +427,7 @@ filter: blur(50px);
 
 .text .topic {
   color: var(--Yellow-yellow-500, #FFB130);
-  font-family: Poppins, sans-serif;
+  
   font-size: 32px;
   font-weight: 600;
   line-height: 160%;
@@ -446,7 +447,7 @@ filter: blur(50px);
 
 .text p {
   color: var(--Black-black-5, #DDDDDE);
-  font-family: Poppins, sans-serif;
+  
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
@@ -484,7 +485,7 @@ filter: blur(50px);
 
 .frame2 .btn-home span {
   color: #FFF;
-  font-family: Poppins, sans-serif;
+  
   font-size: 20px;
   font-weight: 600;
   line-height: 160%;

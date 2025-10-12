@@ -30,7 +30,7 @@ gap: 16px;
 text-align: center;
 
 /* Fonts/32/32 Semi */
-font-family: Poppins;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 600;
@@ -41,7 +41,7 @@ line-height: 160%; /* 51.2px */
     color: var(--Black-black-11, #fff);
 
 /* Fonts/32/32 Semi */
-font-family: Poppins;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 600;
@@ -52,7 +52,7 @@ line-height: 160%;
 .top-process .p{
     color: var(--Black-black-8, #fff);
 text-align: center;
-font-family: Poppins;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -142,7 +142,7 @@ align-self: stretch;
     color: var(--Black-black-10, #3C4141);
 
 /* Fonts/18/18 Med */
-font-family: Poppins;
+
 font-size: 18px;
 font-style: normal;
 font-weight: 500;

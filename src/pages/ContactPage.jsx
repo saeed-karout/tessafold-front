@@ -132,7 +132,7 @@ function ContactPage() {
   return (
     <>
       <div className="content">
-        <div className="frame1">
+        <div className="frame1"style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
           <div className="top" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
             <div className="titles">
               {t('contact.title') || 'Get in Touch'} <span>{t('contact.titleHighlight') || 'Now'}</span>
@@ -238,6 +238,7 @@ function ContactPage() {
               src="/images/contact/icon-form.svg"
               className="bg-icon"
               alt={t('contact.iconAlt') || 'Form Icon'}
+              style={{ left: currentLang === 'ar' ? '0' : 'initial', right: currentLang === 'ar' ? 'initial' : '0' }}
             />
           </div>
         </div>

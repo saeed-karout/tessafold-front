@@ -13,7 +13,7 @@
 
 .topic {
   color: var(--Black-black-1, #FFF);
-  font-family: Poppins, sans-serif;
+  
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.6;
@@ -130,7 +130,7 @@
 
 .top-bar .name-project span {
   color: var(--Black-black-6, #C6C7C7);
-  font-family: Poppins, sans-serif;
+  
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -202,7 +202,7 @@
 
 .project-details .left .h3 {
   color: var(--OilMain-oilmain-1, #E7EFEF);
-  font-family: Poppins, sans-serif;
+  
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.6;
@@ -210,7 +210,7 @@
 
 .project-details .left .p {
   color: var(--Black-black-1, #FFF);
-  font-family: Poppins, sans-serif;
+  
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.6;
@@ -262,7 +262,7 @@
 
 .project-details .left a {
   color: var(--OilMain-oilmain-3, #97B9BC);
-  font-family: Roboto, sans-serif;
+  
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5;

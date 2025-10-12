@@ -1,31 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
   --background: #ffffff;
   --primary: #2B3132;
-  --secondary:#92B6B9;
-  --tessafold:#39797F;
-  --yellow:#FFB130;
-  --hover-btn:#0D5C63;
+  --secondary: #92B6B9;
+  --tessafold: #39797F;
+  --yellow: #FFB130;
+  --hover-btn: #0D5C63;
+  --sb-track-color: #39797f;
+  --sb-thumb-color: #ffb130;
+  --sb-size: 4px;
 }
 
-
+@font-face {
+  font-family: 'NeoSansArabic';
+  src: url('/fonts/alfont_com_NeoSansArabic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   background: var(--primary);
-  /* color: var(--foreground); */
-  font-family:'Poppins', sans-serif;
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  
-
-   --sb-track-color: #39797f;
-  --sb-thumb-color: #ffb130;
-  --sb-size: 4px;
-  
-  
+  font-family: 'NeoSansArabic','Poppins', sans-serif;
 }
+
+
 
 body::-webkit-scrollbar {
   width: var(--sb-size);
@@ -43,28 +46,25 @@ body::-webkit-scrollbar-thumb {
 
 @supports not selector(::-webkit-scrollbar) {
   body {
-      scrollbar-color: var(--sb-thumb-color)
-                     var(--sb-track-color);
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
 
-
-
-input,textarea{
+input, textarea {
   border: 0;
-  outline: none ;
+  outline: none;
 }
 
-p{
+p {
   padding: 0;
   margin: 0;
 }
 
-span ,p,.title,.topic {
+span, p, .title, .topic {
   pointer-events: none;
 }
 
-
-a{
+a {
   text-decoration: none;
 }
+
