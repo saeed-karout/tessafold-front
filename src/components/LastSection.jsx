@@ -23,7 +23,7 @@ function LastSection() {
   }, []);
 
   return (
-    <div className='lastSection-main' style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+    <div className='lastSection-main'>
       <div className="lastSection-content">
         <div className="lastSection-left">
           <div className="lastSection-logo">
@@ -32,7 +32,7 @@ function LastSection() {
             <div className="lastSection-child2"></div>
           </div>
         </div>
-        <div className="lastSection-right">
+        <div className="lastSection-right"  style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
           <div className="lastSection-topic">
             {lastSectionData.last_section?.topic_part1?.[currentLang] || 'Innovate'}
             <span>.</span>

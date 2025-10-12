@@ -6,19 +6,22 @@
   padding: 6.5rem 1rem 8rem 1rem; /* 104px 0 128px 0 */
 }
 
+.main-process-component[dir="rtl"] {
+  direction: rtl;
+}
+
 .section-top {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 1rem; /* 16px */
   align-self: stretch;
- 
+  padding: 0 80px;
 }
 
 .section-top .frame {
   display: flex;
   align-items: flex-start;
- 
   width: 100%;
   flex-wrap: wrap;
 }
@@ -87,7 +90,7 @@
 }
 
 .process-line .group {
-  width: 100%;
+  /* width: 100%; */
   height: 6.8125rem; /* 109px */
 }
 
@@ -102,7 +105,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 5rem; /* 80px */
-  padding: 0 2.5rem; /* 0 40px */
+  padding: 0 .5rem; /* 0 40px */
   position: relative;
   top: -1.5625rem; /* -25px */
 }
@@ -148,22 +151,46 @@
   object-fit: contain;
 }
 
+/* Step number styles */
+.step-number {
+  display: none; /* Hidden by default */
+}
+
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1224px) {
   .main-process-component {
     padding: 4rem 1rem 5rem 1rem;
     gap: 3rem;
     height: 90vh;
   }
-
+  .section-top{
+    padding: 0;
+  }
   .section-top .frame {
     flex-direction: column;
+  
   }
- 
 
   .parent {
-    gap: 3rem;
-    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem 3rem; /* 32px 48px */
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    top: 0; /* Remove negative offset */
+  }
+  .step-number {
+    display: inline; /* Show step number on mobile */
+    color: var(--Yellow-yellow-500, #FFB130); /* Match title color */
+    font-weight: 600;
+    margin-right: 0.25rem; /* Space before name in LTR */
+  }
+  
+  .group .line {
+    display: none; /* Hide line on mobile */
   }
 
   .frame-data {
@@ -177,6 +204,7 @@
 
   .frame-data .name {
     font-size: 1rem; /* 16px */
+    width: 200px;
   }
 }
 
@@ -186,8 +214,10 @@
     gap: 2rem;
   }
 
+ 
 
-  .frame .left .title, .frame .left .title span {
+  .frame .left .title,
+  .frame .left .title span {
     font-size: 1.5rem; /* 24px */
   }
 
@@ -226,7 +256,6 @@
 
   .frame-data {
     display: flex;
-  
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -242,7 +271,21 @@
     gap: 0.5rem; /* 8px */
   }
 
-  
+  .frame-data .name {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .step-number {
+    display: inline; /* Show step number on mobile */
+    color: var(--Yellow-yellow-500, #FFB130); /* Match title color */
+    font-weight: 600;
+    margin-right: 0.25rem; /* Space before name in LTR */
+  }
+
+  [dir="rtl"] .step-number {
+    margin-right: 0;
+    margin-left: 0.25rem; /* Space after number in RTL */
+  }
 }
 
 @media (max-width: 480px) {
@@ -251,11 +294,6 @@
     gap: 1.5rem;
     height: 90vh;
   }
-
-  
-
-
-  
 
   .frame .right .arrow-icon {
     width: 1rem; /* 16px */
@@ -268,7 +306,7 @@
   }
 
   .frame-data {
-   width: 120px;
+    width: 120px;
   }
 
   .frame-data .icon {
@@ -276,5 +314,20 @@
     height: 2rem;
   }
 
- 
+  .frame-data .name {
+    font-size: 0.75rem; /* 12px */
+  }
+}
+
+/* RTL adjustments */
+[dir="rtl"] .frame .left {
+  align-items: flex-end;
+}
+
+[dir="rtl"] .frame .right {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .frame-data .name {
+  text-align: right;
 }

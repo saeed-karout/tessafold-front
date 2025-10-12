@@ -1,0 +1,40 @@
+{
+  "whatsapp": {
+    "phoneNumber": "+19498646033",
+    "messages": {
+      "default": {
+        "en": "Hello! I would like to get more information about your services.",
+        "ar": "مرحباً! أود الحصول على مزيد من المعلومات حول خدماتكم.",
+        "de": "Hallo! Ich möchte weitere Informationen zu Ihren Dienstleistungen erhalten."
+      },
+      "project": {
+        "en": "Hello! I have a project I'd like to discuss.",
+        "ar": "مرحباً! لدي مشروع أود مناقشته.",
+        "de": "Hallo! Ich habe ein Projekt, das ich besprechen möchte."
+      },
+      "quote": {
+        "en": "Hello! I'd like to get a quote for a project.",
+        "ar": "مرحباً! أود الحصول على عرض سعر لمشروع.",
+        "de": "Hallo! Ich möchte ein Angebot für ein Projekt erhalten."
+      }
+    },
+    "tooltips": {
+      "contact": {
+        "en": "Contact us on WhatsApp",
+        "ar": "تواصل معنا على واتساب",
+        "de": "Kontaktieren Sie uns auf WhatsApp"
+      },
+      "clickToChat": {
+        "en": "Click to start chatting",
+        "ar": "انقر لبدء المحادثة",
+        "de": "Klicken Sie, um zu chatten"
+      }
+    },
+    "settings": {
+      "autoOpen": true,
+      "showPulse": true,
+      "position": "bottom-left",
+      "delay": 3000
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/OurProcess.css';
+import '../styles/OurProcessPage.css';
 import ProcessComponent from '../components/ourProcess/Process'; 
 import LastSection from '../components/LastSection';
 

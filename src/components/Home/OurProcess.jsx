@@ -26,7 +26,7 @@ function OurProcess() {
   }, []);
 
   return (
-    <section className="main-process-component" >
+    <section className="main-process-component" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
       <div className="section-top">
         <div className="frame">
           <div className="left">
@@ -56,7 +56,10 @@ function OurProcess() {
                     alt={t('our_process.step_icon_alt', { name: step.name?.[currentLang] || 'Step' })}
                   />
                 </div>
-                <div className="name">{`${index + 1}. ${step.name?.[currentLang] || 'Untitled Step'}`}</div>
+                <div className="name">
+                  <span className="step-number">{`${index + 1}.`}</span>{' '}
+                  {step.name?.[currentLang] || 'Untitled Step'}
+                </div>
               </div>
             ))}
           </div>

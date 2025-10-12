@@ -87,7 +87,7 @@ function Header() {
   };
 
   return (
-    <div className={`navbar ${isHeaderVisible ? '' : 'hidden'} ${lang === 'ar' ? 'rtl' : 'ltr'}`}>
+    <div className={`navbar ${isHeaderVisible ? '' : 'hidden'}`}>
       {/* الشعار */}
       <div className="logo" onClick={() => handleNavigation('/')}>
         <img 

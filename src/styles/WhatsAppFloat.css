@@ -1,0 +1,379 @@
+:root {
+  --whatsapp-green: #25D366;
+  --whatsapp-dark: #128C7E;
+  --whatsapp-light: #dcf8c6;
+  --whatsapp-notification: #FF3B30;
+}
+
+.whatsapp-float-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: whatsapp-entrance 0.8s ease-out forwards;
+}
+
+/* تأكد من أن الزر على اليمين */
+.whatsapp-float-container.bottom-right {
+  bottom: 25px;
+  right: 25px;
+  left: auto;
+}
+
+.whatsapp-float-container.bottom-left {
+  bottom: 25px;
+  left: 25px;
+  right: auto;
+}
+
+@keyframes whatsapp-entrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  70% {
+    transform: scale(1.1) translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.whatsapp-float {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: var(--whatsapp-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: whatsapp-float 3s ease-in-out infinite;
+  border: none;
+  outline: none;
+}
+
+@keyframes whatsapp-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+  transform: scale(1.15) translateY(-5px);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+  animation: none;
+}
+
+.whatsapp-float:active {
+  transform: scale(1.05) translateY(-2px);
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+  z-index: 2;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-icon,
+.whatsapp-float:focus .whatsapp-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* تأثير النبض */
+.whatsapp-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--whatsapp-green);
+  animation: whatsapp-pulse 2s infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* مؤشر النقر للجوال */
+.whatsapp-tap-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: whatsapp-tap 2s infinite;
+  pointer-events: none;
+  display: none;
+}
+
+@keyframes whatsapp-tap {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+/* التولتيب */
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px) scale(0.9);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+}
+
+.whatsapp-float-container.bottom-left .whatsapp-tooltip {
+  right: auto;
+  left: 0;
+}
+
+.whatsapp-float-container.bottom-left .whatsapp-tooltip::after {
+  right: auto;
+  left: 20px;
+}
+
+.whatsapp-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* إشعار العداد - تم التصحيح */
+.whatsapp-notification {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--whatsapp-notification);
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  animation: whatsapp-notification-pulse 2s infinite;
+  box-shadow: 0 2px 8px rgba(255, 59, 48, 0.4);
+  z-index: 3;
+  /* تأكد من أن الإشعار على اليمين */
+  left: auto;
+}
+
+/* للزر على اليسار */
+.whatsapp-float-container.bottom-left .whatsapp-notification {
+  right: -5px;
+  left: auto;
+  top: -5px;
+}
+
+@keyframes whatsapp-notification-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .whatsapp-float-container {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-float-container.bottom-right {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-float-container.bottom-left {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .whatsapp-float {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .whatsapp-tooltip {
+    font-size: 12px;
+    padding: 8px 12px;
+    bottom: 65px;
+  }
+  
+  .whatsapp-notification {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    top: -4px;
+    right: -4px;
+  }
+
+  /* للزر على اليسار في الموبايل */
+  .whatsapp-float-container.bottom-left .whatsapp-notification {
+    right: -4px;
+    top: -4px;
+  }
+
+  /* إظهار مؤشر النقر على الجوال */
+  .whatsapp-tap-indicator {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float-container {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-float-container.bottom-right {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-float-container.bottom-left {
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .whatsapp-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .whatsapp-tooltip {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+  
+  .whatsapp-notification {
+    width: 18px;
+    height: 18px;
+    font-size: 9px;
+    top: -3px;
+    right: -3px;
+  }
+
+  .whatsapp-float-container.bottom-left .whatsapp-notification {
+    right: -3px;
+    top: -3px;
+  }
+}
+
+/* تحسينات للوضع المظلم */
+@media (prefers-color-scheme: dark) {
+  .whatsapp-tooltip {
+    background: rgba(255, 255, 255, 0.95);
+    color: #1a1a1a;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .whatsapp-tooltip::after {
+    border-color: rgba(255, 255, 255, 0.95) transparent transparent transparent;
+  }
+}
+
+/* تحسينات للوصول */
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float,
+  .whatsapp-pulse,
+  .whatsapp-tooltip,
+  .whatsapp-notification {
+    animation: none;
+  }
+  
+  .whatsapp-float:hover,
+  .whatsapp-float:focus {
+    transform: scale(1.05);
+  }
+  
+  .whatsapp-float-container {
+    animation: whatsapp-fade-in 0.5s ease-out forwards;
+  }
+  
+  @keyframes whatsapp-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* تحسينات للطابعات */
+@media print {
+  .whatsapp-float-container {
+    display: none;
+  }
+}

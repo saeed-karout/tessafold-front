@@ -6,6 +6,7 @@ import OurProcess from './pages/OurProcessPage';
 import Contact from './pages/ContactPage';
 import Footer from './components/layout/Footer';
 import ScrollToTopButton from './components/layout/ScrollToTopButton';
+import WhatsAppFloat from './components/layout/WhatsAppFloat';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -24,6 +25,7 @@ function App() {
       </Routes>
       <Footer />
       <ScrollToTopButton />
+      <WhatsAppFloat />
     </Router>
   );
 }

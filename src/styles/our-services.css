@@ -79,7 +79,7 @@
 .topic-service {
   display: flex;
   max-width: 80rem; /* 1280px */
-  padding: 0 4rem; /* 0 64px */
+  padding: 30px 4rem; /* 0 64px */
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -115,7 +115,7 @@
   }
 
   .topic-service {
-    padding: 0 5rem; /* 0 80px */
+    padding: 40px 5rem; /* 0 80px */
   }
 }
 
@@ -127,7 +127,7 @@
   }
 
   .topic-service {
-    padding: 0 2rem; /* 0 32px */
+    padding: 30px 2rem; /* 0 32px */
   }
 
   .topic-service .title {
@@ -171,7 +171,7 @@
   }
 
   .topic-service {
-    padding: 0 1.5rem; /* 0 24px */
+    padding: 20px 1.5rem; /* 0 24px */
   }
 
   .topic-service .title {
@@ -207,7 +207,7 @@
   }
 
   .topic-service {
-    padding: 0 1rem; /* 0 16px */
+    padding: 5px 1rem; /* 0 16px */
   }
 
   .topic-service .title {
