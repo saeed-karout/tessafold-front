@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import '../../styles/reviews.css';
+import '../../styles/Reviews.css';
 
 function Reviews() {
   const { t, i18n } = useTranslation();
