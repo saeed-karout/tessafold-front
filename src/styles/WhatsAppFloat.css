@@ -7,26 +7,15 @@
 
 .whatsapp-float-container {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  top: 300px;
+  right: 200px;
   z-index: 1000;
   opacity: 0;
   transform: scale(0.8);
   animation: whatsapp-entrance 0.8s ease-out forwards;
 }
 
-/* تأكد من أن الزر على اليمين */
-.whatsapp-float-container.bottom-right {
-  bottom: 25px;
-  right: 25px;
-  left: auto;
-}
 
-.whatsapp-float-container.bottom-left {
-  bottom: 25px;
-  left: 25px;
-  right: auto;
-}
 
 @keyframes whatsapp-entrance {
   0% {
@@ -234,24 +223,19 @@
 
 /* تحسينات للشاشات الصغيرة */
 @media (max-width: 768px) {
+
+
   .whatsapp-float-container {
     bottom: 20px;
     right: 20px;
   }
   
-  .whatsapp-float-container.bottom-right {
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .whatsapp-float-container.bottom-left {
-    bottom: 20px;
-    left: 20px;
-  }
+ 
   
   .whatsapp-float {
     width: 56px;
     height: 56px;
+    
   }
   
   .whatsapp-icon {

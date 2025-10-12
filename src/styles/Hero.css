@@ -112,6 +112,7 @@
   align-items: center;
   gap: 2rem; /* 32px */
   align-self: stretch;
+  padding-top: 30px;
 }
 
 .section3-hero .partners-swiper {
@@ -126,12 +127,7 @@
   height: 5.5rem; /* 88px */
 }
 
-.partner-slide img {
-  width: 4.75rem; /* 76px */
-  height: 4.75rem; /* 76px */
-  flex-shrink: 0;
-  object-fit: contain; /* Ensure images scale properly */
-}
+
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {

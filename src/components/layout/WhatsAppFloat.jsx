@@ -33,7 +33,7 @@ function WhatsAppFloat() {
     // إيقاف النبض بعد 15 ثانية
     const pulseTimer = setTimeout(() => {
       setShowPulse(false);
-    }, 15000);
+    }, 20000);
 
     return () => {
       clearTimeout(timer);

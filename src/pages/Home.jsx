@@ -9,6 +9,7 @@ import ComponentPackage from '../components/Home/packageComponent';
 import HeroSection from '../components/Home/HeroSection';
 import Certificates from '../components/Home/Certificates';
 import LastSection from '../components/LastSection';
+import Reviews from '../components/Home/Reviews';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <section><HeroSection /></section>
       <section id="projects"><Projects /></section>
       <section id="about"><About /></section>
+      <Reviews />
       <section id="our_process"><OurProcess /></section>
       <OurServices />
       <section><ComponentPackage /></section>
