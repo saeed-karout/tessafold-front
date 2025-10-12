@@ -2,85 +2,165 @@
   {
     "id": 1,
     "title": {
-      "ar": "نموذج غير وظيفي",
-      "en": "Non-Functional Prototype",
-      "de": "Nicht-funktionales Prototy"
-    }
-  },
-  {
-    "id": 2,
-    "title": {
-      "ar": "تطبيق آيفون",
-      "en": "iPhone App",
-      "de": "iPhone-App"
-    }
-  },
-  {
-    "id": 3,
-    "title": {
-      "ar": "تطبيق آيباد",
-      "en": "iPad App",
-      "de": "iPad-App"
-    }
-  },
-  {
-    "id": 4,
-    "title": {
-      "ar": "تطبيق أندرويد",
-      "en": "Android App",
-      "de": "Android-App"
-    }
-  },
-  {
-    "id": 5,
-    "title": {
-      "ar": "تطبيق ويب",
-      "en": "Website App",
-      "de": "Web-App"
-    }
-  },
-  {
-    "id": 6,
-    "title": {
       "ar": "تصميم واجهة وتجربة المستخدم",
       "en": "UI/UX Design",
       "de": "UI/UX-Design"
     }
   },
   {
+    "id": 2,
+    "title": {
+      "ar": "تطوير تطبيقات الجوال",
+      "en": "Mobile App Development",
+      "de": "Mobile App-Entwicklung"
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "ar": "تطوير تطبيقات الويب",
+      "en": "Web App Development",
+      "de": "Web App-Entwicklung"
+    }
+  },
+  {
+    "id": 4,
+    "title": {
+      "ar": "استشارات AWS",
+      "en": "AWS Consulting",
+      "de": "AWS-Beratung"
+    }
+  },
+  {
+    "id": 5,
+    "title": {
+      "ar": "استشارات Azure",
+      "en": "Azure Consulting",
+      "de": "Azure-Beratung"
+    }
+  },
+  {
+    "id": 6,
+    "title": {
+      "ar": "خدمات Google Cloud",
+      "en": "Google Cloud",
+      "de": "Google Cloud"
+    }
+  },
+  {
     "id": 7,
     "title": {
-      "ar": "موقع ووردبريس",
-      "en": "WordPress Website",
-      "de": "WordPress-Website"
+      "ar": "الذكاء الاصطناعي وتعلم الآلة",
+      "en": "AI / ML",
+      "de": "KI / ML"
     }
   },
   {
     "id": 8,
     "title": {
-      "ar": "صفحة هبوط",
-      "en": "Landing Page Website",
-      "de": "Landingpage-Website"
+      "ar": "تطوير روبوتات الدردشة",
+      "en": "ChatBot Development",
+      "de": "Chatbot-Entwicklung"
     }
   },
   {
     "id": 9,
     "title": {
-      "ar": "تطبيق سطح المكتب",
-      "en": "Desktop App",
-      "de": "Desktop-App"
+      "ar": "تكامل أنظمة التحقق KYC",
+      "en": "KYC Integration",
+      "de": "KYC-Integration"
     }
   },
   {
     "id": 10,
     "title": {
-      "ar": "تطبيق الذكاء الاصطناعي",
-      "en": "AI App",
-      "de": "KI-App"
+      "ar": "توفير فرق تطوير تقنية المعلومات",
+      "en": "IT Staff Augmentation",
+      "de": "IT-Personalaufstockung"
     }
   },
   {
     "id": 11,
+    "title": {
+      "ar": "تطوير React.js / Vue / Nuxt / Angular",
+      "en": "React.js/Vue/Nuxt/Angular",
+      "de": "React.js/Vue/Nuxt/Angular"
+    }
+  },
+  {
+    "id": 12,
+    "title": {
+      "ar": "تطوير PHP Laravel",
+      "en": "PHP Laravel",
+      "de": "PHP Laravel"
+    }
+  },
+  {
+    "id": 13,
+    "title": {
+      "ar": "تطوير Node.js / Nest",
+      "en": "Node.js/Nest",
+      "de": "Node.js/Nest"
+    }
+  },
+  {
+    "id": 14,
+    "title": {
+      "ar": "تطوير بلغة Kotlin",
+      "en": "Kotlin",
+      "de": "Kotlin"
+    }
+  },
+  {
+    "id": 15,
+    "title": {
+      "ar": "تطوير بلغة Swift",
+      "en": "Swift",
+      "de": "Swift"
+    }
+  },
+  {
+    "id": 16,
+    "title": {
+      "ar": "تطوير Flutter",
+      "en": "Flutter",
+      "de": "Flutter"
+    }
+  },
+  {
+    "id": 17,
+    "title": {
+      "ar": "تطوير React Native",
+      "en": "React Native",
+      "de": "React Native"
+    }
+  },
+  {
+    "id": 18,
+    "title": {
+      "ar": "تطوير بلغة Python",
+      "en": "Python",
+      "de": "Python"
+    }
+  },
+  {
+    "id": 19,
+    "title": {
+      "ar": "تطوير .NET",
+      "en": ".NET",
+      "de": ".NET"
+    }
+  },
+  {
+    "id": 20,
+    "title": {
+      "ar": "تطوير Java EE",
+      "en": "Java EE",
+      "de": "Java EE"
+    }
+  },
+  {
+    "id": 21,
     "title": {
       "ar": "أخرى",
       "en": "Other",
