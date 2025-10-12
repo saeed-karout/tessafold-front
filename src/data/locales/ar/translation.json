@@ -32,49 +32,49 @@
     }
   },
   "footer": {
-    "logoAlt": "شعار تيسافولد",
-    "imprint": "الشروط والأحكام",
+    "logoAlt": "Tessafold Logo",
+    "imprint": "Imprint And Data Protection Declaration",
     "social": {
-      "facebook": "فيسبوك",
-      "instagram": "إنستغرام",
-      "linkedin": "لينكدإن",
-      "twitter": "تويتر",
-      "whatsapp": "واتساب"
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "whatsapp": "WhatsApp"
     },
     "locations": {
       "berlin": {
-        "title": "برلين | ألمانيا",
-        "subtitle": "لوتزوفر 25، 10787 برلين، رقم الضريبة: DE354426362"
+        "title": "Berlin | Germany",
+        "subtitle": "Lützowufer 25, 10787 Berlin, USt-ID: DE354426362"
       },
       "jeddah": {
-        "title": "جدة | السعودية",
-        "subtitle": "2777 عبد القدوس الأنصاري، السليمانية، جدة 22253، السعودية، ص.ب: 6635-23415، رقم السجل التجاري: 4030592418"
+        "title": "Jeddah | KSA",
+        "subtitle": "2777 Abd Al Qadous Al Ansari, Al Sulaymaniyah, Jeddah 22253, Saudi Arabia, P.O: 6635-23415, CR number: 4030592418"
       },
       "california": {
-        "title": "كاليفورنيا | الولايات المتحدة",
-        "subtitle": "3101 بارك بلد، بالو ألتو، كاليفورنيا 94306، رقم السجل التجاري: 23021837"
+        "title": "California | USA",
+        "subtitle": "3101 Park Blvd, Palo Alto, CA 94306, CR Number: 23021837"
       },
       "dubai": {
-        "title": "دبي | الإمارات",
-        "subtitle": "دبي للاستثمار بارك 1، مركز بيان للأعمال، رقم السجل التجاري: 1350473"
+        "title": "Dubai | UAE",
+        "subtitle": "Dubai Investments Park 1, Bayan Business Center, CR Number: 1350473"
       }
     },
     "contacts": {
-      "title": "جهات الاتصال",
+      "title": "Contacts",
       "email": "info@tessafold.com",
-      "emailIcon": "أيقونة البريد الإلكتروني",
+      "emailIcon": "Email icon",
       "phone1": "+966 58 167 0316",
       "phone2": "+49 172 677 5186",
       "phone3": "+971 544707457",
       "phone4": "+1 949 864 6033",
-      "phoneIcon": "أيقونة الهاتف"
+      "phoneIcon": "Phone icon"
     },
-    "copyright": "© 2025 تيسافولد . وكالة لتطوير التطبيقات والبرمجيات في برلين وكوبورغ"
+    "copyright": "© {year} Tessafold e.K. Agency for App and Software Development in Berlin and Coburg"
   },
   "scrollToTop": {
-    "title": "الصعود إلى الأعلى",
-    "ariaLabel": "زر الصعود إلى أعلى الصفحة",
-    "alt": "أيقونة الصعود إلى الأعلى"
+    "title": "Scroll to Top",
+    "ariaLabel": "Scroll to top of page button",
+    "alt": "Scroll to top icon"
   },
   "hero": {
     "subtitle": "تمكين الشركات بمنصات برمجية قابلة للتخصيص",
