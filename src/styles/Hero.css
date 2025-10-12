@@ -45,6 +45,10 @@
   text-align: center;
 }
 
+.partner-slide img{
+  max-width: 165px;
+}
+
 .section1-hero .yellow-hero {
   color: var(--Yellow-yellow-500, #FFB130);
   font-family: Poppins, sans-serif;
@@ -181,10 +185,7 @@
     height: 4rem; /* Smaller height */
   }
 
-  .partner-slide img {
-    width: 3.5rem; /* 56px */
-    height: 3.5rem;
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -228,8 +229,4 @@
     height: 3rem;
   }
 
-  .partner-slide img {
-    width: 2.5rem; /* 40px */
-    height: 2.5rem;
-  }
 }
