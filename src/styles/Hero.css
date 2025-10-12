@@ -47,6 +47,7 @@
 
 .partner-slide img{
   max-width: 165px;
+  filter: brightness(0) invert(1);
 }
 
 .section1-hero .yellow-hero {
