@@ -9,7 +9,9 @@ function Projects() {
   const [activeProjectId, setActiveProjectId] = useState(projectsData[0]?.id || 1);
   const [isChanging, setIsChanging] = useState(false);
   const [visibleProjects, setVisibleProjects] = useState([]);
-  const [startIndex, setStartIndex] = useState(0);
+  const [, setStartIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
   const topBarRef = useRef(null);
 
   // Determine VISIBLE_COUNT based on screen width
@@ -97,6 +99,34 @@ function Projects() {
     return () => window.removeEventListener('resize', handleResize);
   }, [activeProjectId, projectsData]);
 
+  // Handle touch events for swipe
+  const handleTouchStart = (e) => {
+    if (window.innerWidth > 768) return; // Restrict to mobile view
+    setTouchStartX(e.changedTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (window.innerWidth > 768) return;
+    setTouchEndX(e.changedTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (window.innerWidth > 768 || touchStartX === null || touchEndX === null) return;
+    const diffX = touchStartX - touchEndX;
+    const threshold = 50; // Minimum swipe distance
+
+    if (diffX > threshold) {
+      // Swipe left (next project)
+      goToNextProject();
+    } else if (diffX < -threshold) {
+      // Swipe right (previous project)
+      goToPrevProject();
+    }
+
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
   const isEdgeProject = (index) => {
     const VISIBLE_COUNT = getVisibleCount();
     return index < 1 || index >= VISIBLE_COUNT - 1;
@@ -123,8 +153,8 @@ function Projects() {
       setActiveProjectId(projectId);
       setTimeout(() => {
         setIsChanging(false);
-      }, 500);
-    }, 300);
+      }, 400); // Reduced from 500ms for smoother transition
+    }, 200); // Reduced from 300ms for faster response
   };
 
   useEffect(() => {
@@ -148,7 +178,12 @@ function Projects() {
     <section className="main-project" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
       <div className="topic">{t("projects") || 'Our Projects'}</div>
       <div className="list-projects">
-        <div className="top-bar-container">
+        <div
+          className="top-bar-container"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div className="navigation-buttons">
             <button className="nav-button prev-button" onClick={goToPrevProject} aria-label={t('projects.prev') || 'Previous Project'}></button>
             <button className="nav-button next-button" onClick={goToNextProject} aria-label={t('projects.next') || 'Next Project'}></button>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import ksaData from '../data/ksa.json';
-import "../styles/ksa.css";
+import ksaData from '../../data/ksa.json';
+import "../../styles/ksa.css";
 
 function KSA() {
   const { i18n } = useTranslation();

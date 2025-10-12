@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import faqData from '../data/faq.json';
-import "../styles/faq.css";
+import faqData from '../../data/faq.json';
+import "../../styles/faq.css";
 
 function FAQ() {
   const { t, i18n } = useTranslation();
