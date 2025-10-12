@@ -1,13 +1,13 @@
 {
   "certificates": {
     "title_part1": {
-      "en": "Recognized as a Top Web Development Company in",
-      "ar": "معترف بها كشركة رائدة في تطوير الويب في",
+      "en": "Recognized as a Top Web/Mobile App Development Company in",
+      "ar": "شركة رائدة في تطوير تطبيقات الويب والجوال في",
       "de": "Anerkannt als Top-Webentwicklungsunternehmen in"
     },
     "germany": {
-      "en": "Germany",
-      "ar": "ألمانيا",
+      "en": "KSA, Germany",
+      "ar": "المملكة العربية السعودية، والمانيا",
       "de": "Deutschland"
     },
     "and": {
@@ -17,22 +17,22 @@
     },
     "california": {
       "en": "California",
-      "ar": "كاليفورنيا",
+      "ar": "وولاية كاليفورنيا",
       "de": "Kalifornien"
     },
     "description": {
-      "en": "Tessafold is super proud to be recognized as a top-notch web development powerhouse in Germany and California, a prestigious title given by the awesome Design Rush, the go-to directory for development agencies.",
-      "ar": "تيسافولد فخورة جدًا بأن يتم الاعتراف بها كقوة رائدة في تطوير الويب في ألمانيا وكاليفورنيا، وهو لقب مرموق تمنحه Design Rush الرائعة، الدليل الرئيسي لوكالات التطوير.",
+      "en": "Tessafold is super proud to be recognized as a top-notch web development powerhouse in KSA, Germany and California, a prestigious title given by the awesome Design Rush, the go-to directory for development agencies.",
+      "ar": "تفخر Tessafold بالحصول على لقب إحدى أفضل شركات تطوير الويب في المملكة العربية السعودية، المانيا، وولاية كاليفورنيا في الولايات المتحدة الأمريكية وهو تصنيف مرموق من Design Rush، الدليل الرائد لوكالات التطوير.",
       "de": "Tessafold ist sehr stolz darauf, als erstklassige Webentwicklungskraft in Deutschland und Kalifornien anerkannt zu werden, ein prestigeträchtiger Titel, der vom großartigen Design Rush vergeben wird, dem führenden Verzeichnis für Entwicklungsagenturen."
     },
     "subtitle": {
       "en": "*View Tessafold Profile on Designrush",
-      "ar": "*عرض ملف تيسافولد على Designrush",
+      "ar": "*عرض بروفايل تيسافولد على Designrush",
       "de": "*Tessafold-Profil auf Designrush anzeigen"
     },
     "button": {
       "en": "view profile",
-      "ar": "عرض الملف",
+      "ar": "عرض البروفايل",
       "de": "Profil anzeigen"
     }
   }
