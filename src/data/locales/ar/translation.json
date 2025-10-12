@@ -2,38 +2,38 @@
   "header": {
     "logoAlt": "شعار الشركة",
     "home": "الرئيسية",
-    "services": "الخدمات",
+    "services": "خدماتنا",
     "career": "الوظائف",
-    "ourProcess": "عمليتنا",
-    "partnerWithUs": "شراكة معنا"
+    "ourProcess": "رحلة المشروع",
+    "partnerWithUs": "اتصل بنا"
   },
   "contact": {
-    "title": "دعنا نتعرف عليك",
-    "titleHighlight": "أنت!",
-    "subtitle": "يرجى مشاركة تفاصيل مشروعك البرمجي ومعلومات الاتصال بك!",
-    "description": "نحن هنا لمساعدتك! نحب أن نعرف المزيد عنك.",
+    "title": "اتصل",
+    "titleHighlight": "بنا!",
+    "subtitle": "شاركنا تفاصيل عن طلبك ومشروعك التقني مع الإيميل أو رقم للتواصل",
+    "description": "فريقنا سيقوم بالتواصل معكم في أقرب وقت ممكن!",
     "emailLabel": "بريدك الإلكتروني؟",
     "emailPlaceholder": "example@email.com",
-    "companyLabel": "اسم الشركة أو الموقع",
-    "companyPlaceholder": "الروابط أو اسم الشركة",
-    "messageLabel": "يرجى مشاركة بعض تفاصيل المشروع",
-    "messagePlaceholder": "قدم لنا بعض المعلومات عن منتجك",
-    "servicesLabel": "رائع! يرجى اختيار جميع الخدمات التي تهتم بالتعاقد معنا من أجلها",
+    "companyLabel": "اسم الشركة أو الموقع الإلكتروني",
+    "companyPlaceholder": "اسم الشركة أو الموقع الإلكتروني",
+    "messageLabel": "من فضلك شارك معنا بعض التفاصيل عن المشروع",
+    "messagePlaceholder": "من فضلك شارك معنا بعض التفاصيل عن المشروع",
+    "servicesLabel": "الرجاء تحديد جميع الخدمات التي ترغب في التعاقد معنا من أجلها",
     "submit": "إرسال",
     "submitting": "جاري الإرسال",
     "iconAlt": "أيقونة نموذج الاتصال",
     "success": "تم إرسال النموذج بنجاح!",
     "error": "حدث خطأ أثناء إرسال النموذج. حاول مرة أخرى.",
     "section2": {
-      "title": "فضولي للاكتشاف",
-      "span": "تيسافولد",
+      "title": "لمعرفة المزيد عن شركة تيسافولد",
+      "span": "وخدماتنا",
       "subtitle": "Lorem ipsum dolor sit amet consectetur. Nec sit morbi pretium dignissim eget",
       "btn": "انتقل إلى الصفحة الرئيسية"
     }
   },
   "footer": {
     "logoAlt": "شعار تيسافولد",
-    "imprint": "بيانات الشركة وحماية البيانات",
+    "imprint": "الشروط والأحكام",
     "social": {
       "facebook": "فيسبوك",
       "instagram": "إنستغرام",
