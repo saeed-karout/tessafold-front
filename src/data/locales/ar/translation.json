@@ -69,7 +69,7 @@
       "phone4": "+1 949 864 6033",
       "phoneIcon": "Phone icon"
     },
-    "copyright": "© {year} Tessafold e.K. Agency for App and Software Development in Berlin and Coburg"
+    "copyright": "2025 © Tessafold Top Agency For App And Software Development In KSA And Germany"
   },
   "scrollToTop": {
     "title": "Scroll to Top",
@@ -77,28 +77,50 @@
     "alt": "Scroll to top icon"
   },
   "hero": {
-    "subtitle": "تمكين الشركات بمنصات برمجية قابلة للتخصيص",
-    "title": "تطوير تطبيقات الويب والموبايل مدعوم بـ",
+    "subtitle": "نمكّن الشركات لتحقيق تحول رقمي سلس وآمن",
+    "title": "تصميم وتطوير تطبيقات الويب والجوال والذكاء الإصطناعي المعززة بـ",
     "animatedText": {
-      "ai": "الذكاء الاصطناعي",
-      "ml": "التعلم الآلي",
-      "software": "حلول البرمجيات"
-    },
-    "description": "تيسافولد هي شريك استراتيجي للشركات ذات الرؤية المستقبلية التي ترغب في بناء حلول برمجية متطورة وطويلة الأمد.",
-    "buttonText": "احجز استشارتك المجانية",
-    "buttonAriaLabel": "زر التوجه إلى صفحة التواصل",
+    "ai": "Artificial Intelligence",
+    "ml": "Machine Learning",
+    "ai1": "LLM",
+    "ai2": "OLLAMA", 
+    "openaimodels": "ChatGPT/Gemine/Claude",
+    "openai": "Open AI",
+    "tts": "Text To Speech",
+    "stt": "Speech To Text",
+    "avs": "AI Voice Assistant / Groq",
+    "aiorch": "AI Orchestration",
+    "dataScience": "Data Science",
+    "cloudTechnology": "Cloud Technology",
+    "cloudProviders": "AWS/Azure/Google",
+    "cloudProviders1": "Oracle/Alibaba",
+    "sso": "SSO",
+    "crmErpIntegrations": "CRM Integrations",
+     "odoo ErpIntegrations": "Odoo Integrations",
+    "agileMethodology": "Agile Methodology",
+    "apiintegrations": "Custom API Integrations",
+    "cleanCode": "Clean Code",
+    "ciCd": "CI/CD",
+    "paymentGateway": "Payment Gateway",
+    "edfaPay": "Edfapay",
+    "keycloak": "KeyCloak",
+    "weclapp": "WeClapp"
+  },
+    "description": "نحن الشريك الإستراتيجي التقني للشركات الطامحة للريادة، نقدّم حلولاً مبتكرة تعزز الإيرادات وتحوّل الأعمال رقميًا بكفاءة وأمان.",
+    "buttonText": "إحصل على إستشارة مجانية الآن!",
+    "buttonAriaLabel": "لإتصل بنا",
     "partnerAlt": "شعار {name}"
   },
   "home": "الرئيسية",
-  "projects": "مشاريعنا",
+  "projects": "أبرز أعمالنا",
   "partners": "الشركاء",
-  "about_us": "ماذا يقول عملاؤنا",
-  "about_span": "عنا",
+  "about_us": " آراء عملاء",
+  "about_span": "تيسافولد",
   "our_process": {
-    "title": "تطوير المواقع والتطبيقات",
-    "title_span": "التنفيذ",
-    "subtitle": "العملية هي كل شيء. إنها ملكيتنا الفكرية، وأساس عملنا!",
-    "view_full_process": "عرض عمليتنا الكاملة",
+    "title": " رحلة",
+    "title_span": "المشروع",
+    "subtitle": "نقدّم تجربة شاملة تبدأ بالتخطيط والتصميم وتستمر بعد الإطلاق بالصيانة والدعم والتطوير المتواصل، لضمان نجاح مشروعك واستمراريته.",
+    "view_full_process": "اتطلع على الرحلة بالتفصيل",
     "arrow_alt": "أيقونة السهم",
     "step_icon_alt": "أيقونة {name}"
   },
@@ -108,11 +130,11 @@
   "we_serve_subtitle":"نحن نقدم خدمات تطوير الويب والجوال وعلوم البيانات والذكاء الاصطناعي.",
   "faq": "الأسئلة الشائعة",
   "select_language": "اختر اللغة",
-  "visit_website": "زيارة الموقع",
+  "visit_website": "زيارة الموقع الإلكتروني",
   "download_app": "تحميل التطبيق",
   "about": {
     "arrowAlt": "أيقونة السهم",
     "videoTitle": "فيديو {name}",
-    "technologies": "التكنولوجيات"
+    "technologies": "التقنيات المستخدمة"
   }
 }
