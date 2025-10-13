@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem; /* Reduced from 24px for mobile */
-  padding: 5rem 2rem 4rem; /* Reduced padding for mobile */
+  padding: 5.7rem 2rem 4rem; /* Reduced padding for mobile */
   min-height: 100vh; /* Ensure full viewport height */
 }
 
