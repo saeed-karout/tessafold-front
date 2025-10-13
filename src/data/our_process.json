@@ -3,18 +3,18 @@
     {
       "id": 1,
       "name": {
-        "ar": "اتفاق",
-        "en": "Agreement",
-        "de": "handeln"
+        "ar": "توقيع العقد",
+        "en": "Kick-Off",
+        "de": "Vertrag"
       },
       "icon": "/icons/ourProcess/search.svg"
     },
     {
       "id": 2,
       "name": {
-        "ar": "تصميم ",
-        "en": "Design",
-        "de": "Design"
+        "ar": "UI UX",
+        "en": "UI UX",
+        "de": "UI UX"
       },
      "icon": "/icons/ourProcess/Design.svg"
     },
@@ -23,61 +23,61 @@
       "name": {
         "ar": "الجدول الزمني",
         "en": "Timeline",
-        "de": "Zeitleiste"
+        "de": "Zeitplan"
       },
      "icon": "/icons/ourProcess/timer.svg"
     },
     {
       "id": 4,
       "name": {
-        "ar": "بناء",
-        "en": "Build",
-        "de": "Bauen"
+        "ar": "البرمجة والتطوير",
+        "en": "Development",
+        "de": "Entwicklung"
       },
      "icon": "/icons/ourProcess/code.svg"
     },
     {
       "id": 5,
       "name": {
-        "ar": "الاختبار",
-        "en": "Test",
-        "de": "Prüfen"
+        "ar": "الإختبار",
+        "en": "QA",
+        "de": "QA"
       },
      "icon": "/icons/ourProcess/task-square.svg"
     },
     {
       "id": 6,
       "name": {
-        "ar": "النشر",
-        "en": "Deploy",
-        "de": "Einsetzen"
+        "ar": "التسليم ",
+        "en": "Delievery",
+        "de": "Lieferung"
       },
      "icon": "/icons/ourProcess/recovery-convert.svg"
     },
     {
       "id": 7,
       "name": {
-        "ar": "الصيانة",
-        "en": "Maintenance",
-        "de": "Wartung"
+        "ar": "الإطلاق ",
+        "en": "Go-Live",
+        "de": "Go-Live"
       },
       "icon": "/icons/ourProcess/search.svg"
     },
     {
       "id": 8,
       "name": {
-        "ar": "يقيس",
-        "en": "Measure",
-        "de": "Messen"
+        "ar": "عقد الدعم والصيانة",
+        "en": "Support & Maintainance",
+        "de": "Support & Wartung"
       },
      "icon": "/icons/ourProcess/ruler&pen.svg"
     },
     {
       "id": 9,
       "name": {
-        "ar": "يحافظ على",
-        "en": "Maintain",
-        "de": "Pflegen"
+        "ar": "التطوير المستمر",
+        "en": "Upgrading",
+        "de": "Weiterentwicklung"
       },
      "icon": "/icons/ourProcess/grid-edit.svg"
     }
