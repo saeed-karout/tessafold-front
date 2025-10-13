@@ -1,24 +1,24 @@
 {
   "package": {
     "title_part1": {
-      "en": "We’ve Got You a",
-      "ar": "لدينا لك",
-      "de": "Wir haben für Sie ein"
+      "en": "Your Partner for",
+      "ar": "شريككم في",
+      "de": "Ihr Partner für"
     },
     "title_part2": {
-      "en": "Full Package",
-      "ar": "باقة متكاملة",
-      "de": "Vollständiges Paket"
+      "en": "Comprehensive Digital Solutions",
+      "ar": "حلول رقمية متكاملة",
+      "de": "Umfassende digitale Lösungen"
     },
     "subtitle": {
-      "en": "Some of the technologies we work with.",
-      "ar": "بعض التقنيات التي نعمل بها.",
-      "de": "Einige der Technologien, mit denen wir arbeiten."
+      "en": "We leverage the world’s leading technologies to deliver efficient, secure, and scalable digital solutions tailored to your business growth.",
+      "ar": "نستخدم أحدث التقنيات العالمية لتقديم حلول رقمية فعّالة وآمنة وقابلة للتوسع، مصممة لدعم نمو أعمالكم.",
+      "de": "Wir nutzen führende globale Technologien, um effiziente, sichere und skalierbare digitale Lösungen zu liefern, die auf das Wachstum Ihres Unternehmens zugeschnitten sind."
     },
     "button": {
-      "en": "Connect With Us Today!",
-      "ar": "تواصل معنا اليوم!",
-      "de": "Kontaktieren Sie uns noch heute!"
+      "en": "Start Your Partnership Today",
+      "ar": "ابدأوا شراكتكم معنا اليوم",
+      "de": "Starten Sie Jetzt Ihre Partnerschaft mit uns"
     }
   }
 }
