@@ -341,7 +341,7 @@ function Projects() {
                 <a href={activeProject.webLink || '#'} target="_blank" rel="noopener noreferrer">
                   <div className="web-link">
                     {t("visit_website") || 'Visit Website'}
-                    <img src="/arrow-left.svg" alt="Arrow icon" />
+                    <img src="/arrow-left.svg" alt="Arrow icon" style={{ rotate: currentLang === 'ar' ? '180deg' : '0' }} />
                   </div>
                 </a>
               </motion.div>
@@ -354,7 +354,7 @@ function Projects() {
                 <a href={activeProject.appDownloadLink || '#'} target="_blank" rel="noopener noreferrer">
                   <div className="web-link">
                     {t("download_app") || 'Download App'}
-                    <img src="/arrow-left.svg" alt="Arrow icon" />
+                    <img src="/arrow-left.svg" alt="Arrow icon" style={{ rotate: currentLang === 'ar' ? '180deg' : '0' }} />
                   </div>
                 </a>
               </motion.div>

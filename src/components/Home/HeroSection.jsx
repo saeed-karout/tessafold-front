@@ -49,7 +49,7 @@ function HeroSection() {
       <div className="section1-hero">
         <span>{t('hero.subtitle') || 'Welcome'}</span>
         <div className="title-hero">{t('hero.title') || 'Innovate with Us'}</div>
-        <div className="yellow-hero-wrapper">
+        <div className="yellow-hero-wrapper" style={{ direction: currentLang === 'ar' ? 'ltr' : 'ltr' }}>
           <span className="yellow-hero"></span>
         </div>
         <p>{t('hero.description') || 'We provide cutting-edge solutions.'}</p>
