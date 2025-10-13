@@ -33,7 +33,7 @@
   },
   "footer": {
     "logoAlt": "Tessafold Logo",
-    "imprint": "Imprint And Data Protection Declaration",
+    "imprint": "Terms And Conditions",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -42,21 +42,21 @@
       "whatsapp": "WhatsApp"
     },
     "locations": {
-      "berlin": {
-        "title": "Berlin | Germany",
-        "subtitle": "Lützowufer 25, 10787 Berlin, USt-ID: DE354426362"
-      },
       "jeddah": {
         "title": "Jeddah | KSA",
         "subtitle": "2777 Abd Al Qadous Al Ansari, Al Sulaymaniyah, Jeddah 22253, Saudi Arabia, P.O: 6635-23415, CR number: 4030592418"
       },
-      "california": {
-        "title": "California | USA",
-        "subtitle": "3101 Park Blvd, Palo Alto, CA 94306, CR Number: 23021837"
-      },
       "dubai": {
         "title": "Dubai | UAE",
         "subtitle": "Dubai Investments Park 1, Bayan Business Center, CR Number: 1350473"
+      },
+      "berlin": {
+        "title": "Berlin | Germany",
+        "subtitle": "Lützowufer 25, 10787 Berlin"
+      },
+      "california": {
+        "title": "California | USA",
+        "subtitle": "3101 Park Blvd, Palo Alto, CA 94306, CR Number: 23021837"
       }
     },
     "contacts": {
@@ -78,7 +78,7 @@
   },
   "hero": {
     "subtitle": "نمكّن الشركات لتحقيق تحول رقمي سلس وآمن",
-    "title": "تصميم وتطوير تطبيقات الويب والجوال والذكاء الإصطناعي المعززة بـ",
+    "title": "تصميم وتطوير تطبيقات الويب والجوال والذكاء الإصطناعي",
     "animatedText": {
     "ai": "Artificial Intelligence",
     "ml": "Machine Learning",
