@@ -20,15 +20,24 @@
   font-display: swap;
 }
 
+body[data-lang="ar"],
+body[data-lang="ar"] * {
+  font-family: 'NeoSansArabic', sans-serif;
+ 
+}
+
+body:not([data-lang="ar"]),
+body:not([data-lang="ar"]) * {
+  font-family: 'Poppins', sans-serif;
+  direction: ltr; /* Ensure left-to-right text direction for non-Arabic */
+}
+
 body {
   background: var(--primary);
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: 'NeoSansArabic','Poppins', sans-serif;
 }
-
-
 
 body::-webkit-scrollbar {
   width: var(--sb-size);
@@ -67,4 +76,3 @@ span, p, .title, .topic {
 a {
   text-decoration: none;
 }
-

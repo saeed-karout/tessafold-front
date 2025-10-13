@@ -157,7 +157,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1224px) {
+@media (max-width: 1424px) {
   .main-process-component {
     padding: 4rem 1rem 5rem 1rem;
     gap: 3rem;

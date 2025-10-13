@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -14,7 +15,9 @@ function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
+    // Set the data-lang attribute on the body element based on the current language
     setLang(i18n.language || 'en');
+    document.body.setAttribute('data-lang', i18n.language || 'en');
     setCurrentHash(window.location.hash);
 
     const handleHashChange = () => {
@@ -49,6 +52,8 @@ function Header() {
   const changeLanguage = (newLang) => {
     i18n.changeLanguage(newLang);
     setLang(newLang);
+    // Update the data-lang attribute when the language changes
+    document.body.setAttribute('data-lang', newLang);
   };
 
   const handleNavigation = (target) => {
