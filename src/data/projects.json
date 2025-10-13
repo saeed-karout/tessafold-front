@@ -2,149 +2,149 @@
   {
     "id": 1,
     "name": {
-      "ar": "المشروع الأول",
-      "en": "Project One",
-      "de": "Projekt Eins"
+      "ar": "GameSafe.Ai",
+      "en": "GameSafe.Ai",
+      "de": "GameSafe.Ai"
     },
     "title": {
-      "ar": "تطبيق ويب مذهل",
-      "en": "Amazing Web App",
-      "de": "Erstaunliche Webanwendung"
+      "ar": "GameSafe.Ai - حماية الطفل على الشبكة (الولايات المتحدة الأمريكية)",
+      "en": "GameSafe.Ai – Child Online Safety (USA)",
+      "de": "GameSafe.Ai – Online-Sicherheit für Kinder (USA)"
     },
     "description": {
-      "ar": "تطبيق ويب تم بناؤه باستخدام تقنيات حديثة لتقديم تجربة مستخدم سلسة.",
-      "en": "A web app built with modern technologies for a seamless user experience.",
-      "de": "Eine Webanwendung mit modernen Technologien für ein nahtloses Benutzererlebnis."
+      "ar": "تُعد GameSafe.AI حلاً متقدماً لحماية الأطفال أثناء ممارسة الألعاب الإلكترونية عبر الإنترنت. يتم تثبيت البرنامج على جهاز الطفل (جوال أو كمبيوتر) لمراقبة الدردشات داخل الألعاب مثل Roblox وMinecraft. وباستخدام الذكاء الاصطناعي، وتعلّم الآلة، وتحليلات البيانات المتقدمة، يقوم النظام بتصفية التهديدات والكشف عن السلوك غير المناسب، ثم تنبيه الوالدين فوراً عبر تطبيق جوال مخصص",
+      "en": "GameSafe.AI is an advanced child-protection solution designed to create a safer internet experience during online gaming. Installed on the child’s device (mobile or desktop), it monitors and analyzes in-game chats on platforms like Roblox and Minecraft. Using AI and smart filtering, it detects threats, inappropriate content, or suspicious behavior, and immediately alerts parents through a dedicated mobile app, ensuring peace of mind and a secure digital environment for children.",
+      "de": "GameSafe.AI ist eine fortschrittliche Kinderschutzlösung, die entwickelt wurde, um ein sichereres Interneterlebnis beim Online-Gaming zu schaffen. Die Anwendung wird auf dem Gerät des Kindes (mobil oder Desktop) installiert und überwacht sowie analysiert Chatverläufe in Spielen wie Roblox und Minecraft. Mithilfe von KI und intelligenten Filtermechanismen erkennt sie Bedrohungen, unangemessene Inhalte oder verdächtiges Verhalten und benachrichtigt die Eltern sofort über eine spezielle mobile App – für ein sicheres digitales Umfeld und ein beruhigendes Gefühl der Sicherheit."
     },
     "image": "/images/projects/1.png",
-    "webLink": "https://example.com/project1",
-    "appDownloadLink": "https://play.google.com/store/apps/details?id=project1"
+    "webLink": "https://gamesafe.ai",
+    "appDownloadLink": "https://apps.apple.com/us/app/gamesafe/id1618047506"
   },
   {
     "id": 2,
     "name": {
-      "ar": "المشروع الثاني",
-      "en": "Project Two",
-      "de": "Projekt Zwei"
+      "ar": "Nouri.AI",
+      "en": "Nouri.AI",
+      "de": "Nouri.AI"
     },
     "title": {
-      "ar": "تطبيق موبايل ذكي",
-      "en": "Smart Mobile App",
-      "de": "Intelligente Mobile-App"
+      "ar": "Nouri.Ai – منصة ذكية للفعاليات والتواصل الإحترافي (الولايات المتحدة الأمريكية)",
+      "en": "Nouri.Ai – Networking Platform (USA)",
+      "de": "Nouri.Ai – Networking-Plattform (USA)"
     },
     "description": {
-      "ar": "تطبيق موبايل يستفيد من الذكاء الاصطناعي لتحسين الأداء.",
-      "en": "A mobile app leveraging AI to enhance performance.",
-      "de": "Eine mobile App, die KI nutzt, um die Leistung zu verbessern."
+      "ar": "تجمع Nouri.Ai بين قوة تنظيم الفعاليات مثل Eventbrite وإمكانات بناء العلاقات المهنية مثل LinkedIn. تمكّن الشركات والأفراد من إنشاء فعاليات، التواصل مع الحضور، وإدارة علاقاتهم بفعالية عبر نظام CRM مدمج.",
+      "en": "A hybrid between Eventbrite and LinkedIn, Nouri.Ai allows professionals to network, manage events, and build business relationships seamlessly. It combines CRM capabilities with social features to help companies engage with clients and organize events effectively.",
+      "de": "Als Hybrid zwischen Eventbrite und LinkedIn ermöglicht Nouri.Ai Experten, sich zu vernetzen, Veranstaltungen zu verwalten und nahtlos Geschäftsbeziehungen aufzubauen. Es kombiniert CRM-Funktionen mit sozialen Features, um Unternehmen dabei zu helfen, mit Kunden in Kontakt zu treten und Veranstaltungen effektiv zu organisieren."
     },
-    "image": "/images/projects/1.png",
-    "webLink": "https://example.com/project2",
-    "appDownloadLink": "https://play.google.com/store/apps/details?id=project2"
+    "image": "/images/projects/nouri.png",
+    "webLink": "https://nouri.ai",
+    "appDownloadLink": "https://apps.apple.com/us/app/nouri/id1578671181"
   },
   {
     "id": 3,
     "name": {
-      "ar": "المشروع الثالث",
-      "en": "Project Three",
-      "de": "Projekt Drei"
+      "ar": "Rehearsals.Ai",
+      "en": "Rehearsals.Ai",
+      "de": "Rehearsals.Ai"
     },
     "title": {
-      "ar": "منصة سحابية متكاملة",
-      "en": "Integrated Cloud Platform",
-      "de": "Integrierte Cloud-Plattform"
+      "ar": "Rehearsals.AI –  تطبيق الذكاء الاصطناعي لمحاكاة مقابلات العمل (السعودية)",
+      "en": "Rehearsals.AI – AI Job Interview Mocker (KSA)",
+      "de": "Rehearsals.AI - KI-Vorstellungsgespräch-Simulator (KSA)"
     },
     "description": {
-      "ar": "منصة سحابية توفر حلولاً شاملة للشركات.",
-      "en": "A cloud platform providing comprehensive business solutions.",
-      "de": "Eine Cloud-Plattform, die umfassende Geschäftslösungen bietet."
+      "ar": "منصّة مبتكرة تتيح للمستخدمين التدرب على مقابلات العمل عبر الكاميرا والمايكروفون، مع تحليل الأداء وإعطاء تقييم فوري. تساعد الباحثين عن عمل على رفع جاهزيتهم وثقتهم.",
+      "en": "Like a Duolingo for interviews, it allows job seekers to practice interviews with camera and mic, get AI-scored feedback, and prepare for real-world interviews. Perfect for students and professionals aiming to boost confidence.",
+      "de": "Ähnlich wie Duolingo für Interviews ermöglicht es Arbeitssuchenden, Interviews mit Kamera und Mikrofon zu üben, KI-bewertetes Feedback zu erhalten und sich auf reale Vorstellungsgespräche vorzubereiten. Perfekt für Studenten und Berufstätige, die ihr Selbstvertrauen stärken möchten."
     },
-    "image": "/images/projects/1.png",
-    "webLink": "https://example.com/project3",
-    "appDownloadLink": "https://play.google.com/store/apps/details?id=project3"
+    "image": "/images/projects/rehearsals.png",
+    "webLink": "https://rehearsals.ai/",
+    "appDownloadLink": "https://rehearsals.ai/"
   },
   {
     "id": 4,
     "name": {
-      "ar": "المشروع الرابع",
-      "en": "Project Four",
-      "de": "Projekt Vier"
+      "ar": "Beachy App",
+      "en": "Beachy App",
+      "de": "Beachy App"
     },
     "title": {
-      "ar": "نظام إدارة ذكي",
-      "en": "Smart Management System",
-      "de": "Intelligentes Managementsystem"
+      "ar": "Beachy App – Luxury Beach Rentals (KSA)",
+      "en": "Beachy App – Luxury Beach Rentals (KSA)",
+      "de": "Beachy App – Luxuriöse Strandunterkünfte (KSA)"
     },
     "description": {
-      "ar": "نظام إدارة يساعد الشركات على تحسين العمليات الداخلية.",
-      "en": "A management system to streamline business operations.",
-      "de": "Ein Managementsystem zur Optimierung von Geschäftsprozessen."
+      "ar": "تطبيق شبيه بـ Airbnb لكن متخصص في الفلل الفاخرة والأنشطة البحرية. يسهّل على المستخدمين اكتشاف وحجز أفضل الوجهات الشاطئية.",
+      "en": "Like Airbnb, but dedicated to luxury beach villas and activities. Delivers a premium vacation booking experience for high-end travelers.",
+      "de": "Ähnlich wie Airbnb, jedoch spezialisiert auf luxuriöse Strandvillen und Aktivitäten. Bietet ein erstklassiges Buchungserlebnis für Urlauber der Extraklasse."
     },
-    "image": "/images/projects/1.png",
+    "image": "/images/projects/beachy.png",
     "webLink": "https://example.com/project4",
-    "appDownloadLink": "https://play.google.com/store/apps/details?id=project4"
+    "appDownloadLink": "https://apps.apple.com/us/app/beachy-app/id6742138006"
   },
   {
     "id": 5,
     "name": {
-      "ar": "المشروع الخامس",
-      "en": "Project Five",
-      "de": "Projekt Fünf"
+      "ar": "Jadarah AI",
+      "en": "Jadarah AI",
+      "de": "Jadarah AI"
     },
     "title": {
-      "ar": "تطبيق تعليمي تفاعلي",
-      "en": "Interactive Learning App",
-      "de": "Interaktive Lern-App"
+      "ar": " Jadarah AI- مولّد العروض المعتمد على الذكاء الاصطناعي (السعودية)",
+      "en": "Jadarah AI – AI Proposal Generator (KSA)",
+      "de": "Jadarah – KI-basierter Angebotsgenerator (KSA)"
     },
     "description": {
-      "ar": "تطبيق تعليمي يقدم محتوى تفاعلي للطلاب.",
-      "en": "An educational app offering interactive content for students.",
-      "de": "Eine Lern-App mit interaktivem Inhalt für Schüler."
+      "ar": "أداة تعتمد على الذكاء الاصطناعي لتوليد مسودات عروض مشاريع متكاملة لشركة جدارة الاستشارية. تختصر الوقت بنسبة 70% مع الحفاظ على الجودة والاتساق.",
+      "en": "A business consulting tool like a HubSpot Proposal Builder + AI, generating structured drafts from RFPs and saving consultants 60–70% of effort. Tailored for Jadarah Consulting.",
+      "de": "Ein Unternehmensberatungstool wie HubSpot Proposal Builder aber mit KI, das strukturierte Entwürfe aus Ausschreibungen generiert und Beratern 60–70 % des Aufwands erspart. Maßgeschneidert für Jadarah Beratungsunternehmen."
     },
-    "image": "/images/projects/1.png",
-    "webLink": "https://example.com/project5",
-    "appDownloadLink": "https://play.google.com/store/apps/details?id=project5"
+    "image": "/images/projects/jadarah.png",
+    "webLink": "https://jadarahcc.com",
+    "appDownloadLink": "https://jadarahcc.com"
   },
   {
     "id": 6,
     "name": {
-      "ar": "المشروع السادس",
-      "en": "Project Six",
-      "de": "Projekt Sechs"
+      "ar": "BLTN App",
+      "en": "BLTN App",
+      "de": "BLTN App"
     },
     "title": {
-      "ar": "منصة تجارة إلكترونية",
-      "en": "E-Commerce Platform",
-      "de": "E-Commerce-Plattform"
+      "ar": "Multitude Insights – تطبيق للشرطة الأمريكية",
+      "en": "Multitude Insights – BLTN App (USA)",
+      "de": "Multitude Insights – BLTN App (USA)"
     },
     "description": {
-      "ar": "منصة للتجارة الإلكترونية تدعم الشركات الصغيرة.",
-      "en": "An e-commerce platform supporting small businesses.",
-      "de": "Eine E-Commerce-Plattform zur Unterstützung kleiner Unternehmen."
+      "ar": "برنامج متخصص (تطبيق ويب وتطبيق محمول) مخصص للشرطة الأمريكية، مشابه لإنستجرام، مع إضافة صلاحيات بين الضباط أو الأفراد العاديين. يدعم وجود مجموعات ودردشات جماعية، بالإضافة إلى الدردشات المباشرة بين شخصين. كل منشور أو إجراء يتم إضافته يتضمن جميع المعلومات الضرورية مثل الصور أو الملفات، مع إمكانية مشاركتها بين الأقسام.",
+      "en": "A specialized software (web and mobile application) for the police, similar to Instagram, with added permissions between officers or regular personnel. It supports the existence of groups and group chats, as well as direct chats between two individuals. Each post or action added includes all necessary information such as photos or files, with the ability to share them between departments.",
+      "de": "Eine spezialisierte Software (Web- und Mobilanwendung) für die USA-Polizei, ähnlich wie Instagram, mit zusätzlichen Berechtigungen zwischen Offizieren oder regulärem Personal. Sie unterstützt Gruppen und Gruppenchats sowie direkte Chats zwischen zwei Personen. Jeder Beitrag oder jede Aktion enthält alle notwendigen Informationen wie Fotos oder Dateien und kann zwischen Abteilungen geteilt werden."
     },
-    "image": "/images/projects/1.png",
-    "webLink": "https://example.com/project6",
-    "appDownloadLink": "https://play.google.com/store/apps/details?id=project6"
+    "image": "/images/projects/mi.png",
+    "webLink": "https://www.multitudeinsights.com/",
+    "appDownloadLink": "https://apps.apple.com/us/app/bltn-mobile/id6446463374"
   },
   {
     "id": 7,
     "name": {
-      "ar": "المشروع السابع",
-      "en": "Project Seven",
-      "de": "Projekt Sieben"
+      "ar": "Cruiz App",
+      "en": "Cruiz App",
+      "de": "Cruiz App"
     },
     "title": {
-      "ar": "تطبيق صحي مبتكر",
-      "en": "Innovative Health App",
-      "de": "Innovative Gesundheits-App"
+      "ar": "Cruiz App - منصة تأجير السيارات",
+      "en": "Cruiz App – Car Rental Platform (KSA)",
+      "de": "Cruiz App – Peer-to-Peer-Autovermietungsplattform (KSA)"
     },
     "description": {
-      "ar": "تطبيق يساعد المستخدمين على تتبع صحتهم بسهولة.",
-      "en": "An app helping users track their health effortlessly.",
-      "de": "Eine App, die Benutzern hilft, ihre Gesundheit mühelos zu verfolgen."
+      "ar": "تطبيق لتأجير السيارات من شخص أو شركة الى شخص. يتيح للمستخدمين البحث، الحجز، والتواصل بسهولة، مع تجربة استخدام حديثة وسلسة.",
+      "en": "A peer-to-peer and B2C car rental platform. Like Turo + traditional rental apps, it connects car owners and renters with secure payments, advanced filters, and sponsorship options.",
+      "de": "Eine Peer-to-Peer- und B2C-Autovermietungsplattform. Ähnlich wie Turo und herkömmliche Mietwagen-Apps verbindet sie Autobesitzer und Mieter mit sicheren Zahlungen, erweiterten Filteroptionen und Sponsoring-Möglichkeiten."
     },
-    "image": "/images/projects/1.png",
-    "webLink": "https://example.com/project7",
-    "appDownloadLink": "https://play.google.com/store/apps/details?id=project7"
+    "image": "/images/projects/cruiz.png",
+    "webLink": "",
+    "appDownloadLink": ""
   },
   {
     "id": 8,
