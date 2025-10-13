@@ -142,19 +142,7 @@ function Reviews() {
               {t('reviews.error', { defaultValue: 'Failed to load reviews. Please try again later.' })}
             </p>
           ) : (
-            <div
-              ref={widgetRef}
-              className="clutch-widget"
-              data-url="https://widget.clutch.co"
-              data-widget-type="4"
-              data-nofollow="true"
-              data-expandifr="true"
-              data-scale="100"
-              data-primary-color="#FFB130"
-              data-secondary-color="#39797f"
-              data-reviews="2231946,2228229,2228148,2215763,2214541,2214305,2211821,2210293,2208659,2207514,2204852,2204421"
-              data-clutchcompany-id="1782053"
-            ></div>
+           <div className=""></div>
           )}
         </div>
 
