@@ -17,29 +17,21 @@
         "de": "Unsere Dienstleistungen"
       },
       "description": {
-        "ar": "نقدم خدمات تطوير الويب والموبايل، علوم البيانات، والذكاء الاصطناعي. فريقنا من المحترفين يقدم حلولًا مبتكرة باستخدام أحدث التقنيات.",
-        "en": "We offer web and mobile development, data science, and AI services. Our team of professionals delivers innovative solutions using the latest technologies.",
-        "de": "Wir bieten Web- und Mobile-Entwicklung, Datenwissenschaft und KI-Dienste an. Unser Team von Fachleuten liefert innovative Lösungen mit den neuesten Technologien."
+        "ar": "نقدّم في تيسافولد خدمات تطوير تطبيقات الويب والجوال والذكاء الاصطناعي. يعمل فريقنا المتخصص على ابتكار حلول متقدمة مخصصة لحاجة العميل تعتمد على أحدث التقنيات لتلبية احتياجات عملائنا وتحقيق أفضل النتائج.",
+        "en": "We offer web and mobile development, data science, and AI Development services. Our team of professionals delivers innovative solutions using the latest technologies.",
+        "de": "Wir bieten Web- und Mobile-Entwicklung, Datenwissenschaft und KI-Dienste an. Unser Team von Experten liefert innovative Lösungen mit den neuesten Technologien."
       }
     },
     "services": [
       {
         "title": {
-          "ar": "الذكاء الاصطناعي وعلوم البيانات",
-          "en": "Artificial Intelligence And Data Science",
-          "de": "Künstliche Intelligenz und Datenwissenschaft"
+          "ar": "تصميم واجهة المستخدم/تجربة المستخدم",
+          "en": "UIUX Design",
+          "de": "UI/UX-Design"
         },
         "isLink": false
       },
-      {
-        "title": {
-          "ar": "ويب3 والبلوكتشين",
-          "en": "Web3 And Blockchain",
-          "de": "Web3 und Blockchain"
-        },
-        "isLink": false
-      },
-      {
+       {
         "title": {
           "ar": "تطوير تطبيقات الويب والموبايل",
           "en": "Web And Mobile App Development",
@@ -49,17 +41,25 @@
       },
       {
         "title": {
-          "ar": "تعزيز الطاقم",
-          "en": "Staff Augmentation",
-          "de": "Personalausbau"
+          "ar": "الذكاء الاصطناعي و وتعلم الآلة",
+          "en": "Artificial Intelligence And Machine Learning",
+          "de": "Künstliche Intelligenz und Machine Learning"
         },
         "isLink": false
       },
       {
         "title": {
-          "ar": "تصميم واجهة المستخدم/تجربة المستخدم",
-          "en": "UIUX Design",
-          "de": "UI/UX-Design"
+          "ar": "Web3 And Blockchain",
+          "en": "Web3 And Blockchain",
+          "de": "Web3 und Blockchain"
+        },
+        "isLink": false
+      },
+      {
+        "title": {
+          "ar": "إعارة موظفين",
+          "en": "Staff Augmentation",
+          "de": "Personalausbau"
         },
         "isLink": false
       },
