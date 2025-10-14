@@ -49,117 +49,116 @@
     "name": { "ar": "Rehearsals.Ai", "en": "Rehearsals.Ai", "de": "Rehearsals.Ai" },
     "title": { "ar": "Rehearsals.AI – تطبيق الذكاء الاصطناعي لمحاكاة مقابلات العمل (السعودية)", "en": "Rehearsals.AI – AI Job Interview Mocker (KSA)", "de": "Rehearsals.AI - KI-Vorstellungsgespräch-Simulator (KSA)" },
     "description": { "ar": "منصّة مبتكرة تتيح للمستخدمين التدرب على مقابلات العمل عبر الكاميرا والمايكروفون، مع تحليل الأداء وإعطاء تقييم فوري. تساعد الباحثين عن عمل على رفع جاهزيتهم وثقتهم.", "en": "Like a Duolingo for interviews, it allows job seekers to practice interviews with camera and mic, get AI-scored feedback, and prepare for real-world interviews. Perfect for students and professionals aiming to boost confidence.", "de": "Ähnlich wie Duolingo für Interviews ermöglicht es Arbeitssuchenden, Interviews mit Kamera und Mikrofon zu üben, KI-bewertetes Feedback zu erhalten und sich auf reale Vorstellungsgespräche vorzubereiten. Perfekt für Studenten und Berufstätige, die ihr Selbstvertrauen stärken möchten." },
-"image": "/images/projects/rehearsals.png",
-"webLink": "[https://rehearsals.ai/](https://rehearsals.ai/)",
-"appDownloadLink": "[https://rehearsals.ai/](https://rehearsals.ai/)"
-},
-{
-"id": 7,
-"name": { "ar": "Beachy App", "en": "Beachy App", "de": "Beachy App" },
-"title": { "ar": "Beachy App – Luxury Beach Rentals (KSA)", "en": "Beachy App – Luxury Beach Rentals (KSA)", "de": "Beachy App – Luxuriöse Strandunterkünfte (KSA)" },
-"description": { "ar": "تطبيق شبيه بـ Airbnb لكن متخصص في الفلل الفاخرة والأنشطة البحرية. يسهّل على المستخدمين اكتشاف وحجز أفضل الوجهات الشاطئية.", "en": "Like Airbnb, but dedicated to luxury beach villas and activities. Delivers a premium vacation booking experience for high-end travelers.", "de": "Ähnlich wie Airbnb, jedoch spezialisiert auf luxuriöse Strandvillen und Aktivitäten. Bietet ein erstklassiges Buchungserlebnis für Urlauber der Extraklasse." },
-"image": "/images/projects/beachy.png",
-"webLink": "[https://example.com/project4](https://example.com/project4)",
-"appDownloadLink": "[https://apps.apple.com/us/app/beachy-app/id6742138006](https://apps.apple.com/us/app/beachy-app/id6742138006)"
-},
-{
-"id": 8,
-"name": { "ar": "Jadarah AI", "en": "Jadarah AI", "de": "Jadarah AI" },
-"title": { "ar": "Jadarah AI – منصة تعليمية ذكية (الإمارات العربية المتحدة)", "en": "Jadarah AI – Smart Learning Platform (UAE)", "de": "Jadarah AI – Intelligente Lernplattform (VAE)" },
-"description": { "ar": "منصة تعليمية ذكية تعتمد على الذكاء الاصطناعي لتقديم محتوى مخصص للطلاب، مع متابعة الأداء وإرشادات تعليمية شخصية.", "en": "AI-powered educational platform that personalizes learning content for students and tracks their progress, offering tailored guidance and feedback.", "de": "KI-gestützte Lernplattform, die Lerninhalte für Schüler personalisiert, deren Fortschritt verfolgt und maßgeschneiderte Anleitung und Feedback bietet." },
-"image": "/images/projects/jadarah.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 9,
-"name": { "ar": "BLTN App", "en": "BLTN App", "de": "BLTN App" },
-"title": { "ar": "BLTN – تطبيق تواصل اجتماعي متخصص (ألمانيا)", "en": "BLTN – Specialized Social Media App (Germany)", "de": "BLTN – Spezielle Social Media App (Deutschland)" },
-"description": { "ar": "تطبيق تواصل اجتماعي يركز على مجتمعات محددة، مع ميزات تفاعلية مخصصة وتحليل سلوك المستخدمين.", "en": "Social media app targeting niche communities, offering interactive features and insights on user engagement.", "de": "Social-Media-App, die sich an Nischen-Communities richtet und interaktive Funktionen sowie Einblicke in das Nutzerengagement bietet." },
-"image": "/images/projects/bltn.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 10,
-"name": { "ar": "Cruiz App", "en": "Cruiz App", "de": "Cruiz App" },
-"title": { "ar": "Cruiz – تطبيق حجز الرحلات البحرية (الولايات المتحدة الأمريكية)", "en": "Cruiz – Cruise Booking App (USA)", "de": "Cruiz – Kreuzfahrten-Buchungs-App (USA)" },
-"description": { "ar": "تطبيق حجز الرحلات البحرية والفنادق، مع واجهة سهلة الاستخدام وعروض مخصصة للمستخدمين.", "en": "Mobile app for booking cruises and hotels, providing an easy interface and personalized offers.", "de": "Mobile App zur Buchung von Kreuzfahrten und Hotels, mit einfacher Benutzeroberfläche und personalisierten Angeboten." },
-"image": "/images/projects/cruiz.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 11,
-"name": { "ar": "Fsexpert", "en": "Fsexpert", "de": "Fsexpert" },
-"title": { "ar": "Fsexpert – منصة استثمار عقاري ذكية (ألمانيا)", "en": "Fsexpert – Smart Real Estate Investment Platform (Germany)", "de": "Fsexpert – Intelligente Immobilien-Investitionsplattform (Deutschland)" },
-"description": { "ar": "تطبيق ومنصة ويب لإدارة الاستثمارات العقارية، تحليل السوق وإيجاد أفضل الفرص الاستثمارية.", "en": "Web and mobile platform for real estate investment management, market analysis, and opportunity discovery.", "de": "Web- und Mobilplattform für das Management von Immobilieninvestitionen, Marktanalyse und Chancenfindung." },
-"image": "/images/projects/fsexpert.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 12,
-"name": { "ar": "Florian Homm Platform", "en": "Florian Homm Platform", "de": "Florian Homm Plattform" },
-"title": { "ar": "Florian Homm – منصة استثمارات مالية (ألمانيا)", "en": "Florian Homm – Financial Investment Platform (Germany)", "de": "Florian Homm – Finanzinvestitionsplattform (Deutschland)" },
-"description": { "ar": "منصة لإدارة الاستثمارات المالية والمحتوى التعليمي للمستثمرين، مع تحليلات متقدمة وتوصيات ذكية.", "en": "Platform for managing financial investments and educational content for investors, featuring analytics and intelligent recommendations.", "de": "Plattform zur Verwaltung von Finanzinvestitionen und Bildungsinhalten für Investoren, mit Analysen und intelligenten Empfehlungen." },
-"image": "/images/projects/florianhomm.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 13,
-"name": { "ar": "ZOUNDR", "en": "ZOUNDR", "de": "ZOUNDR" },
-"title": { "ar": "ZOUNDR – منصة موسيقية تفاعلية (ألمانيا)", "en": "ZOUNDR – Interactive Music Platform (Germany)", "de": "ZOUNDR – Interaktive Musikplattform (Deutschland)" },
-"description": { "ar": "منصة موسيقية تتيح للمستخدمين إنشاء، مشاركة، والتعاون على إنتاج الموسيقى عبر الإنترنت.", "en": "Music platform allowing users to create, share, and collaborate on music production online.", "de": "Musikplattform, die es Benutzern ermöglicht, Musik online zu erstellen, zu teilen und gemeinsam zu produzieren." },
-"image": "/images/projects/zoundr.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 14,
-"name": { "ar": "E-InAkademie", "en": "E-InAkademie", "de": "E-InAkademie" },
-"title": { "ar": "E-InAkademie – منصة تعلم إلكتروني (ألمانيا)", "en": "E-InAkademie – E-Learning Platform (Germany)", "de": "E-InAkademie – E-Learning-Plattform (Deutschland)" },
-"description": { "ar": "منصة تعلم إلكتروني متكاملة، مع دورات تفاعلية، متابعة الأداء، وتقديم شهادات للمستخدمين.", "en": "Comprehensive e-learning platform with interactive courses, progress tracking, and certification for learners.", "de": "Umfassende E-Learning-Plattform mit interaktiven Kursen, Fortschrittsverfolgung und Zertifizierung für Lernende." },
-"image": "/images/projects/einakademie.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 15,
-"name": { "ar": "Wasl", "en": "Wasl", "de": "Wasl" },
-"title": { "ar": "Wasl – تطبيق خدمات النقل (الإمارات العربية المتحدة)", "en": "Wasl – Transportation Services App (UAE)", "de": "Wasl – Transportdienste-App (VAE)" },
-"description": { "ar": "تطبيق يدمج خدمات النقل المحلي والخاص، مع إمكانيات الدفع الذكي وتتبع المركبات.", "en": "App combining local and private transportation services, with smart payment and vehicle tracking capabilities.", "de": "App, die lokale und private Transportdienste kombiniert, mit intelligenten Zahlungs- und Fahrzeugverfolgungsfunktionen." },
-"image": "/images/projects/wasl.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 16,
-"name": { "ar": "Kupek", "en": "Kupek", "de": "Kupek" },
-"title": { "ar": "Kupek – منصة تسويق رقمي (ألمانيا)", "en": "Kupek – Digital Marketing Platform (Germany)", "de": "Kupek – Digitale Marketingplattform (Deutschland)" },
-"description": { "ar": "منصة متكاملة للتسويق الرقمي، إدارة الحملات، والتحليلات لتسهيل نمو الأعمال.", "en": "All-in-one digital marketing platform for campaign management and analytics, helping businesses grow effectively.", "de": "All-in-One-Digital-Marketing-Plattform für Kampagnenmanagement und Analysen, die Unternehmen beim effektiven Wachstum unterstützt." },
-"image": "/images/projects/kupek.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 17,
-"name": { "ar": "Mocka Rocka", "en": "Mocka Rocka", "de": "Mocka Rocka" },
-"title": { "ar": "Mocka Rocka – منصة ترفيهية للأطفال (ألمانيا)", "en": "Mocka Rocka – Kids Entertainment Platform (Germany)", "de": "Mocka Rocka – Unterhaltungsplattform für Kinder (Deutschland)" },
-"description": { "ar": "منصة ترفيهية تعليمية للأطفال، تحتوي على ألعاب، فيديوهات، ونشاطات تعليمية آمنة.", "en": "Educational entertainment platform for kids, featuring games, videos, and safe learning activities.", "de": "Bildungs- und Unterhaltungsplattform für Kinder mit Spielen, Videos und sicheren Lernaktivitäten." },
-"image": "/images/projects/mockarocka.png",
-"webLink": "",
-"appDownloadLink": ""
-},
-{
-"id": 18,
-"name": { "ar": "Nume", "en": "Nume", "de": "Nume" },
-"title": { "ar": "Nume – تطبيق إدارة مواعيد احترافي (ألمانيا)", "en": "Nume – Professional Appointment Management App (Germany)", "de": "Nume – Professionelle Terminverwaltungs-App (Deutschland)" },
-"description": { "ar": "تطبيق لإدارة المواعيد والأعمال الصغيرة، مع تذكيرات ذكية وتنظيم فعال للجدول الزمني.", "en": "App for managing appointments and small businesses, offering smart reminders and efficient scheduling tools.", "de": "App zur Verwaltung von Terminen und kleinen Unternehmen, mit intelligenten Erinnerungen und effizientem Zeitmanagement." },
-"image": "/images/projects/nume.png",
-"webLink": "",
-"appDownloadLink": ""
-}
+    "image": "/images/projects/rehearsals.png",
+    "webLink": "https://rehearsals.ai/",
+    "appDownloadLink": "https://rehearsals.ai/"
+  },
+  {
+    "id": 7,
+    "name": { "ar": "Beachy App", "en": "Beachy App", "de": "Beachy App" },
+    "title": { "ar": "Beachy App – Luxury Beach Rentals (KSA)", "en": "Beachy App – Luxury Beach Rentals (KSA)", "de": "Beachy App – Luxuriöse Strandunterkünfte (KSA)" },
+    "description": { "ar": "تطبيق شبيه بـ Airbnb لكن متخصص في الفلل الفاخرة والأنشطة البحرية. يسهّل على المستخدمين اكتشاف وحجز أفضل الوجهات الشاطئية.", "en": "Like Airbnb, but dedicated to luxury beach villas and activities. Delivers a premium vacation booking experience for high-end travelers.", "de": "Ähnlich wie Airbnb, jedoch spezialisiert auf luxuriöse Strandvillen und Aktivitäten. Bietet ein erstklassiges Buchungserlebnis für Urlauber der Extraklasse." },
+    "image": "/images/projects/beachy.png",
+    "webLink": "https://example.com/project4",
+    "appDownloadLink": "https://apps.apple.com/us/app/beachy-app/id6742138006"
+  },
+  {
+    "id": 8,
+    "name": { "ar": "Jadarah AI", "en": "Jadarah AI", "de": "Jadarah AI" },
+    "title": { "ar": "Jadarah AI – منصة تعليمية ذكية (الإمارات العربية المتحدة)", "en": "Jadarah AI – Smart Learning Platform (UAE)", "de": "Jadarah AI – Intelligente Lernplattform (VAE)" },
+    "description": { "ar": "منصة تعليمية ذكية تعتمد على الذكاء الاصطناعي لتقديم محتوى مخصص للطلاب، مع متابعة الأداء وإرشادات تعليمية شخصية.", "en": "AI-powered educational platform that personalizes learning content for students and tracks their progress, offering tailored guidance and feedback.", "de": "KI-gestützte Lernplattform, die Lerninhalte für Schüler personalisiert, deren Fortschritt verfolgt und maßgeschneiderte Anleitung und Feedback bietet." },
+    "image": "/images/projects/jadarah.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 9,
+    "name": { "ar": "BLTN App", "en": "BLTN App", "de": "BLTN App" },
+    "title": { "ar": "BLTN – تطبيق تواصل اجتماعي متخصص (ألمانيا)", "en": "BLTN – Specialized Social Media App (Germany)", "de": "BLTN – Spezielle Social Media App (Deutschland)" },
+    "description": { "ar": "تطبيق تواصل اجتماعي يركز على مجتمعات محددة، مع ميزات تفاعلية مخصصة وتحليل سلوك المستخدمين.", "en": "Social media app targeting niche communities, offering interactive features and insights on user engagement.", "de": "Social-Media-App, die sich an Nischen-Communities richtet und interaktive Funktionen sowie Einblicke in das Nutzerengagement bietet." },
+    "image": "/images/projects/bltn.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 10,
+    "name": { "ar": "Cruiz App", "en": "Cruiz App", "de": "Cruiz App" },
+    "title": { "ar": "Cruiz – تطبيق حجز الرحلات البحرية (الولايات المتحدة الأمريكية)", "en": "Cruiz – Cruise Booking App (USA)", "de": "Cruiz – Kreuzfahrten-Buchungs-App (USA)" },
+    "description": { "ar": "تطبيق حجز الرحلات البحرية والفنادق، مع واجهة سهلة الاستخدام وعروض مخصصة للمستخدمين.", "en": "Mobile app for booking cruises and hotels, providing an easy interface and personalized offers.", "de": "Mobile App zur Buchung von Kreuzfahrten und Hotels, mit einfacher Benutzeroberfläche und personalisierten Angeboten." },
+    "image": "/images/projects/cruiz.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 11,
+    "name": { "ar": "Fsexpert", "en": "Fsexpert", "de": "Fsexpert" },
+    "title": { "ar": "Fsexpert – منصة استثمار عقاري ذكية (ألمانيا)", "en": "Fsexpert – Smart Real Estate Investment Platform (Germany)", "de": "Fsexpert – Intelligente Immobilien-Investitionsplattform (Deutschland)" },
+    "description": { "ar": "تطبيق ومنصة ويب لإدارة الاستثمارات العقارية، تحليل السوق وإيجاد أفضل الفرص الاستثمارية.", "en": "Web and mobile platform for real estate investment management, market analysis, and opportunity discovery.", "de": "Web- und Mobilplattform für das Management von Immobilieninvestitionen, Marktanalyse und Chancenfindung." },
+    "image": "/images/projects/fsexpert.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 12,
+    "name": { "ar": "Florian Homm Platform", "en": "Florian Homm Platform", "de": "Florian Homm Plattform" },
+    "title": { "ar": "Florian Homm – منصة استثمارات مالية (ألمانيا)", "en": "Florian Homm – Financial Investment Platform (Germany)", "de": "Florian Homm – Finanzinvestitionsplattform (Deutschland)" },
+    "description": { "ar": "منصة لإدارة الاستثمارات المالية والمحتوى التعليمي للمستثمرين، مع تحليلات متقدمة وتوصيات ذكية.", "en": "Platform for managing financial investments and educational content for investors, featuring analytics and intelligent recommendations.", "de": "Plattform zur Verwaltung von Finanzinvestitionen und Bildungsinhalten für Investoren, mit Analysen und intelligenten Empfehlungen." },
+    "image": "/images/projects/florianhomm.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 13,
+    "name": { "ar": "ZOUNDR", "en": "ZOUNDR", "de": "ZOUNDR" },
+    "title": { "ar": "ZOUNDR – منصة موسيقية تفاعلية (ألمانيا)", "en": "ZOUNDR – Interactive Music Platform (Germany)", "de": "ZOUNDR – Interaktive Musikplattform (Deutschland)" },
+    "description": { "ar": "منصة موسيقية تتيح للمستخدمين إنشاء، مشاركة، والتعاون على إنتاج الموسيقى عبر الإنترنت.", "en": "Music platform allowing users to create, share, and collaborate on music production online.", "de": "Musikplattform, die es Benutzern ermöglicht, Musik online zu erstellen, zu teilen und gemeinsam zu produzieren." },
+    "image": "/images/projects/zoundr.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 14,
+    "name": { "ar": "E-InAkademie", "en": "E-InAkademie", "de": "E-InAkademie" },
+    "title": { "ar": "E-InAkademie – منصة تعلم إلكتروني (ألمانيا)", "en": "E-InAkademie – E-Learning Platform (Germany)", "de": "E-InAkademie – E-Learning-Plattform (Deutschland)" },
+    "description": { "ar": "منصة تعلم إلكتروني متكاملة، مع دورات تفاعلية، متابعة الأداء، وتقديم شهادات للمستخدمين.", "en": "Comprehensive e-learning platform with interactive courses, progress tracking, and certification for learners.", "de": "Umfassende E-Learning-Plattform mit interaktiven Kursen, Fortschrittsverfolgung und Zertifizierung für Lernende." },
+    "image": "/images/projects/einakademie.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 15,
+    "name": { "ar": "Wasl", "en": "Wasl", "de": "Wasl" },
+    "title": { "ar": "Wasl – تطبيق خدمات النقل (الإمارات العربية المتحدة)", "en": "Wasl – Transportation Services App (UAE)", "de": "Wasl – Transportdienste-App (VAE)" },
+    "description": { "ar": "تطبيق يدمج خدمات النقل المحلي والخاص، مع إمكانيات الدفع الذكي وتتبع المركبات.", "en": "App combining local and private transportation services, with smart payment and vehicle tracking capabilities.", "de": "App, die lokale und private Transportdienste kombiniert, mit intelligenten Zahlungs- und Fahrzeugverfolgungsfunktionen." },
+    "image": "/images/projects/wasl.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 16,
+    "name": { "ar": "Kupek", "en": "Kupek", "de": "Kupek" },
+    "title": { "ar": "Kupek – منصة تسويق رقمي (ألمانيا)", "en": "Kupek – Digital Marketing Platform (Germany)", "de": "Kupek – Digitale Marketingplattform (Deutschland)" },
+    "description": { "ar": "منصة متكاملة للتسويق الرقمي، إدارة الحملات، والتحليلات لتسهيل نمو الأعمال.", "en": "All-in-one digital marketing platform for campaign management and analytics, helping businesses grow effectively.", "de": "All-in-One-Digital-Marketing-Plattform für Kampagnenmanagement und Analysen, die Unternehmen beim effektiven Wachstum unterstützt." },
+    "image": "/images/projects/kupek.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 17,
+    "name": { "ar": "Mocka Rocka", "en": "Mocka Rocka", "de": "Mocka Rocka" },
+    "title": { "ar": "Mocka Rocka – منصة ترفيهية للأطفال (ألمانيا)", "en": "Mocka Rocka – Kids Entertainment Platform (Germany)", "de": "Mocka Rocka – Unterhaltungsplattform für Kinder (Deutschland)" },
+    "description": { "ar": "منصة ترفيهية تعليمية للأطفال، تحتوي على ألعاب، فيديوهات، ونشاطات تعليمية آمنة.", "en": "Educational entertainment platform for kids, featuring games, videos, and safe learning activities.", "de": "Bildungs- und Unterhaltungsplattform für Kinder mit Spielen, Videos und sicheren Lernaktivitäten." },
+    "image": "/images/projects/mockarocka.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+  {
+    "id": 18,
+    "name": { "ar": "Nume", "en": "Nume", "de": "Nume" },
+    "title": { "ar": "Nume – تطبيق إدارة مواعيد احترافي (ألمانيا)", "en": "Nume – Professional Appointment Management App (Germany)", "de": "Nume – Professionelle Terminverwaltungs-App (Deutschland)" },
+    "description": { "ar": "تطبيق لإدارة المواعيد والأعمال الصغيرة، مع تذكيرات ذكية وتنظيم فعال للجدول الزمني.", "en": "App for managing appointments and small businesses, offering smart reminders and efficient scheduling tools.", "de": "App zur Verwaltung von Terminen und kleinen Unternehmen, mit intelligenten Erinnerungen und effizientem Zeitmanagement." },
+    "image": "/images/projects/nume.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  }
 ]
-
