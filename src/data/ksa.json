@@ -1,8 +1,8 @@
 {
   "ksa_section": {
     "left_text": {
-      "en": "Tessafold supports Mada, MyFatura, Tabby, and Tamara integrations, aligning with Saudi's fintech advancements under SAMA's Fintech Strategy. The company builds secure and scalable payment platforms, fostering financial inclusion and cashless transactions.",
-      "ar": "تيسافولد تدعم تكاملات مدى، فاتورتي، تبي، وتمارا، متوافقة مع تطورات المملكة في التقنية المالية تحت استراتيجية ساما للتقنية المالية. الشركة تبني منصات دفع آمنة وقابلة للتطوير، وتعزيز الشمول المالي والمعاملات غير النقدية.",
+      "en": "Tessafold with its partnership with Edfapay, supports Mada, MyFatura, Tabby, and Tamara integrations, aligning with Saudi's fintech advancements under SAMA's Fintech Strategy. The company builds secure and scalable payment platforms, fostering financial inclusion and cashless transactions.",
+      "ar": "تيسافولد ومن خلال شراكتها م شركة إدفع باي للدفع الإلكتروني والمرخصة من البنك المركزي السعودي تدعم تكاملات مدى، تابي، وتمارا، متوافقة مع تطورات المملكة في التقنية المالية تحت استراتيجية البنك ساما للتقنية المالية. الشركة تبني منصات دفع آمنة وقابلة للتطوير، وتعزيز الشمول المالي والمعاملات غير النقدية.",
       "de": "Tessafold unterstützt Mada, MyFatura, Tabby und Tamara Integrationen und richtet sich damit an die Fortschritte Saudi-Arabiens im Fintech-Bereich unter der Fintech-Strategie von SAMA. Das Unternehmen baut sichere und skalierbare Zahlungsplattformen, die finanzielle Inklusion und bargeldlose Transaktionen fördern."
     },
     "title": {
@@ -12,11 +12,11 @@
     },
     "aligns_with": {
       "en": "Aligns With",
-      "ar": "كيف تواكب تيسافولد رؤية السعودية",
+      "ar": "تواكب تيسافولد رؤية السعودية",
       "de": "Stimmt überein mit"
     },
     "vision_2030": {
-      "en": "2030 Vision",
+      "en": "Saudi 2030 Vision",
       "ar": "2030",
       "de": "Vision 2030"
     },
@@ -30,7 +30,7 @@
         },
         "details": {
           "en": "We develop AI-powered solutions for smart city infrastructure, including IoT integration, data analytics, and automated systems that enhance urban living and resource management.",
-          "ar": "نطور حلولاً مدعومة بالذكاء الاصطناعي للبنية التحتية للمدن الذكية، بما في ذلك تكامل إنترنت الأشياء، وتحليل البيانات، والأنظمة الآلية التي تعزز العيش الحضري وإدارة الموارد.",
+          "ar": "نطور تطبيقات اللذكاء الاصطناعي مما يساهم في بناء المدن الذكية، بما في ذلك تكامل إنترنت الأشياء، وتحليل البيانات، والأنظمة الآلية التي تعزز إدارة الموارد.",
           "de": "Wir entwickeln KI-gestützte Lösungen für Smart-City-Infrastrukturen, einschließlich IoT-Integration, Datenanalyse und automatisierte Systeme, die das städtische Leben und Ressourcenmanagement verbessern."
         },
         "image": "/images/ksa/smart-cities.webp"
@@ -39,7 +39,7 @@
         "id": 2,
         "text": {
           "en": "Enabling a Thriving Private Sector",
-          "ar": "تمكين القطاع الخاص المزدهر",
+          "ar": "تمكين القطاع الخاص بالتحول الرقمي",
           "de": "Ermöglichung eines florierenden Privatsektors"
         },
         "details": {
@@ -72,7 +72,7 @@
         },
         "details": {
           "en": "Our comprehensive digital solutions help organizations transition to modern, efficient operations through cloud computing, automation, and digital workflow optimization.",
-          "ar": "تساعد حلولنا الرقمية الشاملة المنظمات في الانتقال إلى عمليات حديثة وفعالة من خلال الحوسبة السحابية والأتمتة وتحسين سير العمل الرقمي.",
+          "ar": "تساعد حلولنا الرقمية الشاملة المؤسسات في الانتقال إلى عمليات حديثة وفعالة من خلال الحوسبة السحابية والأتمتة وتحسين سير العمل الرقمي.",
           "de": "Unsere umfassenden digitalen Lösungen helfen Organisationen bei der Umstellung auf moderne, effiziente Betriebe durch Cloud Computing, Automatisierung und digitale Workflow-Optimierung."
         },
         "image": "/images/ksa/digital-transformation.webp"
@@ -113,8 +113,8 @@
           "de": "Fortschritt der Finanztechnologie (Fintech)"
         },
         "details": {
-          "en": "Our fintech solutions include secure payment gateways, digital banking integrations, and financial management tools that comply with SAMA regulations.",
-          "ar": "تشمل حلولنا في التكنولوجيا المالية بوابات الدفع الآمنة، وتكاملات البنوك الرقمية، وأدوات إدارة المالية التي تتوافق مع لوائح ساما.",
+          "en": "Through our partnership with Edfapay, we provide fintech solutions that include secure payment gateways, digital banking integrations, and financial management tools that comply with SAMA regulations.",
+          "ar": "من خلال شراكتنا مع شركة إدفع باي للدفع الإلكتروني والمرخصة من البنك المركزي السعودي نقدم حلولنا في التكنولوجيا المالية بوابات الدفع الآمنة، وتكاملات البنوك الرقمية، وأدوات إدارة المالية التي تتوافق مع لوائح البنك المركزي السعودي.",
           "de": "Unsere Fintech-Lösungen umfassen sichere Zahlungsgateways, digitale Bankintegrationen und Finanzmanagement-Tools, die den SAMA-Vorschriften entsprechen."
         },
         "image": "/images/ksa/fintech.webp"
