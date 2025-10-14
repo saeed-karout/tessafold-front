@@ -60,6 +60,7 @@
 
 .clutch-widget iframe {
   width: 100%;
+  display: none !important;
   border: none;
   border-radius: 16px;
   transition: all 0.3s ease;
