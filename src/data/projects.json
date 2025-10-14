@@ -14,16 +14,16 @@
     "title": { "ar": "ESTSS – نظام إدارة العملاء والمهام (السعودية)", "en": "ESTSS – Environmental Safety Technology CRM (KSA)", "de": "ESTSS – CRM- und Aufgabenmanagement-Plattform (KSA)" },
     "description": { "ar": "منصة ويب وتطبيق جوال لشركة ESTSS السعودية، متخصصة في إدارة العملاء والمشاريع. تحتوي على نظام CRM متكامل، إدارة مهام، ونظام ملفات متطور يسمح بمشاركة المستندات بين الشركة والعملاء بشكل آمن وسلس.", "en": "A web and mobile platform built for Environmental Safety Technologies (ESTSS) in Saudi Arabia. It includes a full-featured CRM, task management system, and advanced file management, enabling secure and efficient collaboration between the company and its clients.", "de": "Eine Web- und Mobilplattform, entwickelt für Environmental Safety Technologies (ESTSS) in Saudi-Arabien. Sie umfasst ein voll ausgestattetes CRM, ein Aufgabenmanagementsystem und ein erweitertes Dateiverwaltungssystem, das eine sichere und effiziente Zusammenarbeit zwischen dem Unternehmen und seinen Kunden ermöglicht." },
     "image": "/images/projects/estss.png",
-    "webLink": "",
+    "webLink": "https://estss.com.sa/",
     "appDownloadLink": ""
   },
   {
     "id": 3,
-    "name": { "ar": "EdfaPay AI Voice Assistant", "en": "EdfaPay AI Voice Assistant", "de": "EdfaPay KI-Sprachassistent" },
+    "name": { "ar": "AI Voice Assistant", "en": "AI Voice Assistant", "de": "KI-Sprachassistent" },
     "title": { "ar": "EdfaPay – مساعد صوتي ذكي متعدد اللغات (السعودية)", "en": "EdfaPay – Multilingual AI Voice Assistant (KSA)", "de": "EdfaPay – Mehrsprachiger KI-Sprachassistent (KSA)" },
     "description": { "ar": "مساعد صوتي ذكي معتمد على الذكاء الاصطناعي ومعالجة اللغة الطبيعية (LLM) مخصص لشركة EdfaPay. يدعم اللغة العربية، الإنجليزية، والفرنسية، ويستطيع التفاعل صوتياً مع المستخدمين، تنفيذ الأوامر، والإجابة عن الاستفسارات التقنية والمالية بدقة عالية.", "en": "An advanced AI-powered voice assistant built for EdfaPay, supporting Arabic, English, and French. It uses LLM, speech-to-text (STT), and text-to-speech (TTS) technologies to handle voice interactions, execute commands, and provide intelligent responses to technical and financial queries.", "de": "Ein fortschrittlicher KI-gestützter Sprachassistent, entwickelt für EdfaPay, der Arabisch, Englisch und Französisch unterstützt. Er nutzt LLM-, Sprach-zu-Text- (STT) und Text-zu-Sprach- (TTS) Technologien, um Sprachinteraktionen zu ermöglichen, Befehle auszuführen und intelligente Antworten auf technische und finanzielle Anfragen zu geben." },
     "image": "/images/projects/edfapayai.png",
-    "webLink": "",
+    "webLink": "https://edfapay.com/home/",
     "appDownloadLink": ""
   },
   {
@@ -113,7 +113,7 @@
     "title": { "ar": "ZOUNDR – منصة موسيقية تفاعلية (ألمانيا)", "en": "ZOUNDR – Interactive Music Platform (Germany)", "de": "ZOUNDR – Interaktive Musikplattform (Deutschland)" },
     "description": { "ar": "منصة موسيقية تتيح للمستخدمين إنشاء، مشاركة، والتعاون على إنتاج الموسيقى عبر الإنترنت.", "en": "Music platform allowing users to create, share, and collaborate on music production online.", "de": "Musikplattform, die es Benutzern ermöglicht, Musik online zu erstellen, zu teilen und gemeinsam zu produzieren." },
     "image": "/images/projects/zoundr.png",
-    "webLink": "",
+    "webLink": "https://zoundr.world/",
     "appDownloadLink": ""
   },
   {
@@ -122,7 +122,7 @@
     "title": { "ar": "E-InAkademie – منصة تعلم إلكتروني (ألمانيا)", "en": "E-InAkademie – E-Learning Platform (Germany)", "de": "E-InAkademie – E-Learning-Plattform (Deutschland)" },
     "description": { "ar": "منصة تعلم إلكتروني متكاملة، مع دورات تفاعلية، متابعة الأداء، وتقديم شهادات للمستخدمين.", "en": "Comprehensive e-learning platform with interactive courses, progress tracking, and certification for learners.", "de": "Umfassende E-Learning-Plattform mit interaktiven Kursen, Fortschrittsverfolgung und Zertifizierung für Lernende." },
     "image": "/images/projects/einakademie.png",
-    "webLink": "",
+    "webLink": "https://in-akademie.de/",
     "appDownloadLink": ""
   },
   {
@@ -140,7 +140,7 @@
     "title": { "ar": "Kupek – منصة تسويق رقمي (ألمانيا)", "en": "Kupek – Digital Marketing Platform (Germany)", "de": "Kupek – Digitale Marketingplattform (Deutschland)" },
     "description": { "ar": "منصة متكاملة للتسويق الرقمي، إدارة الحملات، والتحليلات لتسهيل نمو الأعمال.", "en": "All-in-one digital marketing platform for campaign management and analytics, helping businesses grow effectively.", "de": "All-in-One-Digital-Marketing-Plattform für Kampagnenmanagement und Analysen, die Unternehmen beim effektiven Wachstum unterstützt." },
     "image": "/images/projects/kupek.png",
-    "webLink": "",
+    "webLink": "https://kupek.de/",
     "appDownloadLink": ""
   },
   {
