@@ -104,8 +104,8 @@
   },
   "our_services": "Our Services",
   "we_serve": "Industries ",
-  "we_serve_span":"We Serve",
-  "we_serve_subtitle":"We offer web and mobile development, data science, and AI services. ",
+  "we_serve_span": "We Serve",
+  "we_serve_subtitle": "We offer web and mobile development, data science, and AI services. ",
   "faq": "FAQ",
   "select_language": "Select Language",
   "visit_website": "Visit Website",
@@ -114,5 +114,12 @@
     "arrowAlt": "Arrow icon",
     "videoTitle": "Video of {name}",
     "technologies": "Technologies"
+  },
+  "reviews": {
+    "title": "What Our Clients Say",
+    "subtitle": "Discover why businesses trust us with their digital transformation journey",
+    "cta": "Join our satisfied clients and start your project today",
+    "btn": "View All Reviews",
+    "loading": "Loading reviews..."
   }
 }

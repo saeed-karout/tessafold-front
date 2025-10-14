@@ -38,7 +38,7 @@ function OurProcess() {
           </div>
           <div className="right">
             <span>{t('our_process.view_full_process') || 'View Full Process'}</span>
-            <img src="/arrow-left.svg" className="arrow-icon" alt={t('our_process.arrow_alt') || 'Arrow'} />
+            <img src="/arrow-left.svg" className="arrow-icon" style={{ rotate: currentLang === 'ar' ? '180deg' : '0deg' }} alt={t('our_process.arrow_alt') || 'Arrow'} />
           </div>
         </div>
       </div>

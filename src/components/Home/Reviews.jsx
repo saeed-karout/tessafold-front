@@ -164,7 +164,7 @@ function Reviews() {
           </p>
           <a href="https://clutch.co/profile/tessafold#reviews" target="_blank" rel="noopener noreferrer">
             <button className="reviews-button">
-              {t('reviews.button', { defaultValue: 'View All Reviews' })}
+              {t('reviews.btn', { defaultValue: 'View All Reviews' })}
             </button>
           </a>
         </div>

@@ -104,8 +104,8 @@
   },
   "our_services": "Unsere Dienstleistungen",
   "we_serve": "Branchen",
-  "we_serve_span":"Wir bedienen",
-  "we_serve_subtitle":"Wir bieten Web- und Mobilentwicklung, Datenwissenschaft und KI-Dienste.",
+  "we_serve_span": "Wir bedienen",
+  "we_serve_subtitle": "Wir bieten Web- und Mobilentwicklung, Datenwissenschaft und KI-Dienste.",
   "faq": "Häufig gestellte Fragen",
   "select_language": "Sprache auswählen",
   "visit_website": "Website besuchen",
@@ -114,5 +114,12 @@
     "arrowAlt": "Pfeilsymbol",
     "videoTitle": "Video von {name}",
     "technologies": "Technologien"
+  },
+  "reviews": {
+    "title": "What Our Clients Say",
+    "subtitle": "Discover why businesses trust us with their digital transformation journey",
+    "cta": "Join our satisfied clients and start your project today",
+    "btn": "View All Reviews",
+    "loading": "Loading reviews..."
   }
 }
