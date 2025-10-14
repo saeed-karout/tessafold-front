@@ -17,13 +17,13 @@ function Home() {
       <section><HeroSection /></section>
       <section id="projects"><Projects /></section>
       <section id="about"><About /></section>
-      <Reviews />
+      <section id='reviews'><Reviews /></section>
       <section id="our_process"><OurProcess /></section>
-      <OurServices />
+      <section id="services"> <OurServices  /></section>
       <section><ComponentPackage /></section>
       <section id="we_serve"><WeServe /></section>
       <section id="ksa"><KSA /></section>
-      <section><Certificates /></section>
+      <section id=''><Certificates /></section>
       <section id="faq"><FAQ /></section>
       <section><LastSection /></section>
     </main>
