@@ -106,13 +106,13 @@
       "keycloak": "KeyCloak",
       "weclapp": "WeClapp"
     },
-    "description": "Tessafold is a strategic partner for forward-thinking companies that want to build cutting edge and long-lasting software solutions.",
-    "buttonText": "Book Your Free Consultation",
+    "description": "Tessafold is a strategic partner for forward-thinking companies that want to build cutting-edge and long-lasting software solutions.",
+    "buttonText": "Book Your Free Consultation!",
     "buttonAriaLabel": "Navigate to contact page button",
     "partnerAlt": "Logo of {name}"
   },
   "home": "Home",
-  "projects": "Our Projects",
+  "projects": "FEATURED PROJECTS",
   "partners": "Partners",
   "about_us": "What Our Client Say ",
   "about_span": " About Us",
