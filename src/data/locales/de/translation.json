@@ -18,7 +18,7 @@
     "companyPlaceholder": "Links oder Firmenname",
     "messageLabel": "Bitte teilen Sie uns einige Details zum Projekt mit",
     "messagePlaceholder": "Geben Sie uns einige Informationen zu Ihrem Produkt",
-    "servicesLabel": "Toll! Bitte wählen Sie alle Dienstleistungen aus, für die Sie uns engagieren möchten",
+    "servicesLabel": "Super! Bitte wählen Sie alle Dienstleistungen aus, für die Sie uns engagieren möchten",
     "submit": "Absenden",
     "submitting": "Wird gesendet",
     "iconAlt": "Kontaktformular-Symbol",
@@ -69,7 +69,7 @@
       "phone4": "+1 949 864 6033",
       "phoneIcon": "Telefon-Symbol"
     },
-    "copyright": "© {year} Tessafold e.K. Agentur für App- und Softwareentwicklung in Berlin und Coburg"
+    "copyright": "© {year} Tessafold Agentur für App- und Softwareentwicklung in Berlin und Dschidda"
   },
   "scrollToTop": {
     "title": "Zum Seitenanfang",
@@ -77,28 +77,50 @@
     "alt": "Symbol zum Seitenanfang"
   },
   "hero": {
-    "subtitle": "UNTERNEHMEN MIT ANPASSBAREN SOFTWAREPLATTFORMEN STÄRKEN",
-    "title": "Web- und Mobile-App-Entwicklung angetrieben von",
+  "subtitle": "Wir befähigen Unternehmen mit skalierbaren und maßgeschneiderten Softwarelösungen",
+  "title": "Web- und Mobile-App-Entwicklung unterstützt durch",
     "animatedText": {
-      "ai": "Künstlicher Intelligenz",
-      "ml": "Maschinellem Lernen",
-      "software": "Softwarelösungen"
+    "ai": "Künstliche Intelligenz",
+    "ml": "Maschinelles Lernen",
+    "ai1": "LLM",
+    "ai2": "OLLAMA",
+    "openaimodels": "ChatGPT / Gemini / Claude",
+    "openai": "OpenAI",
+    "tts": "Text-zu-Sprache",
+    "stt": "Sprache-zu-Text",
+    "avs": "KI-Sprachassistent / Groq",
+    "aiorch": "KI-Orchestrierung",
+    "dataScience": "Datenwissenschaft",
+    "cloudTechnology": "Cloud-Technologie",
+    "cloudProviders": "AWS / Azure / Google",
+    "cloudProviders1": "Oracle / Alibaba",
+    "sso": "Einmalanmeldung (SSO)",
+    "crmErpIntegrations": "CRM-Integrationen",
+    "odoo ErpIntegrations": "Odoo-Integrationen",
+    "agileMethodology": "Agile Methodik",
+    "apiintegrations": "Individuelle API-Integrationen",
+    "cleanCode": "Sauberer Code",
+    "ciCd": "CI/CD (Continuous Integration / Continuous Deployment)",
+    "paymentGateway": "Zahlungs-Gateway",
+    "edfaPay": "Edfapay",
+    "keycloak": "Keycloak",
+    "weclapp": "WeClapp"
     },
-    "description": "Tessafold ist ein strategischer Partner für zukunftsorientierte Unternehmen, die innovative und langlebige Softwarelösungen entwickeln möchten.",
+    "description": "Tessafold ist ein strategischer Partner für zukunftsorientierte Unternehmen, die innovative und skalierbare Softwarelösungen entwickeln möchten.",
     "buttonText": "Buchen Sie Ihre kostenlose Beratung",
     "buttonAriaLabel": "Schaltfläche zur Kontaktseite",
     "partnerAlt": "Logo von {name}"
   },
   "home": "Startseite",
-  "projects": "Unsere Projekte",
+  "projects": "AUSGEWÄHLTE REFERENZEN",
   "partners": "Partner",
   "about_us": "Was unsere Kunden über",
   "about_span": "uns sagen",
   "our_process": {
     "title": "Website- und App-",
-    "title_span": "Entwicklung",
-    "subtitle": "Prozess ist alles. Es ist unser geistiges Eigentum, unser tägliches Brot!",
-    "view_full_process": "Unseren vollständigen Prozess anzeigen",
+    "title_span": "Entwicklungsprozess",
+    "subtitle": "Unser bewährter Prozess macht den Unterschied – er ist die Grundlage jedes erfolgreichen digitalen Projekts.",
+    "view_full_process": "Unseren A-Z Prozess anzeigen",
     "arrow_alt": "Pfeilsymbol",
     "step_icon_alt": "Symbol für {name}"
   },
@@ -116,10 +138,10 @@
     "technologies": "Technologien"
   },
   "reviews": {
-    "title": "What Our Clients Say",
-    "subtitle": "Discover why businesses trust us with their digital transformation journey",
-    "cta": "Join our satisfied clients and start your project today",
-    "btn": "View All Reviews",
-    "loading": "Loading reviews..."
+    "title": "Was unsere Geschäftskunden über uns sagen",
+    "subtitle": "Wir befähigen Unternehmen, ihre digitale Transformation zu führen",
+    "cta": "Erfahren Sie, warum führende Organisationen uns für Innovation und digitalen Erfolg wählen.",
+    "btn": "Kundenbewertungen ansehen",
+    "loading": "Loading.."
   }
 }
