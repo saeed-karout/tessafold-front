@@ -48,11 +48,7 @@
     "id": 6,
     "name": { "ar": "Rehearsals.Ai", "en": "Rehearsals.Ai", "de": "Rehearsals.Ai" },
     "title": { "ar": "Rehearsals.AI – تطبيق الذكاء الاصطناعي لمحاكاة مقابلات العمل (السعودية)", "en": "Rehearsals.AI – AI Job Interview Mocker (KSA)", "de": "Rehearsals.AI - KI-Vorstellungsgespräch-Simulator (KSA)" },
-    "description": { "ar": "منصّة مبتكرة تتيح للمستخدمين التدرب على مقابلات العمل عبر الكاميرا والمايكروفون، مع تحليل الأداء وإعطاء تقييم فوري. تساعد الباحثين عن عمل على رفع جاهزيتهم وثقتهم.", "en": "Like a Duolingo for interviews
-```
-
-
-, it allows job seekers to practice interviews with camera and mic, get AI-scored feedback, and prepare for real-world interviews. Perfect for students and professionals aiming to boost confidence.", "de": "Ähnlich wie Duolingo für Interviews ermöglicht es Arbeitssuchenden, Interviews mit Kamera und Mikrofon zu üben, KI-bewertetes Feedback zu erhalten und sich auf reale Vorstellungsgespräche vorzubereiten. Perfekt für Studenten und Berufstätige, die ihr Selbstvertrauen stärken möchten." },
+    "description": { "ar": "منصّة مبتكرة تتيح للمستخدمين التدرب على مقابلات العمل عبر الكاميرا والمايكروفون، مع تحليل الأداء وإعطاء تقييم فوري. تساعد الباحثين عن عمل على رفع جاهزيتهم وثقتهم.", "en": "Like a Duolingo for interviews, it allows job seekers to practice interviews with camera and mic, get AI-scored feedback, and prepare for real-world interviews. Perfect for students and professionals aiming to boost confidence.", "de": "Ähnlich wie Duolingo für Interviews ermöglicht es Arbeitssuchenden, Interviews mit Kamera und Mikrofon zu üben, KI-bewertetes Feedback zu erhalten und sich auf reale Vorstellungsgespräche vorzubereiten. Perfekt für Studenten und Berufstätige, die ihr Selbstvertrauen stärken möchten." },
 "image": "/images/projects/rehearsals.png",
 "webLink": "[https://rehearsals.ai/](https://rehearsals.ai/)",
 "appDownloadLink": "[https://rehearsals.ai/](https://rehearsals.ai/)"
