@@ -21,7 +21,7 @@
     "id": 3,
     "name": { "ar": "AI Voice Assistant", "en": "AI Voice Assistant", "de": "KI-Sprachassistent" },
     "title": { "ar": "EdfaPay – مساعد صوتي ذكي متعدد اللغات (السعودية)", "en": "EdfaPay – Multilingual AI Voice Assistant (KSA)", "de": "EdfaPay – Mehrsprachiger KI-Sprachassistent (KSA)" },
-    "description": { "ar": "مساعد صوتي ذكي معتمد على الذكاء الاصطناعي ومعالجة اللغة الطبيعية (LLM) مخصص لشركة EdfaPay. يدعم اللغة العربية، الإنجليزية، والفرنسية، ويستطيع التفاعل صوتياً مع المستخدمين، تنفيذ الأوامر، والإجابة عن الاستفسارات التقنية والمالية بدقة عالية.", "en": "An advanced AI-powered voice assistant built for EdfaPay, supporting Arabic, English, and French. It uses LLM, speech-to-text (STT), and text-to-speech (TTS) technologies to handle voice interactions, execute commands, and provide intelligent responses to technical and financial queries.", "de": "Ein fortschrittlicher KI-gestützter Sprachassistent, entwickelt für EdfaPay, der Arabisch, Englisch und Französisch unterstützt. Er nutzt LLM-, Sprach-zu-Text- (STT) und Text-zu-Sprach- (TTS) Technologien, um Sprachinteraktionen zu ermöglichen, Befehle auszuführen und intelligente Antworten auf technische und finanzielle Anfragen zu geben." },
+    "description": { "ar": "مساعد صوتي ذكي معتمد على الذكاء الاصطناعي ومعالجة اللغة الطبيعية (LLM) مخصص لشركة إدفع باي السعودية والمرخصة من البنك المركزي السعودي كشركة دفع إلكتروني. يدعم اللغة العربية، الإنجليزية، والفرنسية، ويستطيع التفاعل صوتياً مع المستخدمين، تنفيذ الأوامر، والإجابة عن الاستفسارات التقنية والمالية بدقة عالية.", "en": "An advanced AI-powered voice assistant built for EdfaPay, supporting Arabic, English, and French. It uses LLM, speech-to-text (STT), and text-to-speech (TTS) technologies to handle voice interactions, execute commands, and provide intelligent responses to technical and financial queries.", "de": "Ein fortschrittlicher KI-gestützter Sprachassistent, entwickelt für EdfaPay, der Arabisch, Englisch und Französisch unterstützt. Er nutzt LLM-, Sprach-zu-Text- (STT) und Text-zu-Sprach- (TTS) Technologien, um Sprachinteraktionen zu ermöglichen, Befehle auszuführen und intelligente Antworten auf technische und finanzielle Anfragen zu geben." },
     "image": "/images/projects/edfapayai.png",
     "webLink": "https://edfapay.com/home/",
     "appDownloadLink": ""
@@ -30,7 +30,7 @@
     "id": 4,
     "name": { "ar": "Nouri.AI", "en": "Nouri.AI", "de": "Nouri.AI" },
     "title": { "ar": "Nouri.Ai – منصة ذكية للفعاليات والتواصل الإحترافي (الولايات المتحدة الأمريكية)", "en": "Nouri.Ai – Networking Platform (USA)", "de": "Nouri.Ai – Networking-Plattform (USA)" },
-    "description": { "ar": "تجمع Nouri.Ai بين قوة تنظيم الفعاليات مثل Eventbrite وإمكانات بناء العلاقات المهنية مثل LinkedIn. تمكّن الشركات والأفراد من إنشاء فعاليات، التواصل مع الحضور، وإدارة علاقاتهم بفعالية عبر نظام CRM مدمج.", "en": "A hybrid between Eventbrite and LinkedIn, Nouri.Ai allows professionals to network, manage events, and build business relationships seamlessly. It combines CRM capabilities with social features to help companies engage with clients and organize events effectively.", "de": "Als Hybrid zwischen Eventbrite und LinkedIn ermöglicht Nouri.Ai Experten, sich zu vernetzen, Veranstaltungen zu verwalten und nahtlos Geschäftsbeziehungen aufzubauen. Es kombiniert CRM-Funktionen mit sozialen Features, um Unternehmen dabei zu helfen, mit Kunden in Kontakt zu treten und Veranstaltungen effektiv zu organisieren." },
+    "description": { "ar": "تجمع Nouri.Ai بين قوة تنظيم الفعاليات مثل Eventbrite وإمكانات بناء العلاقات مثل LinkedIn. تمكّن الشركات والأفراد من إنشاء فعاليات، التواصل مع الحضور، وإدارة علاقاتهم بفعالية عبر نظام CRM مدمج.", "en": "A hybrid between Eventbrite and LinkedIn, Nouri.Ai allows professionals to network, manage events, and build business relationships seamlessly. It combines CRM capabilities with social features to help companies engage with clients and organize events effectively.", "de": "Als Hybrid zwischen Eventbrite und LinkedIn ermöglicht Nouri.Ai Experten, sich zu vernetzen, Veranstaltungen zu verwalten und nahtlos Geschäftsbeziehungen aufzubauen. Es kombiniert CRM-Funktionen mit sozialen Features, um Unternehmen dabei zu helfen, mit Kunden in Kontakt zu treten und Veranstaltungen effektiv zu organisieren." },
     "image": "/images/projects/nouri.png",
     "webLink": "https://nouri.ai",
     "appDownloadLink": "https://apps.apple.com/us/app/nouri/id1578671181"
@@ -55,108 +55,206 @@
   },
   {
     "id": 7,
-    "name": { "ar": "Beachy App", "en": "Beachy App", "de": "Beachy App" },
-    "title": { "ar": "Beachy App – Luxury Beach Rentals (KSA)", "en": "Beachy App – Luxury Beach Rentals (KSA)", "de": "Beachy App – Luxuriöse Strandunterkünfte (KSA)" },
-    "description": { "ar": "تطبيق شبيه بـ Airbnb لكن متخصص في الفلل الفاخرة والأنشطة البحرية. يسهّل على المستخدمين اكتشاف وحجز أفضل الوجهات الشاطئية.", "en": "Like Airbnb, but dedicated to luxury beach villas and activities. Delivers a premium vacation booking experience for high-end travelers.", "de": "Ähnlich wie Airbnb, jedoch spezialisiert auf luxuriöse Strandvillen und Aktivitäten. Bietet ein erstklassiges Buchungserlebnis für Urlauber der Extraklasse." },
-    "image": "/images/projects/beachy.png",
-    "webLink": "https://example.com/project4",
-    "appDownloadLink": "https://apps.apple.com/us/app/beachy-app/id6742138006"
+    "name": { "ar": "Beachy App", "en": "Beachy App", "de": "Beachy App" }, "title": { "ar": "Beachy App – Luxury Beach Rentals (KSA)", "en": "Beachy App – Luxury Beach Rentals (KSA)", "de": "Beachy App – Luxuriöse Strandunterkünfte (KSA)" }, "description": { "ar": "تطبيق شبيه بـ Airbnb لكن متخصص في الفلل الفاخرة والأنشطة البحرية. يسهّل على المستخدمين اكتشاف وحجز أفضل الوجهات الشاطئية.", "en": "Like Airbnb, but dedicated to luxury beach villas and activities. Delivers a premium vacation booking experience for high-end travelers.", "de": "Ähnlich wie Airbnb, jedoch spezialisiert auf luxuriöse Strandvillen und Aktivitäten. Bietet ein erstklassiges Buchungserlebnis für Urlauber der Extraklasse." }, 
+    "image": "/images/projects/beachy.png", 
+    "webLink": "https://example.com/project4", 
+    "appDownloadLink": "https://apps.apple.com/us/app/beachy-app/id6742138006" 
   },
   {
     "id": 8,
-    "name": { "ar": "Jadarah AI", "en": "Jadarah AI", "de": "Jadarah AI" },
-    "title": { "ar": "Jadarah AI – منصة تعليمية ذكية (الإمارات العربية المتحدة)", "en": "Jadarah AI – Smart Learning Platform (UAE)", "de": "Jadarah AI – Intelligente Lernplattform (VAE)" },
-    "description": { "ar": "منصة تعليمية ذكية تعتمد على الذكاء الاصطناعي لتقديم محتوى مخصص للطلاب، مع متابعة الأداء وإرشادات تعليمية شخصية.", "en": "AI-powered educational platform that personalizes learning content for students and tracks their progress, offering tailored guidance and feedback.", "de": "KI-gestützte Lernplattform, die Lerninhalte für Schüler personalisiert, deren Fortschritt verfolgt und maßgeschneiderte Anleitung und Feedback bietet." },
-    "image": "/images/projects/jadarah.png",
-    "webLink": "",
-    "appDownloadLink": ""
-  },
+ "name": { "ar": "Jadarah AI", "en": "Jadarah AI", "de": "Jadarah AI" }, 
+  "title": { "ar": " Jadarah AI- مولّد العروض المعتمد على الذكاء الاصطناعي (السعودية)", "en": "Jadarah AI – AI Proposal Generator (KSA)", "de": "Jadarah – KI-basierter Angebotsgenerator (KSA)" }, 
+  "description": { "ar": "أداة تعتمد على الذكاء الاصطناعي لتوليد مسودات عروض مشاريع متكاملة لشركة جدارة الاستشارية. تختصر الوقت بنسبة 70% مع الحفاظ على الجودة والاتساق.", "en": "A business consulting tool like a HubSpot Proposal Builder with AI, generating structured drafts from RFPs and saving consultants 60–70% of effort. Tailored for Jadarah Consulting.", 
+  "de": "Ein Unternehmensberatungstool wie HubSpot Proposal Builder aber mit KI, das strukturierte Entwürfe aus Ausschreibungen generiert und Beratern 60–70 % des Aufwands erspart. Maßgeschneidert für Jadarah Beratungsunternehmen." }, 
+  "image": "/images/projects/jadarah.png", 
+  "webLink": "https://jadarahcc.com", 
+  "appDownloadLink": "https://jadarahcc.com" },
   {
     "id": 9,
-    "name": { "ar": "BLTN App", "en": "BLTN App", "de": "BLTN App" },
-    "title": { "ar": "BLTN – تطبيق تواصل اجتماعي متخصص (ألمانيا)", "en": "BLTN – Specialized Social Media App (Germany)", "de": "BLTN – Spezielle Social Media App (Deutschland)" },
-    "description": { "ar": "تطبيق تواصل اجتماعي يركز على مجتمعات محددة، مع ميزات تفاعلية مخصصة وتحليل سلوك المستخدمين.", "en": "Social media app targeting niche communities, offering interactive features and insights on user engagement.", "de": "Social-Media-App, die sich an Nischen-Communities richtet und interaktive Funktionen sowie Einblicke in das Nutzerengagement bietet." },
-    "image": "/images/projects/bltn.png",
-    "webLink": "",
-    "appDownloadLink": ""
+  "name": { "ar": "BLTN App", "en": "BLTN App", "de": "BLTN App" }, 
+  "title": { "ar": "Multitude Insights – تطبيق للشرطة الأمريكية", "en": "Multitude Insights – BLTN App (USA)", "de": "Multitude Insights – BLTN App (USA)" }, 
+  "description": { "ar": "برنامج متخصص (تطبيق ويب وتطبيق محمول) مخصص للشرطة الأمريكية، مشابه لإنستجرام، مع إضافة صلاحيات بين الضباط أو الأفراد العاديين. يدعم وجود مجموعات ودردشات جماعية، بالإضافة إلى الدردشات المباشرة بين شخصين. كل منشور أو إجراء يتم إضافته يتضمن جميع المعلومات الضرورية مثل الصور أو الملفات، مع إمكانية مشاركتها بين الأقسام.", 
+  "en": "A specialized software (web and mobile application) for the police, similar to Instagram, with added permissions between officers or regular personnel. It supports the existence of groups and group chats, as well as direct chats between two individuals. Each post or action added includes all necessary information such as photos or files, with the ability to share them between departments.", 
+  "de": "Eine spezialisierte Software (Web- und Mobilanwendung) für die USA-Polizei, ähnlich wie Instagram, mit zusätzlichen Berechtigungen zwischen Offizieren oder regulärem Personal. Sie unterstützt Gruppen und Gruppenchats sowie direkte Chats zwischen zwei Personen. Jeder Beitrag oder jede Aktion enthält alle notwendigen Informationen wie Fotos oder Dateien und kann zwischen Abteilungen geteilt werden." }, 
+  "image": "/images/projects/mi.png", 
+  "webLink": "https://www.multitudeinsights.com/", 
+  "appDownloadLink": "https://apps.apple.com/us/app/bltn-mobile/id6446463374" 
   },
   {
     "id": 10,
-    "name": { "ar": "Cruiz App", "en": "Cruiz App", "de": "Cruiz App" },
-    "title": { "ar": "Cruiz – تطبيق حجز الرحلات البحرية (الولايات المتحدة الأمريكية)", "en": "Cruiz – Cruise Booking App (USA)", "de": "Cruiz – Kreuzfahrten-Buchungs-App (USA)" },
-    "description": { "ar": "تطبيق حجز الرحلات البحرية والفنادق، مع واجهة سهلة الاستخدام وعروض مخصصة للمستخدمين.", "en": "Mobile app for booking cruises and hotels, providing an easy interface and personalized offers.", "de": "Mobile App zur Buchung von Kreuzfahrten und Hotels, mit einfacher Benutzeroberfläche und personalisierten Angeboten." },
-    "image": "/images/projects/cruiz.png",
+   "name": { "ar": "Cruiz App", "en": "Cruiz App", "de": "Cruiz App" }, 
+    "title": { "ar": "Cruiz App - منصة تأجير السيارات", "en": "Cruiz App – Car Rental Platform (KSA)", "de": "Cruiz App – Peer-to-Peer-Autovermietungsplattform (KSA)" }, 
+    "description": { "ar": "تطبيق لتأجير السيارات من شخص أو شركة الى شخص. يتيح للمستخدمين البحث، الحجز، والتواصل بسهولة، مع تجربة استخدام حديثة وسلسة.", 
+    "en": "A peer-to-peer and B2C car rental platform. Like Turo + traditional rental apps, it connects car owners and renters with secure payments, advanced filters, and sponsorship options.", 
+    "de": "Eine Peer-to-Peer- und B2C-Autovermietungsplattform. Ähnlich wie Turo und herkömmliche Mietwagen-Apps verbindet sie Autobesitzer und Mieter mit sicheren Zahlungen, erweiterten Filteroptionen und Sponsoring-Möglichkeiten." }, 
+    "image": "/images/projects/cruiz.png", 
     "webLink": "",
-    "appDownloadLink": ""
+    "appDownloadLink": "" 
   },
   {
     "id": 11,
-    "name": { "ar": "Fsexpert", "en": "Fsexpert", "de": "Fsexpert" },
-    "title": { "ar": "Fsexpert – منصة استثمار عقاري ذكية (ألمانيا)", "en": "Fsexpert – Smart Real Estate Investment Platform (Germany)", "de": "Fsexpert – Intelligente Immobilien-Investitionsplattform (Deutschland)" },
-    "description": { "ar": "تطبيق ومنصة ويب لإدارة الاستثمارات العقارية، تحليل السوق وإيجاد أفضل الفرص الاستثمارية.", "en": "Web and mobile platform for real estate investment management, market analysis, and opportunity discovery.", "de": "Web- und Mobilplattform für das Management von Immobilieninvestitionen, Marktanalyse und Chancenfindung." },
+    "name": {
+      "ar": "Fsexpert",
+      "en": "Fsexpert",
+      "de": "Fsexpert"
+    },
+    "title": {
+      "ar": "Fsexpert – منصة للمهندسين والشركات (السعودية)",
+      "en": "Fsexpert – Engineering Freelance Platform (KSA)",
+      "de": "Fsexpert – Ingenieur-Freelancing-Plattform (KSA)"
+    },
+    "description": {
+      "ar": "منصة احترافية تربط بين المهندسين والشركات في مجالات الهندسة الكهربائية، الميكانيكية، المدنية وغيرها. تتيح للشركات توظيف خبراء، وللخبراء توظيف مساعدين لإنجاز المشاريع. المنصة تتضمن كذلك ميزة الجلسات عبر Zoom للتعاون الفوري ومتابعة العمل.",
+      "en": "A professional freelancing platform connecting engineers and companies in fields like electrical, mechanical, and civil engineering. Companies can hire experts, and experts can hire assistants to support project delivery. The platform also integrates live Zoom sessions for collaboration and project discussions.",
+      "de": "Eine professionelle Freelancing-Plattform, die Ingenieure und Unternehmen in Bereichen wie Elektrotechnik, Maschinenbau und Bauwesen verbindet. Unternehmen können Experten beauftragen, und Experten können Assistenten zur Projektunterstützung einstellen. Die Plattform bietet zudem integrierte Zoom-Sitzungen für Zusammenarbeit und Projektbesprechungen."
+    },
     "image": "/images/projects/fsexpert.png",
     "webLink": "",
     "appDownloadLink": ""
   },
   {
     "id": 12,
-    "name": { "ar": "Florian Homm Platform", "en": "Florian Homm Platform", "de": "Florian Homm Plattform" },
-    "title": { "ar": "Florian Homm – منصة استثمارات مالية (ألمانيا)", "en": "Florian Homm – Financial Investment Platform (Germany)", "de": "Florian Homm – Finanzinvestitionsplattform (Deutschland)" },
-    "description": { "ar": "منصة لإدارة الاستثمارات المالية والمحتوى التعليمي للمستثمرين، مع تحليلات متقدمة وتوصيات ذكية.", "en": "Platform for managing financial investments and educational content for investors, featuring analytics and intelligent recommendations.", "de": "Plattform zur Verwaltung von Finanzinvestitionen und Bildungsinhalten für Investoren, mit Analysen und intelligenten Empfehlungen." },
+      "name": {
+      "ar": "FH Platform",
+      "en": "FH Platform",
+      "de": "FH Plattform"
+    },
+    "title": {
+      "ar": "منصة فلوريان هوم للتواصل والاستثمار (ألمانيا)",
+      "en": "Florian Homm – Social Investment Platform (Germany)",
+      "de": "Florian Homm – Soziale Investment-Plattform (Deutschland)"
+    },
+    "description": {
+      "ar": "منصة تفاعلية تجمع المهتمين بعالم الاستثمار والأسواق المالية. يمكن للمستخدمين التسجيل، الاشتراك، ومشاركة المنشورات، الفيديوهات، والتحليلات المالية. تتيح التواصل بين المستثمرين وتبادل الخبرات ضمن مجتمع احترافي مغلق.",
+      "en": "An interactive social platform for people interested in investing and financial markets. Users can register, subscribe, and share posts, videos, and market insights. The platform encourages networking and idea exchange among investors in a secure, exclusive community.",
+      "de": "Eine interaktive soziale Plattform für Personen, die sich für Investitionen und Finanzmärkte interessieren. Benutzer können sich registrieren, abonnieren und Beiträge, Videos und Marktanalysen teilen. Die Plattform fördert Networking und Wissensaustausch zwischen Investoren in einer sicheren, exklusiven Community."
+    },
     "image": "/images/projects/florianhomm.png",
-    "webLink": "",
+    "webLink": "https://platform.freehomes.de/dashboard",
     "appDownloadLink": ""
   },
   {
     "id": 13,
-    "name": { "ar": "ZOUNDR", "en": "ZOUNDR", "de": "ZOUNDR" },
-    "title": { "ar": "ZOUNDR – منصة موسيقية تفاعلية (ألمانيا)", "en": "ZOUNDR – Interactive Music Platform (Germany)", "de": "ZOUNDR – Interaktive Musikplattform (Deutschland)" },
-    "description": { "ar": "منصة موسيقية تتيح للمستخدمين إنشاء، مشاركة، والتعاون على إنتاج الموسيقى عبر الإنترنت.", "en": "Music platform allowing users to create, share, and collaborate on music production online.", "de": "Musikplattform, die es Benutzern ermöglicht, Musik online zu erstellen, zu teilen und gemeinsam zu produzieren." },
+     "name": {
+      "ar": "ZOUNDR",
+      "en": "ZOUNDR",
+      "de": "ZOUNDR"
+    },
+    "title": {
+      "ar": "ZOUNDR – مجموعة تطبيقات للموسيقيين (ألمانيا)",
+      "en": "ZOUNDR – Suite of Apps for Musicians (Germany)",
+      "de": "ZOUNDR – App-Suite für Musiker (Deutschland)"
+    },
+    "description": {
+      "ar": "منصة متكاملة تقدم للموسيقيين مجموعة من التطبيقات المتخصصة ضمن نظام تسجيل دخول موحد (SSO). تشمل تطبيقاً للتعلّم الإلكتروني في مجال الموسيقى والإنتاج، وآخر لإصدار حقوق النشر، وتطبيقاً للتواصل الافتراضي بين الفنانين، مع العديد من الإمكانيات الإضافية.",
+      "en": "An integrated platform offering musicians a suite of connected web apps under one SSO account. It includes an e-learning app for music and production, a copyright issuing system, and a virtual networking app similar to Hyhyve, providing creators with versatile digital tools.",
+      "de": "Eine integrierte Plattform, die Musikern eine Suite verbundener Web-Apps unter einem einzigen SSO-Konto bietet. Sie umfasst eine E-Learning-App für Musik und Produktion, ein Urheberrecht-Ausstellungssystem und eine virtuelle Networking-App ähnlich wie Hyhyve – ein vielseitiges digitales Werkzeug für Kreative."
+    },
     "image": "/images/projects/zoundr.png",
     "webLink": "https://zoundr.world/",
     "appDownloadLink": ""
   },
   {
     "id": 14,
-    "name": { "ar": "E-InAkademie", "en": "E-InAkademie", "de": "E-InAkademie" },
-    "title": { "ar": "E-InAkademie – منصة تعلم إلكتروني (ألمانيا)", "en": "E-InAkademie – E-Learning Platform (Germany)", "de": "E-InAkademie – E-Learning-Plattform (Deutschland)" },
-    "description": { "ar": "منصة تعلم إلكتروني متكاملة، مع دورات تفاعلية، متابعة الأداء، وتقديم شهادات للمستخدمين.", "en": "Comprehensive e-learning platform with interactive courses, progress tracking, and certification for learners.", "de": "Umfassende E-Learning-Plattform mit interaktiven Kursen, Fortschrittsverfolgung und Zertifizierung für Lernende." },
+    "name": {
+      "ar": "E-InAkademie",
+      "en": "E-InAkademie",
+      "de": "E-InAkademie"
+    },
+    "title": {
+      "ar": "E-InAkademie – منصة تعليم إلكتروني وإدارة مدارس مهنية (ألمانيا)",
+      "en": "E-InAkademie – E-Learning & Vocational School Management Platform (Germany)",
+      "de": "E-InAkademie – E-Learning- und Berufsschul-Management-Plattform (Deutschland)"
+    },
+    "description": {
+      "ar": "منصة تعليم إلكتروني شاملة تشبه Udemy، لكنها مخصصة للمدارس المهنية في ألمانيا. تتيح إدارة الدورات التدريبية عبر الإنترنت أو الحضور أو النظام الهجين، مع إمكانية منح الشهادات وإدارة المعلمين والطلاب بسهولة.",
+      "en": "A comprehensive e-learning platform similar to Udemy, designed for vocational schools in Germany. It supports online, on-site, and hybrid courses, certificate issuance, and advanced management of students and instructors within an intuitive interface.",
+      "de": "Eine umfassende E-Learning-Plattform, ähnlich wie Udemy, entwickelt für Berufsschulen in Deutschland. Sie unterstützt Online-, Präsenz- und Hybridkurse, Zertifikatsausstellung sowie fortgeschrittene Verwaltung von Schülern und Lehrkräften über eine intuitive Benutzeroberfläche."
+    },
     "image": "/images/projects/einakademie.png",
-    "webLink": "https://in-akademie.de/",
+    "webLink": "https://inakademie.de/",
     "appDownloadLink": ""
   },
   {
     "id": 15,
-    "name": { "ar": "Wasl", "en": "Wasl", "de": "Wasl" },
-    "title": { "ar": "Wasl – تطبيق خدمات النقل (الإمارات العربية المتحدة)", "en": "Wasl – Transportation Services App (UAE)", "de": "Wasl – Transportdienste-App (VAE)" },
-    "description": { "ar": "تطبيق يدمج خدمات النقل المحلي والخاص، مع إمكانيات الدفع الذكي وتتبع المركبات.", "en": "App combining local and private transportation services, with smart payment and vehicle tracking capabilities.", "de": "App, die lokale und private Transportdienste kombiniert, mit intelligenten Zahlungs- und Fahrzeugverfolgungsfunktionen." },
+     "name": {
+      "ar": "Wasl",
+      "en": "Wasl",
+      "de": "Wasl"
+    },
+    "title": {
+      "ar": "Wasl – تطبيق مركز الاتصالات (السعودية)",
+      "en": "Wasl – Call Center Mobile App (KSA)",
+      "de": "Wasl – Callcenter-Mobile-App (KSA)"
+    },
+    "description": {
+      "ar": "تطبيق مخصص لمراكز الاتصال في السعودية، يمكّن الموظفين من إدارة المكالمات، تذاكر الدعم، وجدولة المتابعة مع العملاء. يحتوي على لوحة تحكم متقدمة وتقارير فورية لتحسين تجربة خدمة العملاء.",
+      "en": "A dedicated mobile app for call centers in Saudi Arabia, enabling agents to manage calls, support tickets, and client follow-ups. Includes advanced dashboards, real-time reporting, and seamless integration with CRM systems to enhance customer service efficiency.",
+      "de": "Eine spezialisierte mobile App für Callcenter in Saudi-Arabien, die es Agenten ermöglicht, Anrufe, Support-Tickets und Kunden-Nachverfolgungen zu verwalten. Enthält erweiterte Dashboards, Echtzeitberichte und eine nahtlose Integration in CRM-Systeme zur Verbesserung der Kundendienstleistung."
+    },
     "image": "/images/projects/wasl.png",
     "webLink": "",
     "appDownloadLink": ""
   },
   {
     "id": 16,
-    "name": { "ar": "Kupek", "en": "Kupek", "de": "Kupek" },
-    "title": { "ar": "Kupek – منصة تسويق رقمي (ألمانيا)", "en": "Kupek – Digital Marketing Platform (Germany)", "de": "Kupek – Digitale Marketingplattform (Deutschland)" },
-    "description": { "ar": "منصة متكاملة للتسويق الرقمي، إدارة الحملات، والتحليلات لتسهيل نمو الأعمال.", "en": "All-in-one digital marketing platform for campaign management and analytics, helping businesses grow effectively.", "de": "All-in-One-Digital-Marketing-Plattform für Kampagnenmanagement und Analysen, die Unternehmen beim effektiven Wachstum unterstützt." },
+    "name": {
+      "ar": "Kupek",
+      "en": "Kupek",
+      "de": "Kupek"
+    },
+    "title": {
+      "ar": "Kupek – تطبيق لوجستي لإدارة الطلبات والتوصيل (ألمانيا)",
+      "en": "Kupek – Logistics & Delivery Automation App (Germany)",
+      "de": "Kupek – Logistik- und Lieferautomatisierungs-App (Deutschland)"
+    },
+    "description": {
+      "ar": "تطبيق جوال لشركة Kupek الألمانية يعمل على أتمتة عمليات الطلب والتوصيل. يمكّن العملاء من تتبع الشحنات، إدارة الطلبات، وجدولة عمليات النقل بذكاء لتحسين الكفاءة التشغيلية.",
+      "en": "A mobile logistics app developed for Kupek in Germany to automate the ordering and delivery process. It allows clients to manage orders, track deliveries, and schedule transportation efficiently using smart routing and workflow automation.",
+      "de": "Eine mobile Logistik-App, entwickelt für Kupek in Deutschland, um Bestell- und Lieferprozesse zu automatisieren. Sie ermöglicht Kunden die Verwaltung von Bestellungen, Sendungsverfolgung und intelligente Transportplanung durch automatisierte Abläufe."
+    },
     "image": "/images/projects/kupek.png",
-    "webLink": "https://kupek.de/",
-    "appDownloadLink": ""
-  },
-  {
-    "id": 17,
-    "name": { "ar": "Mocka Rocka", "en": "Mocka Rocka", "de": "Mocka Rocka" },
-    "title": { "ar": "Mocka Rocka – منصة ترفيهية للأطفال (ألمانيا)", "en": "Mocka Rocka – Kids Entertainment Platform (Germany)", "de": "Mocka Rocka – Unterhaltungsplattform für Kinder (Deutschland)" },
-    "description": { "ar": "منصة ترفيهية تعليمية للأطفال، تحتوي على ألعاب، فيديوهات، ونشاطات تعليمية آمنة.", "en": "Educational entertainment platform for kids, featuring games, videos, and safe learning activities.", "de": "Bildungs- und Unterhaltungsplattform für Kinder mit Spielen, Videos und sicheren Lernaktivitäten." },
-    "image": "/images/projects/mockarocka.png",
     "webLink": "",
     "appDownloadLink": ""
   },
   {
+    "id": 17,
+    "name": {
+      "ar": "Mocka Rocka",
+      "en": "Mocka Rocka",
+      "de": "Mocka Rocka"
+    },
+    "title": {
+      "ar": "Mocka Rocka – منصة الذكاء الاصطناعي لتطوير اللغة للطلاب المغتربين (كندا)",
+      "en": "Mocka Rocka – AI Language Training Platform for Expats (Canada)",
+      "de": "Mocka Rocka – KI-Sprachlernplattform für Auslandsstudenten (Kanada)"
+    },
+    "description": {
+      "ar": "منصة ويب تعتمد على الذكاء الاصطناعي لمساعدة الطلاب الأجانب، خاصة الصينيين في كندا، على تحسين لغتهم الإنجليزية عبر القراءة والتحدث. يقوم النظام بتقييم النطق والفهم، ويقدّم ملاحظات فورية لتحسين الأداء اللغوي.",
+      "en": "An AI-driven web platform designed to help international students, especially Chinese expats in Canada, improve their English through speaking and reading exercises. The software evaluates pronunciation, comprehension, and provides instant feedback for better language fluency.",
+      "de": "Eine KI-basierte Webplattform, die internationalen Studierenden, insbesondere chinesischen Expats in Kanada, hilft, ihre Englischkenntnisse durch Sprech- und Leseübungen zu verbessern. Die Software bewertet Aussprache und Verständnis und liefert sofortiges Feedback zur Verbesserung der Sprachkompetenz."
+    },
+    "image": "/images/projects/mockarocka.png",
+    "webLink": "",
+    "appDownloadLink": ""
+  },
+ {
     "id": 18,
-    "name": { "ar": "Nume", "en": "Nume", "de": "Nume" },
-    "title": { "ar": "Nume – تطبيق إدارة مواعيد احترافي (ألمانيا)", "en": "Nume – Professional Appointment Management App (Germany)", "de": "Nume – Professionelle Terminverwaltungs-App (Deutschland)" },
-    "description": { "ar": "تطبيق لإدارة المواعيد والأعمال الصغيرة، مع تذكيرات ذكية وتنظيم فعال للجدول الزمني.", "en": "App for managing appointments and small businesses, offering smart reminders and efficient scheduling tools.", "de": "App zur Verwaltung von Terminen und kleinen Unternehmen, mit intelligenten Erinnerungen und effizientem Zeitmanagement." },
+    "name": {
+      "ar": "Nume",
+      "en": "Nume",
+      "de": "Nume"
+    },
+    "title": {
+      "ar": "Nume – تطبيق الذكاء الاصطناعي لزراعة الشعر (كندا)",
+      "en": "Nume – AI Hair Transplant Assistant (Canada)",
+      "de": "Nume – KI-Haartransplantationsassistent (Kanada)"
+    },
+    "description": {
+      "ar": "تطبيق جوال يعتمد على الذكاء الاصطناعي لمساعدة الأشخاص الراغبين في إجراء عملية زراعة الشعر. يمكن للمستخدم تحميل صورته ليحصل على تصور واقعي لنتائج العملية، مع توصيات مخصصة لأفضل نوع علاج يناسبه.",
+      "en": "An AI-powered mobile app designed to assist people considering hair transplant procedures. Users can upload their photos to visualize post-operation results and receive AI-generated recommendations for the most suitable treatment options.",
+      "de": "Eine KI-gestützte mobile App, die Personen unterstützt, die eine Haartransplantation in Betracht ziehen. Benutzer können ihre Fotos hochladen, um realistische Ergebnisse der Operation zu visualisieren und KI-generierte Empfehlungen für die am besten geeigneten Behandlungsoptionen zu erhalten."
+    },
     "image": "/images/projects/nume.png",
     "webLink": "",
     "appDownloadLink": ""
