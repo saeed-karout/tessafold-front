@@ -3,50 +3,50 @@
     "phases": {
       "phase1": {
         "title": {
-          "en": "Phase I - Research and Design",
-          "ar": "المرحلة الأولى - البحث والتصميم",
-          "de": "Phase I - Forschung und Design"
+          "en": "Phase I - Agreement & Specifications",
+          "ar": "المرحلة الأولى – الاتفاق والمواصفات",
+          "de": "Phase I – Vereinbarung & Spezifikationen"
         },
         "steps": [
           {
             "id": 1,
             "title": {
-              "en": "Specification & Planning",
-              "ar": "المواصفات والتخطيط",
-              "de": "Spezifikation & Planung"
+              "en": "Proposal & Agreement",
+              "ar": "العرض والاتفاق",
+              "de": "Angebot & Vereinbarung"
             },
             "description": {
-              "en": "Through several guided discovery sessions, we build out a specifications document that clearly outlines our project goal.\n\nWhat are we building, for what users, and with what features?\nWhat languages, frameworks & services should we use to optimize cost vs functionality?\n\nOur team of professionals help guide this process through:\nFeature Suggestions (for example, did you think of building an admin panel to track usership & analytics).\n80/20 principles where its possible to build a similar feature but for much cheaper.\n\nHere is a sample of a Specifications Sheet.",
-              "ar": "من خلال عدة جلسات اكتشاف موجهة، نقوم ببناء وثيقة مواصفات تحدد بوضوح هدف مشروعنا.\n\nماذا نبني، ولمن من المستخدمين، وبأي ميزات؟\nما هي اللغات والأطر والخدمات التي يجب أن نستخدمها لتحسين التكلفة مقابل الوظيفة؟\n\nفريقنا من المحترفين يساعد في توجيه هذه العملية من خلال:\nاقتراحات الميزات (على سبيل المثال، هل فكرت في بناء لوحة تحكم لتتبع المستخدمين والتحليلات).\nمبادئ 80/20 حيث يمكن بناء ميزة مماثلة ولكن بتكلفة أقل بكثير.\n\nهنا نموذج من ورقة المواصفات.",
-              "de": "Durch mehrere geführte Entdeckungssitzungen erstellen wir ein Spezifikationsdokument, das unser Projektziel klar umreißt.\n\nWas bauen wir, für welche Benutzer und mit welchen Funktionen?\nWelche Sprachen, Frameworks & Services sollten wir verwenden, um Kosten vs. Funktionalität zu optimieren?\n\nUnser Team von Fachleuten hilft bei der Steuerung dieses Prozesses durch:\nFunktionsvorschläge (zum Beispiel, haben Sie daran gedacht, ein Admin-Panel zur Verfolgung von Nutzern & Analysen zu erstellen).\n80/20-Prinzipien, bei denen es möglich ist, eine ähnliche Funktion zu einem viel günstigeren Preis zu erstellen.\n\nHier ist ein Beispiel eines Spezifikationsblattes."
+              "en": "We transform your vision into a clear, actionable plan. \n\nOur team prepares a detailed Statement of Work (SOW) outlining project scope, key deliverables, timeline, milestones, and estimated costs. \n\nAfter review, we formalize the partnership through a contract, ensuring full alignment of expectations. \n\nThis phase establishes a strong foundation, clarity, and accountability, setting the stage for a successful project execution.",
+              "ar": "نحوّل رؤيتك إلى خطة واضحة وقابلة للتنفيذ. \n\nيقوم فريقنا بإعداد بيان عمل مفصل يحدد نطاق المشروع، المخرجات الرئيسية، الجدول الزمني، المراحل الأساسية والتكاليف المقدرة. \n\nبعد المراجعة والموافقة، نقوم بتوثيق الشراكة بعقد رسمي يضمن توافق التوقعات بالكامل. \n\nتضع هذه المرحلة أساسًا قويًا للنجاح، وتضمن الوضوح والمسؤولية، لتكون البداية لمشروع ناجح.",
+              "de": "Wir verwandeln Ihre Vision in einen klaren, umsetzbaren Plan. \n\nUnser Team erstellt ein detailliertes Statement of Work (SOW), das den Projektumfang, die wichtigsten Liefergegenstände, Zeitplan, Meilensteine und geschätzte Kosten beschreibt. \n\nNach der Prüfung formalisieren wir die Partnerschaft durch einen Vertrag, um volle Übereinstimmung der Erwartungen zu gewährleisten. \n\nDiese Phase legt die Basis, sorgt für Klarheit und Verantwortlichkeit und schafft die Grundlage für eine erfolgreiche Projektdurchführung."
             },
             "icon": "/icons/ourProcess/search.svg"
           },
           {
             "id": 2,
             "title": {
-              "en": "Design, Wireframe & Prototype",
-              "ar": "التصميم، الإطار الشبكي والنموذج الأولي",
-              "de": "Design, Wireframe & Prototyp"
+              "en": "UI/UX Design & Prototyping",
+              "ar": "تصميم واجهة وتجربة المستخدم والنماذج الأولية",
+              "de": "UI/UX Design & Prototyping"
             },
             "description": {
-              "en": "We create detailed designs and interactive prototypes to visualize your project before development begins.",
-              "ar": "نقوم بإنشاء تصاميم مفصلة ونماذج أولية تفاعلية لتصور مشروعك قبل بدء التطوير.",
-              "de": "Wir erstellen detaillierte Designs und interaktive Prototypen, um Ihr Projekt vor Entwicklungsbeginn zu visualisieren."
+              "en": "We create intuitive UI/UX designs that combine aesthetics with functionality. \n\nUsing Figma, our designers produce interactive prototypes, enabling clients to explore workflows, navigation, and key interactions before development starts. \n\nThis process allows early feedback, minimizes rework, and ensures the final product aligns with user expectations and your business objectives. \n\nDesign decisions are informed by market research, usability testing, and industry best practices.",
+              "ar": "نقوم بتصميم واجهات وتجارب مستخدم تجمع بين الجمالية والوظائف العملية. \n\nباستخدام Figma، يقوم مصممونا بإنتاج نماذج أولية تفاعلية تمكن العميل من تجربة تدفقات العمل، والتنقل، والتفاعلات الأساسية قبل بدء التطوير. \n\nيتيح هذا الحصول على ملاحظات مبكرة، وتقليل الحاجة لإعادة العمل، وضمان توافق المنتج النهائي مع توقعات المستخدمين وأهداف عملك. \n\nتستند قرارات التصميم إلى أبحاث السوق، واختبارات سهولة الاستخدام، وأفضل الممارسات في الصناعة.",
+              "de": "Wir erstellen intuitive UI/UX-Designs, die Ästhetik mit Funktionalität verbinden. \n\nMit Figma liefern unsere Designer interaktive Prototypen, die es den Kunden ermöglichen, Arbeitsabläufe, Navigation und zentrale Interaktionen vor der Entwicklung zu testen. \n\nDieser Prozess erlaubt frühes Feedback, minimiert Nacharbeit und stellt sicher, dass das Endprodukt den Erwartungen der Nutzer und Ihren Geschäftszielen entspricht. \n\nDesignentscheidungen basieren auf Marktforschung, Usability-Tests und Best Practices der Branche."
             },
             "icon": "/icons/ourProcess/Design.svg"
           },
           {
             "id": 3,
             "title": {
-              "en": "Estimates & Timeline",
-              "ar": "التقديرات والجدول الزمني",
-              "de": "Schätzungen & Zeitplan"
+              "en": "Detailed Planning & Timeline",
+              "ar": "التخطيط التفصيلي والجدول الزمني",
+              "de": "Detaillierte Planung & Zeitplan"
             },
             "description": {
-              "en": "We provide accurate time and cost estimates with a clear project timeline for successful delivery.",
-              "ar": "نقدم تقديرات دقيقة للوقت والتكلفة مع جدول زمني واضح للمشروع للتسليم الناجح.",
-              "de": "Wir liefern genaue Zeit- und Kostenschätzungen mit einem klaren Projektzeitplan für eine erfolgreiche Lieferung."
+              "en": "Once the designs are approved, we develop a comprehensive project roadmap. \n\nThis includes defining milestones, task assignments, dependencies, resource allocation, and risk management. \n\nOur detailed timeline ensures transparency, accountability, and coordination across teams. \n\nBy setting realistic deadlines and tracking progress, we maintain control over the project and minimize delays, ensuring timely delivery.",
+              "ar": "بعد اعتماد التصاميم، نضع خارطة طريق شاملة للمشروع. \n\nتشمل تحديد المراحل الأساسية، توزيع المهام، العلاقات بين المهام، تخصيص الموارد وإدارة المخاطر. \n\nيضمن الجدول الزمني التفصيلي الشفافية والمسؤولية والتنسيق بين الفرق. \n\nمن خلال تحديد مواعيد واقعية ومتابعة التقدم، نضمن السيطرة على المشروع وتقليل التأخيرات، وضمان التسليم في الوقت المحدد.",
+              "de": "Nach Genehmigung der Designs erstellen wir einen umfassenden Projektfahrplan. \n\nDies beinhaltet die Definition von Meilensteinen, Aufgabenverteilungen, Abhängigkeiten, Ressourcenzuweisung und Risikomanagement. \n\nUnser detaillierter Zeitplan gewährleistet Transparenz, Verantwortlichkeit und Koordination zwischen den Teams. \n\nDurch realistische Deadlines und Fortschrittskontrolle behalten wir die Kontrolle über das Projekt und minimieren Verzögerungen, um eine termingerechte Lieferung sicherzustellen."
             },
             "icon": "/icons/ourProcess/timer.svg"
           }
@@ -54,78 +54,78 @@
       },
       "phase2": {
         "title": {
-          "en": "Phase II - Development",
-          "ar": "المرحلة الثانية - التطوير",
-          "de": "Phase II - Entwicklung"
+          "en": "Phase II - Software Development",
+          "ar": "المرحلة الثانية – تطوير البرمجيات",
+          "de": "Phase II – Softwareentwicklung"
         },
         "steps": [
           {
             "id": 4,
             "title": {
-              "en": "Build",
-              "ar": "البناء",
-              "de": "Aufbau"
+              "en": "Development & Coding",
+              "ar": "التطوير والبرمجة",
+              "de": "Entwicklung & Programmierung"
             },
             "description": {
-              "en": "Our development team brings your project to life using the latest technologies and best practices.",
-              "ar": "فريق التطوير لدينا يحول مشروعك إلى واقع باستخدام أحدث التقنيات وأفضل الممارسات.",
-              "de": "Unser Entwicklungsteam bringt Ihr Projekt mit den neuesten Technologien und Best Practices zum Leben."
+              "en": "Our engineers implement the approved designs using clean, secure, and scalable code. \n\nWe follow modern frameworks and coding standards to ensure performance, maintainability, and security. \n\nThis phase transforms concepts into functional software, with modular architecture ready to accommodate future growth and feature expansion.",
+              "ar": "يقوم مهندسونا بتنفيذ التصاميم المعتمدة باستخدام كود نظيف وآمن وقابل للتوسع. \n\nنلتزم بأحدث الأطر ومعايير الترميز لضمان الأداء وسهولة الصيانة والأمان. \n\nتحول هذه المرحلة المفاهيم إلى برامج عملية مع بنية مرنة جاهزة لدعم النمو المستقبلي وتوسيع المزايا.",
+              "de": "Unsere Entwickler setzen die genehmigten Designs mit sauberem, sicherem und skalierbarem Code um. \n\nWir folgen modernen Frameworks und Codestandards, um Leistung, Wartbarkeit und Sicherheit zu gewährleisten. \n\nDiese Phase verwandelt Konzepte in funktionale Software mit modularer Architektur, die zukünftiges Wachstum und Erweiterungen unterstützt."
             },
             "icon": "/icons/ourProcess/code.svg"
           },
           {
             "id": 5,
             "title": {
-              "en": "Test",
-              "ar": "الاختبار",
-              "de": "Testen"
+              "en": "Quality Assurance (QA)",
+              "ar": "ضمان الجودة",
+              "de": "Qualitätssicherung (QA)"
             },
             "description": {
-              "en": "Comprehensive testing ensures your application works flawlessly across all devices and platforms.",
-              "ar": "الاختبار الشامل يضمن أن تطبيقك يعمل بسلاسة على جميع الأجهزة والمنصات.",
-              "de": "Umfassendes Testen stellt sicher, dass Ihre Anwendung auf allen Geräten und Plattformen einwandfrei funktioniert."
+              "en": "All features undergo thorough testing, including functional, performance, and security checks. \n\nBugs and inconsistencies are identified early, ensuring a stable and reliable product. \n\nOur QA process is iterative and continuous, guaranteeing that every release meets enterprise-grade standards and user expectations.",
+              "ar": "تخضع جميع المزايا لاختبارات دقيقة تشمل الوظائف والأداء والأمان. \n\nيتم اكتشاف الأخطاء والمشكلات مبكرًا لضمان منتج مستقر وموثوق. \n\nتُطبق عملية ضمان الجودة بشكل متكرر ومستمر، لضمان أن كل إصدار يلتزم بمعايير الشركات وتوقعات المستخدمين.",
+              "de": "Alle Funktionen durchlaufen gründliche Tests, einschließlich Funktionalität, Leistung und Sicherheit. \n\nFehler und Inkonsistenzen werden frühzeitig erkannt, um ein stabiles und zuverlässiges Produkt zu gewährleisten. \n\nUnser QA-Prozess ist iterativ und kontinuierlich, um sicherzustellen, dass jede Version Unternehmensstandards und Benutzererwartungen erfüllt."
             },
             "icon": "/icons/ourProcess/task-square.svg"
           },
           {
             "id": 6,
             "title": {
-              "en": "Deploy",
-              "ar": "النشر",
-              "de": "Bereitstellung"
+              "en": "Deployment & Client Review (UAT)",
+              "ar": "النشر ومراجعة العميل",
+              "de": "Bereitstellung & Kundenprüfung (UAT)"
             },
             "description": {
-              "en": "We deploy your application to production servers with zero downtime and optimal performance.",
-              "ar": "نقوم بنشر تطبيقك على خوادم الإنتاج بدون أي توقف وبأداء مثالي.",
-              "de": "Wir stellen Ihre Anwendung auf Produktionsservern ohne Ausfallzeiten und mit optimaler Leistung bereit."
+              "en": "The application is deployed to a staging environment for User Acceptance Testing (UAT). \n\nClients test all functionalities, workflows, and interfaces. Feedback is collected to refine the final product, ensuring it fully meets business requirements before going live.",
+              "ar": "يتم نشر التطبيق في بيئة اختبار لتقييم العميل (UAT). \n\nيقوم العميل باختبار جميع الوظائف وتدفقات العمل والواجهات. تُجمع الملاحظات لتحسين المنتج النهائي وضمان تلبيته لجميع متطلبات العمل قبل الإطلاق.",
+              "de": "Die Anwendung wird in einer Staging-Umgebung für User Acceptance Testing (UAT) bereitgestellt. \n\nKunden testen alle Funktionen, Workflows und Schnittstellen. Feedback wird gesammelt, um das Endprodukt zu verfeinern und sicherzustellen, dass es vor dem Live-Gang alle Geschäftsanforderungen erfüllt."
             },
             "icon": "/icons/ourProcess/recovery-convert.svg"
           },
           {
             "id": 7,
             "title": {
-              "en": "Measure",
-              "ar": "القياس",
-              "de": "Messen"
+              "en": "Production GO LIVE",
+              "ar": "الإطلاق الفعلي للمنتج",
+              "de": "Produktionsstart (GO LIVE)"
             },
             "description": {
-              "en": "We monitor performance and gather analytics to measure success and identify areas for improvement.",
-              "ar": "نراقب الأداء ونجمع التحليلات لقياس النجاح وتحديد مجالات التحسين.",
-              "de": "Wir überwachen die Leistung und sammeln Analysen, um den Erfolg zu messen und Verbesserungsbereiche zu identifizieren."
+              "en": "After final approval, the product is launched in the live environment. \n\nThe platform is fully configured and optimized, ensuring seamless user access. \n\nWe monitor performance closely, respond to any issues quickly, and ensure a smooth operational start for your business.",
+              "ar": "بعد الموافقة النهائية، يتم إطلاق المنتج في البيئة الحية. \n\nالمنصة مجهزة بالكامل ومحسّنة لضمان وصول سلس للمستخدمين. \n\nنراقب الأداء عن كثب ونتعامل بسرعة مع أي مشكلة لضمان بداية تشغيل سلسة وناجحة لعملك.",
+              "de": "Nach der endgültigen Freigabe wird das Produkt in der Live-Umgebung gestartet. \n\nDie Plattform ist vollständig konfiguriert und optimiert, um nahtlosen Benutzerzugang zu gewährleisten. \n\nWir überwachen die Leistung genau, reagieren schnell auf Probleme und sichern einen reibungslosen Start für Ihr Unternehmen."
             },
             "icon": "/icons/ourProcess/ruler&pen.svg"
           },
           {
             "id": 8,
             "title": {
-              "en": "Maintain",
-              "ar": "الصيانة",
-              "de": "Wartung"
+              "en": "Maintenance & Continuous Improvement",
+              "ar": "الصيانة والتطوير المستمر",
+              "de": "Wartung & Kontinuierliche Verbesserung"
             },
             "description": {
-              "en": "Ongoing maintenance and support to keep your application secure, updated, and performing at its best.",
-              "ar": "الصيانة والدعم المستمرين للحفاظ على تطبيقك آمنًا ومحدثًا ويعمل بأفضل أداء.",
-              "de": "Laufende Wartung und Unterstützung, um Ihre Anwendung sicher, aktuell und leistungsstark zu halten."
+              "en": "We provide ongoing support, updates, and enhancements. \n\nThe platform evolves with your business needs, new features are added, performance is optimized, and security is continuously maintained. \n\nOur team ensures long-term reliability, scalability, and maximized ROI for your investment.",
+              "ar": "نوفر دعمًا مستمرًا، وتحديثات، وتحسينات مستمرة. \n\nتتطور المنصة وفقًا لاحتياجات عملك، مع إضافة ميزات جديدة، وتحسين الأداء، والحفاظ المستمر على الأمان. \n\nيضمن فريقنا موثوقية طويلة الأمد، وقابلية للتوسع، وتعظيم العائد على استثمارك.",
+              "de": "Wir bieten fortlaufenden Support, Updates und Verbesserungen. \n\nDie Plattform entwickelt sich mit Ihren Geschäftsanforderungen weiter, neue Funktionen werden hinzugefügt, die Leistung optimiert und die Sicherheit kontinuierlich gewährleistet. \n\nUnser Team sorgt für langfristige Zuverlässigkeit, Skalierbarkeit und maximale Rendite Ihrer Investition."
             },
             "icon": "/icons/ourProcess/grid-edit.svg"
           }
