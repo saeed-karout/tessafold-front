@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": { "ar": "GameSafe.Ai", "en": "GameSafe.Ai", "de": "GameSafe.Ai" },
-    "title": { "ar": "GameSafe.Ai - حماية الطفل على الشبكة (الولايات المتحدة الأمريكية)", "en": "GameSafe.Ai – Child Online Safety (USA)", "de": "GameSafe.Ai – Online-Sicherheit für Kinder (USA)" },
+    "title": { "ar": "GameSafe.Ai - حماية الطفل على الشبكة (أمريكا)", "en": "GameSafe.Ai – Child Online Safety (USA)", "de": "GameSafe.Ai – Online-Sicherheit für Kinder (USA)" },
     "description": { "ar": "تُعد GameSafe.AI حلاً متقدماً لحماية الأطفال أثناء ممارسة الألعاب الإلكترونية عبر الإنترنت. يتم تثبيت البرنامج على جهاز الطفل (جوال أو كمبيوتر) لمراقبة الدردشات داخل الألعاب مثل Roblox وMinecraft. وباستخدام الذكاء الاصطناعي، وتعلّم الآلة، وتحليلات البيانات المتقدمة، يقوم النظام بتصفية التهديدات والكشف عن السلوك غير المناسب، ثم تنبيه الوالدين فوراً عبر تطبيق جوال مخصص", "en": "GameSafe.AI is an advanced child-protection solution designed to create a safer internet experience during online gaming. Installed on the child’s device (mobile or desktop), it monitors and analyzes in-game chats on platforms like Roblox and Minecraft. Using AI and smart filtering, it detects threats, inappropriate content, or suspicious behavior, and immediately alerts parents through a dedicated mobile app, ensuring peace of mind and a secure digital environment for children.", "de": "GameSafe.AI ist eine fortschrittliche Kinderschutzlösung, die entwickelt wurde, um ein sichereres Interneterlebnis beim Online-Gaming zu schaffen. Die Anwendung wird auf dem Gerät des Kindes (mobil oder Desktop) installiert und überwacht sowie analysiert Chatverläufe in Spielen wie Roblox und Minecraft. Mithilfe von KI und intelligenten Filtermechanismen erkennt sie Bedrohungen, unangemessene Inhalte oder verdächtiges Verhalten und benachrichtigt die Eltern sofort über eine spezielle mobile App – für ein sicheres digitales Umfeld und ein beruhigendes Gefühl der Sicherheit." },
     "image": "/images/projects/1.png",
     "webLink": "https://gamesafe.ai",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": { "ar": "Nouri.AI", "en": "Nouri.AI", "de": "Nouri.AI" },
-    "title": { "ar": "Nouri.Ai – منصة ذكية للفعاليات والتواصل الإحترافي (الولايات المتحدة الأمريكية)", "en": "Nouri.Ai – Networking Platform (USA)", "de": "Nouri.Ai – Networking-Plattform (USA)" },
+    "title": { "ar": "Nouri.Ai – منصة ذكية للفعاليات والتواصل الإحترافي (أمريكا)", "en": "Nouri.Ai – Networking Platform (USA)", "de": "Nouri.Ai – Networking-Plattform (USA)" },
     "description": { "ar": "تجمع Nouri.Ai بين قوة تنظيم الفعاليات مثل Eventbrite وإمكانات بناء العلاقات مثل LinkedIn. تمكّن الشركات والأفراد من إنشاء فعاليات، التواصل مع الحضور، وإدارة علاقاتهم بفعالية عبر نظام CRM مدمج.", "en": "A hybrid between Eventbrite and LinkedIn, Nouri.Ai allows professionals to network, manage events, and build business relationships seamlessly. It combines CRM capabilities with social features to help companies engage with clients and organize events effectively.", "de": "Als Hybrid zwischen Eventbrite und LinkedIn ermöglicht Nouri.Ai Experten, sich zu vernetzen, Veranstaltungen zu verwalten und nahtlos Geschäftsbeziehungen aufzubauen. Es kombiniert CRM-Funktionen mit sozialen Features, um Unternehmen dabei zu helfen, mit Kunden in Kontakt zu treten und Veranstaltungen effektiv zu organisieren." },
     "image": "/images/projects/nouri.png",
     "webLink": "https://nouri.ai",
