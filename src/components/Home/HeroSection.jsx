@@ -78,11 +78,11 @@ function HeroSection() {
           className="partners-swiper"
           breakpoints={{
             320: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
             480: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetween: 30,
             },
             768: {

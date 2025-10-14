@@ -37,7 +37,7 @@
   font-size: 2.5rem; /* 40px */
   font-weight: 600;
   line-height: 1.4; /* 140% */
-  max-width: 44.875rem; /* 718px */
+  /* max-width: 44.875rem; 718px */
 }
 
 .section1-hero .yellow-hero-wrapper {
@@ -46,7 +46,8 @@
 }
 
 .partner-slide img{
-  max-width: 165px;
+  max-width: 100px;
+  object-fit: contain;
   filter: brightness(0) invert(1);
 }
 
