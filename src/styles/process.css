@@ -162,7 +162,7 @@
   .main-process-component {
     padding: 4rem 1rem 5rem 1rem;
     gap: 3rem;
-    /* height: 90vh; */
+    height: 80vh;
     margin: 0 40px;
   }
   .section-top{
@@ -295,7 +295,7 @@
   .main-process-component {
     padding: 1.5rem 0.5rem 2rem 0.5rem;
     gap: 1.5rem;
-    /* height: 90vh; */
+    height: 80vh;
     height: 100%;
     margin: 0 20px;
     padding-bottom: 80px;

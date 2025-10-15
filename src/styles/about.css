@@ -184,7 +184,9 @@
   .title-about, .title-about span {
     font-size: 1.5rem; /* 24px */
   }
-
+  .frame-about .content-about{
+    width: 90%;
+  }
   .frame-about {
     padding: 0 1.5rem;
     gap: 3rem;
