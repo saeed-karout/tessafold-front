@@ -84,7 +84,7 @@
       "ml": "Machine Learning",
       "ai1": "LLM",
       "ai2": "OLLAMA",
-      "openaimodels": "ChatGPT/Gemine/Claude",
+      "openaimodels": "ChatGPT/Gemini/Claude",
       "openai": "Open AI",
       "tts": "Text To Speech",
       "stt": "Speech To Text",
