@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import processData from '../../data/our_process.json';
 import '../../styles/process.css';
+import { Link } from 'react-router-dom';
 
 function OurProcess() {
   const { t, i18n } = useTranslation();
@@ -36,10 +37,10 @@ function OurProcess() {
             </div>
             <div className="subtitle">{t('our_process.subtitle') || 'How We Work'}</div>
           </div>
-          <div className="right">
+          <Link to={"/our-process"} className="right">
             <span>{t('our_process.view_full_process') || 'View Full Process'}</span>
             <img src="/arrow-left.svg" className="arrow-icon" style={{ rotate: currentLang === 'ar' ? '180deg' : '0deg' }} alt={t('our_process.arrow_alt') || 'Arrow'} />
-          </div>
+          </Link>
         </div>
       </div>
 
