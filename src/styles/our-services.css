@@ -195,7 +195,7 @@
 }
 
 /* Responsive adjustments for screens <= 470px */
-@media (max-width: 470px) {
+@media (max-width: 670px) {
   .main-our-services {
     padding: 1.5rem 0; /* 24px */
   }
