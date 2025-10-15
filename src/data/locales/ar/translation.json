@@ -96,7 +96,7 @@
       "cloudProviders1": "Oracle/Alibaba",
       "sso": "SSO",
       "crmErpIntegrations": "CRM Integrations",
-      "odoo ErpIntegrations": "Odoo Integrations",
+      "odooErpIntegrations": "Odoo Integrations",
       "agileMethodology": "Agile Methodology",
       "apiintegrations": "Custom API Integrations",
       "cleanCode": "Clean Code",
