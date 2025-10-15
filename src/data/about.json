@@ -3,40 +3,21 @@
     {
       "id": 1,
       "name": {
-        "ar": "جون دو",
-        "en": "John Doe",
-        "de": "John Doe"
+        "ar": "الأستاذ جبريل الصفواني",
+        "en": "Mr. Gabriel Al Safwani",
+        "de": "Herr. Gabriel Al Safwani"
       },
       "careerLevel": {
-        "ar": "مطور أول",
-        "en": "Senior Developer",
-        "de": "Senior Entwickler"
+        "ar": "المدير العام",
+        "en": "General Manager",
+        "de": "Geschäftsführer"
       },
       "technology": {
-        "ar": ["React.js", "Node.js", "TypeScript"],
-        "en": ["React.js", "Node.js", "TypeScript"],
-        "de": ["React.js", "Node.js", "TypeScript"]
+        "ar": ["React.js", "PHP Laravel", "TypeScript", "AI", "AWS"],
+        "en": ["React.js", "PHP Laravel", "TypeScript", "AI", "AWS"],
+        "de": ["React.js", "PHP Laravel", "TypeScript", "AI", "AWS"]
       },
       "video": "https://www.youtube.com/embed/X6GnlcQZ1Cc"
-    },
-    {
-      "id": 2,
-      "name": {
-        "ar": "جين سميث",
-        "en": "Jane Smith",
-        "de": "Jane Smith"
-      },
-      "careerLevel": {
-        "ar": "مدير مشروع",
-        "en": "Project Manager",
-        "de": "Projektmanager"
-      },
-      "technology": {
-        "ar": ["إدارة المشاريع", "Agile", "Scrum"],
-        "en": ["Project Management", "Agile", "Scrum"],
-        "de": ["Projektmanagement", "Agile", "Scrum"]
-      },
-      "video": "https://www.youtube.com/embed/sample-id-2"
     }
   ]
 }
