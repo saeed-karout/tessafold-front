@@ -1,24 +1,48 @@
 [
-  {
-    "id": 1,
-    "reviewer": {
-      "name": { "en": "Sean Bair", "ar": "شان باير" },
-      "role": { "en": "Founder, Nouri.AI Platform - USA ", "ar": "مؤسس، منصة نوري للفعاليات والسوشال - أمريكا" },
-      "avatar": "/images/projects/Sean.jpeg"
+    {
+        "id": 1,
+        "reviewer": {
+            "name": {
+                "en": "Sean Bair",
+                "ar": "شان باير",
+                "de": "Sean Bair"
+            },
+            "role": {
+                "en": "Founder, Nouri.AI Platform - USA ",
+                "ar": "مؤسس، منصة نوري للفعاليات والسوشال - أمريكا",
+                "de": "Gründer, Nouri.AI Plattform - USA "
+            },
+            "avatar": "/images/projects/Sean.jpeg"
+        },
+        "rating": 5,
+        "content": {
+            "en": "Tessafold consistently delivered timely, high-quality development work and support throughout the engagement, meeting expectations. The team communicated clearly and was quick to respond to the client's needs and requests. Above all, they offered cost-effective services.",
+            "ar": "قدّمت تيسافولد أعمال تطوير ودعم عالية الجودة وفي الوقت المحدد طوال فترة التعاون، محققةً جميع التوقعات. تميّز الفريق بوضوح التواصل وسرعة الاستجابة لاحتياجات العميل وطلباته، وقبل كل شيء، قدّم خدمات ذات كفاءة عالية وتكلفة مناسبة.",
+            "de": "Tessafold lieferte während der gesamten Zusammenarbeit konsequent zeitnahe, qualitativ hochwertige Entwicklungsarbeit und Unterstützung und erfüllte die Erwartungen. Das Team kommunizierte klar und reagierte schnell auf die Bedürfnisse und Wünsche des Kunden. Vor allem boten sie kosteneffektive Dienstleistungen."
+        },
+        "date": "2023-06-17"
     },
-    "rating": 5,
-    "content": { "en": "Tessafold consistently delivered timely, high-quality development work and support throughout the engagement, meeting expectations. The team communicated clearly and was quick to respond to the client's needs and requests. Above all, they offered cost-effective services.", "ar": "قدّمت تيسافولد أعمال تطوير ودعم عالية الجودة وفي الوقت المحدد طوال فترة التعاون، محققةً جميع التوقعات. تميّز الفريق بوضوح التواصل وسرعة الاستجابة لاحتياجات العميل وطلباته، وقبل كل شيء، قدّم خدمات ذات كفاءة عالية وتكلفة مناسبة." },
-    "date": "2023-06-17"
-  },
-  {
-    "id": 2,
-    "reviewer": {
-      "name": { "en": "Christian Hartmann", "ar": "كرستيان هارتمان" },
-      "role": { "en": "CTO, Horn & Görwitz GmbH & Co. KG", "ar": "المدير التقني، شركة هورن غورفتس الألمانية" },
-      "avatar": "/images/projects/Christian.jpeg"
-    },
-    "rating": 5,
-    "content": { "en": "Tessafold LLC delivered an innovative and easy-to-use CRM that received positive feedback from the client's customers. The team was reliable and delivered good-quality work. Tessafold LLC met the project milestones and worked under Agile and Scrum methodology, being responsive via virtual meetings.", "ar": " قدّمت شركة  تيسافولد نظام إدارة علاقات عملاء (CRM) مبتكراً وسهل الاستخدام، وقد نال استحسان عملاءنا. تميّز الفريق بالمصداقية وبتقديم عمل عالي الجودة، كما التزم بجميع مراحل المشروع وفقاً للمنهجية الرشيقة لإدارة المشروع، مع الحفاظ على تواصل فعّال وسريع من خلال الاجتماعات الافتراضية." },
-    "date": "2023-11-03"
-  }
+    {
+        "id": 2,
+        "reviewer": {
+            "name": {
+                "en": "Christian Hartmann",
+                "ar": "كرستيان هارتمان",
+                "de":"Christian Hartmann"
+            },
+            "role": {
+                "en": "CTO, Horn & Görwitz GmbH & Co. KG",
+                "ar": "المدير التقني، شركة هورن غورفتس الألمانية",
+                "de":"CTO, Horn & Görwitz GmbH & Co. KG"
+            },
+            "avatar": "/images/projects/Christian.jpeg"
+        },
+        "rating": 5,
+        "content": {
+            "en": "Tessafold LLC delivered an innovative and easy-to-use CRM that received positive feedback from the client's customers. The team was reliable and delivered good-quality work. Tessafold LLC met the project milestones and worked under Agile and Scrum methodology, being responsive via virtual meetings.",
+            "ar": " قدّمت شركة  تيسافولد نظام إدارة علاقات عملاء (CRM) مبتكراً وسهل الاستخدام، وقد نال استحسان عملاءنا. تميّز الفريق بالمصداقية وبتقديم عمل عالي الجودة، كما التزم بجميع مراحل المشروع وفقاً للمنهجية الرشيقة لإدارة المشروع، مع الحفاظ على تواصل فعّال وسريع من خلال الاجتماعات الافتراضية.",
+            "de":"Tessafold LLC lieferte ein innovatives und benutzerfreundliches CRM, das positives Feedback von den Kunden des Auftraggebers erhielt. Das Team war zuverlässig und lieferte qualitativ gute Arbeit. Tessafold LLC erfüllte die Projektmeilensteine und arbeitete nach der Agile- und Scrum-Methodik und war über virtuelle Meetings ansprechbar."
+        },
+        "date": "2023-11-03"
+    }
 ]
