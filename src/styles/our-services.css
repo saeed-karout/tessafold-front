@@ -189,8 +189,8 @@
   }
 
   .card-service {
-    max-width: 17.5rem; /* 280px */
-    padding: 0.75rem; /* 12px */
+    max-width: 950%; /* 280px */
+    padding: 0.85rem; /* 12px */
   }
 }
 
@@ -227,9 +227,9 @@
   }
 
   .card-service {
-    max-width: 16.25rem; /* 260px */
+    max-width:95%; /* 260px */
     max-height: 4.375rem; /* 70px */
-    padding: 0.625rem; /* 10px */
+    padding: 0.725rem; /* 10px */
     border-radius: 0.5rem; /* 8px */
   }
 
