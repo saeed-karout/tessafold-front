@@ -145,7 +145,7 @@ function ProcessComponent() {
                   .split('\n')
                   .map((paragraph, index) => (
                     <p key={index} className="page-process-description-paragraph">
-                      {paragraph || 'No description available'}
+                      {paragraph }
                     </p>
                   ))}
               </div>
@@ -205,7 +205,7 @@ function ProcessComponent() {
                       .split('\n')
                       .map((paragraph, idx) => (
                         <p key={idx} className="page-process-faq-paragraph">
-                          {paragraph || 'No description available'}
+                          {paragraph }
                         </p>
                       ))}
                   </div>
