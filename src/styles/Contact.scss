@@ -70,7 +70,7 @@
   }
 
   @media (max-width: var(--breakpoint-mobile)) {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
@@ -91,7 +91,7 @@
 }
 
 .top p {
-  color: var(--Black-black-9, #575B5C);
+  color: var(--Black-black-9, #6d6f6f);
   
   font-size: 16px;
   font-weight: 400;
@@ -517,7 +517,7 @@ filter: blur(50px);
   }
 
   .top .titles {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .top .subtitles {
@@ -525,7 +525,7 @@ filter: blur(50px);
   }
 
   .top p {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .frame-form {
@@ -546,7 +546,7 @@ filter: blur(50px);
 
   .submit {
     padding: 8px 24px;
-    width: 100%;
+    // width: 100%;
   }
 
   .submit span {

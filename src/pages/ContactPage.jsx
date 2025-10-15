@@ -137,8 +137,8 @@ function ContactPage() {
             <div className="titles">
               {t('contact.title') || 'Get in Touch'} <span>{t('contact.titleHighlight') || 'Now'}</span>
             </div>
-            <div className="subtitles">{t('contact.subtitle') || 'Let’s Collaborate'}</div>
-            <p>{t('contact.description') || 'Reach out to discuss your project.'}</p>
+            <div className="subtitles" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>{t('contact.subtitle') || 'Let’s Collaborate'}</div>
+            <p >{t('contact.description') || 'Reach out to discuss your project.'}</p>
           </div>
           <div className="frame-form">
             <div className="form" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
