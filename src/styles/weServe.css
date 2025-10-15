@@ -162,19 +162,7 @@
     border: 1px solid transparent;
 }
 
-.card-serve:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
 
-.card-serve.with-bg:hover {
-    background: var(--Black-black-12, #2B3132);
-}
-
-.card-serve.without-bg:hover {
-    border-color: var(--Yellow-yellow-500, #FFB130);
-    background: rgba(255, 177, 48, 0.05);
-}
 
 .card-serve img {
     width: 35.8px;
@@ -183,9 +171,7 @@
     transition: transform 0.3s ease;
 }
 
-.card-serve:hover img {
-    transform: scale(1.1);
-}
+
 
 .card-serve .topic-serve {
     color: var(--Black-black-1, #FFF);

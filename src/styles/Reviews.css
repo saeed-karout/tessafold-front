@@ -8,7 +8,7 @@
 .reviews-container {
   max-width: 100%;
   margin: 0 80px;
-  padding: 0 20px;
+
 }
 
 .reviews-header {
@@ -257,7 +257,7 @@
 
 @media (max-width: 768px) {
   .reviews-container{
-    margin: 0 20px;
+    /* margin: 0 20px; */
   }
   .reviews-section {
     padding: 40px 0;
@@ -292,7 +292,7 @@
 
 @media (max-width: 480px) {
   .reviews-container {
-    padding: 0 20px;
+
   }
 
   .reviews-title {

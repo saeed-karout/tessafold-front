@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem; /* Reduced from 24px for mobile */
-  padding: 5.7rem 2rem 4rem; /* Reduced padding for mobile */
+  padding: 5.7rem 80px 4rem; /* Reduced padding for mobile */
   min-height: 100vh; /* Ensure full viewport height */
 }
 
@@ -138,7 +138,7 @@
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
   .Hero {
-    padding: 2rem 1rem; /* Further reduce padding */
+    padding: 2rem 20px 1rem; /* Further reduce padding */
   
   }
 
@@ -192,7 +192,7 @@
 
 @media (max-width: 480px) {
   .Hero {
-    padding: 1.5rem 0.75rem;
+    padding: 1.5rem 20px 0.75rem;
 
   }
 
