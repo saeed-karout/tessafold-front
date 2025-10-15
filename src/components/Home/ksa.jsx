@@ -97,8 +97,14 @@ function KSA() {
           <div className="selected-item">
             {selectedItem && (
               <>
-                <img
-                  src={selectedItem.image || '/images/ksa/placeholder.webp'}
+                {/* <img
+                  src={selectedItem.image || '/images/ksa/bg.jpg'}
+                  className="selected-item-image"
+                  alt={selectedItem.text?.[currentLang] || 'Item'}
+                /> */}
+
+                 <img
+                  src='/images/ksa/bg.jpg'
                   className="selected-item-image"
                   alt={selectedItem.text?.[currentLang] || 'Item'}
                 />
