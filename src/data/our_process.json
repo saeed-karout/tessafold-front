@@ -71,15 +71,7 @@
         "de": "Support & Wartung"
       },
      "icon": "/icons/ourProcess/ruler&pen.svg"
-    },
-    {
-      "id": 9,
-      "name": {
-        "ar": "التطوير المستمر",
-        "en": "Upgrading",
-        "de": "Weiterentwicklung"
-      },
-     "icon": "/icons/ourProcess/grid-edit.svg"
     }
+    
   ]
 }
