@@ -1,33 +1,33 @@
 {
   "whatsapp": {
-    "phoneNumber": "+19498646033",
+    "phoneNumber": "+966581670316",
     "messages": {
       "default": {
-        "en": "Hello! I would like to get more information about your services.",
-        "ar": "مرحباً! أود الحصول على مزيد من المعلومات حول خدماتكم.",
-        "de": "Hallo! Ich möchte weitere Informationen zu Ihren Dienstleistungen erhalten."
+        "en": "Hello! I would like to learn more about your services and solutions.",
+        "ar": "مرحباً! أود التعرف أكثر على خدماتكم وحلولكم التقنية.",
+        "de": "Hallo! Ich möchte mehr über Ihre Dienstleistungen und Lösungen erfahren."
       },
       "project": {
-        "en": "Hello! I have a project I'd like to discuss.",
-        "ar": "مرحباً! لدي مشروع أود مناقشته.",
-        "de": "Hallo! Ich habe ein Projekt, das ich besprechen möchte."
+        "en": "Hello! I have a project I would like to discuss in detail.",
+        "ar": "مرحباً! لدي مشروع أود مناقشته معكم بالتفصيل.",
+        "de": "Hallo! Ich habe ein Projekt, das ich gerne im Detail besprechen möchte."
       },
       "quote": {
-        "en": "Hello! I'd like to get a quote for a project.",
-        "ar": "مرحباً! أود الحصول على عرض سعر لمشروع.",
-        "de": "Hallo! Ich möchte ein Angebot für ein Projekt erhalten."
+        "en": "Hello! I would like to request a professional quote for a project.",
+        "ar": "مرحباً! أود طلب عرض سعر احترافي لمشروع.",
+        "de": "Hallo! Ich möchte ein professionelles Angebot für ein Projekt anfordern."
       }
     },
     "tooltips": {
       "contact": {
-        "en": "Contact us on WhatsApp",
-        "ar": "تواصل معنا على واتساب",
-        "de": "Kontaktieren Sie uns auf WhatsApp"
+        "en": "Get in touch with us on WhatsApp",
+        "ar": "تواصل معنا مباشرة عبر واتساب",
+        "de": "Nehmen Sie über WhatsApp Kontakt mit uns auf"
       },
       "clickToChat": {
-        "en": "Click to start chatting",
-        "ar": "انقر لبدء المحادثة",
-        "de": "Klicken Sie, um zu chatten"
+        "en": "Click here to start a conversation",
+        "ar": "انقر هنا لبدء المحادثة",
+        "de": "Klicken Sie hier, um das Gespräch zu starten"
       }
     },
     "settings": {
