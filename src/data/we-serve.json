@@ -11,9 +11,9 @@
       "de": "die wir bedienen"
     },
     "subtitle": {
-      "en": "We provide tailored software solutions across various industries to meet unique business needs.",
-      "ar": "نقدم حلول برمجية مخصصة عبر مختلف القطاعات لتلبية الاحتياجات التجارية الفريدة.",
-      "de": "Wir bieten maßgeschneiderte Softwarelösungen für verschiedene Branchen, um einzigartige Geschäftsanforderungen zu erfüllen."
+      "en": "We deliver tailored digital solutions designed to meet the specific needs of each industry we serve.",
+      "ar": "نقدم حلولاً رقمية مخصصة مصممة لتلبية الاحتياجات الخاصة بكل قطاع نخدمه.",
+      "de": "Wir liefern maßgeschneiderte digitale Lösungen, die auf die spezifischen Anforderungen jeder Branche zugeschnitten sind."
     },
     "cards": [
       {
@@ -25,9 +25,9 @@
           "de": "Gesundheitswesen"
         },
         "description": {
-          "en": "We develop custom healthcare solutions that enhance patient care, streamline administrative processes, and improve clinical outcomes.",
-          "ar": "نطور حلول رعاية صحية مخصصة تعزز رعاية المرضى، وتبسط العمليات الإدارية، وتحسن النتائج السريرية.",
-          "de": "Wir entwickeln maßgeschneiderte Gesundheitslösungen, die die Patientenversorgung verbessern, administrative Prozesse optimieren und klinische Ergebnisse steigern."
+          "en": "We build secure, compliant healthcare platforms that enhance patient experience, streamline operations, and support better clinical outcomes.",
+          "ar": "نطور منصات رعاية صحية آمنة ومتوافقة تعزز تجربة المرضى، وتبسط العمليات، وتدعم تحسين النتائج السريرية.",
+          "de": "Wir entwickeln sichere und konforme Gesundheitsplattformen, die das Patientenerlebnis verbessern, Abläufe optimieren und bessere klinische Ergebnisse fördern."
         }
       },
       {
@@ -35,13 +35,13 @@
         "icon": "/icons/we-serve/2.svg",
         "topic": {
           "en": "Finance",
-          "ar": "التمويل",
-          "de": "Finanzen"
+          "ar": "القطاع المالي",
+          "de": "Finanzwesen"
         },
         "description": {
-          "en": "Our offerings include online banking platforms, payment processing systems, and risk management solutions.",
-          "ar": "تشمل عروضنا منصات الخدمات المصرفية عبر الإنترنت، وأنظمة معالجة المدفوعات، وحلول إدارة المخاطر.",
-          "de": "Unser Angebot umfasst Online-Banking-Plattformen, Zahlungsabwicklungssysteme und Risikomanagementlösungen."
+          "en": "We create reliable fintech solutions such as digital banking systems, payment gateways, and risk management platforms.",
+          "ar": "نطور حلولاً مالية موثوقة مثل الأنظمة المصرفية الرقمية، وبوابات الدفع، ومنصات إدارة المخاطر.",
+          "de": "Wir entwickeln zuverlässige Fintech-Lösungen wie digitale Bankensysteme, Zahlungsgateways und Risikomanagementplattformen."
         }
       },
       {
@@ -53,9 +53,9 @@
           "de": "E-Commerce"
         },
         "description": {
-          "en": "We build scalable and secure e-commerce solutions that enable businesses to reach customers online, and enhance the shopping experience.",
-          "ar": "نبني حلول تجارة إلكترونية قابلة للتطوير وآمنة تمكن الشركات من الوصول للعملاء عبر الإنترنت، وتعزيز تجربة التسوق.",
-          "de": "Wir entwickeln skalierbare und sichere E-Commerce-Lösungen, die es Unternehmen ermöglichen, Kunden online zu erreichen und das Einkaufserlebnis zu verbessern."
+          "en": "We design scalable and secure e-commerce platforms that drive online sales and deliver seamless shopping experiences.",
+          "ar": "نصمم منصات تجارة إلكترونية قابلة للتطوير وآمنة تعزز المبيعات عبر الإنترنت وتوفر تجربة تسوق سلسة.",
+          "de": "Wir entwickeln skalierbare und sichere E-Commerce-Plattformen, die den Online-Verkauf fördern und ein nahtloses Einkaufserlebnis bieten."
         }
       },
       {
@@ -63,13 +63,13 @@
         "icon": "/icons/we-serve/4.svg",
         "topic": {
           "en": "Retail",
-          "ar": "التجزئة",
+          "ar": "قطاع التجزئة",
           "de": "Einzelhandel"
         },
         "description": {
-          "en": "We deliver retail technology solutions that help businesses attract customers, manage inventory, and drive omnichannel sales.",
-          "ar": "نقدم حلول تكنولوجيا التجزئة التي تساعد الشركات على جذب العملاء، وإدارة المخزون، وتعزيز المبيعات متعددة القنوات.",
-          "de": "Wir liefern Einzelhandelstechnologielösungen, die Unternehmen helfen, Kunden zu gewinnen, Bestände zu verwalten und Omnichannel-Verkäufe zu steigern."
+          "en": "We provide retail technology that connects online and in-store channels, improves inventory control, and increases customer loyalty.",
+          "ar": "نوفر تقنيات تجزئة تربط بين القنوات الإلكترونية والفروع، وتحسن إدارة المخزون، وتزيد من ولاء العملاء.",
+          "de": "Wir bieten Einzelhandelstechnologien, die Online- und Filialkanäle verbinden, die Bestandsverwaltung verbessern und die Kundentreue stärken."
         }
       },
       {
@@ -77,13 +77,13 @@
         "icon": "/icons/we-serve/5.svg",
         "topic": {
           "en": "Education",
-          "ar": "التعليم",
-          "de": "Bildung"
+          "ar": "قطاع التعليم",
+          "de": "Bildungswesen"
         },
         "description": {
-          "en": "We create innovative educational technology solutions that facilitate remote learning, and collaboration among students and educators.",
-          "ar": "نبتكر حلول تكنولوجيا تعليمية مبتكرة تسهل التعلم عن بعد، والتعاون بين الطلاب والمعلمين.",
-          "de": "Wir schaffen innovative Bildungstechnologielösungen, die Fernlernen und Zusammenarbeit zwischen Schülern und Lehrkräften erleichtern."
+          "en": "We develop digital learning platforms that enable remote education, interactive content, and real-time collaboration.",
+          "ar": "نطور منصات تعليم رقمية تدعم التعلم عن بُعد، والمحتوى التفاعلي، والتعاون الفوري بين الطلاب والمعلمين.",
+          "de": "Wir entwickeln digitale Lernplattformen, die Fernunterricht, interaktive Inhalte und Echtzeit-Zusammenarbeit ermöglichen."
         }
       },
       {
@@ -91,55 +91,55 @@
         "icon": "/icons/we-serve/6.svg",
         "topic": {
           "en": "Manufacturing",
-          "ar": "التصنيع",
-          "de": "Fertigung"
+          "ar": "قطاع التصنيع",
+          "de": "Fertigungsindustrie"
         },
         "description": {
-          "en": "We develop software solutions for the manufacturing industry that optimize production processes, and increase operational efficiency.",
-          "ar": "نطور حلول برمجية لصناعة التصنيع تعمل على تحسين عمليات الإنتاج، وزيادة الكفاءة التشغيلية.",
-          "de": "Wir entwickeln Softwarelösungen für die Fertigungsindustrie, die Produktionsprozesse optimieren und die Betriebseffizienz steigern."
+          "en": "We deliver industrial software that optimizes production lines, automates workflows, and enhances overall efficiency.",
+          "ar": "نقدم حلولاً صناعية تعمل على تحسين خطوط الإنتاج، وأتمتة العمليات، وتعزيز الكفاءة التشغيلية الشاملة.",
+          "de": "Wir liefern Industriesoftware, die Produktionslinien optimiert, Arbeitsabläufe automatisiert und die Gesamteffizienz steigert."
         }
       },
       {
         "id": 7,
         "icon": "/icons/we-serve/7.svg",
         "topic": {
-          "en": "Energy and Utilities",
+          "en": "Energy & Utilities",
           "ar": "الطاقة والمرافق",
           "de": "Energie und Versorgung"
         },
         "description": {
-          "en": "We develop software solutions for the energy and utilities sector that improve operational efficiency, manage energy resources, and monitor infrastructure.",
-          "ar": "نطور حلول برمجية لقطاع الطاقة والمرافق تعمل على تحسين الكفاءة التشغيلية، وإدارة موارد الطاقة، ومراقبة البنية التحتية.",
-          "de": "Wir entwickeln Softwarelösungen für den Energie- und Versorgungssektor, die die Betriebseffizienz verbessern, Energieressourcen verwalten und die Infrastruktur überwachen."
+          "en": "We build digital systems for the energy and utilities sector to optimize resource management and infrastructure monitoring.",
+          "ar": "نطور أنظمة رقمية لقطاع الطاقة والمرافق لتحسين إدارة الموارد ومراقبة البنية التحتية.",
+          "de": "Wir entwickeln digitale Systeme für den Energie- und Versorgungssektor, um Ressourcenmanagement und Infrastrukturüberwachung zu optimieren."
         }
       },
       {
         "id": 8,
         "icon": "/icons/we-serve/8.svg",
         "topic": {
-          "en": "Government and Public Sector",
+          "en": "Government & Public Sector",
           "ar": "الحكومة والقطاع العام",
           "de": "Regierung und öffentlicher Sektor"
         },
         "description": {
-          "en": "We provide software solutions for government agencies and the public sector that enhance citizen services, and ensure transparency and accountability.",
-          "ar": "نقدم حلول برمجية للوكالات الحكومية والقطاع العام تعزز خدمات المواطنين، وتضمن الشفافية والمساءلة.",
-          "de": "Wir bieten Softwarelösungen für Regierungsbehörden und den öffentlichen Sektor, die Bürgerservices verbessern und Transparenz sowie Rechenschaftspflicht gewährleisten."
+          "en": "We support government entities with digital solutions that improve citizen services, ensure transparency, and increase efficiency.",
+          "ar": "ندعم الجهات الحكومية بحلول رقمية تعزز خدمات المواطنين، وتضمن الشفافية، وتزيد من الكفاءة التشغيلية.",
+          "de": "Wir unterstützen Regierungsbehörden mit digitalen Lösungen, die Bürgerservices verbessern, Transparenz gewährleisten und Effizienz steigern."
         }
       },
       {
         "id": 9,
         "icon": "/icons/we-serve/9.svg",
         "topic": {
-          "en": "Customized Services",
-          "ar": "الخدمات المخصصة",
-          "de": "Maßgeschneiderte Dienstleistungen"
+          "en": "Customized Solutions",
+          "ar": "الحلول المخصصة",
+          "de": "Individuelle Lösungen"
         },
         "description": {
-          "en": "We offer tailored web and mobile development, data science, and AI services to meet the needs and aspirations of your users.",
-          "ar": "نقدم خدمات تطوير ويب وجوال مخصصة، وعلوم البيانات، وخدمات الذكاء الاصطناعي لتلبية احتياجات وتطلعات مستخدميك.",
-          "de": "Wir bieten maßgeschneiderte Web- und Mobile-Entwicklung, Data Science und KI-Dienstleistungen, um die Bedürfnisse und Bestrebungen Ihrer Benutzer zu erfüllen."
+          "en": "We deliver bespoke web and mobile applications, AI, and data solutions designed around your business goals and user needs.",
+          "ar": "نقدم تطبيقات ويب وجوال مخصصة، وحلول ذكاء اصطناعي وبيانات مصممة وفق أهداف عملك واحتياجات مستخدميك.",
+          "de": "Wir liefern maßgeschneiderte Web- und Mobile-Anwendungen, KI- und Datenlösungen, die auf Ihre Geschäftsziele und Nutzerbedürfnisse abgestimmt sind."
         }
       }
     ]
