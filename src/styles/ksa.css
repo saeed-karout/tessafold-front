@@ -30,14 +30,7 @@
     animation: floatImage 6s ease-in-out infinite;
 }
 
-@keyframes floatImage {
-    0%, 100% {
-        transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-10px) rotate(1deg);
-    }
-}
+
 
 .ksa-left .text-ksa {
     display: flex;
@@ -102,14 +95,7 @@
     animation: pulse 3s ease-in-out infinite;
 }
 
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-}
+
 
 .subtitle-ksa {
     color: var(--OilMain-oilmain-2, #C5D8DA);
@@ -176,9 +162,9 @@
 }
 
 .bottom-right .item-ksa:hover {
-    background: rgba(13, 92, 99, 0.1);
+    /* background: rgba(13, 92, 99, 0.1); */
     transform: translateX(10px);
-    border-color: var(--OilMain-oilmain-4, #7FA6A9);
+    /* border-color: var(--OilMain-oilmain-4, #7FA6A9); */
 }
 
 .bottom-right .item-ksa.active {

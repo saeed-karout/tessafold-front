@@ -6,29 +6,39 @@ import "../../styles/weServe.css";
 function WeServe() {
   const { i18n } = useTranslation();
   const currentLang = i18n.language?.split('-')[0] || 'en';
-  const [isMobile, setIsMobile] = useState(false);
+  const [screenSize, setScreenSize] = useState('desktop'); // desktop, tablet, mobile, tiny
 
   // Detect screen size
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+    const checkScreenSize = () => {
+      const width = window.innerWidth;
+      if (width <= 300) {
+        setScreenSize('tiny');
+      } else if (width <= 768) {
+        setScreenSize('mobile');
+      } else if (width <= 1199) {
+        setScreenSize('tablet');
+      } else {
+        setScreenSize('desktop');
+      }
     };
 
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
     
     return () => {
-      window.removeEventListener('resize', checkMobile);
+      window.removeEventListener('resize', checkScreenSize);
     };
   }, []);
 
   // Log weServeData for debugging
   useEffect(() => {
     console.log('weServeData:', weServeData);
+    console.log('Current screen size:', screenSize);
     if (!weServeData?.we_serve) {
       console.error('Invalid weServeData:', weServeData);
     }
-  }, []);
+  }, [screenSize]);
 
   // Preload images
   useEffect(() => {
@@ -51,33 +61,43 @@ function WeServe() {
       </div>
       <div className="frame-serve">
         {(weServeData.we_serve?.cards || []).map((card, index) => {
-          // Determine background class based on index and screen size
-          const rowIndex = Math.floor(index / 2); // Which row the card is in
+          // تحديد نمط الخلفية بناءً على حجم الشاشة وترتيب السطر
+          let bgClass = 'without-bg'; // default
+          
+          const rowIndex = Math.floor(index / getCardsPerRow(screenSize));
+          const positionInRow = index % getCardsPerRow(screenSize);
           const isEvenRow = rowIndex % 2 === 0;
-          const isFirstInRow = index % 2 === 0;
-          const bgClass = isMobile
-            ? isEvenRow
-              ? isFirstInRow
-                ? 'with-bg'
-                : 'without-bg'
-              : isFirstInRow
-                ? 'without-bg'
-                : 'with-bg'
-            : index % 2 === 0
-              ? 'with-bg'
-              : 'without-bg';
+
+          if (screenSize === 'desktop') {
+            // Desktop: 3 كروت - السطر الأول: مع|بدون|مع، الثاني: بدون|مع|بدون
+            if (isEvenRow) {
+              bgClass = positionInRow === 1 ? 'without-bg' : 'with-bg';
+            } else {
+              bgClass = positionInRow === 1 ? 'with-bg' : 'without-bg';
+            }
+          } else if (screenSize === 'tablet' || screenSize === 'mobile') {
+            // Tablet/Mobile: 2 كروت - السطر الأول: مع|بدون، الثاني: بدون|مع
+            if (isEvenRow) {
+              bgClass = positionInRow === 0 ? 'with-bg' : 'without-bg';
+            } else {
+              bgClass = positionInRow === 0 ? 'without-bg' : 'with-bg';
+            }
+          } else if (screenSize === 'tiny') {
+            // Tiny: 1 كارت - تبديل مستمر
+            bgClass = isEvenRow ? 'with-bg' : 'without-bg';
+          }
 
           return (
             <div
               key={card.id || index}
-              className={`card-serve ${bgClass} ${isMobile ? 'mobile' : ''}`}
+              className={`card-serve ${bgClass} ${screenSize !== 'desktop' ? 'mobile' : ''}`}
             >
               <div className="card-content">
                 <img src={card.icon || '/placeholder.png'} alt={card.topic?.[currentLang] || 'Service'} />
                 <div className="topic-serve">
                   {card.topic?.[currentLang] || 'Untitled Service'}
                 </div>
-                {!isMobile && (
+                {screenSize === 'desktop' && (
                   <div className="description-serve">
                     {card.description?.[currentLang] || 'No description available'}
                   </div>
@@ -89,6 +109,21 @@ function WeServe() {
       </div>
     </section>
   );
+}
+
+// Helper function to determine cards per row based on screen size
+function getCardsPerRow(screenSize) {
+  switch (screenSize) {
+    case 'desktop':
+      return 3;
+    case 'tablet':
+    case 'mobile':
+      return 2;
+    case 'tiny':
+      return 1;
+    default:
+      return 3;
+  }
 }
 
 export default WeServe;

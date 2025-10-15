@@ -7,7 +7,7 @@
 
 .reviews-container {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 80px;
   padding: 0 20px;
 }
 
@@ -51,7 +51,7 @@
 .clutch-widget {
   /* width: 100%; */
   /* max-width: 1440px; */
-  padding: 0 80px;
+ 
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
@@ -231,6 +231,9 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .reviews-container{
+    margin: 0 40px;
+  }
   .reviews-section {
     padding: 60px 0;
   }
@@ -253,6 +256,9 @@
 }
 
 @media (max-width: 768px) {
+  .reviews-container{
+    margin: 0 20px;
+  }
   .reviews-section {
     padding: 40px 0;
   }
@@ -286,7 +292,7 @@
 
 @media (max-width: 480px) {
   .reviews-container {
-    padding: 0 16px;
+    padding: 0 20px;
   }
 
   .reviews-title {
