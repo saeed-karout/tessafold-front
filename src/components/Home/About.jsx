@@ -53,7 +53,7 @@ function About() {
     <section className="main-about" dir={currentLang === 'ar' ? 'rtl' : 'ltr'}>
       <div className="title-about">
         {t('about_us') || 'About Us'}
-        <span>{t('about_span') || 'Our Team'}</span>
+        <span style={{paddingRight:"6px"}}>{t('about_span') || 'Our Team'}</span>
       </div>
 
       <div className="frame-about">
