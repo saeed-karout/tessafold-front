@@ -22,7 +22,7 @@
     "name": { "ar": "AI Voice Assistant", "en": "AI Voice Assistant", "de": "KI-Sprachassistent" },
     "title": { "ar": "EdfaPay – مساعد صوتي ذكي متعدد اللغات (السعودية)", "en": "EdfaPay – Multilingual AI Voice Assistant (KSA)", "de": "EdfaPay – Mehrsprachiger KI-Sprachassistent (KSA)" },
     "description": { "ar": "مساعد صوتي ذكي معتمد على الذكاء الاصطناعي ومعالجة اللغة الطبيعية (LLM) مخصص لشركة إدفع باي السعودية والمرخصة من البنك المركزي السعودي كشركة دفع إلكتروني. يدعم اللغة العربية، الإنجليزية، والفرنسية، ويستطيع التفاعل صوتياً مع المستخدمين، تنفيذ الأوامر، والإجابة عن الاستفسارات التقنية والمالية بدقة عالية.", "en": "An advanced AI-powered voice assistant built for EdfaPay, supporting Arabic, English, and French. It uses LLM, speech-to-text (STT), and text-to-speech (TTS) technologies to handle voice interactions, execute commands, and provide intelligent responses to technical and financial queries.", "de": "Ein fortschrittlicher KI-gestützter Sprachassistent, entwickelt für EdfaPay, der Arabisch, Englisch und Französisch unterstützt. Er nutzt LLM-, Sprach-zu-Text- (STT) und Text-zu-Sprach- (TTS) Technologien, um Sprachinteraktionen zu ermöglichen, Befehle auszuführen und intelligente Antworten auf technische und finanzielle Anfragen zu geben." },
-    "image": "/images/projects/edfapaya.png",
+    "image": "/images/projects/edfapay.png",
     "webLink": "https://edfapay.com/home/",
     "appDownloadLink": ""
   },
@@ -129,7 +129,7 @@
       "en": "An interactive social platform for people interested in investing and financial markets. Users can register, subscribe, and share posts, videos, and market insights. The platform encourages networking and idea exchange among investors in a secure, exclusive community.",
       "de": "Eine interaktive soziale Plattform für Personen, die sich für Investitionen und Finanzmärkte interessieren. Benutzer können sich registrieren, abonnieren und Beiträge, Videos und Marktanalysen teilen. Die Plattform fördert Networking und Wissensaustausch zwischen Investoren in einer sicheren, exklusiven Community."
     },
-    "image": "/images/projects/fh platform.png",
+    "image": "/images/projects/fh.png",
     "webLink": "https://platform.freehomes.de/dashboard",
     "appDownloadLink": ""
   },
