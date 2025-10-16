@@ -1,9 +1,5 @@
 [
-  {
-    "id": 1,
-    "name": "Jadarah",
-    "image": "/images/partners/Jadarah.png"
-  },
+ 
   {
     "id": 2,
     "name": "Edfapay",
@@ -29,11 +25,7 @@
     "name": "Rehearsals AI",
     "image": "/images/partners/Rehearsals.png"
   },
-  {
-    "id": 7,
-    "name": "GameSafe.AI",
-    "image": "/images/partners/GameSafe.png"
-  },
+  
   {
     "id": 8,
     "name": "MI",
