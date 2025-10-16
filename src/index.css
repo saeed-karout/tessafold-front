@@ -51,14 +51,14 @@ body[data-lang="ar"],
 body[data-lang="ar"] * {
   font-family: 'NeoSansArabic'!important;
 
-  unicode-bidi: embed;
+
 }
 
 /* الإنجليزية/غير العربية */
 body:not([data-lang="ar"]),
 body:not([data-lang="ar"]) * {
   font-family: 'Poppins'!important;
-  unicode-bidi: plaintext;
+  
 }
 
 /* تعزيز الأولوية للعناصر المهمة */
@@ -108,9 +108,13 @@ body::-webkit-scrollbar-thumb {
 
 /* دعم للخطوط النظامية كـ fallback */
 body[data-lang="ar"] {
-  font-family: 'NeoSansArabic', Tahoma, Arial, sans-serif !important;
+  font-family: 'NeoSansArabic'!important;
 }
 
 body:not([data-lang="ar"]) {
-  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: 'Poppins' !important;
+}
+
+a{
+  text-decoration: none;
 }
