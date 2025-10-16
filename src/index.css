@@ -1,5 +1,3 @@
-
-
 :root {
   --background: #ffffff;
   --primary: #2B3132;
@@ -12,12 +10,14 @@
   --sb-size: 4px;
 }
 
+/* تحميل الخطوط مع أولوية عالية و font-display: swap لتجنب FOUT */
 @font-face {
   font-family: 'NeoSansArabic';
   src: url('/fonts/alfont_com_NeoSansArabic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  font-display: block; /* للعربية - يمنع FOUT */
 }
 
 @font-face {
@@ -28,26 +28,45 @@
   font-display: swap;
 }
 
-body[data-lang="ar"],
-body[data-lang="ar"] * {
-  font-family: 'NeoSansArabic';
- 
+/* CSS Reset مع font-family العام */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
-body:not([data-lang="ar"]),
-body:not([data-lang="ar"]) * {
-  font-family: 'Poppins';
-  direction: ltr; /* Ensure left-to-right text direction for non-Arabic */
-}
-
+/* قواعد الخطوط بأولوية عالية - قبل أي CSS آخر */
 body {
   background: var(--primary);
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  /* max-width: 1440px; */
+  font-family: 'Poppins' !important;
+  /* direction: ltr; */
+ 
 }
 
+/* العربية - أولوية عالية */
+body[data-lang="ar"],
+body[data-lang="ar"] * {
+  font-family: 'NeoSansArabic'!important;
+
+  unicode-bidi: embed;
+}
+
+/* الإنجليزية/غير العربية */
+body:not([data-lang="ar"]),
+body:not([data-lang="ar"]) * {
+  font-family: 'Poppins'!important;
+  unicode-bidi: plaintext;
+}
+
+/* تعزيز الأولوية للعناصر المهمة */
+html {
+  font-family: inherit !important;
+}
+
+/* scrollbar styles */
 body::-webkit-scrollbar {
   width: var(--sb-size);
 }
@@ -68,20 +87,30 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-input, textarea {
-  border: 0;
-  outline: none;
+
+
+
+/* للعناصر المُعاد تحميلها */
+[data-lang="ar"] {
+  font-family: 'NeoSansArabic'!important;
 }
 
-p {
-  padding: 0;
-  margin: 0;
+:not([data-lang="ar"]) {
+  font-family: 'Poppins'!important;
 }
 
-span, p, .title, .topic {
-  pointer-events: none;
+/* تحسينات للعرض */
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    scroll-behavior: smooth;
+  }
 }
 
-a {
-  text-decoration: none;
+/* دعم للخطوط النظامية كـ fallback */
+body[data-lang="ar"] {
+  font-family: 'NeoSansArabic', Tahoma, Arial, sans-serif !important;
+}
+
+body:not([data-lang="ar"]) {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
