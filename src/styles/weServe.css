@@ -17,7 +17,6 @@
 
 .top-serve .title-serve {
     color: var(--Yellow-yellow-500, #FFB130);
-    font-family: Poppins;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -27,7 +26,6 @@
 
 .top-serve .title-serve span {
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -37,7 +35,6 @@
 .top-serve .subtitle-serve {
     color: var(--Black-black-4, #F1F2F2);
     text-align: center;
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -175,7 +172,6 @@
 
 .card-serve .topic-serve {
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -189,7 +185,6 @@
 
 .card-serve .description-serve {
     color: var(--Black-black-1, #FFF);
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

@@ -48,7 +48,7 @@ function OurProcess() {
         <div className="group">
           <div className="line"></div>
           <div className="parent">
-            {(processData.steps || []).map((step, index) => (
+            {(processData.steps || []).map((step, ) => (
               <div key={step.id || Math.random()} className="frame-data">
                 <div className="icon">
                   <img
@@ -58,7 +58,7 @@ function OurProcess() {
                   />
                 </div>
                 <div className="name">
-                  <span className="step-number">{`${index + 1}.`}</span>{' '}
+                  <span className="step-number"></span>{' '}
                   {step.name?.[currentLang] || 'Untitled Step'}
                 </div>
               </div>
