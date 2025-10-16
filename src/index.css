@@ -30,13 +30,13 @@
 
 body[data-lang="ar"],
 body[data-lang="ar"] * {
-  font-family: 'NeoSansArabic', sans-serif;
+  font-family: 'NeoSansArabic';
  
 }
 
 body:not([data-lang="ar"]),
 body:not([data-lang="ar"]) * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   direction: ltr; /* Ensure left-to-right text direction for non-Arabic */
 }
 
