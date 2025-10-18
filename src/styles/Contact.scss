@@ -3,6 +3,22 @@
   --breakpoint-tablet: 1024px;
 }
 
+
+
+
+// فقط رسائل الخطأ باللون الأحمر
+.error-message {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  color: #00C851;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -91,7 +107,7 @@
 }
 
 .top p {
-  color: var(--Black-black-9, #6d6f6f);
+  color: var(--Black-black-9, #DBE7E8);
   
   font-size: 16px;
   font-weight: 400;

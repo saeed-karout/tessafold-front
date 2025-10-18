@@ -62,25 +62,31 @@ function Footer() {
 
         <div className="footer-right">
           <div className="footer-col1">
-            <div className="footer-top">
-              <div className="footer-title">{t('footer.locations.berlin.title')}</div>
-              <div className="footer-subtitle">{t('footer.locations.berlin.subtitle')}</div>
-            </div>
+           
             <div className="footer-top">
               <div className="footer-title">{t('footer.locations.jeddah.title')}</div>
               <div className="footer-subtitle">{t('footer.locations.jeddah.subtitle')}</div>
             </div>
-          </div>
 
-          <div className="footer-col2">
-            <div className="footer-top">
-              <div className="footer-title">{t('footer.locations.california.title')}</div>
-              <div className="footer-subtitle">{t('footer.locations.california.subtitle')}</div>
-            </div>
-            <div className="footer-top">
+             <div className="footer-top">
               <div className="footer-title">{t('footer.locations.dubai.title')}</div>
               <div className="footer-subtitle">{t('footer.locations.dubai.subtitle')}</div>
             </div>
+          </div>
+
+          <div className="footer-col2">
+           
+
+             <div className="footer-top">
+              <div className="footer-title">{t('footer.locations.berlin.title')}</div>
+              <div className="footer-subtitle">{t('footer.locations.berlin.subtitle')}</div>
+            </div>
+
+             <div className="footer-top">
+              <div className="footer-title">{t('footer.locations.california.title')}</div>
+              <div className="footer-subtitle">{t('footer.locations.california.subtitle')}</div>
+            </div>
+           
           </div>
 
           <div className="footer-col3">

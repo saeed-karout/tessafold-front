@@ -86,20 +86,7 @@
           "de": "Wir entwickeln digitale Lernplattformen, die Fernunterricht, interaktive Inhalte und Echtzeit-Zusammenarbeit ermöglichen."
         }
       },
-      {
-        "id": 6,
-        "icon": "/icons/we-serve/6.svg",
-        "topic": {
-          "en": "Manufacturing",
-          "ar": "قطاع التصنيع",
-          "de": "Fertigungsindustrie"
-        },
-        "description": {
-          "en": "We deliver industrial software that optimizes production lines, automates workflows, and enhances overall efficiency.",
-          "ar": "نقدم حلولاً صناعية تعمل على تحسين خطوط الإنتاج، وأتمتة العمليات، وتعزيز الكفاءة التشغيلية الشاملة.",
-          "de": "Wir liefern Industriesoftware, die Produktionslinien optimiert, Arbeitsabläufe automatisiert und die Gesamteffizienz steigert."
-        }
-      },
+     
       {
         "id": 7,
         "icon": "/icons/we-serve/7.svg",

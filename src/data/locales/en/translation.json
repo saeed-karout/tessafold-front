@@ -29,6 +29,18 @@
       "span": "Tessafold",
       "subtitle": "Lorem ipsum dolor sit amet consectetur. Nec sit morbi pretium dignissim eget",
       "btn": "Go To Homepage"
+    },
+    "validation": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "companyRequired": "Company name is required",
+      "companyMinLength": "Company name must be at least two characters",
+      "companyMaxLength": "Company name must be less than 100 characters",
+      "messageRequired": "Message is required",
+      "messageMinLength": "Message must be at least 10 characters",
+      "messageMaxLength": "Message must be less than 1000 characters",
+      "servicesRequired": "Please select at least one service",
+      "servicesMax": "Please select no more than 5 services"
     }
   },
   "footer": {
@@ -145,8 +157,8 @@
     "loading": "Loading reviews..."
   },
   "our_process_page":{
-    "title":"Website and App",
-    "span_title":"Process",
-    "description":" Process is everything. It’s our IP, our bread and butter. Years and years of experience, mistakes and success have gone into creating the best possible experience, and equip us with the best tools to navigate the sometimes challenging waters of app development."
+    "title":"Web & Application Development Methodology",
+    "span_title":" Agile & Scrum for Success",
+    "description":" We believe in the power of agile methodologies to accelerate delivery and ensure the highest quality. From initial analysis to post-launch support, we guide each step to ensure your long-term success."
   }
 }

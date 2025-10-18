@@ -29,6 +29,18 @@
       "span": "Tessafold",
       "subtitle": "Entdecken Sie innovative Lösungen für Ihre digitale Transformation.",
       "btn": "Zur Startseite"
+    },
+    "validation": {
+      "emailRequired": "E-Mail ist erforderlich",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "companyRequired": "Firmenname ist erforderlich",
+      "companyMinLength": "Firmenname muss mindestens zwei Zeichen lang sein",
+      "companyMaxLength": "Firmenname darf maximal 100 Zeichen lang sein",
+      "messageRequired": "Nachricht ist erforderlich",
+      "messageMinLength": "Nachricht muss mindestens 10 Zeichen lang sein",
+      "messageMaxLength": "Nachricht darf maximal 1000 Zeichen lang sein",
+      "servicesRequired": "Bitte wählen Sie mindestens eine Dienstleistung aus",
+      "servicesMax": "Bitte wählen Sie höchstens 5 Dienstleistungen aus"
     }
   },
   "footer": {
@@ -145,8 +157,8 @@
     "loading": "Lädt..."
   },
   "our_process_page": {
-    "title": "Website- und App-",
-    "span_title": "Prozess",
-    "description": "Prozess ist alles. Er ist unser geistiges Eigentum und unser tägliches Brot. Jahre voller Erfahrung, Fehler und Erfolge sind in die Entwicklung der bestmöglichen Erfahrung eingeflossen und statten uns mit den besten Werkzeugen aus, um durch die manchmal herausfordernden Gewässer der App-Entwicklung zu navigieren."
+    "title": "Web- und Anwendungsentwicklung",
+    "span_title": "Agile & Scrum für den Erfolg",
+    "description": "Wir setzen auf die Kraft agiler Methoden, um die Lieferung zu beschleunigen und höchste Qualität zu gewährleisten. Vom ersten Schritt der Analyse bis hin zur kontinuierlichen Unterstützung nach dem Go-Live führen wir jede Phase durch, um Ihren langfristigen Erfolg sicherzustellen."
   }
 }

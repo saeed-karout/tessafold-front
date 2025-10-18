@@ -97,7 +97,7 @@ function ProcessComponent() {
                       onClick={() => handleStepChange(step.id)}
                     >
                       <div className="page-process-logo">
-                        <img src={step.icon} alt={`${step.title?.[currentLang] || 'Step'} icon`} />
+                        <img src={step.icon}  alt={`${step.title?.[currentLang] || 'Step'} icon`} />
                       </div>
                       <div className={`page-process-title ${activeStep === step.id ? 'page-process-title-active' : ''}`}>
                         {step.title?.[currentLang] || 'Untitled Step'}
@@ -160,10 +160,10 @@ function ProcessComponent() {
           <div className="page-process-header">
             <div className="page-process-main-title">
               {currentLang === 'ar'
-                ? 'عملية التطوير'
+                ? 'مراحل عملية التطوير'
                 : currentLang === 'de'
-                ? 'Entwicklungsprozess'
-                : 'Development Process'}
+                ? 'Phasen des Entwicklungsprozesses'
+                : 'Development Process Stages'}
             </div>
             <div className="page-process-subtitle">
               {currentLang === 'ar'
@@ -194,7 +194,7 @@ function ProcessComponent() {
                   </div>
                   <div className="page-process-faq-arrow">
                     <span className={`page-process-arrow-icon ${openItems[step.id] ? 'open' : ''}`}>
-                      <img src="/arrow-left.svg" style={{ rotate: '0deg' }} alt="Toggle arrow" />
+                      <img src="/arrow-left.svg" style={{ rotate: currentLang === 'ar' ? '180deg' : '' }} alt="Toggle arrow" />
                     </span>
                   </div>
                 </div>

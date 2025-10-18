@@ -49,6 +49,7 @@
   font-size: 2rem; /* 32px */
   font-weight: 600;
   line-height: 1.6;
+  margin: 0 5px;
 }
 
 .frame .left .subtitle {
@@ -295,7 +296,7 @@
   .main-process-component {
     padding: 1.5rem 0.5rem 2rem 0.5rem;
     gap: 1.5rem;
-    height: 90vh;
+    height: 420px;
     /* height: 100%; */
     margin: 0 20px;
     padding-bottom: 80px;
