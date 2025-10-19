@@ -8,21 +8,21 @@
     "partnerWithUs": "Contact Us Now!"
   },
   "contact": {
-    "title": "Let’s Get to Know",
-    "titleHighlight": "You!",
-    "subtitle": "Please share with us details about your software project and your contact information!",
-    "description": "We're here to assist you! We'd love to learn more about you.",
-    "emailLabel": "Your email?",
-    "emailPlaceholder": "example@email.com",
-    "companyLabel": "Company name or website",
-    "companyPlaceholder": "Links or Company Name",
-    "messageLabel": "Please share with us some details of the project",
-    "messagePlaceholder": "Provide us with some info about your product",
-    "servicesLabel": "Great! Please select all services you are interested in hiring us for",
-    "submit": "Submit",
-    "submitting": "Submitting",
-    "iconAlt": "Contact form icon",
-    "success": "Form submitted successfully!",
+     "title": "Let’s Discuss",
+  "titleHighlight": "Your Project",
+  "subtitle": "Share key details about your software project and how we can reach you.",
+  "description": "We’re ready to collaborate with your team. Tell us more about your goals so we can help you achieve them.",
+  "emailLabel": "Business Email",
+  "emailPlaceholder": "name@company.com",
+  "companyLabel": "Company Name or Website",
+  "companyPlaceholder": "e.g. www.company.com or Company Name",
+  "messageLabel": "Project Details",
+  "messagePlaceholder": "Briefly describe your project scope, objectives, and timeline.",
+  "servicesLabel": "Select the services you’re interested in",
+  "submit": "Send Inquiry",
+  "submitting": "Sending...",
+  "iconAlt": "Business contact form icon",
+  "success": "Your inquiry has been submitted successfully. Our team will get back to you shortly.",
     "error": "An error occurred while submitting the form. Please try again.",
     "section2": {
       "title": "Curious to Discover",
@@ -81,7 +81,7 @@
       "phone4": "+1 949 864 6033",
       "phoneIcon": "Phone icon"
     },
-    "copyright": "© 2025 Tessafold e.K. Agency for App and Software Development in Berlin and Coburg"
+    "copyright": "© 2025 Tessafold, Top Software Development Company"
   },
   "scrollToTop": {
     "title": "Scroll to Top",
@@ -90,7 +90,7 @@
   },
   "hero": {
     "subtitle": "EMPOWERING BUSINESSES WITH CUSTOMIZABLE SOFTWARE PLATFORMS",
-    "title": "Web & Mobile App Development Powered By",
+    "title": "Web & Mobile App Development Including",
     "animatedText": {
       "ai": "Artificial Intelligence",
       "ml": "Machine Learning",
@@ -139,7 +139,7 @@
   "our_services": "Our Services",
   "we_serve": "Industries",
   "we_serve_span": "We Serve",
-  "we_serve_subtitle": "We offer web and mobile development, data science, and AI Development services.",
+  "we_serve_subtitle": "We offer web and mobile app development, data science, Blockchain, and AI development services.",
   "faq": "FAQ",
   "select_language": "Select Language",
   "visit_website": "Visit Website",
@@ -157,8 +157,8 @@
     "loading": "Loading reviews..."
   },
   "our_process_page":{
-    "title":"Web & Application Development Methodology",
-    "span_title":" Agile & Scrum for Success",
+    "title":"Web & Application Development Methodology \n",
+    "span_title":"Agile & Scrum for Success",
     "description":" We believe in the power of agile methodologies to accelerate delivery and ensure the highest quality. From initial analysis to post-launch support, we guide each step to ensure your long-term success."
   }
 }
