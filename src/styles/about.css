@@ -1,17 +1,32 @@
 .main-about {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding: 4rem 2rem;
-  width: 100%;
-  box-sizing: border-box;
+  align-items: center;
+  gap: 3rem; /* 48px */
+  
+  overflow: hidden;
+  /* width: 100%; */
+  /* margin: 0 80px; */
+
 }
 
-.title-about, .title-about span {
+
+
+.title-about {
+  display: flex;
+  align-items: flex-start;
   color: var(--Black-black-1, #FFF);
-  font-size: 2rem;
+  
+  font-size: 2rem; /* 32px */
+  font-weight: 600;
+  line-height: 1.6; /* 160% */
+}
+
+.title-about span {
+  color: var(--Yellow-yellow-500, #FFB130);
+  
+  font-size: 2rem; /* 32px */
   font-weight: 600;
   line-height: 1.6;
 }
@@ -19,72 +34,295 @@
 .frame-about {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 6rem; /* 96px */
   width: 100%;
-  max-width: 1200px;
-  padding: 0 3rem;
   position: relative;
-  box-sizing: border-box;
+  padding: 0 5rem; /* Reduced from 0 80px */
+  margin: 0 80px;
 }
 
 .frame-about .content-about {
-  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.5rem; /* 24px */
+  width: 70%;
 }
 
-.team-video {
-  width: 100%;
-  max-width: 1200px;
-  aspect-ratio: 16 / 7;
-  border-radius: 8px;
-  border: none;
-}
-
-.arrow-left, .arrow-right {
+.arrow-left {
   position: absolute;
+  left: 15.5625rem;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(180deg);
   cursor: pointer;
-  width: 2.5rem;
+  width: 2.5rem; /* 40px */
   height: 2.5rem;
 }
 
-.arrow-left { left: 4rem; }
-.arrow-right { right: 4rem; }
-
-/* === Tablets Landscape (992–1199px) === */
-@media (max-width: 1199px) and (min-width: 992px) {
-  .main-about { padding: 3rem 1.5rem; }
-  .frame-about { gap: 4rem; }
-  .content-about { width: 80%; }
-  .title-about, .title-about span { font-size: 1.8rem; }
-  .arrow-left, .arrow-right { width: 2rem; height: 2rem; }
+.arrow-right {
+  position: absolute;
+  right: 15.5625rem; 
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
 }
 
-/* === Tablets Portrait (768–991px) — iPad focus === */
-@media (max-width: 991px) and (min-width: 768px) {
-  .main-about { padding: 3rem 1rem; gap: 2.5rem; }
-  .frame-about { gap: 3rem; padding: 0 1.5rem; }
-  .frame-about .content-about { width: 85%; }
-  .title-about, .title-about span { font-size: 1.6rem; }
-  .arrow-left, .arrow-right { display: none; } /* Usually tight on portrait tablets */
+.team-video {
+  display: flex;
+  /* width: 100%; */
+  max-width: 1440px;
+  height: auto;
+  aspect-ratio: 16 / 7; /* Maintain proportion (926/404 ≈ 2.29) */
+  border-radius: 0.5rem; /* 8px */
+  border: none;
 }
 
-/* === Mobile Landscape (576–767px) === */
-@media (max-width: 767px) and (min-width: 576px) {
-  .main-about { padding: 2.5rem 1rem; gap: 2rem; }
-  .frame-about .content-about { width: 90%; }
-  .title-about, .title-about span { font-size: 1.4rem; }
+.details-for-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem; /* 8px */
+  width: 100%;
+  max-width: 1440px;
 }
 
-/* === Mobile Portrait (≤575px) === */
-@media (max-width: 575px) {
-  .main-about { padding: 2rem 0.75rem; gap: 1.5rem; }
-  .frame-about { padding: 0 1rem; gap: 2rem; }
-  .content-about { width: 95%; }
-  .title-about, .title-about span { font-size: 1.25rem; }
+.name {
+  color: var(--Black-black-6, #C6C7C7);
+  
+  font-size: 1rem; /* 16px */
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.name span {
+  color: var(--Black-black-2, #FDFDFD);
+  
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.technology {
+  color: var(--Black-black-6, #C6C7C7);
+  
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Animation styles */
+.content-about.animate-out {
+  animation: slideOut 0.2s ease-in-out forwards;
+}
+
+.content-about.animate-in {
+  animation: slideIn 0.2s ease-in-out forwards;
+}
+
+/* Use a directional slide variable --slide-x (set to -0.9375rem for left, 0.9375rem for right) */
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(var(--slide-x, 0.9375rem)); /* 15px; set --slide-x: -0.9375rem for left */
+    visibility: hidden;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(var(--slide-x, 0.9375rem)); /* 15px; set --slide-x: -0.9375rem for left */
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-about {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .frame-about {
+    padding: 0 3rem;
+    gap: 4rem;
+  }
+
+  .arrow-left {
+    left: 2rem;
+  }
+
+  .arrow-right {
+    right: 2rem;
+  }
+
+  .team-video {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-about {
+    padding: 2rem 0.75rem;
+    gap: 1.5rem;
+  }
+
+  .title-about, .title-about span {
+    font-size: 1.5rem; /* 24px */
+  }
+  .frame-about .content-about{
+    width: 90%;
+  }
+  .frame-about {
+    padding: 0 1.5rem;
+    gap: 3rem;
+  }
+
+  .arrow-left {
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .arrow-right {
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .team-video {
+    max-width: 100%;
+  }
+
+  .name, .name span, .technology {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-about {
+    padding: 1.5rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .title-about, .title-about span {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .frame-about {
+    padding: 0 0.75rem;
+    gap: 2rem;
+  }
+
+  .arrow-left {
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .arrow-right {
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .name, .name span, .technology {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  @keyframes slideOut {
+    to {
+      transform: translateX(var(--slide-x, 0.625rem)); /* 10px; set --slide-x to -0.625rem for left */
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(var(--slide-x, 0.625rem)); /* 10px; set --slide-x to -0.625rem for left */
+    }
+  }
+}
+
+
+/* =========================
+   TABLET LANDSCAPE (1024–1180px)
+   ========================= */
+@media (max-width: 1180px) and (min-width: 1024px) {
+  .main-about {
+    padding: 3rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .frame-about {
+    padding: 0 3rem;
+    margin: 0 40px;
+  }
+
+  .frame-about .content-about {
+    width: 80%;
+  }
+
+  .arrow-left {
+    left: 4rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .arrow-right {
+    right: 4rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .team-video {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   TABLET PORTRAIT (768–1023px)
+   ========================= */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .main-about {
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .frame-about {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  .frame-about .content-about {
+    width: 85%;
+    text-align: center;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    display: none; /* Hide arrows on portrait iPads */
+  }
+
+  .team-video {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
 }
