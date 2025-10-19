@@ -5,7 +5,7 @@
   align-items: center;
   gap: 2rem;
   padding: 5.7rem 80px 0rem;
-  min-height: 90vh;
+  min-height: 75vh;
 }
 
 .Hero[dir="rtl"] {
@@ -19,6 +19,7 @@
   align-items: center;
   gap: 1rem;
   text-align: center;
+  margin-top: 100px;
 }
 
 .section1-hero span {
