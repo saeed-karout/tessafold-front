@@ -8,6 +8,14 @@
     margin: 0 80px;
     position: relative;
 }
+.top-ksa-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 
 .ksa-left {
     width: 40%;
@@ -84,8 +92,8 @@
 
 .ksa-right .top-right {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
+    align-items: center;
     gap: 24px;
     width: 100%;
 }
@@ -101,7 +109,7 @@
 .subtitle-ksa {
     color: var(--OilMain-oilmain-2, #C5D8DA);
     
-    font-size: 32px;
+    font-size: 29px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
@@ -126,7 +134,7 @@
 .subtitle-ksa span {
     color: var(--Black-black-1, #FFF);
     
-    font-size: 32px;
+    font-size: 29px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
@@ -136,7 +144,7 @@
     display: inline;
     color: var(--Yellow, #FFB130);
     
-    font-size: 32px;
+    font-size: 29px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;

@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Reduced from 24px for mobile */
-  padding: 5.7rem 80px 4rem; /* Reduced padding for mobile */
-  min-height: 100vh; /* Ensure full viewport height */
+  gap: 2rem;
+  padding: 5.7rem 80px 0rem;
+  min-height: 90vh;
 }
 
 .Hero[dir="rtl"] {
@@ -17,27 +17,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem; /* Reduced from 16px for mobile */
+  gap: 1rem;
   text-align: center;
 }
 
 .section1-hero span {
   color: var(--Black-black-3, #F6F6F6);
-  
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.6; /* 160% */
+  line-height: 1.6;
   letter-spacing: 0.02rem;
   text-transform: uppercase;
 }
 
 .section1-hero .title-hero {
   color: var(--Black-black-1, #FFF);
-  
-  font-size: 2.5rem; /* 40px */
+  font-size: 2.5rem;
   font-weight: 600;
-  line-height: 1.4; /* 140% */
-  /* max-width: 44.875rem; 718px */
+  line-height: 1.4;
 }
 
 .section1-hero .yellow-hero-wrapper {
@@ -53,70 +50,181 @@
 
 .section1-hero .yellow-hero {
   color: var(--Yellow-yellow-500, #FFB130);
-  
-  font-size: 3rem; /* 48px */
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 1.6; /* 160% */
+  line-height: 1.6;
   text-transform: capitalize;
 }
 
 .typed-cursor,
 .typed-cursor--blink {
   color: #FFB130 !important;
-  font-size: 3rem !important; /* Match .yellow-hero */
+  font-size: 3rem !important;
 }
 
 .section1-hero p {
   color: var(--Black-black-3, #F6F6F6);
-  
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.6; /* 160% */
-  max-width: 61.875rem; /* 990px */
+  line-height: 1.6;
+  max-width: 61.875rem;
 }
 
-/* Button */
+/* Button Container */
 .section2-hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem; /* Reduced from 24px */
+  gap: 1.5rem;
 }
 
-.section2-hero .btn-contact-hero {
+/* Button Styles with Enhanced Animations */
+.btn-contact-hero {
   display: flex;
-  padding: 1rem 3rem; /* 16px 48px */
+  padding: 1rem 3rem;
   align-items: center;
   gap: 0.5rem;
-  border-radius: 0.75rem; /* 12px */
+  border-radius: 0.75rem;
   background: var(--OilN-oil-1, #FFF);
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  border: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: btn-entrance 0.8s ease-out forwards,
+             btn-float 3s ease-in-out infinite 0.8s;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  transform: translateY(20px);
+  opacity: 0;
 }
 
-.section2-hero .btn-contact-hero:hover {
+/* Entrance Animation */
+@keyframes btn-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  70% {
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Floating Animation */
+@keyframes btn-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Hover Effects - تم التصحيح */
+.btn-contact-hero:hover {
   background: var(--tessafold);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 35px rgba(255, 177, 48, 0.4);
+ 
 }
 
-.section2-hero .btn-contact-hero span {
+/* Pulse Animation على hover فقط */
+@keyframes btn-pulse {
+  0% {
+    box-shadow: 0 8px 35px rgba(255, 177, 48, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(255, 177, 48, 0.6),
+                0 0 0 8px rgba(255, 177, 48, 0.1);
+  }
+  100% {
+    box-shadow: 0 8px 35px rgba(255, 177, 48, 0.4);
+  }
+}
+
+.btn-contact-hero:active {
+  transform: translateY(-2px) scale(1.02);
+  transition: all 0.1s ease;
+}
+
+/* Button Text */
+.btn-contact-hero span {
   color: var(--OilMain-oilmain-6, #0D5C63);
-  
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 1.6; /* 160% */
+  line-height: 1.6;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
-.section2-hero .btn-contact-hero:hover span {
+.btn-contact-hero:hover span {
   color: #FFF;
+  transform: scale(1.05);
+}
+
+/* Ripple Effect */
+.btn-contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-contact-hero:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Shine Effect */
+.btn-contact-hero::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.btn-contact-hero:hover::after {
+  opacity: 1;
+  animation: shine 1.5s ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(45deg) translateX(-100%);
+  }
+  100% {
+    transform: rotate(45deg) translateX(100%);
+  }
 }
 
 /* Swiper Section */
 .section3-hero {
   display: flex;
-  
   flex-direction: column;
   align-items: center;
-  gap: 2rem; /* 32px */
+  gap: 2rem;
   align-self: stretch;
   padding-top: 30px;
 }
@@ -130,16 +238,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5.5rem; /* 88px */
+  height: 5.5rem;
 }
-
-
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
   .Hero {
-    padding: 2rem 20px 1rem; /* Further reduce padding */
-  
+    padding: 2rem 20px 1rem;
+    gap: 4rem;
   }
 
   .section1-hero {
@@ -147,35 +253,75 @@
   }
 
   .section1-hero span {
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
   }
 
   .section1-hero .title-hero {
-    font-size: 1.75rem; /* 28px */
-    max-width: 90%; /* Prevent overflow */
+    font-size: 1.75rem;
+    max-width: 90%;
   }
 
   .section1-hero .yellow-hero,
   .typed-cursor,
   .typed-cursor--blink {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem;
   }
 
   .section1-hero p {
-    font-size: 1rem; /* 16px */
-    max-width: 100%; /* Full width on mobile */
+    font-size: 1rem;
+    max-width: 100%;
   }
 
   .section2-hero {
     gap: 1rem;
   }
 
-  .section2-hero .btn-contact-hero {
-    padding: 0.75rem 2rem; /* Smaller button */
+  .btn-contact-hero {
+    padding: 0.75rem 2rem;
+    animation: btn-entrance-mobile 0.8s ease-out forwards,
+               btn-float-mobile 3s ease-in-out infinite 0.8s;
   }
 
-  .section2-hero .btn-contact-hero span {
-    font-size: 1rem; /* 16px */
+  @keyframes btn-entrance-mobile {
+    0% {
+      opacity: 0;
+      transform: translateY(15px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes btn-float-mobile {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+
+  /* Hover effects for mobile */
+  .btn-contact-hero:hover {
+   
+  }
+
+  @keyframes btn-pulse-mobile {
+    0% {
+      box-shadow: 0 6px 25px rgba(255, 177, 48, 0.4);
+    }
+    50% {
+      box-shadow: 0 6px 25px rgba(255, 177, 48, 0.6),
+                  0 0 0 6px rgba(255, 177, 48, 0.1);
+    }
+    100% {
+      box-shadow: 0 6px 25px rgba(255, 177, 48, 0.4);
+    }
+  }
+
+  .btn-contact-hero span {
+    font-size: 1rem;
   }
 
   .section3-hero {
@@ -184,51 +330,73 @@
   }
 
   .partner-slide {
-    height: 4rem; /* Smaller height */
+    height: 4rem;
   }
 
-  
+  /* Tap animation for mobile */
+  .btn-contact-hero:active {
+    transform: scale(0.95);
+  }
 }
 
 @media (max-width: 480px) {
   .Hero {
     padding: 1.5rem 20px 0.75rem;
-
+    gap: 5rem;
   }
 
   .section1-hero span {
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.75rem;
   }
 
   .section1-hero .title-hero {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
   }
 
   .section1-hero .yellow-hero,
   .typed-cursor,
   .typed-cursor--blink {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
   }
 
   .section1-hero p {
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
   }
 
-  .section2-hero .btn-contact-hero {
+  .btn-contact-hero {
     padding: 0.5rem 1.5rem;
   }
 
-  .section2-hero .btn-contact-hero span {
-    font-size: 0.875rem; /* 14px */
+  .btn-contact-hero span {
+    font-size: 0.875rem;
   }
 
   .section3-hero {
     padding: 0.75rem 0.5rem;
-
   }
 
   .partner-slide {
     height: 3rem;
   }
+}
 
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .btn-contact-hero {
+    animation: btn-fade-in 0.5s ease-out forwards !important;
+  }
+  
+  .btn-contact-hero:hover {
+    animation: none !important;
+    transform: scale(1.05) !important;
+  }
+  
+  @keyframes btn-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }

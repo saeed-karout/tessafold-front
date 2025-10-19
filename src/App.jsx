@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
+import useAutoLanguage from './hooks/useAutoLanguage';
 import Home from './pages/Home';
 import Header from './components/layout/Header';
 import OurProcess from './pages/OurProcessPage';
@@ -26,19 +27,27 @@ function ScrollToTop() {
 
 function App() {
   const { t, i18n } = useTranslation();
+  useAutoLanguage(); // تفعيل اكتشاف اللغة تلقائيًا
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    localStorage.setItem('lang', lng);
+    document.body.setAttribute('data-lang', lng);
   };
 
   return (
     <Router>
-      <ScrollToTop /> {/* إضافة مكون التمرير */}
+      <ScrollToTop />
       <Header changeLanguage={changeLanguage} t={t} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<Home />} /> 
+        <Route path="/software-development-staff-augmentation" element={<Home />} /> 
+        <Route path="/web3-blockchain" element={<Home />} />
         <Route path="/our-process" element={<OurProcess />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/ar/contact-us" element={<Contact />} />
+
       </Routes>
       <Footer />
       <ScrollToTopButton />

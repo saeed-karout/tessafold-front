@@ -51,7 +51,7 @@ function PackageComponent() {
               {packageTranslations.package?.subtitle?.[currentLang] || 'Advanced solutions for your needs.'}
             </div>
           </div>
-          <Link to={'/contact'}>
+          <Link to={'/contact-us'}>
             <div className="tech-contact-btn">
               <span className="tech-btn-text">
                 {packageTranslations.package?.button?.[currentLang] || 'Contact Us'}

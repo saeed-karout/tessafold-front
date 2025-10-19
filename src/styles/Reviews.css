@@ -193,8 +193,8 @@
 
 
 .reviews-button {
-  background: var(--yellow, #FFB130);
-  color: var(--primary, #2B3132);
+  background: #FFF;
+  color: var(--tessafold);
   border: none;
   border-radius: 12px;
   padding: 14px 32px;
@@ -222,7 +222,8 @@
 .reviews-button:hover {
   background: var(--hover-btn, #0D5C63);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 177, 48, 0.3);
+  box-shadow: 0 8px 25px rgba(149, 148, 148, 0.3);
+  color: #FFF;
 }
 
 .reviews-button:hover::before {

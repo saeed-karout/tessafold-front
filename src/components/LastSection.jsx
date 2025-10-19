@@ -44,7 +44,7 @@ function LastSection() {
           <div className="lastSection-sub-topic">
             {lastSectionData.last_section?.subtopic?.[currentLang] || 'Our mission is to deliver excellence.'}
           </div>
-          <Link to={'/contact'} className="lastSection-btn-secondary">
+          <Link to={'/contact-us'} className="lastSection-btn-secondary">
             <span>{lastSectionData.last_section?.button?.[currentLang] || 'Get Started'}</span>
           </Link>
         </div>

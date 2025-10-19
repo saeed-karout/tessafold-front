@@ -57,8 +57,8 @@ function Header() {
   };
 
   const handleNavigation = (target) => {
-    if (target === '/contact') {
-      navigate('/contact');
+    if (target === '/contact-us') {
+      navigate('/contact-us');
     } else if (target === '/our-process') {
       navigate('/our-process');
     } else if (target === '/') {
@@ -75,8 +75,8 @@ function Header() {
   };
 
   const isActive = (target) => {
-    if (target === '/contact') {
-      return location.pathname === '/contact';
+    if (target === '/contact-us') {
+      return location.pathname === '/contact-us';
     } else if (target === '/our-process') {
       return location.pathname === '/our-process';
     } else if (target === '/') {
@@ -199,9 +199,9 @@ function Header() {
 
           <div className="mobile-menu-footer">
             <div
-              className={`mobile-contact-btn ${isActive('/contact') ? 'active' : ''}`}
+              className={`mobile-contact-btn ${isActive('/contact-us') ? 'active' : ''}`}
               onClick={() => {
-                handleNavigation('/contact');
+                handleNavigation('/contact-us');
                 toggleMobileMenu();
               }}
             >
@@ -244,8 +244,8 @@ function Header() {
       {/* الجزء الأيمن للشاشات الكبيرة */}
       <div className="frame-contact desktop-contact">
         <div
-          className={`button-contact ${isActive('/contact') ? 'active' : ''}`}
-          onClick={() => handleNavigation('/contact')}
+          className={`button-contact ${isActive('/contact-us') ? 'active' : ''}`}
+          onClick={() => handleNavigation('/contact-us')}
         >
           <span>{t('header.partnerWithUs', { defaultValue: 'Partner With Us' })}</span>
         </div>

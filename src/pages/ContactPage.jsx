@@ -47,7 +47,6 @@ function ContactPage() {
     },
     message: (value) => {
       if (!value.trim()) return t('contact.validation.messageRequired') || 'Message is required';
-      if (value.trim().length < 10) return t('contact.validation.messageMinLength') || 'Message must be at least 10 characters';
       if (value.trim().length > 1000) return t('contact.validation.messageMaxLength') || 'Message must be less than 1000 characters';
       return null;
     },
@@ -134,7 +133,7 @@ function ContactPage() {
       [name]: newValue,
     }));
 
-    // Clear errors if field is no longer empty (optional, but helps user experience)
+    // Clear errors if field is no longer empty
     if (errors[name] && newValue.trim() !== '') {
       setErrors((prev) => ({
         ...prev,
@@ -239,7 +238,7 @@ function ContactPage() {
         // Reset form status after 5 seconds
         setTimeout(() => {
           setFormStatus(null);
-        }, 5000);
+        }, 7000);
       }
     } catch (error) {
       console.error('Form submission error:', error);
@@ -268,7 +267,7 @@ function ContactPage() {
               {t('contact.title') || 'Get in Touch'} <span>{t('contact.titleHighlight') || 'Now'}</span>
             </div>
             <div className="subtitles" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
-              {t('contact.subtitle') || 'Let\'s Collaborate'}
+              {t('contact.subtitle') || "Let's Collaborate"}
             </div>
             <p>{t('contact.description') || 'Reach out to discuss your project.'}</p>
           </div>
@@ -359,11 +358,13 @@ function ContactPage() {
                   {shouldShowError('services') && <div className="error-message">{errors.services}</div>}
                 </div>
 
-                <div className={`submit ${shouldEnableSubmit() ? 'active' : ''}`}>
-                  <button type="submit" disabled={isSubmitting}>
-                    <span>
-                      {isSubmitting ? t('contact.submitting') || 'Submitting...' : t('contact.submit') || 'Submit'}
-                    </span>
+                <div className="submit">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting || !shouldEnableSubmit()}
+                    className={`submit-button ${shouldEnableSubmit() ? 'active' : 'disabled'}`}
+                  >
+                    {isSubmitting ? t('contact.submitting') || 'Submitting...' : t('contact.submit') || 'Submit'}
                   </button>
                 </div>
 

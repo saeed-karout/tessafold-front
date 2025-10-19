@@ -156,6 +156,8 @@
 @media (max-width: 768px) {
   .main-our-services {
     margin:  0  20px ; /* 40px */
+    height: 600px;
+    padding: 0;
   }
 
   
@@ -186,14 +188,12 @@
 
 /* Responsive adjustments for screens <= 470px */
 @media (max-width: 670px) {
-  .main-our-services {
-    padding: 1.5rem 0; /* 24px */
-  }
+ 
 
   
 
   .topic-service {
-    padding: 5px 1rem; /* 0 16px */
+    padding: 5px 1rem 0px; /* 0 16px */
   }
 
   .topic-service .title {

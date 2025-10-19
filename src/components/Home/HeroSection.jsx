@@ -40,7 +40,7 @@ function HeroSection() {
         t('hero.animatedText.cloudProviders') || 'AI Development',
         t('hero.animatedText.cloudProviders1') || 'Machine Learning',
         t('hero.animatedText.sso') || 'Software Development',
-         t('hero.animatedText.crmErpIntegrations') || 'AI Development',
+        t('hero.animatedText.crmErpIntegrations') || 'AI Development',
         t('hero.animatedText.odooErpIntegrations') || 'Machine Learning',
         t('hero.animatedText.agileMethodology') || 'Software Development',
         t('hero.animatedText.cleanCode') || 'AI Development',
@@ -49,7 +49,6 @@ function HeroSection() {
         t('hero.animatedText.edfaPay') || 'AI Development',
         t('hero.animatedText.keycloak') || 'Machine Learning',
         t('hero.animatedText.weclapp') || 'Machine Learning',
-
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -66,6 +65,10 @@ function HeroSection() {
     };
   }, [t, i18n.language]);
 
+  const handleButtonClick = () => {
+    navigate('/contact-us');
+  };
+
   return (
     <div className="Hero" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
       <div className="section1-hero">
@@ -80,7 +83,7 @@ function HeroSection() {
       <div className="section2-hero">
         <button
           className="btn-contact-hero"
-          onClick={() => navigate('/contact')}
+          onClick={handleButtonClick}
           aria-label={t('hero.buttonAriaLabel') || 'Contact Us'}
         >
           <span>{t('hero.buttonText') || 'Get in Touch'}</span>
