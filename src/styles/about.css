@@ -258,71 +258,81 @@
 }
 
 
-/* =========================
-   TABLET LANDSCAPE (1024–1180px)
-   ========================= */
-@media (max-width: 1180px) and (min-width: 1024px) {
-  .main-about {
-    padding: 3rem 2rem;
-    gap: 2.5rem;
-  }
+/* ====== ABOUT (Tablet / iPad fixes) ====== */
+/* Include iPad Pro portrait (1024px) and smaller tablets */
+@media (min-width: 768px) and (max-width: 1180px) {
 
+  /* Make the frame/content use full available width on tablets */
   .frame-about {
-    padding: 0 3rem;
-    margin: 0 40px;
+    max-width: 1100px;           /* same look as laptop but limited */
+    width: calc(100% - 48px) !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    gap: 3.5rem;
   }
 
+  /* Ensure the inner content takes most of the frame to make the video big */
   .frame-about .content-about {
-    width: 80%;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    text-align: center;          /* center content on narrow tablets */
+  }
+
+  /* Make the video large and responsive */
+  .team-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 7;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+
+  /* If video is an iframe inside a wrapper, make iframe fill it */
+  .team-video iframe,
+  .team-video video {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
+
+  /* Place arrows inside the visible frame on tablets */
+  .arrow-left, .arrow-right {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    background: transparent;
+    z-index: 10;
   }
 
   .arrow-left {
-    left: 4rem;
-    width: 2.25rem;
-    height: 2.25rem;
+    left: 12px !important;      /* inside edge, visible */
   }
-
   .arrow-right {
-    right: 4rem;
-    width: 2.25rem;
-    height: 2.25rem;
+    right: 12px !important;     /* inside edge, visible */
   }
 
-  .team-video {
-    max-width: 100%;
+  /* Reduce title size slightly (keeps visual balance) */
+  .title-about, .title-about span {
+    font-size: 1.8rem !important;
+  }
+
+  /* Keep text readable */
+  .name, .name span, .technology {
+    font-size: 0.95rem !important;
   }
 }
 
-/* =========================
-   TABLET PORTRAIT (768–1023px)
-   ========================= */
-@media (max-width: 1023px) and (min-width: 768px) {
-  .main-about {
-    flex-direction: column;
-    padding: 2.5rem 1.5rem;
-    gap: 2rem;
-  }
-
-  .frame-about {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 2rem;
-    margin: 0 auto;
-    gap: 3rem;
-  }
-
-  .frame-about .content-about {
-    width: 85%;
-    text-align: center;
-  }
-
-  .arrow-left,
-  .arrow-right {
-    display: none; /* Hide arrows on portrait iPads */
-  }
-
-  .team-video {
-    width: 100%;
-    border-radius: 0.5rem;
-  }
+/* Extra safety: include exact iPad Pro portrait width (1024) */
+@media (width: 1024px) {
+  .frame-about { padding: 0 28px !important; }
+  .frame-about .content-about { width: 100% !important; }
+  .team-video { max-width: calc(100% - 56px) !important; }
+  .arrow-left { left: 14px !important; }
+  .arrow-right { right: 14px !important; }
 }

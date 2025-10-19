@@ -32,7 +32,7 @@
 
 .section1-hero .title-hero {
   color: var(--Black-black-1, #FFF);
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -229,6 +229,8 @@
   padding-top: 30px;
 }
 
+
+
 .section3-hero .partners-swiper {
   width: 100%;
   display: flex;
@@ -239,8 +241,21 @@
   justify-content: center;
   align-items: center;
   height: 5.5rem;
+  object-fit: contain;
+  height: 50px;
 }
 
+
+@media (max-width: 1680px){
+   .Hero{
+    min-height: 65dvh;
+  }
+}
+@media (max-width: 1180px) {
+  .Hero{
+    min-height: 55dvh;
+  }
+}
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
   .Hero {
@@ -258,7 +273,7 @@
 
   .section1-hero .title-hero {
     font-size: 1.75rem;
-    max-width: 90%;
+    /* max-width: 90%; */
   }
 
   .section1-hero .yellow-hero,

@@ -38,15 +38,15 @@ function Certificates() {
         <div className="top-cert" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
           {certificatesData.certificates?.title_part1?.[currentLang] || 'Our Certifications'}
           <span> {certificatesData.certificates?.germany?.[currentLang] || 'Germany'}</span>
-          {certificatesData.certificates?.and?.[currentLang] || ' and '}
+          <p style={{display:"inline",margin:'0 5px', padding:"0"}}>{certificatesData.certificates?.and?.[currentLang] || ' and '}</p>
           <span> {certificatesData.certificates?.california?.[currentLang] || 'California'}</span>
         </div>
         <div className="description-cert" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
           {certificatesData.certificates?.description?.[currentLang] || 'Our achievements in excellence.'}
         </div>
-        <div className="subtitle-cert">
+        {/* <div className="subtitle-cert">
           {certificatesData.certificates?.subtitle?.[currentLang] || 'Certified quality.'}
-        </div>
+        </div> */}
         <Link to="/profile">
           <div className="btn-profile">
             <div className="view">{certificatesData.certificates?.button?.[currentLang] || 'View Profile'}</div>

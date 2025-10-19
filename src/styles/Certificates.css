@@ -197,7 +197,7 @@
     .left-cert {
         max-width: 100%;
         width: 90%;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .right-cert {
