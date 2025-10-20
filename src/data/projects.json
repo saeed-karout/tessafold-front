@@ -87,7 +87,7 @@
     "description": { "ar": "تطبيق لتأجير السيارات من شخص أو شركة الى شخص. يتيح للمستخدمين البحث، الحجز، والتواصل بسهولة، مع تجربة استخدام حديثة وسلسة.", 
     "en": "A peer-to-peer and B2C car rental platform. Like Turo + traditional rental apps, it connects car owners and renters with secure payments, advanced filters, and sponsorship options.", 
     "de": "Eine Peer-to-Peer- und B2C-Autovermietungsplattform. Ähnlich wie Turo und herkömmliche Mietwagen-Apps verbindet sie Autobesitzer und Mieter mit sicheren Zahlungen, erweiterten Filteroptionen und Sponsoring-Möglichkeiten." }, 
-    "image": "/images/projects/cruiz.png", 
+    
     "webLink": "",
     "appDownloadLink": "" 
   },
@@ -192,7 +192,7 @@
       "en": "A dedicated mobile app for call centers in Saudi Arabia, enabling agents to manage calls, support tickets, and client follow-ups. Includes advanced dashboards, real-time reporting, and seamless integration with CRM systems to enhance customer service efficiency.",
       "de": "Eine spezialisierte mobile App für Callcenter in Saudi-Arabien, die es Agenten ermöglicht, Anrufe, Support-Tickets und Kunden-Nachverfolgungen zu verwalten. Enthält erweiterte Dashboards, Echtzeitberichte und eine nahtlose Integration in CRM-Systeme zur Verbesserung der Kundendienstleistung."
     },
-    "image": "/images/projects/wasl.png",
+    
     "webLink": "",
     "appDownloadLink": ""
   },
@@ -213,7 +213,7 @@
       "en": "A mobile logistics app developed for Kupek in Germany to automate the ordering and delivery process. It allows clients to manage orders, track deliveries, and schedule transportation efficiently using smart routing and workflow automation.",
       "de": "Eine mobile Logistik-App, entwickelt für Kupek in Deutschland, um Bestell- und Lieferprozesse zu automatisieren. Sie ermöglicht Kunden die Verwaltung von Bestellungen, Sendungsverfolgung und intelligente Transportplanung durch automatisierte Abläufe."
     },
-    "image": "/images/projects/kupek.png",
+    
     "webLink": "",
     "appDownloadLink": ""
   },

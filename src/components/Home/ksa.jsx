@@ -14,7 +14,7 @@ function KSA() {
   // Detect screen size
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 1180);
     };
 
     checkMobile();
