@@ -93,16 +93,16 @@ function KSA() {
     >
       {isMobile ? (
         <div className="ksa-mobile" >
-          <div className="top-ksa-mobile"   style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr'}}>
+
+          <img src="/images/ksa/ksa.webp"  className="icon-ksa" alt="Saudi Vision 2030"  />
 
            <div className="subtitle-ksa"  style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr'}} >
                 {ksaData.ksa_section?.title?.[currentLang] || 'Vision Alignment'}
                 <span>{ksaData.ksa_section?.aligns_with_mobile?.[currentLang] || 'Aligned with'}</span>
-                {/* <p>{ksaData.ksa_section?.vision_2030?.[currentLang] || 'Saudi Vision 2030'}</p> */}
+                <p>{ksaData.ksa_section?.vision_2030?.[currentLang] || 'Saudi Vision 2030'}</p>
               </div>
-          <img src="/images/ksa/ksa.webp"  className="icon-ksa" alt="Saudi Vision 2030"  />
 
-          </div>
+          
           <div className="selected-item" >
             {selectedItem && (
               <>

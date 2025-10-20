@@ -9,19 +9,17 @@ function WhatsAppFloat() {
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [showPulse, setShowPulse] = useState(true);
-  const [showNotification, setShowNotification] = useState(false); // التحكم في ظهور الإشعار
+  const [showNotification, setShowNotification] = useState(false);
 
   const { whatsapp } = whatsappData;
   const phoneNumber = whatsapp.phoneNumber;
   const settings = whatsapp.settings;
 
   useEffect(() => {
-    // تأخير ظهور الزر لتحسين تجربة المستخدم
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, settings.delay || 2000);
 
-    // إظهار الإشعار لمدة 5 ثوانٍ ثم إخفاؤه
     const notificationTimer = setTimeout(() => {
       setShowNotification(true);
     }, 4000);
@@ -30,7 +28,6 @@ function WhatsAppFloat() {
       setShowNotification(false);
     }, 9000);
 
-    // إيقاف النبض بعد 15 ثانية
     const pulseTimer = setTimeout(() => {
       setShowPulse(false);
     }, 20000);
@@ -43,22 +40,12 @@ function WhatsAppFloat() {
     };
   }, [settings.delay]);
 
-  const handleWhatsAppClick = () => {
+  // إنشاء رابط WhatsApp
+  const getWhatsAppUrl = () => {
     const message = whatsapp.messages.default[currentLang] || 
                    t('whatsapp.defaultMessage', { defaultValue: 'Hello! I would like to get more information.' });
     
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
-    if (settings.autoOpen) {
-      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-    } else {
-      // بديل للشاشات التي قد تحجب النافذة المنبثقة
-      window.location.href = whatsappUrl;
-    }
-
-    // إخفاء الإشعار بعد النقر
-    setShowNotification(false);
-    setShowPulse(false);
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   };
 
   const getTooltipText = () => {
@@ -68,6 +55,12 @@ function WhatsAppFloat() {
     }
     return whatsapp.tooltips.contact[currentLang] || 
            t('whatsapp.contactUs', { defaultValue: 'Contact us on WhatsApp' });
+  };
+
+  const handleLinkClick = () => {
+    // إخفاء الإشعار بعد النقر
+    setShowNotification(false);
+    setShowPulse(false);
   };
 
   if (!isVisible) {
@@ -81,20 +74,16 @@ function WhatsAppFloat() {
         {getTooltipText()}
       </div>
       
-      {/* زر واتساب الرئيسي */}
-      <div 
+      {/* رابط واتساب الرئيسي - تم التغيير إلى <a> */}
+      <a 
+        href={getWhatsAppUrl()}
         className="whatsapp-float"
-        onClick={handleWhatsAppClick}
+        onClick={handleLinkClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        role="button"
-        tabIndex={0}
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label={whatsapp.tooltips.contact[currentLang] || "Contact us on WhatsApp"}
-        onKeyPress={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            handleWhatsAppClick();
-          }
-        }}
       >
         <svg 
           className="whatsapp-icon" 
@@ -112,7 +101,7 @@ function WhatsAppFloat() {
         
         {/* مؤشر النقر للجوال */}
         <div className="whatsapp-tap-indicator" aria-hidden="true"></div>
-      </div>
+      </a>
 
       {/* عدد الرسائل غير المقروءة - تظهر مؤقتاً */}
       {showNotification && (

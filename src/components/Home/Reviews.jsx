@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import reviewsData from '../../data/reviews.json';
 import '../../styles/Reviews.css';
@@ -6,13 +6,10 @@ import '../../styles/Reviews.css';
 function Reviews() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language?.split('-')[0] || 'en';
-  const iframeRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [useFallback, setUseFallback] = useState(false);
 
-  // تحميل صور الـ fallback مسبقاً
+  // تحميل صور الـ avatars مسبقاً
   useEffect(() => {
-    if (useFallback && reviewsData) {
+    if (reviewsData) {
       reviewsData.forEach((review) => {
         if (review.reviewer?.avatar) {
           const img = new Image();
@@ -23,39 +20,6 @@ function Reviews() {
         }
       });
     }
-  }, [useFallback]);
-
-  // التحقق من تحميل الـ iframe
-  useEffect(() => {
-    const iframe = iframeRef.current;
-    if (!iframe) return;
-
-    const handleLoad = () => {
-      setIsLoading(false);
-      console.log('Clutch iframe loaded successfully');
-    };
-
-    const handleError = () => {
-      console.error('Clutch iframe failed to load');
-      setUseFallback(true);
-      setIsLoading(false);
-    };
-
-    iframe.addEventListener('load', handleLoad);
-    iframe.addEventListener('error', handleError);
-
-    // التحقق من وجود المصدر بعد فترة زمنية
-    const timeout = setTimeout(() => {
-      if (!iframe.src) {
-        handleError();
-      }
-    }, 5000);
-
-    return () => {
-      iframe.removeEventListener('load', handleLoad);
-      iframe.removeEventListener('error', handleError);
-      clearTimeout(timeout);
-    };
   }, []);
 
   return (
@@ -73,62 +37,47 @@ function Reviews() {
         </div>
 
         <div className="reviews-content">
-          {isLoading ? (
-            <p className="loading">{t('reviews.loading', { defaultValue: 'Loading reviews...' })}</p>
-          ) : useFallback ? (
-            reviewsData && reviewsData.length > 0 ? (
-              <div className="clutch-widget">
-                {reviewsData.map((review) => (
-                  <div key={review.id} className="review-card">
-                    <div className="review-header">
-                      <div className="reviewer-info">
-                        <div className="reviewer-avatar">
-                          <img
-                            src={review.reviewer?.avatar || '/images/placeholder-avatar.png'}
-                            alt={t('reviews.reviewer_alt', {
-                              name: review.reviewer?.name?.[currentLang] || 'Reviewer',
-                              defaultValue: 'Reviewer avatar',
-                            })}
-                            onError={(e) => {
-                              e.currentTarget.src = '/images/placeholder-avatar.png';
-                            }}
-                          />
-                        </div>
-                        <div className="reviewer-details">
-                          <h4>{review.reviewer?.name?.[currentLang] || 'Anonymous'}</h4>
-                          <p>{review.reviewer?.role?.[currentLang] || 'Client'}</p>
-                        </div>
+          {reviewsData && reviewsData.length > 0 ? (
+            <div className="clutch-widget">
+              {reviewsData.map((review) => (
+                <div key={review.id} className="review-card">
+                  <div className="review-header">
+                    <div className="reviewer-info">
+                      <div className="reviewer-avatar">
+                        <img
+                          src={review.reviewer?.avatar || '/images/placeholder-avatar.png'}
+                          alt={t('reviews.reviewer_alt', {
+                            name: review.reviewer?.name?.[currentLang] || 'Reviewer',
+                            defaultValue: 'Reviewer avatar',
+                          })}
+                          onError={(e) => {
+                            e.currentTarget.src = '/images/placeholder-avatar.png';
+                          }}
+                        />
                       </div>
-                      <div className="review-rating">
-                        <div className="stars">
-                          {'★'.repeat(review.rating || 0)}
-                          {'☆'.repeat(5 - (review.rating || 0))}
-                        </div>
-                        <div className="rating-text">{review.date || 'N/A'}</div>
+                      <div className="reviewer-details">
+                        <h4>{review.reviewer?.name?.[currentLang] || 'Anonymous'}</h4>
+                        <p>{review.reviewer?.role?.[currentLang] || 'Client'}</p>
                       </div>
                     </div>
-                    <p className="review-content">
-                      {review.content?.[currentLang] || 'No review content'}
-                    </p>
+                    <div className="review-rating">
+                      <div className="stars">
+                        {'★'.repeat(review.rating || 0)}
+                        {'☆'.repeat(5 - (review.rating || 0))}
+                      </div>
+                      <div className="rating-text">{review.date || 'N/A'}</div>
+                    </div>
                   </div>
-                ))}
-              </div>
-            ) : (
-              <p className="error">
-                {t('reviews.error', { defaultValue: 'Failed to load reviews. Please try again later.' })}
-              </p>
-            )
+                  <p className="review-content">
+                    {review.content?.[currentLang] || 'No review content'}
+                  </p>
+                </div>
+              ))}
+            </div>
           ) : (
-            <iframe
-              ref={iframeRef}
-              src="https://widget.clutch.co/widgets/get/4?uid=1782053&reviews=2231946,2228229,2228148,2215763,2214541,2214305,2211821,2210293,2208659,2207514,2204852,2204421"
-              className="clutch-widget-iframe"
-              width="100%"
-              height="500"
-              frameBorder="0"
-              scrolling="no"
-              title="Clutch Reviews"
-            />
+            <p className="error">
+              {t('reviews.error', { defaultValue: 'No reviews available.' })}
+            </p>
           )}
         </div>
 
