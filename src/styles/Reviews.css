@@ -8,7 +8,6 @@
 .reviews-container {
   max-width: 100%;
   margin: 0 80px;
-
 }
 
 .reviews-header {
@@ -25,8 +24,6 @@
   animation: fadeInUp 0.6s ease-out;
 }
 
-
-
 .reviews-subtitle {
   color: var(--secondary, #92B6B9);
   font-size: 18px;
@@ -37,10 +34,6 @@
   animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
-
-
-
-
 .reviews-content {
   display: flex;
   flex-direction: column;
@@ -49,9 +42,6 @@
 }
 
 .clutch-widget {
-  /* width: 100%; */
-  /* max-width: 1440px; */
- 
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
@@ -59,15 +49,15 @@
   animation: slideInLeft 0.6s ease-out 0.4s both;
 }
 
-.clutch-widget iframe {
+.clutch-widget-iframe {
   width: 100%;
-  display: none !important;
   border: none;
   border-radius: 16px;
   transition: all 0.3s ease;
+  display: block; /* إصلاح إخفاء الـ iframe */
 }
 
-.clutch-widget iframe:hover {
+.clutch-widget-iframe:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
@@ -76,7 +66,7 @@
   background: var(--primary, #2B3132);
   border-radius: 16px;
   padding: 24px;
-  border: 1px solid var(--tessafold, #39797F);  
+  border: 1px solid var(--tessafold, #39797F);
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -124,19 +114,12 @@
   margin: 0 0 4px 0;
 }
 
-
-
-
-
 .reviewer-details p {
   color: var(--secondary, #92B6B9);
   font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
-
-
-
 
 .review-rating {
   display: flex;
@@ -164,9 +147,8 @@
   margin: 0;
 }
 
-
-
-.loading, .error {
+.loading,
+.error {
   color: var(--secondary, #92B6B9);
   font-size: 16px;
   text-align: center;
@@ -174,12 +156,9 @@
   animation: fadeInUp 0.6s ease-out 0.4s both;
 }
 
-
-
 .reviews-cta {
   text-align: center;
   padding-top: 40px;
-  /* border-top: 1px solid var(--tessafold, #39797F); */
   animation: fadeInUp 0.6s ease-out 0.6s both;
 }
 
@@ -189,8 +168,6 @@
   font-weight: 500;
   margin-bottom: 24px;
 }
-
-
 
 .reviews-button {
   background: #FFF;
@@ -205,8 +182,6 @@
   position: relative;
   overflow: hidden;
 }
-
-
 
 .reviews-button::before {
   content: '';
@@ -232,113 +207,88 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .reviews-container{
+  .reviews-container {
     margin: 0 40px;
   }
   .reviews-section {
     padding: 60px 0;
   }
-
   .reviews-title {
     font-size: 32px;
   }
-
   .reviews-subtitle {
     font-size: 16px;
   }
-
   .clutch-widget {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-
   .review-card {
     max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .reviews-container{
-    /* margin: 0 20px; */
+  .reviews-container {
+    margin: 0 20px;
   }
   .reviews-section {
     padding: 40px 0;
   }
-
   .reviews-title {
     font-size: 24px;
   }
-
   .reviews-subtitle {
     font-size: 14px;
     max-width: 100%;
   }
-
   .clutch-widget {
     grid-template-columns: 1fr;
   }
-
-  .clutch-widget iframe {
+  .clutch-widget-iframe {
     border-radius: 12px;
   }
-
   .review-card {
     padding: 16px;
   }
-
-  .loading, .error {
+  .loading,
+  .error {
     font-size: 14px;
     padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .reviews-container {
-
-  }
-
   .reviews-title {
     font-size: 20px;
   }
-
   .reviews-subtitle {
     font-size: 12px;
   }
-
-  .clutch-widget iframe {
+  .clutch-widget-iframe {
     border-radius: 8px;
   }
-
   .review-card {
     padding: 12px;
   }
-
   .reviewer-avatar {
     width: 40px;
     height: 40px;
   }
-
-
-
   .reviewer-details h4 {
     font-size: 14px;
   }
-
   .reviewer-details p {
     font-size: 12px;
   }
-
   .review-content {
     font-size: 13px;
   }
-
   .stars {
     font-size: 14px;
   }
-
   .rating-text {
     font-size: 12px;
   }
-
   .reviews-button {
     padding: 12px 24px;
     font-size: 14px;
@@ -385,17 +335,6 @@
   from {
     opacity: 0;
     transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
   }
   to {
     opacity: 1;
