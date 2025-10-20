@@ -55,9 +55,11 @@
 }
 
 .partner-slide img{
-  max-width: 100px;
+  max-width: 120px;
   object-fit: contain;
   filter: brightness(0) invert(1);
+  height: 40px !important;
+  min-height: 55px !important;
 }
 
 .section1-hero .yellow-hero {
