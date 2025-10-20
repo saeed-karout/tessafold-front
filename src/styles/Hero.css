@@ -58,7 +58,7 @@
   max-width: 100px;
   object-fit: contain;
   filter: brightness(0) invert(1);
-  
+  height: 70px;
 }
 
 .section1-hero .yellow-hero {
@@ -405,6 +405,9 @@
 
   .partner-slide {
     height: 3rem;
+  }
+  .swiper-wrapper{
+    display: none;
   }
 }
 
