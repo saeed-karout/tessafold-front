@@ -311,10 +311,10 @@ textarea {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 130px; /* نفس عرض .submit الأصلي */
+  min-width: 130px; /* نفس عرض .submit الأصلي */
   padding: 12px 40px;
   border-radius: 100px;
-  background: var(--tessafold, #007bff);
+  background: var(--tessafold);
   color: var(--secondary, #FFF);
   font-size: 20px;
   font-weight: 500;
@@ -339,7 +339,7 @@ textarea {
   }
 
   &.active:hover {
-    background: #003087; /* لون أغمق عند التمرير */
+    background: var(--tessafold); /* لون أغمق عند التمرير */
     transform: scale(1.05);
   }
 
@@ -453,7 +453,7 @@ textarea {
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
   will-change: background, transform;
-
+  z-index: 10;
   @media (max-width: var(--breakpoint-mobile)) {
     padding: 10px 32px;
   }
