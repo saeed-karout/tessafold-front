@@ -19,7 +19,7 @@
   "messageLabel": "Project Details",
   "messagePlaceholder": "Briefly describe your project scope, objectives, and timeline.",
   "servicesLabel": "Select the services you’re interested in",
-  "submit": "Send Inquiry",
+  "submit": "Send",
   "submitting": "Sending...",
   "iconAlt": "Business contact form icon",
   "success": "Your inquiry has been submitted successfully. Our team will get back to you shortly.",
@@ -45,7 +45,7 @@
   },
   "footer": {
     "logoAlt": "Tessafold Logo",
-    "imprint": "Imprint And Data Protection Declaration",
+    "imprint": "Terms And Conditions",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
