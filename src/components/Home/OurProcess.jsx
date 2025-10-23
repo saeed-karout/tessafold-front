@@ -10,7 +10,7 @@ function OurProcess() {
 
   // Log processData for debugging
   useEffect(() => {
-    console.log('processData:', processData);
+    // console.log('processData:', processData);
     if (!processData?.steps) {
       console.error('Invalid processData:', processData);
     }

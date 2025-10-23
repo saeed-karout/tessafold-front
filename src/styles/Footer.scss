@@ -189,11 +189,28 @@ $breakpoint-tablet: 1024px;
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
+  min-height: 130px;
 
   @media (max-width: $breakpoint-mobile) {
     align-items: flex-start;
     gap: 12px;
+ 
+
   }
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+  .footer-col1 .footer-top,
+  .footer-col2 .footer-top {
+
+    min-height: 160px;
+    
+  }
+  
+  .footer-right{
+    gap: 27px;
+  }
+  
 }
 
 .footer-top .footer-title {
@@ -361,11 +378,14 @@ $breakpoint-tablet: 1024px;
   .footer-col1 .footer-top,
   .footer-col2 .footer-top {
     gap: 8px;
+    min-height:0;
   }
 
   .footer-col3 .footer-contacts {
     gap: 16px;
   }
+
+   
 }
 
 // تحسينات للشاشات المتوسطة
@@ -379,12 +399,12 @@ $breakpoint-tablet: 1024px;
   }
 
   .footer-right {
-    gap: 24px;
+    gap: 16px;
   }
 
   .footer-right .footer-col1,
   .footer-right .footer-col2 {
-    width: 180px;
+    width: 171px;
   }
 
   .footer-col3 {

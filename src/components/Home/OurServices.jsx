@@ -12,7 +12,7 @@ function OurServices() {
 
   // Log ServicesData for debugging
   useEffect(() => {
-    console.log('ServicesData:', ServicesData);
+    // console.log('ServicesData:', ServicesData);
     if (!ServicesData?.section) {
       console.error('Invalid ServicesData:', ServicesData);
     }

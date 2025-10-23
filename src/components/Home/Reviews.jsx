@@ -15,7 +15,7 @@ function Reviews() {
           const img = new Image();
           img.src = review.reviewer.avatar;
           img.onerror = () => {
-            console.warn(`Failed to preload avatar: ${review.reviewer.avatar}`);
+            // console.warn(`Failed to preload avatar: ${review.reviewer.avatar}`);
           };
         }
       });

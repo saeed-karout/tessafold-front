@@ -10,7 +10,7 @@ function LastSection() {
 
   // Log lastSectionData for debugging
   useEffect(() => {
-    console.log('lastSectionData:', lastSectionData);
+    // console.log('lastSectionData:', lastSectionData);
     if (!lastSectionData?.last_section) {
       console.error('Invalid lastSectionData:', lastSectionData);
     }

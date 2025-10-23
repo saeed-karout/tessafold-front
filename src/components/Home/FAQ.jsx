@@ -10,7 +10,7 @@ function FAQ() {
 
   // Log faqData for debugging
   useEffect(() => {
-    console.log('faqData:', faqData);
+    // console.log('faqData:', faqData);
     if (!faqData || !Array.isArray(faqData)) {
       console.error('Invalid faqData:', faqData);
     }

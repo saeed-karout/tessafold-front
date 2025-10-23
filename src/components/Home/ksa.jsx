@@ -26,7 +26,7 @@ function KSA() {
 
   // Log ksaData for debugging
   useEffect(() => {
-    console.log('ksaData:', ksaData);
+    // console.log('ksaData:', ksaData);
     if (!ksaData?.ksa_section) {
       console.error('Invalid ksaData:', ksaData);
     }

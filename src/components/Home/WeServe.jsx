@@ -33,8 +33,8 @@ function WeServe() {
 
   // Log weServeData for debugging
   useEffect(() => {
-    console.log('weServeData:', weServeData);
-    console.log('Current screen size:', screenSize);
+    // console.log('weServeData:', weServeData);
+    // console.log('Current screen size:', screenSize);
     if (!weServeData?.we_serve) {
       console.error('Invalid weServeData:', weServeData);
     }

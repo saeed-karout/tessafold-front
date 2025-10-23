@@ -26,7 +26,7 @@ function Projects() {
   };
 
   useEffect(() => {
-    console.log("projectsData:", projectsData);
+    // console.log("projectsData:", projectsData);
     if (!projectsData || !Array.isArray(projectsData)) {
       console.error("Invalid projectsData:", projectsData);
     }

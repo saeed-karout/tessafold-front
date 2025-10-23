@@ -472,14 +472,14 @@
 }
 
 /* تحسينات للشاشات المتوسطة */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1424px) {
   .lastSection-content {
       padding: 60px 40px;
       gap: 50px;
   }
 
   .lastSection-right {
-      width: 100%;
+      /* width: 100%; */
   }
 
   .lastSection-topic {
@@ -488,5 +488,10 @@
 
   .lastSection-topic span {
       font-size: 28px;
+  }
+
+  .lastSection-logo {
+    position: relative;
+    left: -70px;
   }
 }

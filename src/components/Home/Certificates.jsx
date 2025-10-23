@@ -10,7 +10,7 @@ function Certificates() {
 
   // Log certificatesData for debugging
   useEffect(() => {
-    console.log('certificatesData:', certificatesData);
+    // console.log('certificatesData:', certificatesData);
     if (!certificatesData?.certificates) {
       console.error('Invalid certificatesData:', certificatesData);
     }

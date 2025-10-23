@@ -67,8 +67,8 @@
       "id": 8,
       "name": {
         "ar": "عقد الدعم والصيانة",
-        "en": "Support & Maintainance",
-        "de": "Support & Wartung"
+        "en": "Maintainance",
+        "de": "Wartung"
       },
      "icon": "/icons/ourProcess/ruler&pen.svg"
     }

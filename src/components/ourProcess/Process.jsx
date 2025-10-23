@@ -13,7 +13,7 @@ function ProcessComponent() {
 
   // Log processData to debug JSON loading
   useEffect(() => {
-    console.log('processData:', processData);
+    // console.log('processData:', processData);
     if (!processData?.process?.phases) {
       console.error('Invalid processData structure:', processData);
     }

@@ -264,9 +264,13 @@
     min-height: 65dvh;
   }
 }
-@media (max-width: 1180px) {
+@media (max-width: 1300px) {
   .Hero{
     min-height: 55dvh;
+  }
+
+  .section3-hero {
+    display: none;
   }
 }
 /* Media Queries for Mobile */
@@ -367,7 +371,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .Hero {
     padding: 1.5rem 20px 0.75rem;
     gap: 5rem;

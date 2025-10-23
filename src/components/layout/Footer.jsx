@@ -22,13 +22,13 @@ function Footer() {
           </div>
 
           <div className="footer-social-media">
-            <a href="https://facebook.com/tessafold" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://facebook.com/tessafold" target="_blank" rel="noopener noreferrer">
               <img
                 src="/icons/social-media/facebook.svg"
                 className="footer-item"
                 alt={t('footer.social.facebook')}
               />
-            </a>
+            </a> */}
             <a href="https://instagram.com/tessafold" target="_blank" rel="noopener noreferrer">
               <img
                 src="/icons/social-media/instagram.svg"

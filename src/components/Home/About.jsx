@@ -11,7 +11,7 @@ function About() {
 
   // Log aboutData for debugging
   useEffect(() => {
-    console.log('aboutData:', aboutData);
+    // console.log('aboutData:', aboutData);
     if (!aboutData?.team) {
       console.error('Invalid aboutData:', aboutData);
     }
