@@ -68,7 +68,7 @@
 .team-video {
   display: flex;
   width: 100%;
-  max-width: 925px; /* الحجم الأصلي من التصميم */
+  max-width: 1030px; /* الحجم الأصلي من التصميم */
   height: 404px; /* الحجم الأصلي من التصميم */
   border-radius: 0.5rem; /* 8px */
   border: none;
@@ -81,7 +81,7 @@
   align-items: flex-start;
   gap: 0.5rem; /* 8px */
   width: 100%;
-  max-width: 925px; /* نفس عرض الفيديو */
+  max-width: 1030px; /* نفس عرض الفيديو */
 }
 
 .name {
