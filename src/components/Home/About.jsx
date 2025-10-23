@@ -9,15 +9,12 @@ function About() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState('');
 
-  // Log aboutData for debugging
   useEffect(() => {
-    // console.log('aboutData:', aboutData);
     if (!aboutData?.team) {
       console.error('Invalid aboutData:', aboutData);
     }
   }, []);
 
-  // Preload arrow image
   useEffect(() => {
     const img = new Image();
     img.src = '/arrow-left.svg';
@@ -28,16 +25,16 @@ function About() {
 
   const handleNext = () => {
     setAnimationClass('animate-out');
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (team.length || 1));
     setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % (team.length || 1));
       setAnimationClass('animate-in');
     }, 200);
   };
 
   const handlePrev = () => {
     setAnimationClass('animate-out');
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + (team.length || 1)) % (team.length || 1));
     setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + (team.length || 1)) % (team.length || 1));
       setAnimationClass('animate-in');
     }, 200);
   };

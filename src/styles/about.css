@@ -4,20 +4,13 @@
   justify-content: center;
   align-items: center;
   gap: 3rem; /* 48px */
-  
   overflow: hidden;
-  /* width: 100%; */
-  /* margin: 0 80px; */
-
 }
-
-
 
 .title-about {
   display: flex;
   align-items: flex-start;
   color: var(--Black-black-1, #FFF);
-  
   font-size: 2rem; /* 32px */
   font-weight: 600;
   line-height: 1.6; /* 160% */
@@ -25,7 +18,6 @@
 
 .title-about span {
   color: var(--Yellow-yellow-500, #FFB130);
-  
   font-size: 2rem; /* 32px */
   font-weight: 600;
   line-height: 1.6;
@@ -39,8 +31,9 @@
   gap: 6rem; /* 96px */
   width: 100%;
   position: relative;
-  padding: 0 5rem; /* Reduced from 0 80px */
-  margin: 0 80px;
+  padding: 0 5rem;
+  margin: 0 auto;
+  max-width: 1800px; /* جديد لدعم الشاشات الكبيرة */
 }
 
 .frame-about .content-about {
@@ -49,6 +42,7 @@
   align-items: center;
   gap: 1.5rem; /* 24px */
   width: 100%;
+  max-width: 1440px; /* الحفاظ على القياس الأصلي */
 }
 
 .arrow-left {
@@ -73,10 +67,9 @@
 
 .team-video {
   display: flex;
-  /* width: 100%; */
-  max-width: 1440px;
-  height: auto;
-  aspect-ratio: 16 / 7; /* Maintain proportion (926/404 ≈ 2.29) */
+  width: 100%;
+  max-width: 1030px; /* الحجم الأصلي من التصميم */
+  height: 404px; /* الحجم الأصلي من التصميم */
   border-radius: 0.5rem; /* 8px */
   border: none;
 }
@@ -88,12 +81,11 @@
   align-items: flex-start;
   gap: 0.5rem; /* 8px */
   width: 100%;
-  max-width: 1440px;
+  max-width: 925px; /* نفس عرض الفيديو */
 }
 
 .name {
   color: var(--Black-black-6, #C6C7C7);
-  
   font-size: 1rem; /* 16px */
   font-weight: 300;
   line-height: 1.6;
@@ -101,7 +93,6 @@
 
 .name span {
   color: var(--Black-black-2, #FDFDFD);
-  
   font-size: 1rem; /* 16px */
   font-weight: 600;
   line-height: 1.6;
@@ -109,7 +100,6 @@
 
 .technology {
   color: var(--Black-black-6, #C6C7C7);
-  
   font-size: 1rem; /* 16px */
   font-weight: 400;
   line-height: 1.6;
@@ -124,7 +114,6 @@
   animation: slideIn 0.2s ease-in-out forwards;
 }
 
-/* Use a directional slide variable --slide-x (set to -0.9375rem for left, 0.9375rem for right) */
 @keyframes slideOut {
   from {
     opacity: 1;
@@ -132,7 +121,7 @@
   }
   to {
     opacity: 0;
-    transform: translateX(var(--slide-x, 0.9375rem)); /* 15px; set --slide-x: -0.9375rem for left */
+    transform: translateX(var(--slide-x, 0.9375rem));
     visibility: hidden;
   }
 }
@@ -140,7 +129,7 @@
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(var(--slide-x, 0.9375rem)); /* 15px; set --slide-x: -0.9375rem for left */
+    transform: translateX(var(--slide-x, 0.9375rem));
     visibility: hidden;
   }
   to {
@@ -150,14 +139,44 @@
   }
 }
 
-@media (min-width: 1000px) {
- .frame-about .content-about{
-  min-width: 650px;
-  /* width: 650px; */
- }
+/* تحسينات لشاشة 1920 وما فوق */
+@media (min-width: 1920px) {
+  .frame-about {
+    max-width: 1600px;
+    padding: 0 8rem;
+  }
   
+  .arrow-left {
+    left: 20rem;
+  }
+  
+  .arrow-right {
+    right: 20rem;
+  }
 }
-/* Responsive Design */
+
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .frame-about {
+    max-width: 1400px;
+    padding: 0 6rem;
+  }
+  
+  .arrow-left {
+    left: 18rem;
+  }
+  
+  .arrow-right {
+    right: 18rem;
+  }
+}
+
+/* الوسائط الأصلية مع تحسينات طفيفة */
+@media (min-width: 1000px) {
+  .frame-about .content-about {
+    min-width: 650px;
+  }
+}
+
 @media (max-width: 1024px) {
   .main-about {
     padding: 3rem 1rem;
@@ -179,6 +198,7 @@
 
   .team-video {
     max-width: 90%;
+    height: 350px; /* تعديل ارتفاع لتتناسب مع الشاشات المتوسطة */
   }
 }
 
@@ -191,9 +211,11 @@
   .title-about, .title-about span {
     font-size: 1.5rem; /* 24px */
   }
-  .frame-about .content-about{
+  
+  .frame-about .content-about {
     width: 90%;
   }
+  
   .frame-about {
     padding: 0 1.5rem;
     gap: 3rem;
@@ -213,6 +235,7 @@
 
   .team-video {
     max-width: 100%;
+    height: 300px; /* تعديل ارتفاع لتتناسب مع الشاشات الصغيرة */
   }
 
   .name, .name span, .technology {
@@ -247,66 +270,54 @@
     height: 1.5rem;
   }
 
+  .team-video {
+    height: 200px; /* تعديل ارتفاع لتتناسب مع الشاشات الصغيرة جداً */
+  }
+
   .name, .name span, .technology {
     font-size: 0.75rem; /* 12px */
   }
 
   @keyframes slideOut {
     to {
-      transform: translateX(var(--slide-x, 0.625rem)); /* 10px; set --slide-x to -0.625rem for left */
+      transform: translateX(var(--slide-x, 0.625rem));
     }
   }
 
   @keyframes slideIn {
     from {
-      transform: translateX(var(--slide-x, 0.625rem)); /* 10px; set --slide-x to -0.625rem for left */
+      transform: translateX(var(--slide-x, 0.625rem));
     }
   }
 }
 
-
-/* ====== ABOUT (Tablet / iPad fixes) ====== */
-/* Include iPad Pro portrait (1024px) and smaller tablets */
+/* تحسينات للتابلت والأيباد */
 @media (min-width: 768px) and (max-width: 1180px) {
-
-  /* Make the frame/content use full available width on tablets */
   .frame-about {
-    max-width: 1100px;           /* same look as laptop but limited */
+    max-width: 1100px;
     width: calc(100% - 48px) !important;
     margin: 0 auto !important;
     padding: 0 24px !important;
     gap: 3.5rem;
   }
 
-  /* Ensure the inner content takes most of the frame to make the video big */
   .frame-about .content-about {
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
     box-sizing: border-box;
-    text-align: center;          /* center content on narrow tablets */
+    text-align: center;
   }
 
-  /* Make the video large and responsive */
   .team-video {
     width: 100% !important;
     max-width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 16 / 7;
+    height: 400px !important;
     display: block;
     margin: 0 auto;
     border-radius: 0.5rem;
   }
 
-  /* If video is an iframe inside a wrapper, make iframe fill it */
-  .team-video iframe,
-  .team-video video {
-    width: 100% !important;
-    height: 100% !important;
-    display: block;
-  }
-
-  /* Place arrows inside the visible frame on tablets */
   .arrow-left, .arrow-right {
     position: absolute !important;
     top: 50% !important;
@@ -318,28 +329,41 @@
   }
 
   .arrow-left {
-    left: 12px !important;      /* inside edge, visible */
+    left: 12px !important;
   }
+  
   .arrow-right {
-    right: 12px !important;     /* inside edge, visible */
+    right: 12px !important;
   }
 
-  /* Reduce title size slightly (keeps visual balance) */
   .title-about, .title-about span {
     font-size: 1.8rem !important;
   }
 
-  /* Keep text readable */
   .name, .name span, .technology {
     font-size: 0.95rem !important;
   }
 }
 
-/* Extra safety: include exact iPad Pro portrait width (1024) */
 @media (width: 1024px) {
-  .frame-about { padding: 0 28px !important; }
-  .frame-about .content-about { width: 100% !important; }
-  .team-video { max-width: calc(100% - 56px) !important; }
-  .arrow-left { left: 14px !important; }
-  .arrow-right { right: 14px !important; }
+  .frame-about { 
+    padding: 0 28px !important; 
+  }
+  
+  .frame-about .content-about { 
+    width: 100% !important; 
+  }
+  
+  .team-video { 
+    max-width: calc(100% - 56px) !important; 
+    height: 350px !important;
+  }
+  
+  .arrow-left { 
+    left: 14px !important; 
+  }
+  
+  .arrow-right { 
+    right: 14px !important; 
+  }
 }
