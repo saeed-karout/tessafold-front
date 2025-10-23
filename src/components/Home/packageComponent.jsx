@@ -33,7 +33,9 @@ function PackageComponent() {
     images.forEach((src) => {
       const img = new Image();
       img.src = src;
-      img.onload = () => console.log(`Image loaded: ${src}`);
+      img.onload = () => {
+        // console.log(`Preloaded image: ${src}`);
+      }
     });
   }, []);
 
