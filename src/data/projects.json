@@ -87,7 +87,7 @@
     "description": { "ar": "تطبيق لتأجير السيارات من شخص أو شركة الى شخص. يتيح للمستخدمين البحث، الحجز، والتواصل بسهولة، مع تجربة استخدام حديثة وسلسة.", 
     "en": "A peer-to-peer and B2C car rental platform. Like Turo + traditional rental apps, it connects car owners and renters with secure payments, advanced filters, and sponsorship options.", 
     "de": "Eine Peer-to-Peer- und B2C-Autovermietungsplattform. Ähnlich wie Turo und herkömmliche Mietwagen-Apps verbindet sie Autobesitzer und Mieter mit sicheren Zahlungen, erweiterten Filteroptionen und Sponsoring-Möglichkeiten." }, 
-    
+  "image": "/images/projects/cruiz.png", 
     "webLink": "",
     "appDownloadLink": "" 
   },
@@ -173,27 +173,6 @@
     },
     "image": "/images/projects/einakademie.png",
     "webLink": "https://inakademie.de/",
-    "appDownloadLink": ""
-  },
-  {
-    "id": 15,
-     "name": {
-      "ar": "Wasl",
-      "en": "Wasl",
-      "de": "Wasl"
-    },
-    "title": {
-      "ar": "Wasl – تطبيق مركز الاتصالات (السعودية)",
-      "en": "Wasl – Call Center Mobile App (KSA)",
-      "de": "Wasl – Callcenter-Mobile-App (KSA)"
-    },
-    "description": {
-      "ar": "تطبيق مخصص لمراكز الاتصال في السعودية، يمكّن الموظفين من إدارة المكالمات، تذاكر الدعم، وجدولة المتابعة مع العملاء. يحتوي على لوحة تحكم متقدمة وتقارير فورية لتحسين تجربة خدمة العملاء.",
-      "en": "A dedicated mobile app for call centers in Saudi Arabia, enabling agents to manage calls, support tickets, and client follow-ups. Includes advanced dashboards, real-time reporting, and seamless integration with CRM systems to enhance customer service efficiency.",
-      "de": "Eine spezialisierte mobile App für Callcenter in Saudi-Arabien, die es Agenten ermöglicht, Anrufe, Support-Tickets und Kunden-Nachverfolgungen zu verwalten. Enthält erweiterte Dashboards, Echtzeitberichte und eine nahtlose Integration in CRM-Systeme zur Verbesserung der Kundendienstleistung."
-    },
-    
-    "webLink": "",
     "appDownloadLink": ""
   },
   {
