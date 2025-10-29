@@ -26,7 +26,6 @@ function KSA() {
 
   // Log ksaData for debugging
   useEffect(() => {
-    // console.log('ksaData:', ksaData);
     if (!ksaData?.ksa_section) {
       console.error('Invalid ksaData:', ksaData);
     }
@@ -86,37 +85,36 @@ function KSA() {
   return (
     <section
       className='ksa-main'
-      
       onTouchStart={isMobile ? handleTouchStart : undefined}
       onTouchMove={isMobile ? handleTouchMove : undefined}
       onTouchEnd={isMobile ? handleTouchEnd : undefined}
     >
       {isMobile ? (
-        <div className="ksa-mobile" >
+        <div className="ksa-mobile">
+          {/* العنوان في الموبايل */}
+          <div className="subtitle-ksa" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
+            <span className="subtitle-text">
+              {ksaData.ksa_section?.title?.[currentLang] || 'Vision Alignment'}
+            </span>
+            <span className="subtitle-text">
+              {ksaData.ksa_section?.aligns_with_mobile?.[currentLang] || 'Aligned with'}
+            </span>
+            <span className="vision-2030">
+              {ksaData.ksa_section?.vision_2030?.[currentLang] || 'Saudi Vision 2030'}
+            </span>
+          </div>
 
-          <img src="/images/ksa/ksa.webp"  className="icon-ksa" alt="Saudi Vision 2030"  />
-
-           <div className="subtitle-ksa"  style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr'}} >
-                {ksaData.ksa_section?.title?.[currentLang] || 'Vision Alignment'}
-                <span>{ksaData.ksa_section?.aligns_with_mobile?.[currentLang] || 'Aligned with'}</span>
-                <p>{ksaData.ksa_section?.vision_2030?.[currentLang] || 'Saudi Vision 2030'}</p>
-              </div>
-
+          {/* الصورة */}
+          <img
+            src='/images/ksa/bg.jpg'
+            className="selected-item-image"
+            alt={selectedItem?.text?.[currentLang] || 'Item'}
+          />
           
-          <div className="selected-item" >
+          {/* المحتوى المحدد */}
+          <div className="selected-item">
             {selectedItem && (
               <>
-                {/* <img
-                  src={selectedItem.image || '/images/ksa/bg.jpg'}
-                  className="selected-item-image"
-                  alt={selectedItem.text?.[currentLang] || 'Item'}
-                /> */}
-
-                 <img
-                  src='/images/ksa/bg.jpg'
-                  className="selected-item-image"
-                  alt={selectedItem.text?.[currentLang] || 'Item'}
-                />
                 <div className="selected-item-title">
                   <span className="number">
                     {(ksaData.ksa_section?.items.findIndex(item => item.id === selectedItem.id) + 1).toString().padStart(2, '0')}.
@@ -129,6 +127,8 @@ function KSA() {
               </>
             )}
           </div>
+
+          {/* نقاط التنقل */}
           <div className="carousel-dots">
             {(ksaData.ksa_section?.items || []).map((item, index) => (
               <span
@@ -141,6 +141,7 @@ function KSA() {
         </div>
       ) : (
         <>
+          {/* التخطيط لشاشات الكمبيوتر */}
           <div className="ksa-left">
             <div className="bg-ksa">
               <div className="text-ksa">
@@ -152,16 +153,25 @@ function KSA() {
               </div>
             </div>
           </div>
+          
           <div className="ksa-right" style={{ direction: currentLang === 'ar' ? 'rtl' : 'ltr' }}>
             <div className="top-right">
-              <div className="subtitle-ksa">
-                {ksaData.ksa_section?.title?.[currentLang] || 'Vision Alignment'}
-                <span>{ksaData.ksa_section?.aligns_with?.[currentLang] || 'Aligned with'}</span>
-                <p>{ksaData.ksa_section?.vision_2030?.[currentLang] || 'Saudi Vision 2030'}</p>
-
-              </div>
               <img src="/images/ksa/ksa.webp" className="icon-ksa" alt="Saudi Vision 2030" />
+
+              {/* العنوان في شاشات الكمبيوتر */}
+              <div className="subtitle-ksa">
+                <span className="subtitle-text">
+                  {ksaData.ksa_section?.title?.[currentLang] || 'Vision Alignment'}
+                </span>
+                <span className="subtitle-text">
+                  {ksaData.ksa_section?.aligns_with?.[currentLang] || 'Aligned with'}
+                </span>
+                <span className="vision-2030">
+                  {ksaData.ksa_section?.vision_2030?.[currentLang] || 'Saudi Vision 2030'}
+                </span>
+              </div>
             </div>
+            
             <div className="bottom-right">
               {(ksaData.ksa_section?.items || []).map((item, index) => (
                 <div

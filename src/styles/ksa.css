@@ -4,18 +4,17 @@
     justify-content: center;
     align-items: center;
     gap: 96px;
-    /* max-width: 1440px; */
     margin: 0 80px;
     position: relative;
 }
-.top-ksa-mobile{
+
+.top-ksa-mobile {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-
 
 .ksa-left {
     width: 40%;
@@ -37,8 +36,6 @@
     position: relative;
     animation: floatImage 6s ease-in-out infinite;
 }
-
-
 
 .ksa-left .text-ksa {
     display: flex;
@@ -73,7 +70,6 @@
 .ksa-left .text-ksa span {
     flex: 1 0 0;
     color: var(--Black-black-1, #FFF);
-    
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -86,14 +82,13 @@
     align-items: flex-start;
     gap: 64px;
     flex: 1;
-    /* max-width: 900px; */
     width: 60%;
 }
 
 .ksa-right .top-right {
     display: flex;
-    /* flex-direction: column; */
-    align-items: center;
+    flex-direction: column;
+    align-items: self-start;
     gap: 24px;
     width: 100%;
 }
@@ -104,11 +99,11 @@
     animation: pulse 3s ease-in-out infinite;
 }
 
-
-
+/* =========================
+   SUBTITLE STYLES - UPDATED FOR MOBILE
+   ========================= */
 .subtitle-ksa {
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
@@ -118,6 +113,25 @@
     flex-wrap: wrap;
     align-items: center;
     animation: fadeInUp 1s ease-out 0.3s both;
+    width: 100%;
+}
+
+.subtitle-text {
+    color: var(--OilMain-oilmain-2, #C5D8DA);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    white-space: nowrap;
+}
+
+.vision-2030 {
+    color: var(--Yellow, #FFB130);
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    white-space: nowrap;
 }
 
 @keyframes fadeInUp {
@@ -131,29 +145,9 @@
     }
 }
 
-.subtitle-ksa span {
-    color: var(--Black-black-1, #FFF);
-    
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-}
-
-.subtitle-ksa p {
-    display: inline;
-    color: var(--Yellow, #FFB130);
-    
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-}
-
 .bottom-right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 40px; */
     width: 100%;
     animation: fadeInUp 1s ease-out 0.6s both;
 }
@@ -171,9 +165,7 @@
 }
 
 .bottom-right .item-ksa:hover {
-    /* background: rgba(13, 92, 99, 0.1); */
     transform: translateX(10px);
-    /* border-color: var(--OilMain-oilmain-4, #7FA6A9); */
 }
 
 .bottom-right .item-ksa.active {
@@ -204,7 +196,6 @@
 
 .bottom-right .item-ksa .number {
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -229,7 +220,6 @@
 
 .bottom-right .item-ksa .text span {
     color: var(--OilMain-oilmain-2, #C5D8DA);
-    
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -266,14 +256,14 @@
     }
 }
 
-/* Mobile layout */
+/* =========================
+   MOBILE LAYOUT
+   ========================= */
 .ksa-mobile {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 24px;
-    
-    padding: 20px;
 }
 
 .ksa-mobile .icon-ksa {
@@ -285,18 +275,19 @@
 .ksa-mobile .selected-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
-    width: 100%;
+    align-self: stretch;
     animation: fadeInUp 0.8s ease-out;
 }
 
 .ksa-mobile .selected-item-image {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    height: 406px;
+    flex: 1 0 0;
+    border-radius: 10.667px;
+    background: url(/images/ksa/bg.jpg) lightgray 50% / cover no-repeat;
+    box-shadow: 2.667px 5.333px 13.333px 0 rgba(103, 152, 157, 0.15);
     transition: transform 0.3s ease;
 }
 
@@ -306,30 +297,34 @@
 
 .ksa-mobile .selected-item-title {
     display: flex;
+    justify-content: start;
     align-items: center;
     gap: 8px;
-    color: var(--Black-black-1, #FFF);
-    
-    font-size: 18px;
-    font-weight: 600;
+    align-self: stretch;
+    color: var(--OilMain-oilmain-2, #C5D8DA);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 160%;
-    text-align: center;
 }
 
 .ksa-mobile .selected-item-title .number {
-    color: var(--Yellow, #FFB130);
-    font-size: 20px;
+    color: var(--OilMain-oilmain-2, #C5D8DA);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 300;
+    line-height: 160%;
 }
 
 .ksa-mobile .selected-item-description {
-    color: var(--OilMain-oilmain-2, #C5D8DA);
-    
-    font-size: 14px;
+    color: var(--Black-black-3, #F6F6F6);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 150%;
-    text-align: center;
-    max-width: 90%;
+    line-height: 160%;
 }
 
 .ksa-mobile .carousel-dots {
@@ -350,12 +345,24 @@
 }
 
 .ksa-mobile .carousel-dots .dot.active {
-    background: var(--Yellow, #FFB130);
-    transform: scale(1.3);
+    width: 20px;
+    border-radius: 60px;
+    background: var(--OilMain-oilmain-3, #97B9BC);
 }
 
-/* ========== MEDIA QUERIES ========== */
+/* =========================
+   RESPONSIVE DESIGN - MOBILE FIRST APPROACH
+   ========================= */
 
+/* Large desktops */
+@media (min-width: 1440px) {
+    .ksa-main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablets and small desktops */
 @media (max-width: 1200px) {
     .ksa-main {
         flex-direction: column;
@@ -363,13 +370,13 @@
         padding: 60px 0px;
         margin: 0 40px;
     }
-    
+
     .ksa-left {
         width: 100%;
         height: auto;
         justify-content: center;
     }
-    
+
     .ksa-left .text-ksa {
         position: relative;
         right: auto;
@@ -379,82 +386,308 @@
         width: 100%;
         max-width: 500px;
     }
-    
+
     .ksa-right {
         max-width: 100%;
         width: 100%;
         align-items: center;
         text-align: center;
     }
-    
+}
+
+/* =========================
+   MOBILE SUBTITLE RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
     .subtitle-ksa {
-        /* justify-content: center; */
+        font-size: 26px;
+        gap: 5px;
+    }
+
+    .subtitle-text {
+        font-size: 26px;
+    }
+
+    .vision-2030 {
+        font-size: 26px;
     }
 }
 
+/* Small tablets and large phones */
 @media (max-width: 768px) {
     .ksa-main {
         padding: 40px 0px;
         gap: 48px;
         margin: 0 20px;
     }
-    
+
     .ksa-left,
     .ksa-right {
-        display: none; /* Hide desktop layout */
+        display: none;
+    }
+
+    .subtitle-ksa {
+        font-size: 22px;
+        gap: 4px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        line-height: 1.3;
+    }
+
+    .subtitle-text {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+
+    .vision-2030 {
+        font-size: 22px;
+        white-space: nowrap;
     }
 }
 
+/* Medium phones */
 @media (max-width: 480px) {
     .ksa-main {
         padding: 32px 0px;
         gap: 32px;
         margin: 0 20px;
     }
-    
+
     .ksa-mobile .icon-ksa {
         width: 80px;
         height: 60px;
     }
 
-
-    .subtitle-ksa{
+    .subtitle-ksa {
+        font-size: 20px;
         gap: 3px;
-        font-size: 27px;
+        line-height: 1.4;
     }
 
-    .subtitle-ksa span{
-        font-size: 27px;
+    .subtitle-text {
+        font-size: 20px;
     }
 
-    
-    
-    
-   
-    
+    .vision-2030 {
+        font-size: 20px;
+    }
+
     .ksa-mobile .selected-item-title {
         font-size: 16px;
     }
-    
+
     .ksa-mobile .selected-item-title .number {
         font-size: 18px;
     }
-    
+
     .ksa-mobile .selected-item-description {
         font-size: 13px;
     }
-    
+
     .ksa-mobile .carousel-dots {
         gap: 6px;
     }
-    
+
     .ksa-mobile .carousel-dots .dot {
         width: 8px;
         height: 8px;
     }
 }
 
-/* Arabic language improvements */
+/* Small phones */
+@media (max-width: 375px) {
+    .subtitle-ksa {
+        font-size: 18px;
+        gap: 2px;
+        line-height: 1.5;
+        flex-wrap: wrap;
+    }
+
+    .subtitle-text {
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    .vision-2030 {
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    /* Ensure text breaks properly on very small screens */
+    .subtitle-ksa .subtitle-text:nth-child(2) {
+        white-space: normal;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .subtitle-ksa {
+        font-size: 17px;
+        gap: 2px;
+    }
+
+    .subtitle-text {
+        font-size: 17px;
+    }
+
+    .vision-2030 {
+        font-size: 17px;
+    }
+
+    /* Force Vision 2030 to break if needed */
+    .vision-2030 {
+        word-break: break-word;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+    .ksa-main {
+        padding: 24px 0px;
+        gap: 24px;
+        margin: 0 16px;
+    }
+
+    .subtitle-ksa {
+        font-size: 16px;
+        gap: 2px;
+        line-height: 1.6;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subtitle-text {
+        font-size: 16px;
+        display: block;
+        white-space: normal;
+    }
+
+    .vision-2030 {
+        font-size: 16px;
+        display: block;
+        white-space: normal;
+    }
+
+    .ksa-mobile .selected-item-image {
+        height: 300px;
+    }
+
+    .ksa-mobile .selected-item-title {
+        font-size: 14px;
+    }
+
+    .ksa-mobile .selected-item-title .number {
+        font-size: 16px;
+    }
+
+    .ksa-mobile .selected-item-description {
+        font-size: 12px;
+    }
+}
+
+/* Ultra small phones */
+@media (max-width: 280px) {
+    .subtitle-ksa {
+        font-size: 14px;
+    }
+
+    .subtitle-text {
+        font-size: 14px;
+    }
+
+    .vision-2030 {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   SPECIFIC BREAKPOINTS FOR TEXT WRAPPING
+   ========================= */
+
+/* When screen is too narrow for three elements in one line */
+@media (max-width: 400px) {
+    .subtitle-ksa {
+        flex-wrap: wrap;
+    }
+}
+
+/* When only two elements can fit */
+@media (max-width: 350px) {
+    .subtitle-ksa .subtitle-text:nth-child(2) {
+        white-space: normal;
+    }
+}
+
+/* When each element should be on its own line */
+@media (max-width: 300px) {
+    .subtitle-ksa {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .subtitle-text,
+    .vision-2030 {
+        display: block;
+        white-space: normal;
+    }
+}
+
+/* =========================
+   TABLET SPECIFIC BREAKPOINTS
+   ========================= */
+
+/* Tablet landscape (1024–1180px) */
+@media (max-width: 1180px) and (min-width: 1024px) {
+    .ksa-main {
+        gap: 72px;
+        margin: 0 40px;
+        padding: 60px 0;
+    }
+
+    .ksa-left .text-ksa {
+        right: -80px;
+        max-width: 380px;
+    }
+}
+
+/* Tablet portrait (768–1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .ksa-main {
+        flex-direction: column;
+        gap: 48px;
+        padding: 60px 2rem;
+        margin: 0 auto;
+    }
+
+    .ksa-left,
+    .ksa-right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ksa-left .text-ksa {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .bottom-right {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+/* =========================
+   RTL SUPPORT FOR ARABIC
+   ========================= */
 [dir="rtl"] .ksa-left .text-ksa {
     right: auto;
     left: -120px;
@@ -471,6 +704,16 @@
     text-align: start;
 }
 
+[dir="rtl"] .subtitle-ksa {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+[dir="rtl"] .subtitle-text,
+[dir="rtl"] .vision-2030 {
+    unicode-bidi: plaintext;
+}
+
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -482,54 +725,44 @@
     }
 }
 
-
-
 /* =========================
-   TABLET LANDSCAPE (1024–1180px)
+   ACCESSIBILITY AND PERFORMANCE
    ========================= */
-@media (max-width: 1180px) and (min-width: 1024px) {
-  .ksa-main {
-    gap: 72px;
-    margin: 0 40px;
-    padding: 60px 0;
-  }
-
-  .ksa-left .text-ksa {
-    right: -80px;
-    max-width: 380px;
-  }
+@media (prefers-reduced-motion: reduce) {
+    .ksa-main::before,
+    .ksa-left .bg-ksa,
+    .top-right .icon-ksa,
+    .ksa-mobile .icon-ksa,
+    .subtitle-ksa,
+    .bottom-right,
+    .bottom-right .item-ksa,
+    .ksa-mobile .selected-item,
+    .ksa-left .text-ksa {
+        animation: none;
+    }
+    
+    .bottom-right .item-ksa:hover,
+    .bottom-right .item-ksa.active {
+        transform: none;
+    }
+    
+    .ksa-mobile .selected-item-image:hover {
+        transform: none;
+    }
 }
 
-/* =========================
-   TABLET PORTRAIT (768–1023px)
-   ========================= */
-@media (max-width: 1023px) and (min-width: 768px) {
-  .ksa-main {
-    flex-direction: column;
-    gap: 48px;
-    padding: 60px 2rem;
-    margin: 0 auto;
-  }
-
-  .ksa-left,
-  .ksa-right {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .ksa-left .text-ksa {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .bottom-right {
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .subtitle-text {
+        color: #FFFFFF;
+    }
+    
+    .vision-2030 {
+        color: #FFD700;
+    }
+    
+    .bottom-right .item-ksa.active {
+        background: rgba(255, 215, 0, 0.2);
+        border-color: #FFD700;
+    }
 }

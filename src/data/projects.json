@@ -192,7 +192,7 @@
       "en": "A mobile logistics app developed for Kupek in Germany to automate the ordering and delivery process. It allows clients to manage orders, track deliveries, and schedule transportation efficiently using smart routing and workflow automation.",
       "de": "Eine mobile Logistik-App, entwickelt für Kupek in Deutschland, um Bestell- und Lieferprozesse zu automatisieren. Sie ermöglicht Kunden die Verwaltung von Bestellungen, Sendungsverfolgung und intelligente Transportplanung durch automatisierte Abläufe."
     },
-    
+    "image": "/images/projects/kupek.png",
     "webLink": "",
     "appDownloadLink": ""
   },
